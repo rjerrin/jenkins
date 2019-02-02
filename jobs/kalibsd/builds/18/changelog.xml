@@ -1,0 +1,11 @@
+commit a2f38f5b7dd71d917d7e5fa3da377c338c83aa6f
+tree 31ab5541c8842452b361cc5ee5a9580e4a404e0c
+parent 92d4305c87279c6d45152ee6e8fb29250ac23b1a
+author jery <jery@tos.bsd.dev> 2018-12-15 19:48:58 +0530
+committer jery <jery@tos.bsd.dev> 2018-12-15 19:48:58 +0530
+
+    removing ruby version
+
+
+
+:100644 100644 6283664a82653e172179d67d5e68460cf899b528 02615abe72edd33dfe052586ab8cf2b4576df3b5 M	rubygem-cms_scanner/Makefile

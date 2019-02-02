@@ -1,0 +1,63 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.3">
+      <projectUrl>git@github.com:rjerrin/kali-freebsd-ports.git/</projectUrl>
+      <displayName>kali</displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>git@github.com:rjerrin/kali-freebsd-ports.git</url>
+        <credentialsId>27337e61-9bc9-4d20-8838-c555ec818669</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <assignedNode>tos.bsd.dev</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>PORTS=&quot;/usr/local/poudriere/ports/kali2&quot;
+CTGR=&quot;devel&quot;
+PKG=&quot;rubygem-cms_scanner&quot;
+PKG_PATH=${WORKSPACE}/${PKG}
+JNAME=&quot;kbuild&quot;
+
+
+if [ -d ${PORTS}/${CTGR}/${PKG} ];then
+   sudo rm -rfv ${PORTS}/${CTGR}/${PKG}
+fi
+sudo poudriere  jail -u   -j ${JNAME} 
+sudo poudriere  ports  -u -p kali2
+sudo cp -Rfv ${PKG_PATH}  ${PORTS}/${CTGR}
+cd  ${PORTS}/${CTGR}/${PKG} &amp;&amp; sudo make distclean . &amp;&amp; sudo make makesum .
+sudo poudriere  bulk -c -j ${JNAME}   -p   kali2 ${CTGR}/${PKG} 
+sudo poudriere  testport  -j ${JNAME} -p   kali2 ${CTGR}/${PKG}
+
+</command>
+    </hudson.tasks.Shell>
+    <EnvInjectBuilder plugin="envinject@2.1.6">
+      <info/>
+    </EnvInjectBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

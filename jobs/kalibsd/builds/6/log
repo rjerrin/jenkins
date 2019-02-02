@@ -1,0 +1,42 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd
+Cloning the remote Git repository
+Cloning repository git@github.com:rjerrin/kali-freebsd-ports.git
+ > git init /usr/local/jenkins/workspace/kalibsd # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 1a8e26634cd54d31a699bb938a5e6e0ce4696720 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1a8e26634cd54d31a699bb938a5e6e0ce4696720
+Commit message: "updating progress bar"
+ > git rev-list --no-walk 1a8e26634cd54d31a699bb938a5e6e0ce4696720 # timeout=10
+[kalibsd] $ /bin/sh -xe /tmp/jenkins2081147028447813544.sh
++ PORTS=/usr/local/poudriere/ports/kali
++ CTGR=security
++ PKG=0d1n
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd/0d1n
++ JNAME=lrelease
++ [ -d /usr/local/poudriere/ports/kali/security/0d1n ]
++ sudo rm -rfv /usr/local/poudriere/ports/kali/security/0d1n
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

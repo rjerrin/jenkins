@@ -1,0 +1,28 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4ANC072mxUGdW0XVxCd9hQ96/8aX6hmejGxQ5p0facNoAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/eT83ILSktQifa/inFwAtwJR98MAAAA=[0mJslm in workspace /home/jery/workspace/linux
+[linux] $ /bin/sh -xe /tmp/jenkins3997212503208988054.sh
++ rsync -av --progress --delete --exclude=*.xz --exclude=*.sign rsync://rsync.kernel.org/pub/linux/kernel/v4.x/linux-4.19.* .
+MOTD:
+MOTD:   Welcome to the Linux Kernel Archive.
+MOTD:
+MOTD:   Due to U.S. Exports Regulations, all cryptographic software on this
+MOTD:   site is subject to the following legal notice:
+MOTD:
+MOTD:   This site includes publicly available encryption source code
+MOTD:   which, together with object code resulting from the compiling of
+MOTD:   publicly available source code, may be exported from the United
+MOTD:   States under License Exception "TSU" pursuant to 15 C.F.R. Section
+MOTD:   740.13(e).
+MOTD:
+MOTD:   This legal notice applies to cryptographic software only.
+MOTD:   Please see the Bureau of Industry and Security,
+MOTD:   http://www.bis.doc.gov/ for more information about current
+MOTD:   U.S. regulations.
+MOTD:
+
+receiving incremental file list
+linux-4.19.1.tar.gz
+              0   0%    0.00kB/s    0:00:00          196,608   0%  155.84kB/s    0:16:59          425,984   0%  169.04kB/s    0:15:38          557,056   0%  147.43kB/s    0:17:55          753,664   0%  149.53kB/s    0:17:38          983,040   0%  156.10kB/s    0:16:52        1,114,112   0%   93.65kB/s    0:28:07        1,179,648   0%   84.70kB/s    0:31:04        1,212,416   0%   59.85kB/s    0:43:57        1,277,952   0%   38.47kB/s    1:08:22        1,343,488   0%   42.82kB/s    1:01:24        1,409,024   0%   42.83kB/s    1:01:21        1,507,328   0%   58.49kB/s    0:44:54        1,638,400   1%   71.46kB/s    0:36:43        1,703,936   1%   55.38kB/s    0:47:22        1,867,776   1%   70.47kB/s    0:37:11        2,064,384   1%   85.55kB/s    0:30:35        2,260,992   1%   95.70kB/s    0:27:18        2,359,296   1%  127.74kB/s    0:20:27        2,523,136   1%  129.95kB/s    0:20:04        2,719,744   1%  129.95kB/s    0:20:03        2,883,584   1%  123.38kB/s    0:21:06        3,080,192   1%  144.32kB/s    0:18:01        3,211,264   2%  141.74kB/s    0:18:19        3,276,800   2%  110.46kB/s    0:23:30        3,473,408   2%  116.93kB/s    0:22:10        3,571,712   2%   91.00kB/s    0:28:29        3,637,248   2%   76.20kB/s    0:34:00        3,702,784   2%   77.55kB/s    0:33:23        3,768,320   2%   53.69kB/s    0:48:13        3,866,624   2%   52.76kB/s    0:49:02        3,932,160   2%   54.09kB/s    0:47:48        3,997,696   2%   56.06kB/s    0:46:06        4,063,232   2%   55.07kB/s    0:46:55        4,128,768   2%   53.47kB/s    0:48:18        4,194,304   2%   52.52kB/s    0:49:09        4,259,840   2%   50.91kB/s    0:50:41        4,358,144   2%   54.65kB/s    0:47:11        4,423,680   2%   52.49kB/s    0:49:06  Build was aborted
+Aborted by [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Finished: ABORTED

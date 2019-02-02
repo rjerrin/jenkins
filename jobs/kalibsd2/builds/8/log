@@ -1,0 +1,1400 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a2f38f5b7dd71d917d7e5fa3da377c338c83aa6f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a2f38f5b7dd71d917d7e5fa3da377c338c83aa6f
+Commit message: "removing ruby version"
+ > git rev-list --no-walk a2f38f5b7dd71d917d7e5fa3da377c338c83aa6f # timeout=10
+[kalibsd2] $ /bin/sh -xe /tmp/jenkins1489332246250257700.sh
++ PORTS=/usr/local/poudriere/ports/kali2
++ CTGR=security
++ PKG=automater
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd2/automater
++ JNAME=twlv
++ [ -d /usr/local/poudriere/ports/kali2/security/automater ]
++ sudo poudriere ports -u -p kali2
+[00:00:00] Updating portstree "kali2" with portsnap...Looking up portsnap.FreeBSD.org mirrors... 6 mirrors found.
+Fetching snapshot tag from ec2-ap-southeast-2.portsnap.freebsd.org... done.
+Fetching snapshot metadata... done.
+Updating from Sat Dec 15 17:24:15 IST 2018 to Sun Dec 23 12:22:26 IST 2018.
+Fetching 5 metadata patches... done.
+Applying metadata patches... done.
+Fetching 0 metadata files... done.
+Fetching 822 patches. 
+                                     (0/822) 0.00% .........                                     (100/822) 12.16% .........                                     (200/822) 24.33% .........                                     (300/822) 36.49% .........                                     (400/822) 48.66% .........                                     (500/822) 60.82% .........                                     (600/822) 72.99% .........                                     (700/822) 85.15% .........                                     (800/822) 97.32% ..                                     (822/822) 100.00%  done. 
+done.
+Applying patches... 
+done.
+Fetching 44 new ports or files... done.
+Removing old files and directories... done.
+Extracting new files:
+/usr/local/poudriere/ports/kali2/LEGAL
+/usr/local/poudriere/ports/kali2/MOVED
+/usr/local/poudriere/ports/kali2/Mk/Scripts/
+/usr/local/poudriere/ports/kali2/Mk/Uses/
+/usr/local/poudriere/ports/kali2/Mk/bsd.default-versions.mk
+/usr/local/poudriere/ports/kali2/Mk/bsd.gecko.mk
+/usr/local/poudriere/ports/kali2/Mk/bsd.port.mk
+/usr/local/poudriere/ports/kali2/Tools/scripts/
+/usr/local/poudriere/ports/kali2/UPDATING
+/usr/local/poudriere/ports/kali2/archivers/kf5-karchive/
+/usr/local/poudriere/ports/kali2/archivers/lzip/
+/usr/local/poudriere/ports/kali2/archivers/pear-File_Archive/
+/usr/local/poudriere/ports/kali2/archivers/pecl-lzf/
+/usr/local/poudriere/ports/kali2/archivers/py-lz4/
+/usr/local/poudriere/ports/kali2/archivers/quazip/
+/usr/local/poudriere/ports/kali2/astro/boinc-astropulse/
+/usr/local/poudriere/ports/kali2/astro/boinc-setiathome/
+/usr/local/poudriere/ports/kali2/astro/gpsprune/
+/usr/local/poudriere/ports/kali2/astro/libosmium/
+/usr/local/poudriere/ports/kali2/astro/marble/
+/usr/local/poudriere/ports/kali2/astro/merkaartor/
+/usr/local/poudriere/ports/kali2/astro/mkgmap-splitter/
+/usr/local/poudriere/ports/kali2/astro/mkgmap/
+/usr/local/poudriere/ports/kali2/astro/osmosis/
+/usr/local/poudriere/ports/kali2/audio/Makefile
+/usr/local/poudriere/ports/kali2/audio/ardour/
+/usr/local/poudriere/ports/kali2/audio/baresip/
+/usr/local/poudriere/ports/kali2/audio/denemo/
+/usr/local/poudriere/ports/kali2/audio/fasttracker2/
+/usr/local/poudriere/ports/kali2/audio/gxplugins-lv2/
+/usr/local/poudriere/ports/kali2/audio/libcoverart/
+/usr/local/poudriere/ports/kali2/audio/logitechmediaserver/
+/usr/local/poudriere/ports/kali2/audio/lsp-plugins-lv2/
+/usr/local/poudriere/ports/kali2/audio/mixxx/
+/usr/local/poudriere/ports/kali2/audio/musescore/
+/usr/local/poudriere/ports/kali2/audio/normalize/
+/usr/local/poudriere/ports/kali2/audio/pear-Text_Spell_Audio/
+/usr/local/poudriere/ports/kali2/audio/rtmidi/
+/usr/local/poudriere/ports/kali2/audio/sc3-plugins/
+/usr/local/poudriere/ports/kali2/audio/sonic-visualiser/
+/usr/local/poudriere/ports/kali2/audio/tagtool/
+/usr/local/poudriere/ports/kali2/audio/uade/
+/usr/local/poudriere/ports/kali2/audio/xmcd/
+/usr/local/poudriere/ports/kali2/audio/zynaddsubfx/
+/usr/local/poudriere/ports/kali2/benchmarks/bombardier/
+/usr/local/poudriere/ports/kali2/benchmarks/pear-Benchmark/
+/usr/local/poudriere/ports/kali2/benchmarks/phoronix-test-suite/
+/usr/local/poudriere/ports/kali2/biology/Makefile
+/usr/local/poudriere/ports/kali2/biology/diamond/
+/usr/local/poudriere/ports/kali2/biology/gff2ps/
+/usr/local/poudriere/ports/kali2/biology/py-biopython/
+/usr/local/poudriere/ports/kali2/biology/ugene/
+/usr/local/poudriere/ports/kali2/cad/elmerfem/
+/usr/local/poudriere/ports/kali2/chinese/gcin-gtk3/
+/usr/local/poudriere/ports/kali2/chinese/gcin-qt4/
+/usr/local/poudriere/ports/kali2/chinese/gcin-qt5/
+/usr/local/poudriere/ports/kali2/chinese/gcin/
+/usr/local/poudriere/ports/kali2/chinese/wordpress-zh_CN/
+/usr/local/poudriere/ports/kali2/comms/Makefile
+/usr/local/poudriere/ports/kali2/comms/lirc/
+/usr/local/poudriere/ports/kali2/comms/py-esptool/
+/usr/local/poudriere/ports/kali2/comms/py-qt5-serialport/
+/usr/local/poudriere/ports/kali2/comms/py-xmodem/
+/usr/local/poudriere/ports/kali2/comms/qt5-connectivity/
+/usr/local/poudriere/ports/kali2/comms/qt5-sensors/
+/usr/local/poudriere/ports/kali2/comms/qt5-serialbus/
+/usr/local/poudriere/ports/kali2/comms/qt5-serialport/
+/usr/local/poudriere/ports/kali2/comms/ser2net/
+/usr/local/poudriere/ports/kali2/comms/svxlink/
+/usr/local/poudriere/ports/kali2/comms/xcwcp/
+/usr/local/poudriere/ports/kali2/converters/p5-Convert-PEM/
+/usr/local/poudriere/ports/kali2/converters/pear-Services_JSON/
+/usr/local/poudriere/ports/kali2/databases/couchdb2/
+/usr/local/poudriere/ports/kali2/databases/kbibtex/
+/usr/local/poudriere/ports/kali2/databases/mroonga/
+/usr/local/poudriere/ports/kali2/databases/mysql56-server/
+/usr/local/poudriere/ports/kali2/databases/mysql57-client/
+/usr/local/poudriere/ports/kali2/databases/mysqlwsrep56-server/
+/usr/local/poudriere/ports/kali2/databases/mysqlwsrep57-server/
+/usr/local/poudriere/ports/kali2/databases/pear-DBA/
+/usr/local/poudriere/ports/kali2/databases/pear-DBA_Relational/
+/usr/local/poudriere/ports/kali2/databases/pear-DB_DataObject/
+/usr/local/poudriere/ports/kali2/databases/pear-DB_DataObject_FormBuilder/
+/usr/local/poudriere/ports/kali2/databases/pear-DB_QueryTool/
+/usr/local/poudriere/ports/kali2/databases/pear-DB_Sqlite_Tools/
+/usr/local/poudriere/ports/kali2/databases/pear-DB_Table/
+/usr/local/poudriere/ports/kali2/databases/pear-DB_ldap/
+/usr/local/poudriere/ports/kali2/databases/pear-DB_ldap2/
+/usr/local/poudriere/ports/kali2/databases/pear-MDB/
+/usr/local/poudriere/ports/kali2/databases/pear-MDB2_Driver_mysql/
+/usr/local/poudriere/ports/kali2/databases/pear-MDB2_Schema/
+/usr/local/poudriere/ports/kali2/databases/pear-MDB_QueryTool/
+/usr/local/poudriere/ports/kali2/databases/pear-Structures_DataGrid_DataSource_Array/
+/usr/local/poudriere/ports/kali2/databases/pear-Structures_DataGrid_DataSource_CSV/
+/usr/local/poudriere/ports/kali2/databases/pear-Structures_DataGrid_DataSource_DB/
+/usr/local/poudriere/ports/kali2/databases/pear-Structures_DataGrid_DataSource_DBQuery/
+/usr/local/poudriere/ports/kali2/databases/pear-Structures_DataGrid_DataSource_DBTable/
+/usr/local/poudriere/ports/kali2/databases/pear-Structures_DataGrid_DataSource_DataObject/
+/usr/local/poudriere/ports/kali2/databases/pear-Structures_DataGrid_DataSource_MDB2/
+/usr/local/poudriere/ports/kali2/databases/pear-Structures_DataGrid_DataSource_PDO/
+/usr/local/poudriere/ports/kali2/databases/pear-XML_Query2XML/
+/usr/local/poudriere/ports/kali2/databases/pecl-leveldb/
+/usr/local/poudriere/ports/kali2/databases/pecl-mongodb/
+/usr/local/poudriere/ports/kali2/databases/percona56-server/
+/usr/local/poudriere/ports/kali2/databases/pg_citus/
+/usr/local/poudriere/ports/kali2/databases/pgroonga/
+/usr/local/poudriere/ports/kali2/databases/postgresql-repmgr/
+/usr/local/poudriere/ports/kali2/databases/puppetdb-terminus6/
+/usr/local/poudriere/ports/kali2/databases/puppetdb6/
+/usr/local/poudriere/ports/kali2/databases/py-peewee/
+/usr/local/poudriere/ports/kali2/databases/py-qt5-sql/
+/usr/local/poudriere/ports/kali2/databases/qt5-sql/
+/usr/local/poudriere/ports/kali2/databases/sequeler/
+/usr/local/poudriere/ports/kali2/databases/timescaledb/
+/usr/local/poudriere/ports/kali2/deskutils/Makefile
+/usr/local/poudriere/ports/kali2/deskutils/basket/
+/usr/local/poudriere/ports/kali2/deskutils/caja-extensions/
+/usr/local/poudriere/ports/kali2/deskutils/calibre/
+/usr/local/poudriere/ports/kali2/deskutils/egroupware/
+/usr/local/poudriere/ports/kali2/deskutils/gnome-calendar/
+/usr/local/poudriere/ports/kali2/deskutils/logjam/
+/usr/local/poudriere/ports/kali2/deskutils/lumina-mediaplayer/
+/usr/local/poudriere/ports/kali2/deskutils/lumina-pdf/
+/usr/local/poudriere/ports/kali2/deskutils/lumina-xdg-entry/
+/usr/local/poudriere/ports/kali2/deskutils/qownnotes/
+/usr/local/poudriere/ports/kali2/deskutils/semantik/
+/usr/local/poudriere/ports/kali2/deskutils/znotes/
+/usr/local/poudriere/ports/kali2/devel/Makefile
+/usr/local/poudriere/ports/kali2/devel/aws-c-commons/
+/usr/local/poudriere/ports/kali2/devel/aws-c-event-stream/
+/usr/local/poudriere/ports/kali2/devel/aws-checksums/
+/usr/local/poudriere/ports/kali2/devel/aws-sdk-cpp/
+/usr/local/poudriere/ports/kali2/devel/bmake/
+/usr/local/poudriere/ports/kali2/devel/capnproto/
+/usr/local/poudriere/ports/kali2/devel/cc65/
+/usr/local/poudriere/ports/kali2/devel/cmake-doc/
+/usr/local/poudriere/ports/kali2/devel/cmake-gui/
+/usr/local/poudriere/ports/kali2/devel/cmake/
+/usr/local/poudriere/ports/kali2/devel/cpp-hocon/
+/usr/local/poudriere/ports/kali2/devel/cppcheck/
+/usr/local/poudriere/ports/kali2/devel/cssc/
+/usr/local/poudriere/ports/kali2/devel/cxxopts/
+/usr/local/poudriere/ports/kali2/devel/evdev-proto/
+/usr/local/poudriere/ports/kali2/devel/evemu/
+/usr/local/poudriere/ports/kali2/devel/fuel/
+/usr/local/poudriere/ports/kali2/devel/gamin/
+/usr/local/poudriere/ports/kali2/devel/geany-plugin-ctags/
+/usr/local/poudriere/ports/kali2/devel/geany-plugin-markdown/
+/usr/local/poudriere/ports/kali2/devel/geany-plugin-scope/
+/usr/local/poudriere/ports/kali2/devel/geany-plugin-vimode/
+/usr/local/poudriere/ports/kali2/devel/geany-plugins/
+/usr/local/poudriere/ports/kali2/devel/geany/
+/usr/local/poudriere/ports/kali2/devel/git-cinnabar/
+/usr/local/poudriere/ports/kali2/devel/git/
+/usr/local/poudriere/ports/kali2/devel/gitg/
+/usr/local/poudriere/ports/kali2/devel/glade/
+/usr/local/poudriere/ports/kali2/devel/hadoop/
+/usr/local/poudriere/ports/kali2/devel/hadoop2/
+/usr/local/poudriere/ports/kali2/devel/hub/
+/usr/local/poudriere/ports/kali2/devel/ioncube/
+/usr/local/poudriere/ports/kali2/devel/jenkins/
+/usr/local/poudriere/ports/kali2/devel/jfrog-cli/
+/usr/local/poudriere/ports/kali2/devel/kf5-extra-cmake-modules/
+/usr/local/poudriere/ports/kali2/devel/kf5-kapidox/
+/usr/local/poudriere/ports/kali2/devel/kf5-kauth/
+/usr/local/poudriere/ports/kali2/devel/kf5-kbookmarks/
+/usr/local/poudriere/ports/kali2/devel/kf5-kcmutils/
+/usr/local/poudriere/ports/kali2/devel/kf5-kconfig/
+/usr/local/poudriere/ports/kali2/devel/kf5-kcoreaddons/
+/usr/local/poudriere/ports/kali2/devel/kf5-kcrash/
+/usr/local/poudriere/ports/kali2/devel/kf5-kdbusaddons/
+/usr/local/poudriere/ports/kali2/devel/kf5-kdeclarative/
+/usr/local/poudriere/ports/kali2/devel/kf5-kdoctools/
+/usr/local/poudriere/ports/kali2/devel/kf5-kfilemetadata/
+/usr/local/poudriere/ports/kali2/devel/kf5-ki18n/
+/usr/local/poudriere/ports/kali2/devel/kf5-kidletime/
+/usr/local/poudriere/ports/kali2/devel/kf5-kio/
+/usr/local/poudriere/ports/kali2/devel/kf5-kitemmodels/
+/usr/local/poudriere/ports/kali2/devel/kf5-knewstuff/
+/usr/local/poudriere/ports/kali2/devel/kf5-knotifications/
+/usr/local/poudriere/ports/kali2/devel/kf5-knotifyconfig/
+/usr/local/poudriere/ports/kali2/devel/kf5-kpackage/
+/usr/local/poudriere/ports/kali2/devel/kf5-kparts/
+/usr/local/poudriere/ports/kali2/devel/kf5-kpeople/
+/usr/local/poudriere/ports/kali2/devel/kf5-kpty/
+/usr/local/poudriere/ports/kali2/devel/kf5-kservice/
+/usr/local/poudriere/ports/kali2/devel/kf5-ktexteditor/
+/usr/local/poudriere/ports/kali2/devel/kf5-kunitconversion/
+/usr/local/poudriere/ports/kali2/devel/kf5-solid/
+/usr/local/poudriere/ports/kali2/devel/kf5-threadweaver/
+/usr/local/poudriere/ports/kali2/devel/kore/
+/usr/local/poudriere/ports/kali2/devel/ksql/
+/usr/local/poudriere/ports/kali2/devel/leatherman/
+/usr/local/poudriere/ports/kali2/devel/libdbusmenu-qt/
+/usr/local/poudriere/ports/kali2/devel/libepoll-shim/
+/usr/local/poudriere/ports/kali2/devel/libevdev/
+/usr/local/poudriere/ports/kali2/devel/libevt/
+/usr/local/poudriere/ports/kali2/devel/libevtx/
+/usr/local/poudriere/ports/kali2/devel/libfsapfs/
+/usr/local/poudriere/ports/kali2/devel/libfwnt/
+/usr/local/poudriere/ports/kali2/devel/libfwsi/
+/usr/local/poudriere/ports/kali2/devel/libgit2-glib/
+/usr/local/poudriere/ports/kali2/devel/libinotify/
+/usr/local/poudriere/ports/kali2/devel/liblnk/
+/usr/local/poudriere/ports/kali2/devel/liblouis/
+/usr/local/poudriere/ports/kali2/devel/libmsiecf/
+/usr/local/poudriere/ports/kali2/devel/libmtdev/
+/usr/local/poudriere/ports/kali2/devel/libqcow/
+/usr/local/poudriere/ports/kali2/devel/libsigrok/
+/usr/local/poudriere/ports/kali2/devel/libsigscan/
+/usr/local/poudriere/ports/kali2/devel/libsmdev/
+/usr/local/poudriere/ports/kali2/devel/libsmraw/
+/usr/local/poudriere/ports/kali2/devel/libudev-devd/
+/usr/local/poudriere/ports/kali2/devel/libuv/
+/usr/local/poudriere/ports/kali2/devel/libvmdk/
+/usr/local/poudriere/ports/kali2/devel/libvshadow/
+/usr/local/poudriere/ports/kali2/devel/libvslvm/
+/usr/local/poudriere/ports/kali2/devel/lightning/
+/usr/local/poudriere/ports/kali2/devel/linux-c6-devtools/
+/usr/local/poudriere/ports/kali2/devel/liteide/
+/usr/local/poudriere/ports/kali2/devel/llvm70/
+/usr/local/poudriere/ports/kali2/devel/luabind/
+/usr/local/poudriere/ports/kali2/devel/meson/
+/usr/local/poudriere/ports/kali2/devel/ncurses/
+/usr/local/poudriere/ports/kali2/devel/openmp/
+/usr/local/poudriere/ports/kali2/devel/p5-Config-Perl-V/
+/usr/local/poudriere/ports/kali2/devel/p5-Exporter-Tidy/
+/usr/local/poudriere/ports/kali2/devel/p5-File-Tempdir/
+/usr/local/poudriere/ports/kali2/devel/p5-Getopt-ArgvFile/
+/usr/local/poudriere/ports/kali2/devel/p5-UI-Dialog/
+/usr/local/poudriere/ports/kali2/devel/pear-Config/
+/usr/local/poudriere/ports/kali2/devel/pear-Console_Color/
+/usr/local/poudriere/ports/kali2/devel/pear-Console_Getargs/
+/usr/local/poudriere/ports/kali2/devel/pear-Date/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Brazil/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Denmark/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Discordian/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_EnglandWales/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Germany/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Iceland/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Ireland/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Italy/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Japan/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Netherlands/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Norway/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_PHPdotNet/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Romania/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Slovenia/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Sweden/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_UNO/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_USA/
+/usr/local/poudriere/ports/kali2/devel/pear-Date_Holidays_Ukraine/
+/usr/local/poudriere/ports/kali2/devel/pear-Event_Dispatcher/
+/usr/local/poudriere/ports/kali2/devel/pear-FSM/
+/usr/local/poudriere/ports/kali2/devel/pear-channel-horde/
+/usr/local/poudriere/ports/kali2/devel/pecl-event/
+/usr/local/poudriere/ports/kali2/devel/pecl-msgpack/
+/usr/local/poudriere/ports/kali2/devel/phpunit6/
+/usr/local/poudriere/ports/kali2/devel/phpunit7/
+/usr/local/poudriere/ports/kali2/devel/pmd/
+/usr/local/poudriere/ports/kali2/devel/ptlib/
+/usr/local/poudriere/ports/kali2/devel/py-Dumper/
+/usr/local/poudriere/ports/kali2/devel/py-PyUtilib/
+/usr/local/poudriere/ports/kali2/devel/py-aiortc/
+/usr/local/poudriere/ports/kali2/devel/py-antlr4-python2-runtime/
+/usr/local/poudriere/ports/kali2/devel/py-antlr4-python3-runtime/
+/usr/local/poudriere/ports/kali2/devel/py-dbus/
+/usr/local/poudriere/ports/kali2/devel/py-django-rq/
+/usr/local/poudriere/ports/kali2/devel/py-evdev/
+/usr/local/poudriere/ports/kali2/devel/py-fabric3/
+/usr/local/poudriere/ports/kali2/devel/py-grpcio-tools/
+/usr/local/poudriere/ports/kali2/devel/py-grpcio/
+/usr/local/poudriere/ports/kali2/devel/py-libzfs/
+/usr/local/poudriere/ports/kali2/devel/py-mypy/
+/usr/local/poudriere/ports/kali2/devel/py-portalocker/
+/usr/local/poudriere/ports/kali2/devel/py-pykde4-kde4/
+/usr/local/poudriere/ports/kali2/devel/py-pytest-timeout/
+/usr/local/poudriere/ports/kali2/devel/py-pyudev/
+/usr/local/poudriere/ports/kali2/devel/py-qt4-dbussupport/
+/usr/local/poudriere/ports/kali2/devel/py-qt4-designerplugin/
+/usr/local/poudriere/ports/kali2/devel/py-qt4-qscintilla2/
+/usr/local/poudriere/ports/kali2/devel/py-qt5-core/
+/usr/local/poudriere/ports/kali2/devel/py-qt5-dbus/
+/usr/local/poudriere/ports/kali2/devel/py-qt5-dbussupport/
+/usr/local/poudriere/ports/kali2/devel/py-qt5-designer/
+/usr/local/poudriere/ports/kali2/devel/py-qt5-designerplugin/
+/usr/local/poudriere/ports/kali2/devel/py-qt5-help/
+/usr/local/poudriere/ports/kali2/devel/py-qt5-qscintilla2/
+/usr/local/poudriere/ports/kali2/devel/py-qt5-test/
+/usr/local/poudriere/ports/kali2/devel/py-qt5/
+/usr/local/poudriere/ports/kali2/devel/py-sarge/
+/usr/local/poudriere/ports/kali2/devel/py-setuptools_scm_git_archive/
+/usr/local/poudriere/ports/kali2/devel/py-shellingham/
+/usr/local/poudriere/ports/kali2/devel/py-sip/
+/usr/local/poudriere/ports/kali2/devel/pycharm-ce/
+/usr/local/poudriere/ports/kali2/devel/pyotherside-qt5/
+/usr/local/poudriere/ports/kali2/devel/qbs/
+/usr/local/poudriere/ports/kali2/devel/qca/
+/usr/local/poudriere/ports/kali2/devel/qscintilla2-designerplugin-qt5/
+/usr/local/poudriere/ports/kali2/devel/qscintilla2-designerplugin/
+/usr/local/poudriere/ports/kali2/devel/qscintilla2-qt5/
+/usr/local/poudriere/ports/kali2/devel/qscintilla2/
+/usr/local/poudriere/ports/kali2/devel/qt5-assistant/
+/usr/local/poudriere/ports/kali2/devel/qt5-core/
+/usr/local/poudriere/ports/kali2/devel/qt5-designer/
+/usr/local/poudriere/ports/kali2/devel/qt5-help/
+/usr/local/poudriere/ports/kali2/devel/qt5-linguist/
+/usr/local/poudriere/ports/kali2/devel/qt5-linguisttools/
+/usr/local/poudriere/ports/kali2/devel/qt5-location/
+/usr/local/poudriere/ports/kali2/devel/qt5-qdbus/
+/usr/local/poudriere/ports/kali2/devel/qt5-qdbusviewer/
+/usr/local/poudriere/ports/kali2/devel/qt5-qdoc-data/
+/usr/local/poudriere/ports/kali2/devel/qt5-qdoc/
+/usr/local/poudriere/ports/kali2/devel/qt5-qmake/
+/usr/local/poudriere/ports/kali2/devel/qt5-script/
+/usr/local/poudriere/ports/kali2/devel/qt5-scripttools/
+/usr/local/poudriere/ports/kali2/devel/qt5-scxml/
+/usr/local/poudriere/ports/kali2/devel/qt5-testlib/
+/usr/local/poudriere/ports/kali2/devel/qt5-uitools/
+/usr/local/poudriere/ports/kali2/devel/qt5/
+/usr/local/poudriere/ports/kali2/devel/qtcreator/
+/usr/local/poudriere/ports/kali2/devel/rtichoke/
+/usr/local/poudriere/ports/kali2/devel/rubygem-gitlab-sidekiq-fetcher/
+/usr/local/poudriere/ports/kali2/devel/rubygem-grape-path-helpers/
+/usr/local/poudriere/ports/kali2/devel/rubygem-json-schema/
+/usr/local/poudriere/ports/kali2/devel/sdl20/
+/usr/local/poudriere/ports/kali2/devel/sope3/
+/usr/local/poudriere/ports/kali2/devel/spark/
+/usr/local/poudriere/ports/kali2/devel/svn2git/
+/usr/local/poudriere/ports/kali2/devel/upnp/
+/usr/local/poudriere/ports/kali2/devel/vera++/
+/usr/local/poudriere/ports/kali2/devel/websocketpp/
+/usr/local/poudriere/ports/kali2/devel/xeus-cling/
+/usr/local/poudriere/ports/kali2/devel/xeus/
+/usr/local/poudriere/ports/kali2/devel/xtl-quant-stack/
+/usr/local/poudriere/ports/kali2/devel/zfp/
+/usr/local/poudriere/ports/kali2/dns/Makefile
+/usr/local/poudriere/ports/kali2/dns/bind9-devel/
+/usr/local/poudriere/ports/kali2/dns/kf5-kdnssd/
+/usr/local/poudriere/ports/kali2/editors/Makefile
+/usr/local/poudriere/ports/kali2/editors/abiword/
+/usr/local/poudriere/ports/kali2/editors/calligra/
+/usr/local/poudriere/ports/kali2/editors/kak-lsp/
+/usr/local/poudriere/ports/kali2/editors/libreoffice/
+/usr/local/poudriere/ports/kali2/editors/nano/
+/usr/local/poudriere/ports/kali2/editors/openoffice-devel/
+/usr/local/poudriere/ports/kali2/editors/tea/
+/usr/local/poudriere/ports/kali2/editors/texmaker/
+/usr/local/poudriere/ports/kali2/editors/texstudio/
+/usr/local/poudriere/ports/kali2/emulators/Makefile
+/usr/local/poudriere/ports/kali2/emulators/citra/
+/usr/local/poudriere/ports/kali2/emulators/qmc2/
+/usr/local/poudriere/ports/kali2/emulators/rpcs3/
+/usr/local/poudriere/ports/kali2/emulators/vice/
+/usr/local/poudriere/ports/kali2/emulators/wine-devel/
+/usr/local/poudriere/ports/kali2/emulators/winetricks/
+/usr/local/poudriere/ports/kali2/french/Makefile
+/usr/local/poudriere/ports/kali2/french/wordpress/
+/usr/local/poudriere/ports/kali2/games/Makefile
+/usr/local/poudriere/ports/kali2/games/blackshadeselite/
+/usr/local/poudriere/ports/kali2/games/dhewm3/
+/usr/local/poudriere/ports/kali2/games/five-or-more/
+/usr/local/poudriere/ports/kali2/games/flightgear/
+/usr/local/poudriere/ports/kali2/games/gnome-nibbles/
+/usr/local/poudriere/ports/kali2/games/gnome-robots/
+/usr/local/poudriere/ports/kali2/games/libgnome-games-support/
+/usr/local/poudriere/ports/kali2/games/linux-enemyterritory/
+/usr/local/poudriere/ports/kali2/games/openra/
+/usr/local/poudriere/ports/kali2/games/palomino/
+/usr/local/poudriere/ports/kali2/games/plutocracy/
+/usr/local/poudriere/ports/kali2/games/qnetwalk/
+/usr/local/poudriere/ports/kali2/games/quakeforge/
+/usr/local/poudriere/ports/kali2/games/stockfish/
+/usr/local/poudriere/ports/kali2/games/tali/
+/usr/local/poudriere/ports/kali2/games/trimines/
+/usr/local/poudriere/ports/kali2/games/wtf/
+/usr/local/poudriere/ports/kali2/games/wyrmsun/
+/usr/local/poudriere/ports/kali2/german/Makefile
+/usr/local/poudriere/ports/kali2/german/wordpress/
+/usr/local/poudriere/ports/kali2/graphics/Coin/
+/usr/local/poudriere/ports/kali2/graphics/GraphicsMagick/
+/usr/local/poudriere/ports/kali2/graphics/Makefile
+/usr/local/poudriere/ports/kali2/graphics/ampasCTL/
+/usr/local/poudriere/ports/kali2/graphics/appleseed/
+/usr/local/poudriere/ports/kali2/graphics/cimg/
+/usr/local/poudriere/ports/kali2/graphics/dcmtk/
+/usr/local/poudriere/ports/kali2/graphics/diff-pdf/
+/usr/local/poudriere/ports/kali2/graphics/drm-fbsd12.0-kmod/
+/usr/local/poudriere/ports/kali2/graphics/drm-legacy-kmod/
+/usr/local/poudriere/ports/kali2/graphics/entangle/
+/usr/local/poudriere/ports/kali2/graphics/exrtools/
+/usr/local/poudriere/ports/kali2/graphics/fracplanet/
+/usr/local/poudriere/ports/kali2/graphics/gimmage/
+/usr/local/poudriere/ports/kali2/graphics/gimp-resynthesizer/
+/usr/local/poudriere/ports/kali2/graphics/gmic/
+/usr/local/poudriere/ports/kali2/graphics/goom/
+/usr/local/poudriere/ports/kali2/graphics/gpxsee/
+/usr/local/poudriere/ports/kali2/graphics/graphite2/
+/usr/local/poudriere/ports/kali2/graphics/gscan2pdf/
+/usr/local/poudriere/ports/kali2/graphics/inkscape/
+/usr/local/poudriere/ports/kali2/graphics/kf5-kimageformats/
+/usr/local/poudriere/ports/kali2/graphics/kf5-kplotting/
+/usr/local/poudriere/ports/kali2/graphics/kf5-prison/
+/usr/local/poudriere/ports/kali2/graphics/krita/
+/usr/local/poudriere/ports/kali2/graphics/minder/
+/usr/local/poudriere/ports/kali2/graphics/movit/
+/usr/local/poudriere/ports/kali2/graphics/netpbm/
+/usr/local/poudriere/ports/kali2/graphics/ocre/
+/usr/local/poudriere/ports/kali2/graphics/okular-kde4/
+/usr/local/poudriere/ports/kali2/graphics/okular/
+/usr/local/poudriere/ports/kali2/graphics/openfx-arena/
+/usr/local/poudriere/ports/kali2/graphics/openorienteering-mapper/
+/usr/local/poudriere/ports/kali2/graphics/p5-Image-OCR-Tesseract/
+/usr/local/poudriere/ports/kali2/graphics/pdfpc/
+/usr/local/poudriere/ports/kali2/graphics/photivo/
+/usr/local/poudriere/ports/kali2/graphics/png/
+/usr/local/poudriere/ports/kali2/graphics/poppler-glib/
+/usr/local/poudriere/ports/kali2/graphics/poppler-qt5/
+/usr/local/poudriere/ports/kali2/graphics/poppler-utils/
+/usr/local/poudriere/ports/kali2/graphics/poppler/
+/usr/local/poudriere/ports/kali2/graphics/pqiv/
+/usr/local/poudriere/ports/kali2/graphics/py-poppler/
+/usr/local/poudriere/ports/kali2/graphics/py-qt5-svg/
+/usr/local/poudriere/ports/kali2/graphics/qt5-3d/
+/usr/local/poudriere/ports/kali2/graphics/qt5-graphicaleffects/
+/usr/local/poudriere/ports/kali2/graphics/qt5-imageformats/
+/usr/local/poudriere/ports/kali2/graphics/qt5-pixeltool/
+/usr/local/poudriere/ports/kali2/graphics/qt5-svg/
+/usr/local/poudriere/ports/kali2/graphics/qt5-wayland/
+/usr/local/poudriere/ports/kali2/graphics/radiance/
+/usr/local/poudriere/ports/kali2/graphics/rawtherapee/
+/usr/local/poudriere/ports/kali2/graphics/sk1/
+/usr/local/poudriere/ports/kali2/graphics/ufraw/
+/usr/local/poudriere/ports/kali2/graphics/vigra/
+/usr/local/poudriere/ports/kali2/graphics/yagf/
+/usr/local/poudriere/ports/kali2/irc/Makefile
+/usr/local/poudriere/ports/kali2/irc/anope/
+/usr/local/poudriere/ports/kali2/irc/kvirc/
+/usr/local/poudriere/ports/kali2/irc/znc-push/
+/usr/local/poudriere/ports/kali2/japanese/Makefile
+/usr/local/poudriere/ports/kali2/japanese/kasumi/
+/usr/local/poudriere/ports/kali2/japanese/wordpress/
+/usr/local/poudriere/ports/kali2/java/intellij/
+/usr/local/poudriere/ports/kali2/lang/Makefile
+/usr/local/poudriere/ports/kali2/lang/erlang-runtime21/
+/usr/local/poudriere/ports/kali2/lang/gcc7-devel/
+/usr/local/poudriere/ports/kali2/lang/gcc8-devel/
+/usr/local/poudriere/ports/kali2/lang/gcc8/
+/usr/local/poudriere/ports/kali2/lang/gcc9-devel/
+/usr/local/poudriere/ports/kali2/lang/ghc/
+/usr/local/poudriere/ports/kali2/lang/ghc843/
+/usr/local/poudriere/ports/kali2/lang/ghc862/
+/usr/local/poudriere/ports/kali2/lang/go/
+/usr/local/poudriere/ports/kali2/lang/kf5-kross/
+/usr/local/poudriere/ports/kali2/lang/perl5-devel/
+/usr/local/poudriere/ports/kali2/lang/perl5.26/
+/usr/local/poudriere/ports/kali2/lang/py-qt5-qml/
+/usr/local/poudriere/ports/kali2/lang/ruby24/
+/usr/local/poudriere/ports/kali2/lang/rust-nightly/
+/usr/local/poudriere/ports/kali2/lang/rust/
+/usr/local/poudriere/ports/kali2/lang/scala/
+/usr/local/poudriere/ports/kali2/lang/scm/
+/usr/local/poudriere/ports/kali2/lang/squeak/
+/usr/local/poudriere/ports/kali2/mail/Makefile
+/usr/local/poudriere/ports/kali2/mail/claws-mail/
+/usr/local/poudriere/ports/kali2/mail/courier-imap/
+/usr/local/poudriere/ports/kali2/mail/evolution-ews/
+/usr/local/poudriere/ports/kali2/mail/mutt/
+/usr/local/poudriere/ports/kali2/mail/opensmtpd-devel/
+/usr/local/poudriere/ports/kali2/mail/opensmtpd/
+/usr/local/poudriere/ports/kali2/mail/p5-Mail-RFC822-Address/
+/usr/local/poudriere/ports/kali2/math/4ti2/
+/usr/local/poudriere/ports/kali2/math/Makefile
+/usr/local/poudriere/ports/kali2/math/R/
+/usr/local/poudriere/ports/kali2/math/blis/
+/usr/local/poudriere/ports/kali2/math/combblas/
+/usr/local/poudriere/ports/kali2/math/elpa/
+/usr/local/poudriere/ports/kali2/math/geogebra/
+/usr/local/poudriere/ports/kali2/math/gnuplot/
+/usr/local/poudriere/ports/kali2/math/gretl/
+/usr/local/poudriere/ports/kali2/math/gri/
+/usr/local/poudriere/ports/kali2/math/hipmcl/
+/usr/local/poudriere/ports/kali2/math/latte-integrale/
+/usr/local/poudriere/ports/kali2/math/libRmath/
+/usr/local/poudriere/ports/kali2/math/mathmod/
+/usr/local/poudriere/ports/kali2/math/matio/
+/usr/local/poudriere/ports/kali2/math/mkl-dnn/
+/usr/local/poudriere/ports/kali2/math/octave-forge/
+/usr/local/poudriere/ports/kali2/math/p5-Number-WithError/
+/usr/local/poudriere/ports/kali2/math/plplot/
+/usr/local/poudriere/ports/kali2/math/py-MutatorMath/
+/usr/local/poudriere/ports/kali2/math/py-mpmath/
+/usr/local/poudriere/ports/kali2/math/py-pandas-datareader/
+/usr/local/poudriere/ports/kali2/math/py-pyclipper/
+/usr/local/poudriere/ports/kali2/math/py-python-louvain/
+/usr/local/poudriere/ports/kali2/math/py-rapi/
+/usr/local/poudriere/ports/kali2/math/py-theano/
+/usr/local/poudriere/ports/kali2/math/qtiplot/
+/usr/local/poudriere/ports/kali2/math/scilab/
+/usr/local/poudriere/ports/kali2/math/xtensor/
+/usr/local/poudriere/ports/kali2/misc/Makefile
+/usr/local/poudriere/ports/kali2/misc/gnuit/
+/usr/local/poudriere/ports/kali2/misc/iso-codes/
+/usr/local/poudriere/ports/kali2/misc/kdeutils/
+/usr/local/poudriere/ports/kali2/misc/kf5-purpose/
+/usr/local/poudriere/ports/kali2/misc/libemos/
+/usr/local/poudriere/ports/kali2/misc/openhab2-addons/
+/usr/local/poudriere/ports/kali2/misc/openhab2/
+/usr/local/poudriere/ports/kali2/misc/osinfo-db/
+/usr/local/poudriere/ports/kali2/misc/p5-Array-RefElem/
+/usr/local/poudriere/ports/kali2/misc/py-qt4-doc/
+/usr/local/poudriere/ports/kali2/misc/qt5-doc/
+/usr/local/poudriere/ports/kali2/misc/qt5-examples/
+/usr/local/poudriere/ports/kali2/misc/qt5ct/
+/usr/local/poudriere/ports/kali2/misc/snakemake/
+/usr/local/poudriere/ports/kali2/misc/survex/
+/usr/local/poudriere/ports/kali2/misc/tellico-kde4/
+/usr/local/poudriere/ports/kali2/misc/unclutter-xfixes/
+/usr/local/poudriere/ports/kali2/misc/urh/
+/usr/local/poudriere/ports/kali2/multimedia/Makefile
+/usr/local/poudriere/ports/kali2/multimedia/aom/
+/usr/local/poudriere/ports/kali2/multimedia/clipgrab/
+/usr/local/poudriere/ports/kali2/multimedia/dav1d/
+/usr/local/poudriere/ports/kali2/multimedia/dvb-apps/
+/usr/local/poudriere/ports/kali2/multimedia/ffmpeg/
+/usr/local/poudriere/ports/kali2/multimedia/gstreamer1-plugins-aom/
+/usr/local/poudriere/ports/kali2/multimedia/gstreamer1-plugins/
+/usr/local/poudriere/ports/kali2/multimedia/gstreamer1-qt/
+/usr/local/poudriere/ports/kali2/multimedia/kaffeine/
+/usr/local/poudriere/ports/kali2/multimedia/kdenlive/
+/usr/local/poudriere/ports/kali2/multimedia/kf5-kmediaplayer/
+/usr/local/poudriere/ports/kali2/multimedia/kodi-devel/
+/usr/local/poudriere/ports/kali2/multimedia/libva-intel-driver/
+/usr/local/poudriere/ports/kali2/multimedia/lives/
+/usr/local/poudriere/ports/kali2/multimedia/mpv/
+/usr/local/poudriere/ports/kali2/multimedia/phonon-designerplugin/
+/usr/local/poudriere/ports/kali2/multimedia/phonon-gstreamer/
+/usr/local/poudriere/ports/kali2/multimedia/phonon-vlc/
+/usr/local/poudriere/ports/kali2/multimedia/phonon/
+/usr/local/poudriere/ports/kali2/multimedia/plexmediaserver-plexpass/
+/usr/local/poudriere/ports/kali2/multimedia/plexmediaserver/
+/usr/local/poudriere/ports/kali2/multimedia/py-moviepy/
+/usr/local/poudriere/ports/kali2/multimedia/py-qt5-multimedia/
+/usr/local/poudriere/ports/kali2/multimedia/py-qt5-multimediawidgets/
+/usr/local/poudriere/ports/kali2/multimedia/pyjama/
+/usr/local/poudriere/ports/kali2/multimedia/qt5-multimedia/
+/usr/local/poudriere/ports/kali2/multimedia/rav1e/
+/usr/local/poudriere/ports/kali2/multimedia/tautulli/
+/usr/local/poudriere/ports/kali2/multimedia/v4l_compat/
+/usr/local/poudriere/ports/kali2/multimedia/vlc3/
+/usr/local/poudriere/ports/kali2/multimedia/webvfx-qt5/
+/usr/local/poudriere/ports/kali2/net-im/Makefile
+/usr/local/poudriere/ports/kali2/net-im/kopete-kde4/
+/usr/local/poudriere/ports/kali2/net-im/ktp-accounts-kcm/
+/usr/local/poudriere/ports/kali2/net-im/ktp-approver/
+/usr/local/poudriere/ports/kali2/net-im/ktp-auth-handler/
+/usr/local/poudriere/ports/kali2/net-im/ktp-contact-runner/
+/usr/local/poudriere/ports/kali2/net-im/ktp-desktop-applets/
+/usr/local/poudriere/ports/kali2/net-im/ktp-kded-module/
+/usr/local/poudriere/ports/kali2/net-im/ktp-send-file/
+/usr/local/poudriere/ports/kali2/net-im/prosody/
+/usr/local/poudriere/ports/kali2/net-im/qTox/
+/usr/local/poudriere/ports/kali2/net-im/telegram-desktop/
+/usr/local/poudriere/ports/kali2/net-im/telepathy-qt/
+/usr/local/poudriere/ports/kali2/net-mgmt/blackbox_exporter/
+/usr/local/poudriere/ports/kali2/net-mgmt/collectd5/
+/usr/local/poudriere/ports/kali2/net-mgmt/icingaweb2-module-grafana/
+/usr/local/poudriere/ports/kali2/net-mgmt/librenms/
+/usr/local/poudriere/ports/kali2/net-mgmt/py-prometheus-client/
+/usr/local/poudriere/ports/kali2/net-p2p/Makefile
+/usr/local/poudriere/ports/kali2/net-p2p/amule/
+/usr/local/poudriere/ports/kali2/net-p2p/retroshare/
+/usr/local/poudriere/ports/kali2/net-p2p/transmission-qt/
+/usr/local/poudriere/ports/kali2/net/Makefile
+/usr/local/poudriere/ports/kali2/net/aluminum/
+/usr/local/poudriere/ports/kali2/net/anet/
+/usr/local/poudriere/ports/kali2/net/avahi-app/
+/usr/local/poudriere/ports/kali2/net/avahi-qt5/
+/usr/local/poudriere/ports/kali2/net/avahi/
+/usr/local/poudriere/ports/kali2/net/bosh-bootloader/
+/usr/local/poudriere/ports/kali2/net/cf/
+/usr/local/poudriere/ports/kali2/net/clash/
+/usr/local/poudriere/ports/kali2/net/freerdp/
+/usr/local/poudriere/ports/kali2/net/google-cloud-sdk/
+/usr/local/poudriere/ports/kali2/net/haproxy-devel/
+/usr/local/poudriere/ports/kali2/net/haproxy/
+/usr/local/poudriere/ports/kali2/net/kf5-kholidays/
+/usr/local/poudriere/ports/kali2/net/kf5-kxmlrpcclient/
+/usr/local/poudriere/ports/kali2/net/kf5-syndication/
+/usr/local/poudriere/ports/kali2/net/kitinerary/
+/usr/local/poudriere/ports/kali2/net/libsrtp/
+/usr/local/poudriere/ports/kali2/net/mpich/
+/usr/local/poudriere/ports/kali2/net/nanomsg/
+/usr/local/poudriere/ports/kali2/net/ndpi/
+/usr/local/poudriere/ports/kali2/net/ntopng/
+/usr/local/poudriere/ports/kali2/net/opal/
+/usr/local/poudriere/ports/kali2/net/openldap24-server/
+/usr/local/poudriere/ports/kali2/net/pdb/
+/usr/local/poudriere/ports/kali2/net/py-qt5-network/
+/usr/local/poudriere/ports/kali2/net/qt5-network/
+/usr/local/poudriere/ports/kali2/net/sflowtool/
+/usr/local/poudriere/ports/kali2/net/traefik/
+/usr/local/poudriere/ports/kali2/net/uriparser/
+/usr/local/poudriere/ports/kali2/net/wireguard/
+/usr/local/poudriere/ports/kali2/palm/Makefile
+/usr/local/poudriere/ports/kali2/polish/Makefile
+/usr/local/poudriere/ports/kali2/ports-mgmt/pkg_cutleaves/
+/usr/local/poudriere/ports/kali2/portuguese/Makefile
+/usr/local/poudriere/ports/kali2/print/Makefile
+/usr/local/poudriere/ports/kali2/print/cups-filters/
+/usr/local/poudriere/ports/kali2/print/gutenprint/
+/usr/local/poudriere/ports/kali2/print/harfbuzz-icu/
+/usr/local/poudriere/ports/kali2/print/harfbuzz/
+/usr/local/poudriere/ports/kali2/print/pdf-tools/
+/usr/local/poudriere/ports/kali2/print/py-qt5-printsupport/
+/usr/local/poudriere/ports/kali2/print/qpdfview/
+/usr/local/poudriere/ports/kali2/print/scribus-devel/
+/usr/local/poudriere/ports/kali2/print/scribus/
+/usr/local/poudriere/ports/kali2/science/InsightToolkit/
+/usr/local/poudriere/ports/kali2/science/Makefile
+/usr/local/poudriere/ports/kali2/science/agrum/
+/usr/local/poudriere/ports/kali2/science/dalton/
+/usr/local/poudriere/ports/kali2/science/drawxtl/
+/usr/local/poudriere/ports/kali2/science/erkale/
+/usr/local/poudriere/ports/kali2/science/gchemutils/
+/usr/local/poudriere/ports/kali2/science/h5z-zfp/
+/usr/local/poudriere/ports/kali2/science/jdftx/
+/usr/local/poudriere/ports/kali2/science/lamprop/
+/usr/local/poudriere/ports/kali2/science/libghemical/
+/usr/local/poudriere/ports/kali2/science/mmdb2/
+/usr/local/poudriere/ports/kali2/science/mpqc/
+/usr/local/poudriere/ports/kali2/science/pcmsolver/
+/usr/local/poudriere/ports/kali2/science/py-GPy/
+/usr/local/poudriere/ports/kali2/science/py-GPyOpt/
+/usr/local/poudriere/ports/kali2/science/py-dlib/
+/usr/local/poudriere/ports/kali2/science/py-gsd/
+/usr/local/poudriere/ports/kali2/science/py-lifelines/
+/usr/local/poudriere/ports/kali2/science/py-paramz/
+/usr/local/poudriere/ports/kali2/science/py-scikit-learn/
+/usr/local/poudriere/ports/kali2/science/qmcpack/
+/usr/local/poudriere/ports/kali2/science/qwalk/
+/usr/local/poudriere/ports/kali2/science/tinker/
+/usr/local/poudriere/ports/kali2/science/vipster/
+/usr/local/poudriere/ports/kali2/science/xdrawchem/
+/usr/local/poudriere/ports/kali2/science/yoda/
+/usr/local/poudriere/ports/kali2/security/Makefile
+/usr/local/poudriere/ports/kali2/security/beid/
+/usr/local/poudriere/ports/kali2/security/bro/
+/usr/local/poudriere/ports/kali2/security/cargo-audit/
+/usr/local/poudriere/ports/kali2/security/cyberchef/
+/usr/local/poudriere/ports/kali2/security/gnutls/
+/usr/local/poudriere/ports/kali2/security/hashcat/
+/usr/local/poudriere/ports/kali2/security/hitch/
+/usr/local/poudriere/ports/kali2/security/kf5-kdesu/
+/usr/local/poudriere/ports/kali2/security/krb5-appl/
+/usr/local/poudriere/ports/kali2/security/krb5-devel/
+/usr/local/poudriere/ports/kali2/security/libgpg-error/
+/usr/local/poudriere/ports/kali2/security/libhijack/
+/usr/local/poudriere/ports/kali2/security/libressl-devel/
+/usr/local/poudriere/ports/kali2/security/libressl/
+/usr/local/poudriere/ports/kali2/security/linux-c6-nss/
+/usr/local/poudriere/ports/kali2/security/metasploit/
+/usr/local/poudriere/ports/kali2/security/nextcloud-passman/
+/usr/local/poudriere/ports/kali2/security/opensc/
+/usr/local/poudriere/ports/kali2/security/p5-OpenCA-OpenSSL/
+/usr/local/poudriere/ports/kali2/security/py-artifacts/
+/usr/local/poudriere/ports/kali2/security/py-dfvfs/
+/usr/local/poudriere/ports/kali2/security/py-ospd/
+/usr/local/poudriere/ports/kali2/security/py-plaso/
+/usr/local/poudriere/ports/kali2/security/py-stix2/
+/usr/local/poudriere/ports/kali2/security/qtkeychain/
+/usr/local/poudriere/ports/kali2/security/racoon2-legacy/
+/usr/local/poudriere/ports/kali2/security/racoon2/
+/usr/local/poudriere/ports/kali2/security/rubygem-metasploit-payloads/
+/usr/local/poudriere/ports/kali2/security/rubygem-metasploit_payloads-mettle/
+/usr/local/poudriere/ports/kali2/security/rubygem-recog/
+/usr/local/poudriere/ports/kali2/security/silktools/
+/usr/local/poudriere/ports/kali2/security/suricata/
+/usr/local/poudriere/ports/kali2/security/tor-devel/
+/usr/local/poudriere/ports/kali2/security/vault/
+/usr/local/poudriere/ports/kali2/security/vuxml/
+/usr/local/poudriere/ports/kali2/shells/ksh93-devel/
+/usr/local/poudriere/ports/kali2/sysutils/Makefile
+/usr/local/poudriere/ports/kali2/sysutils/ansible/
+/usr/local/poudriere/ports/kali2/sysutils/ansible25/
+/usr/local/poudriere/ports/kali2/sysutils/ansible26/
+/usr/local/poudriere/ports/kali2/sysutils/apachetop/
+/usr/local/poudriere/ports/kali2/sysutils/asmctl/
+/usr/local/poudriere/ports/kali2/sysutils/bulk_extractor/
+/usr/local/poudriere/ports/kali2/sysutils/cfengine-devel/
+/usr/local/poudriere/ports/kali2/sysutils/cfengine-masterfiles-devel/
+/usr/local/poudriere/ports/kali2/sysutils/debootstrap/
+/usr/local/poudriere/ports/kali2/sysutils/e2fsprogs/
+/usr/local/poudriere/ports/kali2/sysutils/eksctl/
+/usr/local/poudriere/ports/kali2/sysutils/facter/
+/usr/local/poudriere/ports/kali2/sysutils/fusefs-webdavfs/
+/usr/local/poudriere/ports/kali2/sysutils/goawk/
+/usr/local/poudriere/ports/kali2/sysutils/grub2-pcbsd/
+/usr/local/poudriere/ports/kali2/sysutils/intel-pcm-devel/
+/usr/local/poudriere/ports/kali2/sysutils/iocage-devel/
+/usr/local/poudriere/ports/kali2/sysutils/kf5-baloo/
+/usr/local/poudriere/ports/kali2/sysutils/kf5-kwallet/
+/usr/local/poudriere/ports/kali2/sysutils/kfilemetadata-kde4/
+/usr/local/poudriere/ports/kali2/sysutils/nepomuk-core-kde4/
+/usr/local/poudriere/ports/kali2/sysutils/packer/
+/usr/local/poudriere/ports/kali2/sysutils/polkit-qt/
+/usr/local/poudriere/ports/kali2/sysutils/pot/
+/usr/local/poudriere/ports/kali2/sysutils/puppet6/
+/usr/local/poudriere/ports/kali2/sysutils/puppetserver6/
+/usr/local/poudriere/ports/kali2/sysutils/rubygem-puppetserver-ca/
+/usr/local/poudriere/ports/kali2/sysutils/runit-faster/
+/usr/local/poudriere/ports/kali2/sysutils/shim/
+/usr/local/poudriere/ports/kali2/sysutils/sysadm-client/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng319/
+/usr/local/poudriere/ports/kali2/sysutils/terraform/
+/usr/local/poudriere/ports/kali2/sysutils/xorriso/
+/usr/local/poudriere/ports/kali2/textproc/Makefile
+/usr/local/poudriere/ports/kali2/textproc/ansifilter/
+/usr/local/poudriere/ports/kali2/textproc/ffe/
+/usr/local/poudriere/ports/kali2/textproc/fzy/
+/usr/local/poudriere/ports/kali2/textproc/groonga/
+/usr/local/poudriere/ports/kali2/textproc/htmldoc/
+/usr/local/poudriere/ports/kali2/textproc/ibus-typing-booster/
+/usr/local/poudriere/ports/kali2/textproc/kf5-kcodecs/
+/usr/local/poudriere/ports/kali2/textproc/kf5-sonnet/
+/usr/local/poudriere/ports/kali2/textproc/kf5-syntax-highlighting/
+/usr/local/poudriere/ports/kali2/textproc/lowdown/
+/usr/local/poudriere/ports/kali2/textproc/p5-Net-IDN-Encode/
+/usr/local/poudriere/ports/kali2/textproc/pdfgrep/
+/usr/local/poudriere/ports/kali2/textproc/pear-Structures_DataGrid_DataSource_RSS/
+/usr/local/poudriere/ports/kali2/textproc/pear-Structures_DataGrid_DataSource_XML/
+/usr/local/poudriere/ports/kali2/textproc/py-qt5-xml/
+/usr/local/poudriere/ports/kali2/textproc/py-qt5-xmlpatterns/
+/usr/local/poudriere/ports/kali2/textproc/qt5-xmlpatterns/
+/usr/local/poudriere/ports/kali2/textproc/retext/
+/usr/local/poudriere/ports/kali2/www/e2guardian/
+/usr/local/poudriere/ports/kali2/www/gitlab-ce/
+/usr/local/poudriere/ports/kali2/www/grafana5/
+/usr/local/poudriere/ports/kali2/www/groupoffice/
+/usr/local/poudriere/ports/kali2/www/kf5-kdewebkit/
+/usr/local/poudriere/ports/kali2/www/kf5-khtml/
+/usr/local/poudriere/ports/kali2/www/kf5-kjs/
+/usr/local/poudriere/ports/kali2/www/kf5-kjsembed/
+/usr/local/poudriere/ports/kali2/www/libepc/
+/usr/local/poudriere/ports/kali2/www/minio/
+/usr/local/poudriere/ports/kali2/www/nextcloud-contacts/
+/usr/local/poudriere/ports/kali2/www/nginx/
+/usr/local/poudriere/ports/kali2/www/node6/
+/usr/local/poudriere/ports/kali2/www/node8/
+/usr/local/poudriere/ports/kali2/www/p5-Mojolicious/
+/usr/local/poudriere/ports/kali2/www/phpbb3/
+/usr/local/poudriere/ports/kali2/www/py-azure-common/
+/usr/local/poudriere/ports/kali2/www/py-flask-bootstrap/
+/usr/local/poudriere/ports/kali2/www/py-qt5-webchannel/
+/usr/local/poudriere/ports/kali2/www/py-qt5-webkit/
+/usr/local/poudriere/ports/kali2/www/py-qt5-webkitwidgets/
+/usr/local/poudriere/ports/kali2/www/py-webassets/
+/usr/local/poudriere/ports/kali2/www/qt5-webchannel/
+/usr/local/poudriere/ports/kali2/www/qt5-webengine/
+/usr/local/poudriere/ports/kali2/www/qt5-webkit/
+/usr/local/poudriere/ports/kali2/www/qt5-websockets-qml/
+/usr/local/poudriere/ports/kali2/www/qt5-websockets/
+/usr/local/poudriere/ports/kali2/www/unit/
+/usr/local/poudriere/ports/kali2/www/webkit-gtk2/
+/usr/local/poudriere/ports/kali2/www/webkit2-gtk3/
+/usr/local/poudriere/ports/kali2/www/wordpress/
+/usr/local/poudriere/ports/kali2/x11-clocks/Makefile
+/usr/local/poudriere/ports/kali2/x11-drivers/xf86-input-evdev/
+/usr/local/poudriere/ports/kali2/x11-drivers/xf86-input-libinput/
+/usr/local/poudriere/ports/kali2/x11-drivers/xf86-input-synaptics/
+/usr/local/poudriere/ports/kali2/x11-drivers/xf86-input-wacom/
+/usr/local/poudriere/ports/kali2/x11-drivers/xf86-video-ati-legacy/
+/usr/local/poudriere/ports/kali2/x11-drivers/xf86-video-intel/
+/usr/local/poudriere/ports/kali2/x11-drivers/xf86-video-qxl/
+/usr/local/poudriere/ports/kali2/x11-fm/Makefile
+/usr/local/poudriere/ports/kali2/x11-fm/nautilus/
+/usr/local/poudriere/ports/kali2/x11-fonts/Makefile
+/usr/local/poudriere/ports/kali2/x11-fonts/py-booleanOperations/
+/usr/local/poudriere/ports/kali2/x11-fonts/py-compreffor/
+/usr/local/poudriere/ports/kali2/x11-fonts/py-cu2qu/
+/usr/local/poudriere/ports/kali2/x11-fonts/py-defcon/
+/usr/local/poudriere/ports/kali2/x11-fonts/py-fontMath/
+/usr/local/poudriere/ports/kali2/x11-fonts/py-fontmake/
+/usr/local/poudriere/ports/kali2/x11-fonts/py-glyphsLib/
+/usr/local/poudriere/ports/kali2/x11-fonts/py-ufo2ft/
+/usr/local/poudriere/ports/kali2/x11-fonts/py-ufoLib/
+/usr/local/poudriere/ports/kali2/x11-servers/xwayland/
+/usr/local/poudriere/ports/kali2/x11-themes/Kvantum/
+/usr/local/poudriere/ports/kali2/x11-themes/adwaita-qt/
+/usr/local/poudriere/ports/kali2/x11-themes/kf5-breeze-icons/
+/usr/local/poudriere/ports/kali2/x11-themes/kf5-kemoticons/
+/usr/local/poudriere/ports/kali2/x11-themes/kf5-kiconthemes/
+/usr/local/poudriere/ports/kali2/x11-themes/kf5-oxygen-icons5/
+/usr/local/poudriere/ports/kali2/x11-themes/kf5-qqc2-desktop-style/
+/usr/local/poudriere/ports/kali2/x11-themes/qt5-style-plugins/
+/usr/local/poudriere/ports/kali2/x11-toolkits/Makefile
+/usr/local/poudriere/ports/kali2/x11-toolkits/gnustep-gui/
+/usr/local/poudriere/ports/kali2/x11-toolkits/kf5-attica/
+/usr/local/poudriere/ports/kali2/x11-toolkits/kf5-kcompletion/
+/usr/local/poudriere/ports/kali2/x11-toolkits/kf5-kconfigwidgets/
+/usr/local/poudriere/ports/kali2/x11-toolkits/kf5-kdesignerplugin/
+/usr/local/poudriere/ports/kali2/x11-toolkits/kf5-kguiaddons/
+/usr/local/poudriere/ports/kali2/x11-toolkits/kf5-kirigami2/
+/usr/local/poudriere/ports/kali2/x11-toolkits/kf5-kitemviews/
+/usr/local/poudriere/ports/kali2/x11-toolkits/kf5-kjobwidgets/
+/usr/local/poudriere/ports/kali2/x11-toolkits/kf5-ktextwidgets/
+/usr/local/poudriere/ports/kali2/x11-toolkits/kf5-kwidgetsaddons/
+/usr/local/poudriere/ports/kali2/x11-toolkits/kf5-kxmlgui/
+/usr/local/poudriere/ports/kali2/x11-toolkits/py-qt5-gui/
+/usr/local/poudriere/ports/kali2/x11-toolkits/py-qt5-quick/
+/usr/local/poudriere/ports/kali2/x11-toolkits/py-qt5-quickwidgets/
+/usr/local/poudriere/ports/kali2/x11-toolkits/py-qt5-widgets/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-canvas3d/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-charts/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-datavis3d/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-declarative/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-gamepad/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-gtkplatform/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-gui/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-quickcontrols/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-quickcontrols2/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-uiplugin/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-virtualkeyboard/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5-widgets/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qt5pas/
+/usr/local/poudriere/ports/kali2/x11-toolkits/qwt6/
+/usr/local/poudriere/ports/kali2/x11-toolkits/tepl/
+/usr/local/poudriere/ports/kali2/x11-toolkits/wlc/
+/usr/local/poudriere/ports/kali2/x11-wm/bspwm/
+/usr/local/poudriere/ports/kali2/x11-wm/i3/
+/usr/local/poudriere/ports/kali2/x11-wm/plasma5-kwin/
+/usr/local/poudriere/ports/kali2/x11-wm/stumpwm/
+/usr/local/poudriere/ports/kali2/x11/Makefile
+/usr/local/poudriere/ports/kali2/x11/cool-retro-term/
+/usr/local/poudriere/ports/kali2/x11/i3blocks/
+/usr/local/poudriere/ports/kali2/x11/kde-workspace-kde4/
+/usr/local/poudriere/ports/kali2/x11/kdelibs-kde4/
+/usr/local/poudriere/ports/kali2/x11/kf5-frameworkintegration/
+/usr/local/poudriere/ports/kali2/x11/kf5-kactivities-stats/
+/usr/local/poudriere/ports/kali2/x11/kf5-kactivities/
+/usr/local/poudriere/ports/kali2/x11/kf5-kded/
+/usr/local/poudriere/ports/kali2/x11/kf5-kdelibs4support/
+/usr/local/poudriere/ports/kali2/x11/kf5-kglobalaccel/
+/usr/local/poudriere/ports/kali2/x11/kf5-kinit/
+/usr/local/poudriere/ports/kali2/x11/kf5-krunner/
+/usr/local/poudriere/ports/kali2/x11/kf5-kwayland/
+/usr/local/poudriere/ports/kali2/x11/kf5-kwindowsystem/
+/usr/local/poudriere/ports/kali2/x11/kf5-plasma-framework/
+/usr/local/poudriere/ports/kali2/x11/leechcraft/
+/usr/local/poudriere/ports/kali2/x11/libinput/
+/usr/local/poudriere/ports/kali2/x11/lumina-core/
+/usr/local/poudriere/ports/kali2/x11/nvidia-settings/
+/usr/local/poudriere/ports/kali2/x11/nvidia-xconfig/
+/usr/local/poudriere/ports/kali2/x11/plasma5-kwayland-integration/
+/usr/local/poudriere/ports/kali2/x11/polybar/
+/usr/local/poudriere/ports/kali2/x11/py-qt5-opengl/
+/usr/local/poudriere/ports/kali2/x11/qt5-qev/
+/usr/local/poudriere/ports/kali2/x11/qt5-x11extras/
+/usr/local/poudriere/ports/kali2/x11/radare-cutter/
+/usr/local/poudriere/ports/kali2/x11/sxhkd/
+/usr/local/poudriere/ports/kali2/x11/terminology/
+/usr/local/poudriere/ports/kali2/x11/xfce4-taskmanager/
+/usr/local/poudriere/ports/kali2/x11/xterm/
+/usr/local/poudriere/ports/kali2/x11/xtermcontrol/
+Building new INDEX files... done.
+ done
++ sudo cp -Rfv /usr/local/jenkins/workspace/kalibsd2/automater /usr/local/poudriere/ports/kali2/security
+/usr/local/jenkins/workspace/kalibsd2/automater -> /usr/local/poudriere/ports/kali2/security/automater
+/usr/local/jenkins/workspace/kalibsd2/automater/Makefile -> /usr/local/poudriere/ports/kali2/security/automater/Makefile
+/usr/local/jenkins/workspace/kalibsd2/automater/files -> /usr/local/poudriere/ports/kali2/security/automater/files
+/usr/local/jenkins/workspace/kalibsd2/automater/files/patch-inputs.py -> /usr/local/poudriere/ports/kali2/security/automater/files/patch-inputs.py
+/usr/local/jenkins/workspace/kalibsd2/automater/files/patch-Automater.py -> /usr/local/poudriere/ports/kali2/security/automater/files/patch-Automater.py
+/usr/local/jenkins/workspace/kalibsd2/automater/files/__init__.py.in -> /usr/local/poudriere/ports/kali2/security/automater/files/__init__.py.in
+/usr/local/jenkins/workspace/kalibsd2/automater/files/patch-siteinfo.py -> /usr/local/poudriere/ports/kali2/security/automater/files/patch-siteinfo.py
+/usr/local/jenkins/workspace/kalibsd2/automater/distinfo -> /usr/local/poudriere/ports/kali2/security/automater/distinfo
+/usr/local/jenkins/workspace/kalibsd2/automater/pkg-descr -> /usr/local/poudriere/ports/kali2/security/automater/pkg-descr
+/usr/local/jenkins/workspace/kalibsd2/automater/pkg-plist -> /usr/local/poudriere/ports/kali2/security/automater/pkg-plist
++ cd /usr/local/poudriere/ports/kali2/security/automater
++ sudo make distclean .
+===>  Cleaning for automater-0.21
+===>  Deleting distfiles for automater-0.21
+`.' is up to date.
++ sudo make makesum .
+=> 1aN0rmus-TekDefense-Automater-0.21-42548cf_GH0.tar.gz doesn't seem to exist in /usr/local/poudriere/ports/kali2/distfiles/.
+=> Attempting to fetch https://codeload.github.com/1aN0rmus/TekDefense-Automater/tar.gz/42548cf?dummy=/1aN0rmus-TekDefense-Automater-0.21-42548cf_GH0.tar.gz
+fetch: https://codeload.github.com/1aN0rmus/TekDefense-Automater/tar.gz/42548cf?dummy=/1aN0rmus-TekDefense-Automater-0.21-42548cf_GH0.tar.gz: size of remote file is not known
+1aN0rmus-TekDefense-Automater-0.21-42548cf_GH0.tar.gz           0  B    0  Bps
+`.' is up to date.
++ sudo poudriere bulk -c -j twlv -p kali2 security/automater
+[00:00:00] Creating the reference jail... done
+[00:00:01] Warning: !!! Jail is newer than host. (Jail: 1200086, Host: 1200065) !!!
+[00:00:01] Warning: This is not supported.
+[00:00:01] Warning: Host kernel must be same or newer than jail.
+[00:00:01] Warning: Expect build failures.
+[00:00:02] Mounting system devices for twlv-kali2
+[00:00:02] Mounting ports/packages/distfiles
+[00:00:02] Stashing existing package repository
+[00:00:02] Mounting packages from: /usr/local/poudriere/data/packages/twlv-kali2
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/twlv-kali2/ref/etc/resolv.conf
+[00:00:02] Starting jail twlv-kali2
+[00:00:08] Logs: /usr/local/poudriere/data/logs/bulk/twlv-kali2/2018-12-23_13h35m23s
+[00:00:08] Loading MOVED for /usr/local/poudriere/data/.m/twlv-kali2/ref/usr/ports
+[00:00:09] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:09] Gathering ports metadata
+[00:00:11] Calculating ports order and dependencies
+[00:00:11] (-c) Cleaning all packages... done
+[00:00:12] Sanity checking the repository
+[00:00:12] Checking packages for incremental rebuild needs
+[00:00:12] Deleting stale symlinks... done
+[00:00:12] Deleting empty directories... done
+[00:00:12] Cleaning the build queue
+[00:00:12] Sanity checking build queue
+[00:00:12] Processing PRIORITY_BOOST
+[00:00:12] Balancing pool
+[00:00:12] Recording filesystem state for prepkg... done
+[00:00:13] Building 26 packages using 1 builders
+[00:00:13] Starting/Cloning builders
+[00:00:14] Hit CTRL+t at any time to see build progress and stats
+[00:00:14] [01] [00:00:00] Building ports-mgmt/pkg | pkg-1.10.5_5
+[00:02:22] [01] [00:02:08] Finished ports-mgmt/pkg | pkg-1.10.5_5: Success
+[00:02:22] [01] [00:00:00] Building print/indexinfo | indexinfo-0.3.1
+[00:02:24] [01] [00:00:02] Finished print/indexinfo | indexinfo-0.3.1: Success
+[00:02:24] [01] [00:00:00] Building devel/gettext-runtime | gettext-runtime-0.19.8.1_2
+[00:02:47] [01] [00:00:23] Finished devel/gettext-runtime | gettext-runtime-0.19.8.1_2: Success
+[00:02:47] [01] [00:00:00] Building devel/readline | readline-7.0.5
+[00:03:00] [01] [00:00:13] Finished devel/readline | readline-7.0.5: Success
+[00:03:00] [01] [00:00:00] Building devel/gettext-tools | gettext-tools-0.19.8.1_1
+[00:05:31] [01] [00:02:31] Finished devel/gettext-tools | gettext-tools-0.19.8.1_1: Success
+[00:05:31] [01] [00:00:00] Building devel/libffi | libffi-3.2.1_3
+[00:05:38] [01] [00:00:07] Finished devel/libffi | libffi-3.2.1_3: Success
+[00:05:38] [01] [00:00:00] Building devel/pkgconf | pkgconf-1.5.4,1
+[00:05:45] [01] [00:00:07] Finished devel/pkgconf | pkgconf-1.5.4,1: Success
+[00:05:46] [01] [00:00:00] Building lang/python27 | python27-2.7.15
+[00:07:22] [01] [00:01:36] Finished lang/python27 | python27-2.7.15: Success
+[00:07:22] [01] [00:00:00] Building devel/py-setuptools@py27 | py27-setuptools-40.6.2
+[00:07:29] [01] [00:00:07] Finished devel/py-setuptools@py27 | py27-setuptools-40.6.2: Success
+[00:07:29] [01] [00:00:00] Building devel/py-pycparser@py27 | py27-pycparser-2.18
+[00:07:35] [01] [00:00:06] Finished devel/py-pycparser@py27 | py27-pycparser-2.18: Success
+[00:07:35] [01] [00:00:00] Building devel/py-enum34@py27 | py27-enum34-1.1.6
+[00:07:42] [01] [00:00:07] Finished devel/py-enum34@py27 | py27-enum34-1.1.6: Success
+[00:07:42] [01] [00:00:00] Building devel/py-asn1crypto@py27 | py27-asn1crypto-0.22.0
+[00:07:48] [01] [00:00:06] Finished devel/py-asn1crypto@py27 | py27-asn1crypto-0.22.0: Success
+[00:07:48] [01] [00:00:00] Building dns/py-idna@py27 | py27-idna-2.7
+[00:07:54] [01] [00:00:06] Finished dns/py-idna@py27 | py27-idna-2.7: Success
+[00:07:55] [01] [00:00:00] Building devel/py-cffi@py27 | py27-cffi-1.11.5
+[00:08:05] [01] [00:00:10] Finished devel/py-cffi@py27 | py27-cffi-1.11.5: Success
+[00:08:06] [01] [00:00:00] Building net/py-ipaddress@py27 | py27-ipaddress-1.0.22
+[00:08:12] [01] [00:00:06] Finished net/py-ipaddress@py27 | py27-ipaddress-1.0.22: Success
+[00:08:12] [01] [00:00:00] Building devel/py-six@py27 | py27-six-1.12.0
+[00:08:20] [01] [00:00:08] Finished devel/py-six@py27 | py27-six-1.12.0: Success
+[00:08:20] [01] [00:00:00] Building security/py-cryptography@py27 | py27-cryptography-2.3
+[00:08:40] [01] [00:00:20] Finished security/py-cryptography@py27 | py27-cryptography-2.3: Success
+[00:08:40] [01] [00:00:00] Building devel/py-setuptools_scm@py27 | py27-setuptools_scm-1.17.0
+[00:08:50] [01] [00:00:10] Finished devel/py-setuptools_scm@py27 | py27-setuptools_scm-1.17.0: Success
+[00:08:50] [01] [00:00:00] Building net/py-pysocks@py27 | py27-pysocks-1.6.8
+[00:09:16] [01] [00:00:26] Finished net/py-pysocks@py27 | py27-pysocks-1.6.8: Success
+[00:09:16] [01] [00:00:00] Building security/py-openssl@py27 | py27-openssl-18.0.0
+[00:09:27] [01] [00:00:11] Finished security/py-openssl@py27 | py27-openssl-18.0.0: Success
+[00:09:28] [01] [00:00:00] Building devel/py-pytest-runner@py27 | py27-pytest-runner-2.11.1
+[00:09:35] [01] [00:00:07] Finished devel/py-pytest-runner@py27 | py27-pytest-runner-2.11.1: Success
+[00:09:35] [01] [00:00:00] Building security/py-certifi@py27 | py27-certifi-2018.11.29
+[00:09:44] [01] [00:00:09] Finished security/py-certifi@py27 | py27-certifi-2018.11.29: Success
+[00:09:44] [01] [00:00:00] Building textproc/py-chardet@py27 | py27-chardet-3.0.4
+[00:09:51] [01] [00:00:07] Finished textproc/py-chardet@py27 | py27-chardet-3.0.4: Success
+[00:09:51] [01] [00:00:00] Building net/py-urllib3@py27 | py27-urllib3-1.22,1
+[00:10:04] [01] [00:00:13] Finished net/py-urllib3@py27 | py27-urllib3-1.22,1: Success
+[00:10:04] [01] [00:00:00] Building www/py-requests@py27 | py27-requests-2.18.4_1
+[00:10:37] [01] [00:00:33] Finished www/py-requests@py27 | py27-requests-2.18.4_1: Success
+[00:10:37] [01] [00:00:00] Building security/automater | automater-0.21
+[00:10:56] [01] [00:00:19] Finished security/automater | automater-0.21: Success
+[00:10:56] Stopping 1 builders
+[00:10:58] Creating pkg repository
+Creating repository in /tmp/packages: ........ done
+Packing files for repository: .... done
+[00:11:00] Committing packages to repository
+[00:11:00] Removing old packages
+[00:11:03] Built ports: ports-mgmt/pkg print/indexinfo devel/gettext-runtime devel/readline devel/gettext-tools devel/libffi devel/pkgconf lang/python27 devel/py-setuptools devel/py-pycparser devel/py-enum34 devel/py-asn1crypto dns/py-idna devel/py-cffi net/py-ipaddress devel/py-six security/py-cryptography devel/py-setuptools_scm net/py-pysocks security/py-openssl devel/py-pytest-runner security/py-certifi textproc/py-chardet net/py-urllib3 www/py-requests security/automater
+[twlv-kali2] [2018-12-23_13h35m23s] [committing:] Queued: 26 Built: 26 Failed: 0  Skipped: 0  Ignored: 0  Tobuild: 0   Time: 00:10:55
+[00:11:03] Logs: /usr/local/poudriere/data/logs/bulk/twlv-kali2/2018-12-23_13h35m23s
+[00:11:03] Cleaning up
+[00:11:03] Unmounting file systems
++ sudo poudriere testport -j twlv -p kali2 security/automater
+[00:00:00] Creating the reference jail... done
+[00:00:00] Warning: !!! Jail is newer than host. (Jail: 1200086, Host: 1200065) !!!
+[00:00:00] Warning: This is not supported.
+[00:00:00] Warning: Host kernel must be same or newer than jail.
+[00:00:00] Warning: Expect build failures.
+[00:00:01] Mounting system devices for twlv-kali2
+[00:00:02] Mounting ports/packages/distfiles
+[00:00:02] Stashing existing package repository
+[00:00:02] Mounting packages from: /usr/local/poudriere/data/packages/twlv-kali2
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/twlv-kali2/ref/etc/resolv.conf
+[00:00:02] Starting jail twlv-kali2
+[00:00:02] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:04] Logs: /usr/local/poudriere/data/logs/bulk/twlv-kali2/2018-12-23_13h46m27s
+[00:00:04] Loading MOVED for /usr/local/poudriere/data/.m/twlv-kali2/ref/usr/ports
+[00:00:05] Gathering ports metadata
+[00:00:05] Calculating ports order and dependencies
+[00:00:06] Sanity checking the repository
+[00:00:06] Checking packages for incremental rebuild needs
+[00:00:07] Deleting stale symlinks... done
+[00:00:07] Deleting empty directories... done
+[00:00:07] Cleaning the build queue
+[00:00:07] Sanity checking build queue
+[00:00:07] Processing PRIORITY_BOOST
+[00:00:07] Balancing pool
+[00:00:07] Recording filesystem state for prepkg... done
+[00:00:08] Committing packages to repository
+[00:00:08] Removing old packages
+[00:00:08] Building with flags: 
+[00:00:08] Removing existing /usr/local
+build started at Sun Dec 23 13:46:36 IST 2018
+port directory: /usr/ports/security/automater
+package name: automater-0.21
+building for: FreeBSD twlv-kali2 12.0-RELEASE FreeBSD 12.0-RELEASE amd64
+maintained by: rihaz.jerrin@gmail.com
+Makefile ident: 
+Poudriere version: 3.2.7
+Host OSVERSION: 1200065
+Jail OSVERSION: 1200086
+Job Id: 
+
+
+
+
+!!! Jail is newer than host. (Jail: 1200086, Host: 1200065) !!!
+!!! This is not supported. !!!
+!!! Host kernel must be same or newer than jail. !!!
+!!! Expect build failures. !!!
+
+
+
+---Begin Environment---
+SHELL=/bin/csh
+OSVERSION=1200086
+UNAME_v=FreeBSD 12.0-RELEASE
+UNAME_r=12.0-RELEASE
+BLOCKSIZE=K
+MAIL=/var/mail/root
+WARNING_WAIT=0
+STATUS=1
+HOME=/root
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin
+LOCALBASE=/usr/local
+USER=root
+TRYBROKEN=yes
+LIBEXECPREFIX=/libexec/poudriere
+POUDRIERE_VERSION=3.2.7
+MASTERMNT=/usr/local/poudriere/data/.m/twlv-kali2/ref
+DEV_WARNING_WAIT=0
+POUDRIERE_BUILD_TYPE=bulk
+PACKAGE_BUILDING=yes
+SAVED_TERM=su
+GID=0
+UID=0
+PWD=/usr/local/poudriere/data/.m/twlv-kali2/ref/.p
+NO_WARNING_PKG_INSTALL_EOL=yes
+P_PORTS_FEATURES=FLAVORS SELECTED_OPTIONS
+MASTERNAME=twlv-kali2
+SCRIPTPREFIX=/usr/share/poudriere
+OLDPWD=/usr/local/poudriere/data/.m/twlv-kali2/ref/.p
+SCRIPTPATH=/usr/share/poudriere/testport.sh
+POUDRIEREPATH=/usr/bin/poudriere
+---End Environment---
+
+---Begin Poudriere Port Flags/Env---
+PORT_FLAGS=
+PKGENV=PACKAGES=/tmp/pkgs PKGREPOSITORY=/tmp/pkgs
+FLAVOR=
+DEPENDS_ARGS=
+MAKE_ARGS=
+---End Poudriere Port Flags/Env---
+
+---Begin OPTIONS List---
+===> The following configuration options are available for automater-0.21:
+     DOCS=on: Build and/or install documentation
+===> Use 'make config' to modify these settings
+---End OPTIONS List---
+
+--MAINTAINER--
+rihaz.jerrin@gmail.com
+--End MAINTAINER--
+
+--CONFIGURE_ARGS--
+
+--End CONFIGURE_ARGS--
+
+--CONFIGURE_ENV--
+PYTHON="/usr/local/bin/python2.7" XDG_DATA_HOME=/wrkdirs/usr/ports/security/automater/work  XDG_CONFIG_HOME=/wrkdirs/usr/ports/security/automater/work  HOME=/wrkdirs/usr/ports/security/automater/work TMPDIR="/tmp" PATH=/wrkdirs/usr/ports/security/automater/work/.bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin SHELL=/bin/sh CONFIG_SHELL=/bin/sh
+--End CONFIGURE_ENV--
+
+--MAKE_ENV--
+XDG_DATA_HOME=/wrkdirs/usr/ports/security/automater/work  XDG_CONFIG_HOME=/wrkdirs/usr/ports/security/automater/work  HOME=/wrkdirs/usr/ports/security/automater/work TMPDIR="/tmp" PATH=/wrkdirs/usr/ports/security/automater/work/.bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin NO_PIE=yes MK_DEBUG_FILES=no MK_KERNEL_SYMBOLS=no SHELL=/bin/sh NO_LINT=YES PREFIX=/usr/local  LOCALBASE=/usr/local  CC="cc" CFLAGS="-O2 -pipe  -fstack-protector -fno-strict-aliasing "  CPP="cpp" CPPFLAGS=""  LDFLAGS=" -fstack-protector " LIBS=""  CXX="c++" CXXFLAGS="-O2 -pipe -fstack-protector -fno-strict-aliasing  "  MANPREFIX="/usr/local" BSD_INSTALL_PROGRAM="install  -s -m 555"  BSD_INSTALL_LIB="install  -s -m 0644"  BSD_INSTALL_SCRIPT="install  -m 555"  BSD_INSTALL_DATA="install  -m 0644"  BSD_INSTALL_MAN="install  -m 444"
+--End MAKE_ENV--
+
+--PLIST_SUB--
+PORTDOCS="" PYTHON_INCLUDEDIR=include/python2.7  PYTHON_LIBDIR=lib/python2.7  PYTHON_PLATFORM=freebsd12  PYTHON_PYOEXTENSION=pyo  PYTHON_SITELIBDIR=lib/python2.7/site-packages  PYTHON_SUFFIX=27  PYTHON_VER=2.7  PYTHON_VERSION=python2.7 PYTHON2="" PYTHON3="@comment " OSREL=12.0 PREFIX=%D LOCALBASE=/usr/local  RESETPREFIX=/usr/local LIB32DIR=lib DOCSDIR="share/doc/automater"  EXAMPLESDIR="share/examples/automater"  DATADIR="share/automater"  WWWDIR="www/automater"  ETCDIR="etc/automater"
+--End PLIST_SUB--
+
+--SUB_LIST--
+PREFIX=/usr/local LOCALBASE=/usr/local  DATADIR=/usr/local/share/automater DOCSDIR=/usr/local/share/doc/automater EXAMPLESDIR=/usr/local/share/examples/automater  WWWDIR=/usr/local/www/automater ETCDIR=/usr/local/etc/automater
+--End SUB_LIST--
+
+---Begin make.conf---
+USE_PACKAGE_DEPENDS=yes
+BATCH=yes
+WRKDIRPREFIX=/wrkdirs
+PORTSDIR=/usr/ports
+PACKAGES=/packages
+DISTDIR=/distfiles
+FORCE_PACKAGE=yes
+PACKAGE_BUILDING=yes
+PACKAGE_BUILDING_FLAVORS=yes
+#### /usr/ports/Mk/Scripts/ports_env.sh ####
+_CCVERSION_921dbbb2=FreeBSD clang version 6.0.1 (tags/RELEASE_601/final 335540) (based on LLVM 6.0.1) Target: x86_64-unknown-freebsd12.0 Thread model: posix InstalledDir: /usr/bin
+_ALTCCVERSION_921dbbb2=none
+_CXXINTERNAL_acaad9ca=FreeBSD clang version 6.0.1 (tags/RELEASE_601/final 335540) (based on LLVM 6.0.1) Target: x86_64-unknown-freebsd12.0 Thread model: posix InstalledDir: /usr/bin "/usr/bin/ld" "--eh-frame-hdr" "-dynamic-linker" "/libexec/ld-elf.so.1" "--hash-style=both" "--enable-new-dtags" "-o" "a.out" "/usr/lib/crt1.o" "/usr/lib/crti.o" "/usr/lib/crtbegin.o" "-L/usr/lib" "/dev/null" "-lc++" "-lm" "-lgcc" "--as-needed" "-lgcc_s" "--no-as-needed" "-lc" "-lgcc" "--as-needed" "-lgcc_s" "--no-as-needed" "/usr/lib/crtend.o" "/usr/lib/crtn.o"
+CC_OUTPUT_921dbbb2_58173849=yes
+CC_OUTPUT_921dbbb2_9bdba57c=yes
+CC_OUTPUT_921dbbb2_6a4fe7f5=yes
+CC_OUTPUT_921dbbb2_6bcac02b=yes
+CC_OUTPUT_921dbbb2_67d20829=yes
+CC_OUTPUT_921dbbb2_bfa62e83=yes
+CC_OUTPUT_921dbbb2_f0b4d593=yes
+CC_OUTPUT_921dbbb2_308abb44=yes
+CC_OUTPUT_921dbbb2_f00456e5=yes
+CC_OUTPUT_921dbbb2_65ad290d=yes
+CC_OUTPUT_921dbbb2_f2776b26=yes
+CC_OUTPUT_921dbbb2_b2657cc3=yes
+CC_OUTPUT_921dbbb2_380987f7=yes
+CC_OUTPUT_921dbbb2_160933ec=yes
+CC_OUTPUT_921dbbb2_fb62803b=yes
+_OBJC_CCVERSION_921dbbb2=FreeBSD clang version 6.0.1 (tags/RELEASE_601/final 335540) (based on LLVM 6.0.1) Target: x86_64-unknown-freebsd12.0 Thread model: posix InstalledDir: /usr/bin
+_OBJC_ALTCCVERSION_921dbbb2=none
+ARCH=amd64
+OPSYS=FreeBSD
+_OSRELEASE=12.0-RELEASE
+OSREL=12.0
+OSVERSION=1200086
+PYTHONBASE=/usr/local
+HAVE_COMPAT_IA32_KERN=YES
+_SMP_CPUS=1
+CONFIGURE_MAX_CMD_LEN=262144
+HAVE_PORTS_ENV=1
+#### Misc Poudriere ####
+---End make.conf---
+--Resource limits--
+cpu time               (seconds, -t)  unlimited
+file size           (512-blocks, -f)  unlimited
+data seg size           (kbytes, -d)  33554432
+stack size              (kbytes, -s)  524288
+core file size      (512-blocks, -c)  unlimited
+max memory size         (kbytes, -m)  unlimited
+locked memory           (kbytes, -l)  unlimited
+max user processes              (-u)  9000
+open files                      (-n)  1024
+virtual mem size        (kbytes, -v)  unlimited
+swap limit              (kbytes, -w)  unlimited
+socket buffer size       (bytes, -b)  unlimited
+pseudo-terminals                (-p)  unlimited
+kqueues                         (-k)  unlimited
+umtx shared locks               (-o)  unlimited
+--End resource limits--
+=======================<phase: check-sanity   >============================
+===>  License MIT accepted by the user
+===========================================================================
+=======================<phase: pkg-depends    >============================
+===>   automater-0.21 depends on file: /usr/local/sbin/pkg - not found
+===>   Installing existing package /packages/All/pkg-1.10.5_5.txz
+[twlv-kali2] Installing pkg-1.10.5_5...
+[twlv-kali2] Extracting pkg-1.10.5_5: .......... done
+===>   automater-0.21 depends on file: /usr/local/sbin/pkg - found
+===>   Returning to build of automater-0.21
+===========================================================================
+=======================<phase: fetch-depends  >============================
+===========================================================================
+=======================<phase: fetch          >============================
+===>  License MIT accepted by the user
+===>   automater-0.21 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by automater-0.21 for building
+===========================================================================
+=======================<phase: checksum       >============================
+===>  License MIT accepted by the user
+===>   automater-0.21 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by automater-0.21 for building
+=> SHA256 Checksum OK for 1aN0rmus-TekDefense-Automater-0.21-42548cf_GH0.tar.gz.
+===========================================================================
+=======================<phase: extract-depends>============================
+===========================================================================
+=======================<phase: extract        >============================
+===>  License MIT accepted by the user
+===>   automater-0.21 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by automater-0.21 for building
+===>  Extracting for automater-0.21
+=> SHA256 Checksum OK for 1aN0rmus-TekDefense-Automater-0.21-42548cf_GH0.tar.gz.
+===========================================================================
+=======================<phase: patch-depends  >============================
+===========================================================================
+=======================<phase: patch          >============================
+===>  Patching for automater-0.21
+===>  Applying FreeBSD patches for automater-0.21
+===========================================================================
+=======================<phase: build-depends  >============================
+===>   automater-0.21 depends on file: /usr/local/bin/python2.7 - not found
+===>   Installing existing package /packages/All/python27-2.7.15.txz
+[twlv-kali2] Installing python27-2.7.15...
+[twlv-kali2] `-- Installing gettext-runtime-0.19.8.1_2...
+[twlv-kali2] |   `-- Installing indexinfo-0.3.1...
+[twlv-kali2] |   `-- Extracting indexinfo-0.3.1: .... done
+[twlv-kali2] `-- Extracting gettext-runtime-0.19.8.1_2: .......... done
+[twlv-kali2] `-- Installing libffi-3.2.1_3...
+[twlv-kali2] `-- Extracting libffi-3.2.1_3: .......... done
+[twlv-kali2] `-- Installing readline-7.0.5...
+[twlv-kali2] `-- Extracting readline-7.0.5: .......... done
+[twlv-kali2] Extracting python27-2.7.15: .......... done
+Message from python27-2.7.15:
+
+===========================================================================
+
+Note that some standard Python modules are provided as separate ports
+as they require additional dependencies. They are available as:
+
+bsddb           databases/py-bsddb
+gdbm            databases/py-gdbm
+sqlite3         databases/py-sqlite3
+tkinter         x11-toolkits/py-tkinter
+
+===========================================================================
+===>   automater-0.21 depends on file: /usr/local/bin/python2.7 - found
+===>   Returning to build of automater-0.21
+===========================================================================
+=======================<phase: lib-depends    >============================
+===========================================================================
+=>> Recording filesystem state for prebuild... done
+=======================<phase: configure      >============================
+===>   automater-0.21 depends on file: /usr/local/bin/python2.7 - found
+===>  Configuring for automater-0.21
+===========================================================================
+=======================<phase: build          >============================
+===========================================================================
+=>> Checking for filesystem violations... done
+=======================<phase: run-depends    >============================
+===>   automater-0.21 depends on package: py27-requests>=0 - not found
+===>   Installing existing package /packages/All/py27-requests-2.18.4_1.txz
+[twlv-kali2] Installing py27-requests-2.18.4_1...
+[twlv-kali2] `-- Installing py27-certifi-2018.11.29...
+[twlv-kali2] |   `-- Installing py27-setuptools-40.6.2...
+[twlv-kali2] |   `-- Extracting py27-setuptools-40.6.2: .......... done
+[twlv-kali2] `-- Extracting py27-certifi-2018.11.29: .......... done
+[twlv-kali2] `-- Installing py27-chardet-3.0.4...
+[twlv-kali2] `-- Extracting py27-chardet-3.0.4: .......... done
+[twlv-kali2] `-- Installing py27-idna-2.7...
+[twlv-kali2] `-- Extracting py27-idna-2.7: .......... done
+[twlv-kali2] `-- Installing py27-urllib3-1.22,1...
+[twlv-kali2] |   `-- Installing py27-cryptography-2.3...
+[twlv-kali2] |   | `-- Installing py27-asn1crypto-0.22.0...
+[twlv-kali2] |   | `-- Extracting py27-asn1crypto-0.22.0: .......... done
+[twlv-kali2] |   | `-- Installing py27-cffi-1.11.5...
+[twlv-kali2] |   |   `-- Installing py27-pycparser-2.18...
+[twlv-kali2] |   |   `-- Extracting py27-pycparser-2.18: .......... done
+[twlv-kali2] |   | `-- Extracting py27-cffi-1.11.5: .......... done
+[twlv-kali2] |   | `-- Installing py27-enum34-1.1.6...
+[twlv-kali2] |   | `-- Extracting py27-enum34-1.1.6: .......... done
+[twlv-kali2] |   | `-- Installing py27-ipaddress-1.0.22...
+[twlv-kali2] |   | `-- Extracting py27-ipaddress-1.0.22: .......... done
+[twlv-kali2] |   | `-- Installing py27-six-1.12.0...
+[twlv-kali2] |   | `-- Extracting py27-six-1.12.0: .......... done
+[twlv-kali2] |   `-- Extracting py27-cryptography-2.3: .......... done
+[twlv-kali2] |   `-- Installing py27-openssl-18.0.0...
+[twlv-kali2] |   `-- Extracting py27-openssl-18.0.0: .......... done
+[twlv-kali2] |   `-- Installing py27-pysocks-1.6.8...
+[twlv-kali2] |   `-- Extracting py27-pysocks-1.6.8: .......... done
+[twlv-kali2] `-- Extracting py27-urllib3-1.22,1: .......... done
+[twlv-kali2] Extracting py27-requests-2.18.4_1: .......... done
+Message from py27-urllib3-1.22,1:
+
+Be careful, support of IPv6 is broken with PySocks 1.5.7.
+===>   automater-0.21 depends on package: py27-requests>=0 - found
+===>   Returning to build of automater-0.21
+===>   automater-0.21 depends on file: /usr/local/bin/python2.7 - found
+===========================================================================
+=>> Recording filesystem state for prestage... done
+=======================<phase: stage          >============================
+===>  Staging for automater-0.21
+===>   automater-0.21 depends on package: py27-requests>=0 - found
+===>   automater-0.21 depends on file: /usr/local/bin/python2.7 - found
+===>   Generating temporary packing list
+/bin/mkdir -p 	    	 /wrkdirs/usr/ports/security/automater/work/stage/usr/local/lib/python2.7/site-packages/automater
+/bin/mkdir -p 	     	 /wrkdirs/usr/ports/security/automater/work/stage/usr/local/etc/automater
+install  -m 0644		 /wrkdirs/usr/ports/security/automater/work/TekDefense-Automater-42548cf/inputs.py /wrkdirs/usr/ports/security/automater/work/TekDefense-Automater-42548cf/outputs.py /wrkdirs/usr/ports/security/automater/work/TekDefense-Automater-42548cf/siteinfo.py /wrkdirs/usr/ports/security/automater/work/TekDefense-Automater-42548cf/utilities.py 		  /wrkdirs/usr/ports/security/automater/work/stage/usr/local/lib/python2.7/site-packages/automater
+install  -m 0644 	 /wrkdirs/usr/ports/security/automater/work/__init__.py		          /wrkdirs/usr/ports/security/automater/work/stage/usr/local/lib/python2.7/site-packages/automater/__init__.py
+install  -m 0644		 /wrkdirs/usr/ports/security/automater/work/TekDefense-Automater-42548cf/tekdefense.xml		  /wrkdirs/usr/ports/security/automater/work/stage/usr/local/etc/automater/tekdefense.xml.example
+install  -m 0644		 /wrkdirs/usr/ports/security/automater/work/TekDefense-Automater-42548cf/sites.xml		  	  /wrkdirs/usr/ports/security/automater/work/stage/usr/local/etc/automater/sites.xml.example
+install  -m 555	 /wrkdirs/usr/ports/security/automater/work/TekDefense-Automater-42548cf/Automater.py           	  /wrkdirs/usr/ports/security/automater/work/stage/usr/local/bin/automater
+/bin/mkdir -p	/wrkdirs/usr/ports/security/automater/work/stage/usr/local/share/doc/automater
+(cd /wrkdirs/usr/ports/security/automater/work/TekDefense-Automater-42548cf/docs	 && /bin/sh -c '(/usr/bin/find -Ed $1 $3 | /usr/bin/cpio -dumpl $2 >/dev/null 2>&1) &&  /usr/bin/find -Ed $1 $3 \(   -type d -exec /bin/sh -c '\''cd '\''$2'\'' && chmod 755 "$@"'\'' . {} +  -o -type f -exec /bin/sh -c '\''cd '\''$2'\'' && chmod 0644 "$@"'\'' . {} + \)' COPYTREE_SHARE \* /wrkdirs/usr/ports/security/automater/work/stage/usr/local/share/doc/automater)
+====> Compressing man pages (compress-man)
+===========================================================================
+====> Running Q/A tests (stage-qa)
+====> Checking for pkg-plist issues (check-plist)
+===> Parsing plist
+===> Checking for items in STAGEDIR missing from pkg-plist
+===> Checking for items in pkg-plist which are not in STAGEDIR
+===> No pkg-plist issues found (check-plist)
+=>> Checking for staging violations... done
+=======================<phase: package        >============================
+===>  Building package for automater-0.21
+pkg-static: DEVELOPER_MODE: Notice: arch "FreeBSD:12:amd64" -- no architecture specific files found:
+**** could this package use a wildcard architecture?
+===========================================================================
+=>> Recording filesystem state for preinst... done
+=======================<phase: install        >============================
+===>  Installing for automater-0.21
+===>  Checking if automater already installed
+===>   Registering installation for automater-0.21
+pkg-static: DEVELOPER_MODE: Notice: arch "FreeBSD:12:amd64" -- no architecture specific files found:
+**** could this package use a wildcard architecture?
+[twlv-kali2] Installing automater-0.21...
+===========================================================================
+=>> Checking shared library dependencies
+=======================<phase: deinstall      >============================
+===>  Deinstalling for automater
+===>   Deinstalling automater-0.21
+Updating database digests format: .......... done
+Checking integrity... done (0 conflicting)
+Deinstallation has been requested for the following 1 packages (of 0 packages in the universe):
+
+Installed packages to be REMOVED:
+	automater-0.21
+
+Number of packages to be removed: 1
+[twlv-kali2] [1/1] Deinstalling automater-0.21...
+[twlv-kali2] [1/1] Deleting files for automater-0.21: .......... done
+===========================================================================
+=>> Checking for extra files and directories
+[00:00:26] Installing from package
+[twlv-kali2] Installing automater-0.21...
+[twlv-kali2] Extracting automater-0.21: .......... done
+[00:00:26] Cleaning up
+===>  Cleaning for automater-0.21
+[00:00:26] Deinstalling package
+Updating database digests format: . done
+Checking integrity... done (0 conflicting)
+Deinstallation has been requested for the following 1 packages (of 0 packages in the universe):
+
+Installed packages to be REMOVED:
+	automater-0.21
+
+Number of packages to be removed: 1
+[twlv-kali2] [1/1] Deinstalling automater-0.21...
+[twlv-kali2] [1/1] Deleting files for automater-0.21: .......... done
+build of security/automater | automater-0.21 ended at Sun Dec 23 13:46:54 IST 2018
+build time: 00:00:18
+[00:00:26] Logs: /usr/local/poudriere/data/logs/bulk/twlv-kali2/2018-12-23_13h46m27s
+[00:00:26] Cleaning up
+[00:00:26] Unmounting file systems
+[EnvInject] - Injecting environment variables from a build step.
+Finished: SUCCESS

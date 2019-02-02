@@ -1,0 +1,36 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4ANC072mxUGdW0XVxCd9hQ96/8aX6hmejGxQ5p0facNoAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/eT83ILSktQifa/inFwAtwJR98MAAAA=[0mJslm in workspace /home/jery/workspace/linux
+[linux] $ /bin/sh -xe /tmp/jenkins18227790060685989233.sh
++ rsync -av --progress --delete --exclude=*.xz --exclude=*.sign rsync://rsync.kernel.org/pub/linux/kernel/v4.x/linux-4.19.* .
+MOTD:
+MOTD:   Welcome to the Linux Kernel Archive.
+MOTD:
+MOTD:   Due to U.S. Exports Regulations, all cryptographic software on this
+MOTD:   site is subject to the following legal notice:
+MOTD:
+MOTD:   This site includes publicly available encryption source code
+MOTD:   which, together with object code resulting from the compiling of
+MOTD:   publicly available source code, may be exported from the United
+MOTD:   States under License Exception "TSU" pursuant to 15 C.F.R. Section
+MOTD:   740.13(e).
+MOTD:
+MOTD:   This legal notice applies to cryptographic software only.
+MOTD:   Please see the Bureau of Industry and Security,
+MOTD:   http://www.bis.doc.gov/ for more information about current
+MOTD:   U.S. regulations.
+MOTD:
+
+receiving incremental file list
+
+sent 46 bytes  received 290 bytes  134.40 bytes/sec
+total size is 2,068,494,151  speedup is 6,156,232.59
++ sudo /usr/bin/python2.7 /home/jery/lin.py
+linux-4.19.tar.gz
+linux-4.19.tar.gz
+Traceback (most recent call last):
+  File "/home/jery/lin.py", line 13, in <module>
+    os.system("tar xvf {}/{} -c {}/compile".format(workspace,kernel))
+IndexError: tuple index out of range
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

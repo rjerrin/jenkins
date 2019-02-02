@@ -1,0 +1,155 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 1a8e26634cd54d31a699bb938a5e6e0ce4696720 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1a8e26634cd54d31a699bb938a5e6e0ce4696720
+Commit message: "updating progress bar"
+ > git rev-list --no-walk 1a8e26634cd54d31a699bb938a5e6e0ce4696720 # timeout=10
+[kalibsd] $ /bin/sh -xe /tmp/jenkins9029273810443861779.sh
++ PORTS=/usr/local/poudriere/ports/kali
++ CTGR=security
++ PKG=automater
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd/automater
++ JNAME=lrelease
++ [ -d /usr/local/poudriere/ports/kali/security/automater ]
++ sudo rm -rfv /usr/local/poudriere/ports/kali/security/automater
+/usr/local/poudriere/ports/kali/security/automater/pkg-plist
+/usr/local/poudriere/ports/kali/security/automater/files/patch-siteinfo.py
+/usr/local/poudriere/ports/kali/security/automater/files/patch-Automater.py
+/usr/local/poudriere/ports/kali/security/automater/files/patch-inputs.py
+/usr/local/poudriere/ports/kali/security/automater/files/__init__.py.in
+/usr/local/poudriere/ports/kali/security/automater/files
+/usr/local/poudriere/ports/kali/security/automater/distinfo
+/usr/local/poudriere/ports/kali/security/automater/Makefile
+/usr/local/poudriere/ports/kali/security/automater/pkg-descr
+/usr/local/poudriere/ports/kali/security/automater
++ sudo poudriere ports -p kali -u
+[00:00:00] Updating portstree "kali" with portsnap...Looking up portsnap.FreeBSD.org mirrors... 5 mirrors found.
+Fetching snapshot tag from ec2-ap-southeast-2.portsnap.freebsd.org... done.
+Latest snapshot on server matches what we already have.
+No updates needed.
+Ports tree is already up to date.
+ done
++ sudo cp -Rfv /usr/local/jenkins/workspace/kalibsd/automater /usr/local/poudriere/ports/kali/security
+/usr/local/jenkins/workspace/kalibsd/automater -> /usr/local/poudriere/ports/kali/security/automater
+/usr/local/jenkins/workspace/kalibsd/automater/pkg-plist -> /usr/local/poudriere/ports/kali/security/automater/pkg-plist
+/usr/local/jenkins/workspace/kalibsd/automater/files -> /usr/local/poudriere/ports/kali/security/automater/files
+/usr/local/jenkins/workspace/kalibsd/automater/files/patch-siteinfo.py -> /usr/local/poudriere/ports/kali/security/automater/files/patch-siteinfo.py
+/usr/local/jenkins/workspace/kalibsd/automater/files/__init__.py.in -> /usr/local/poudriere/ports/kali/security/automater/files/__init__.py.in
+/usr/local/jenkins/workspace/kalibsd/automater/files/patch-inputs.py -> /usr/local/poudriere/ports/kali/security/automater/files/patch-inputs.py
+/usr/local/jenkins/workspace/kalibsd/automater/files/patch-Automater.py -> /usr/local/poudriere/ports/kali/security/automater/files/patch-Automater.py
+/usr/local/jenkins/workspace/kalibsd/automater/distinfo -> /usr/local/poudriere/ports/kali/security/automater/distinfo
+/usr/local/jenkins/workspace/kalibsd/automater/Makefile -> /usr/local/poudriere/ports/kali/security/automater/Makefile
+/usr/local/jenkins/workspace/kalibsd/automater/pkg-descr -> /usr/local/poudriere/ports/kali/security/automater/pkg-descr
++ cd /usr/local/poudriere/ports/kali/security/automater
++ sudo make distclean .
+===>  Cleaning for automater-0.21
+===>  Deleting distfiles for automater-0.21
+`.' is up to date.
++ sudo make makesum .
+=> 1aN0rmus-TekDefense-Automater-0.21-42548cf_GH0.tar.gz doesn't seem to exist in /usr/local/poudriere/ports/kali/distfiles/.
+=> Attempting to fetch https://codeload.github.com/1aN0rmus/TekDefense-Automater/tar.gz/42548cf?dummy=/1aN0rmus-TekDefense-Automater-0.21-42548cf_GH0.tar.gz
+fetch: https://codeload.github.com/1aN0rmus/TekDefense-Automater/tar.gz/42548cf?dummy=/1aN0rmus-TekDefense-Automater-0.21-42548cf_GH0.tar.gz: size of remote file is not known
+1aN0rmus-TekDefense-Automater-0.21-42548cf_GH0.tar.gz           0  B    0  Bps
+`.' is up to date.
++ sudo poudriere bulk -c -j lrelease -p kali security/automater
+[00:00:00] Creating the reference jail... done
+[00:00:00] Mounting system devices for lrelease-kali
+[00:00:01] Mounting ports/packages/distfiles
+[00:00:01] Stashing existing package repository
+[00:00:01] Mounting packages from: /usr/local/poudriere/data/packages/lrelease-kali
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/lrelease-kali/ref/etc/resolv.conf
+[00:00:01] Starting jail lrelease-kali
+[00:00:02] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali/2018-12-13_15h06m48s
+[00:00:02] Loading MOVED for /usr/local/poudriere/data/.m/lrelease-kali/ref/usr/ports
+[00:00:05] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:05] Gathering ports metadata
+[00:00:06] Calculating ports order and dependencies
+[00:00:06] (-c) Cleaning all packages... done
+[00:00:06] Sanity checking the repository
+[00:00:06] Checking packages for incremental rebuild needs
+[00:00:06] Deleting stale symlinks... done
+[00:00:06] Deleting empty directories... done
+[00:00:06] Cleaning the build queue
+[00:00:06] Sanity checking build queue
+[00:00:06] Processing PRIORITY_BOOST
+[00:00:06] Balancing pool
+[00:00:06] Recording filesystem state for prepkg... done
+[00:00:07] Building 26 packages using 2 builders
+[00:00:07] Starting/Cloning builders
+[00:00:07] Hit CTRL+t at any time to see build progress and stats
+[00:00:07] [01] [00:00:00] Building ports-mgmt/pkg | pkg-1.10.5_5
+[00:01:26] [01] [00:01:19] Finished ports-mgmt/pkg | pkg-1.10.5_5: Success
+[00:01:26] [01] [00:00:00] Building print/indexinfo | indexinfo-0.3.1
+[00:01:26] [02] [00:00:00] Building devel/pkgconf | pkgconf-1.5.4,1
+[00:01:27] [01] [00:00:01] Finished print/indexinfo | indexinfo-0.3.1: Success
+[00:01:28] [01] [00:00:00] Building devel/gettext-runtime | gettext-runtime-0.19.8.1_2
+[00:01:33] [02] [00:00:07] Finished devel/pkgconf | pkgconf-1.5.4,1: Success
+[00:01:33] [02] [00:00:00] Building devel/readline | readline-7.0.5
+[00:01:51] [01] [00:00:23] Finished devel/gettext-runtime | gettext-runtime-0.19.8.1_2: Success
+[00:01:51] [01] [00:00:00] Building devel/gettext-tools | gettext-tools-0.19.8.1_1
+[00:02:18] [02] [00:00:45] Finished devel/readline | readline-7.0.5: Success
+[00:02:18] [02] [00:00:00] Building devel/libffi | libffi-3.2.1_3
+[00:02:24] [02] [00:00:06] Finished devel/libffi | libffi-3.2.1_3: Success
+[00:04:04] [01] [00:02:13] Finished devel/gettext-tools | gettext-tools-0.19.8.1_1: Success
+[00:04:04] [01] [00:00:00] Building lang/python27 | python27-2.7.15
+[00:05:52] [01] [00:01:48] Finished lang/python27 | python27-2.7.15: Success
+[00:05:52] [01] [00:00:00] Building devel/py-setuptools@py27 | py27-setuptools-40.6.2
+[00:06:03] [01] [00:00:11] Finished devel/py-setuptools@py27 | py27-setuptools-40.6.2: Success
+[00:06:03] [01] [00:00:00] Building devel/py-pycparser@py27 | py27-pycparser-2.18
+[00:06:03] [02] [00:00:00] Building devel/py-enum34@py27 | py27-enum34-1.1.6
+[00:06:17] [02] [00:00:14] Finished devel/py-enum34@py27 | py27-enum34-1.1.6: Success
+[00:06:17] [02] [00:00:00] Building devel/py-asn1crypto@py27 | py27-asn1crypto-0.22.0
+[00:06:17] [01] [00:00:14] Finished devel/py-pycparser@py27 | py27-pycparser-2.18: Success
+[00:06:17] [01] [00:00:00] Building dns/py-idna@py27 | py27-idna-2.7
+[00:06:38] [01] [00:00:21] Finished dns/py-idna@py27 | py27-idna-2.7: Success
+[00:06:38] [01] [00:00:00] Building devel/py-cffi@py27 | py27-cffi-1.11.5
+[00:06:38] [02] [00:00:21] Finished devel/py-asn1crypto@py27 | py27-asn1crypto-0.22.0: Success
+[00:06:39] [02] [00:00:00] Building net/py-ipaddress@py27 | py27-ipaddress-1.0.22
+[00:07:01] [02] [00:00:22] Finished net/py-ipaddress@py27 | py27-ipaddress-1.0.22: Success
+[00:07:01] [02] [00:00:00] Building devel/py-six@py27 | py27-six-1.12.0
+[00:07:21] [01] [00:00:43] Finished devel/py-cffi@py27 | py27-cffi-1.11.5: Success
+[00:07:21] [01] [00:00:00] Building devel/py-setuptools_scm@py27 | py27-setuptools_scm-1.17.0
+[00:07:23] [02] [00:00:22] Finished devel/py-six@py27 | py27-six-1.12.0: Success
+[00:07:23] [02] [00:00:00] Building security/py-cryptography@py27 | py27-cryptography-2.3
+[00:07:29] [01] [00:00:08] Finished devel/py-setuptools_scm@py27 | py27-setuptools_scm-1.17.0: Success
+[00:07:29] [01] [00:00:00] Building net/py-pysocks@py27 | py27-pysocks-1.6.8
+[00:07:39] [01] [00:00:10] Finished net/py-pysocks@py27 | py27-pysocks-1.6.8: Success
+[00:07:40] [01] [00:00:00] Building devel/py-pytest-runner@py27 | py27-pytest-runner-2.11.1
+[00:07:47] [02] [00:00:24] Finished security/py-cryptography@py27 | py27-cryptography-2.3: Success
+[00:07:47] [02] [00:00:00] Building security/py-openssl@py27 | py27-openssl-18.0.0
+[00:07:49] [01] [00:00:09] Finished devel/py-pytest-runner@py27 | py27-pytest-runner-2.11.1: Success
+[00:07:49] [01] [00:00:00] Building security/py-certifi@py27 | py27-certifi-2018.11.29
+[00:07:53] [02] [00:00:06] Finished security/py-openssl@py27 | py27-openssl-18.0.0: Success
+[00:07:53] [02] [00:00:00] Building textproc/py-chardet@py27 | py27-chardet-3.0.4
+[00:07:56] [01] [00:00:07] Finished security/py-certifi@py27 | py27-certifi-2018.11.29: Success
+[00:07:56] [01] [00:00:00] Building net/py-urllib3@py27 | py27-urllib3-1.22,1
+[00:08:02] [02] [00:00:09] Finished textproc/py-chardet@py27 | py27-chardet-3.0.4: Success
+[00:08:10] [01] [00:00:14] Finished net/py-urllib3@py27 | py27-urllib3-1.22,1: Success
+[00:08:10] [01] [00:00:00] Building www/py-requests@py27 | py27-requests-2.18.4_1
+[00:08:26] [01] [00:00:16] Finished www/py-requests@py27 | py27-requests-2.18.4_1: Success
+[00:08:26] [01] [00:00:00] Building security/automater | automater-0.21
+[00:08:40] [01] [00:00:14] Finished security/automater | automater-0.21: Success
+[00:08:42] Stopping 2 builders
+[00:08:43] Creating pkg repository
+Creating repository in /tmp/packages: ......... done
+Packing files for repository: .... done
+[00:08:44] Committing packages to repository
+[00:08:44] Removing old packages
+[00:08:45] Built ports: ports-mgmt/pkg print/indexinfo devel/pkgconf devel/gettext-runtime devel/readline devel/libffi devel/gettext-tools lang/python27 devel/py-setuptools devel/py-enum34 devel/py-pycparser dns/py-idna devel/py-asn1crypto net/py-ipaddress devel/py-cffi devel/py-six devel/py-setuptools_scm net/py-pysocks security/py-cryptography devel/py-pytest-runner security/py-openssl security/py-certifi textproc/py-chardet net/py-urllib3 www/py-requests security/automater
+[lrelease-kali] [2018-12-13_15h06m48s] [committing:] Queued: 26 Built: 26 Failed: 0  Skipped: 0  Ignored: 0  Tobuild: 0   Time: 00:08:43
+[00:08:45] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali/2018-12-13_15h06m48s
+[00:08:45] Cleaning up
+[00:08:45] Unmounting file systems
+[EnvInject] - Injecting environment variables from a build step.
+Finished: SUCCESS

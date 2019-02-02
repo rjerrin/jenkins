@@ -1,0 +1,12 @@
+commit 3a9c1632ac7958b2e555adda76f2b583696fda68
+tree 5cb3d4235f2c645486d850f357b1cdbfce8c1da1
+parent a2f38f5b7dd71d917d7e5fa3da377c338c83aa6f
+author jery <jery@tos.bsd.dev> 2019-01-07 14:33:51 +0530
+committer jery <jery@tos.bsd.dev> 2019-01-07 14:33:51 +0530
+
+    updating rubygem cms scanner
+
+
+
+:100644 100644 02615abe72edd33dfe052586ab8cf2b4576df3b5 bd8ee8d6dfbb25bee2a14d64a283069914aa66eb M	rubygem-cms_scanner/Makefile
+:100644 100644 06a4a512384e5fb3de5590aa0e7a8812524cf2ad 48d2cdf387273cd22b37627e54cd702bddf29eb6 M	rubygem-cms_scanner/distinfo

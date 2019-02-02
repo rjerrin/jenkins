@@ -1,0 +1,1375 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a2f38f5b7dd71d917d7e5fa3da377c338c83aa6f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a2f38f5b7dd71d917d7e5fa3da377c338c83aa6f
+Commit message: "removing ruby version"
+ > git rev-list --no-walk 92d4305c87279c6d45152ee6e8fb29250ac23b1a # timeout=10
+[kalibsd] $ /bin/sh -xe /tmp/jenkins7108386317804198534.sh
++ PORTS=/usr/local/poudriere/ports/kali
++ CTGR=devel
++ PKG=rubygem-activesupport5
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5
++ JNAME=lrelease
++ [ -d /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5 ]
++ sudo poudriere ports -p kali -u
+[00:00:00] Updating portstree "kali" with portsnap...Looking up portsnap.FreeBSD.org mirrors... 6 mirrors found.
+Fetching snapshot tag from ec2-ap-southeast-2.portsnap.freebsd.org... done.
+Fetching snapshot metadata... done.
+Updating from Sat Dec 15 11:49:49 IST 2018 to Sat Dec 22 23:32:05 IST 2018.
+Fetching 5 metadata patches... done.
+Applying metadata patches... done.
+Fetching 0 metadata files... done.
+Fetching 803 patches. 
+                                     (0/803) 0.00% .........                                     (100/803) 12.45% .........                                     (200/803) 24.90% .........                                     (300/803) 37.35% .........                                     (400/803) 49.81% .........                                     (500/803) 62.26% .........                                     (600/803) 74.71% .........                                     (700/803) 87.17% .........                                     (800/803) 99.62%                                      (803/803) 100.00%  done. 
+done.
+Applying patches... 
+done.
+Fetching 42 new ports or files... done.
+Removing old files and directories... done.
+Extracting new files:
+/usr/local/poudriere/ports/kali/LEGAL
+/usr/local/poudriere/ports/kali/MOVED
+/usr/local/poudriere/ports/kali/Mk/Scripts/
+/usr/local/poudriere/ports/kali/Mk/Uses/
+/usr/local/poudriere/ports/kali/Mk/bsd.default-versions.mk
+/usr/local/poudriere/ports/kali/Mk/bsd.port.mk
+/usr/local/poudriere/ports/kali/Tools/scripts/
+/usr/local/poudriere/ports/kali/UPDATING
+/usr/local/poudriere/ports/kali/archivers/kf5-karchive/
+/usr/local/poudriere/ports/kali/archivers/lzip/
+/usr/local/poudriere/ports/kali/archivers/pear-File_Archive/
+/usr/local/poudriere/ports/kali/archivers/pecl-lzf/
+/usr/local/poudriere/ports/kali/archivers/py-lz4/
+/usr/local/poudriere/ports/kali/archivers/quazip/
+/usr/local/poudriere/ports/kali/astro/boinc-astropulse/
+/usr/local/poudriere/ports/kali/astro/boinc-setiathome/
+/usr/local/poudriere/ports/kali/astro/gpsprune/
+/usr/local/poudriere/ports/kali/astro/libosmium/
+/usr/local/poudriere/ports/kali/astro/marble/
+/usr/local/poudriere/ports/kali/astro/merkaartor/
+/usr/local/poudriere/ports/kali/astro/mkgmap-splitter/
+/usr/local/poudriere/ports/kali/astro/mkgmap/
+/usr/local/poudriere/ports/kali/astro/osmosis/
+/usr/local/poudriere/ports/kali/audio/Makefile
+/usr/local/poudriere/ports/kali/audio/ardour/
+/usr/local/poudriere/ports/kali/audio/baresip/
+/usr/local/poudriere/ports/kali/audio/denemo/
+/usr/local/poudriere/ports/kali/audio/fasttracker2/
+/usr/local/poudriere/ports/kali/audio/gxplugins-lv2/
+/usr/local/poudriere/ports/kali/audio/libcoverart/
+/usr/local/poudriere/ports/kali/audio/logitechmediaserver/
+/usr/local/poudriere/ports/kali/audio/lsp-plugins-lv2/
+/usr/local/poudriere/ports/kali/audio/mixxx/
+/usr/local/poudriere/ports/kali/audio/musescore/
+/usr/local/poudriere/ports/kali/audio/normalize/
+/usr/local/poudriere/ports/kali/audio/pear-Text_Spell_Audio/
+/usr/local/poudriere/ports/kali/audio/rtmidi/
+/usr/local/poudriere/ports/kali/audio/sc3-plugins/
+/usr/local/poudriere/ports/kali/audio/sonic-visualiser/
+/usr/local/poudriere/ports/kali/audio/tagtool/
+/usr/local/poudriere/ports/kali/audio/uade/
+/usr/local/poudriere/ports/kali/audio/xmcd/
+/usr/local/poudriere/ports/kali/audio/zynaddsubfx/
+/usr/local/poudriere/ports/kali/benchmarks/bombardier/
+/usr/local/poudriere/ports/kali/benchmarks/pear-Benchmark/
+/usr/local/poudriere/ports/kali/benchmarks/phoronix-test-suite/
+/usr/local/poudriere/ports/kali/biology/Makefile
+/usr/local/poudriere/ports/kali/biology/diamond/
+/usr/local/poudriere/ports/kali/biology/gff2ps/
+/usr/local/poudriere/ports/kali/biology/py-biopython/
+/usr/local/poudriere/ports/kali/biology/py-fastTSNE/
+/usr/local/poudriere/ports/kali/biology/ugene/
+/usr/local/poudriere/ports/kali/cad/elmerfem/
+/usr/local/poudriere/ports/kali/chinese/gcin-gtk3/
+/usr/local/poudriere/ports/kali/chinese/gcin-qt4/
+/usr/local/poudriere/ports/kali/chinese/gcin-qt5/
+/usr/local/poudriere/ports/kali/chinese/gcin/
+/usr/local/poudriere/ports/kali/chinese/wordpress-zh_CN/
+/usr/local/poudriere/ports/kali/comms/Makefile
+/usr/local/poudriere/ports/kali/comms/lirc/
+/usr/local/poudriere/ports/kali/comms/py-esptool/
+/usr/local/poudriere/ports/kali/comms/py-qt5-serialport/
+/usr/local/poudriere/ports/kali/comms/py-xmodem/
+/usr/local/poudriere/ports/kali/comms/qt5-connectivity/
+/usr/local/poudriere/ports/kali/comms/qt5-sensors/
+/usr/local/poudriere/ports/kali/comms/qt5-serialbus/
+/usr/local/poudriere/ports/kali/comms/qt5-serialport/
+/usr/local/poudriere/ports/kali/comms/ser2net/
+/usr/local/poudriere/ports/kali/comms/svxlink/
+/usr/local/poudriere/ports/kali/comms/xcwcp/
+/usr/local/poudriere/ports/kali/converters/p5-Convert-PEM/
+/usr/local/poudriere/ports/kali/converters/pear-Services_JSON/
+/usr/local/poudriere/ports/kali/databases/couchdb2/
+/usr/local/poudriere/ports/kali/databases/kbibtex/
+/usr/local/poudriere/ports/kali/databases/mroonga/
+/usr/local/poudriere/ports/kali/databases/mysql56-server/
+/usr/local/poudriere/ports/kali/databases/mysql57-client/
+/usr/local/poudriere/ports/kali/databases/pear-DBA/
+/usr/local/poudriere/ports/kali/databases/pear-DBA_Relational/
+/usr/local/poudriere/ports/kali/databases/pear-DB_DataObject/
+/usr/local/poudriere/ports/kali/databases/pear-DB_DataObject_FormBuilder/
+/usr/local/poudriere/ports/kali/databases/pear-DB_QueryTool/
+/usr/local/poudriere/ports/kali/databases/pear-DB_Sqlite_Tools/
+/usr/local/poudriere/ports/kali/databases/pear-DB_Table/
+/usr/local/poudriere/ports/kali/databases/pear-DB_ldap/
+/usr/local/poudriere/ports/kali/databases/pear-DB_ldap2/
+/usr/local/poudriere/ports/kali/databases/pear-MDB/
+/usr/local/poudriere/ports/kali/databases/pear-MDB2_Driver_mysql/
+/usr/local/poudriere/ports/kali/databases/pear-MDB2_Schema/
+/usr/local/poudriere/ports/kali/databases/pear-MDB_QueryTool/
+/usr/local/poudriere/ports/kali/databases/pear-Structures_DataGrid_DataSource_Array/
+/usr/local/poudriere/ports/kali/databases/pear-Structures_DataGrid_DataSource_CSV/
+/usr/local/poudriere/ports/kali/databases/pear-Structures_DataGrid_DataSource_DB/
+/usr/local/poudriere/ports/kali/databases/pear-Structures_DataGrid_DataSource_DBQuery/
+/usr/local/poudriere/ports/kali/databases/pear-Structures_DataGrid_DataSource_DBTable/
+/usr/local/poudriere/ports/kali/databases/pear-Structures_DataGrid_DataSource_DataObject/
+/usr/local/poudriere/ports/kali/databases/pear-Structures_DataGrid_DataSource_MDB2/
+/usr/local/poudriere/ports/kali/databases/pear-Structures_DataGrid_DataSource_PDO/
+/usr/local/poudriere/ports/kali/databases/pear-XML_Query2XML/
+/usr/local/poudriere/ports/kali/databases/pecl-leveldb/
+/usr/local/poudriere/ports/kali/databases/pecl-mongodb/
+/usr/local/poudriere/ports/kali/databases/percona56-server/
+/usr/local/poudriere/ports/kali/databases/pg_citus/
+/usr/local/poudriere/ports/kali/databases/pgroonga/
+/usr/local/poudriere/ports/kali/databases/postgresql-repmgr/
+/usr/local/poudriere/ports/kali/databases/puppetdb-terminus6/
+/usr/local/poudriere/ports/kali/databases/puppetdb6/
+/usr/local/poudriere/ports/kali/databases/py-peewee/
+/usr/local/poudriere/ports/kali/databases/py-qt5-sql/
+/usr/local/poudriere/ports/kali/databases/qt5-sql/
+/usr/local/poudriere/ports/kali/databases/sequeler/
+/usr/local/poudriere/ports/kali/databases/timescaledb/
+/usr/local/poudriere/ports/kali/deskutils/Makefile
+/usr/local/poudriere/ports/kali/deskutils/caja-extensions/
+/usr/local/poudriere/ports/kali/deskutils/calibre/
+/usr/local/poudriere/ports/kali/deskutils/egroupware/
+/usr/local/poudriere/ports/kali/deskutils/gnome-calendar/
+/usr/local/poudriere/ports/kali/deskutils/logjam/
+/usr/local/poudriere/ports/kali/deskutils/lumina-mediaplayer/
+/usr/local/poudriere/ports/kali/deskutils/lumina-pdf/
+/usr/local/poudriere/ports/kali/deskutils/lumina-xdg-entry/
+/usr/local/poudriere/ports/kali/deskutils/qownnotes/
+/usr/local/poudriere/ports/kali/deskutils/semantik/
+/usr/local/poudriere/ports/kali/deskutils/znotes/
+/usr/local/poudriere/ports/kali/devel/Makefile
+/usr/local/poudriere/ports/kali/devel/aws-c-commons/
+/usr/local/poudriere/ports/kali/devel/aws-c-event-stream/
+/usr/local/poudriere/ports/kali/devel/aws-checksums/
+/usr/local/poudriere/ports/kali/devel/aws-sdk-cpp/
+/usr/local/poudriere/ports/kali/devel/bmake/
+/usr/local/poudriere/ports/kali/devel/capnproto/
+/usr/local/poudriere/ports/kali/devel/cc65/
+/usr/local/poudriere/ports/kali/devel/cmake-doc/
+/usr/local/poudriere/ports/kali/devel/cmake-gui/
+/usr/local/poudriere/ports/kali/devel/cmake/
+/usr/local/poudriere/ports/kali/devel/cpp-hocon/
+/usr/local/poudriere/ports/kali/devel/cppcheck/
+/usr/local/poudriere/ports/kali/devel/cssc/
+/usr/local/poudriere/ports/kali/devel/evdev-proto/
+/usr/local/poudriere/ports/kali/devel/evemu/
+/usr/local/poudriere/ports/kali/devel/fuel/
+/usr/local/poudriere/ports/kali/devel/gamin/
+/usr/local/poudriere/ports/kali/devel/geany-plugin-ctags/
+/usr/local/poudriere/ports/kali/devel/geany-plugin-markdown/
+/usr/local/poudriere/ports/kali/devel/geany-plugin-scope/
+/usr/local/poudriere/ports/kali/devel/geany-plugin-vimode/
+/usr/local/poudriere/ports/kali/devel/geany-plugins/
+/usr/local/poudriere/ports/kali/devel/geany/
+/usr/local/poudriere/ports/kali/devel/git-cinnabar/
+/usr/local/poudriere/ports/kali/devel/git/
+/usr/local/poudriere/ports/kali/devel/gitg/
+/usr/local/poudriere/ports/kali/devel/glade/
+/usr/local/poudriere/ports/kali/devel/hadoop/
+/usr/local/poudriere/ports/kali/devel/hadoop2/
+/usr/local/poudriere/ports/kali/devel/hub/
+/usr/local/poudriere/ports/kali/devel/ioncube/
+/usr/local/poudriere/ports/kali/devel/jenkins/
+/usr/local/poudriere/ports/kali/devel/jfrog-cli/
+/usr/local/poudriere/ports/kali/devel/kf5-extra-cmake-modules/
+/usr/local/poudriere/ports/kali/devel/kf5-kapidox/
+/usr/local/poudriere/ports/kali/devel/kf5-kauth/
+/usr/local/poudriere/ports/kali/devel/kf5-kbookmarks/
+/usr/local/poudriere/ports/kali/devel/kf5-kcmutils/
+/usr/local/poudriere/ports/kali/devel/kf5-kconfig/
+/usr/local/poudriere/ports/kali/devel/kf5-kcoreaddons/
+/usr/local/poudriere/ports/kali/devel/kf5-kcrash/
+/usr/local/poudriere/ports/kali/devel/kf5-kdbusaddons/
+/usr/local/poudriere/ports/kali/devel/kf5-kdeclarative/
+/usr/local/poudriere/ports/kali/devel/kf5-kdoctools/
+/usr/local/poudriere/ports/kali/devel/kf5-kfilemetadata/
+/usr/local/poudriere/ports/kali/devel/kf5-ki18n/
+/usr/local/poudriere/ports/kali/devel/kf5-kidletime/
+/usr/local/poudriere/ports/kali/devel/kf5-kio/
+/usr/local/poudriere/ports/kali/devel/kf5-kitemmodels/
+/usr/local/poudriere/ports/kali/devel/kf5-knewstuff/
+/usr/local/poudriere/ports/kali/devel/kf5-knotifications/
+/usr/local/poudriere/ports/kali/devel/kf5-knotifyconfig/
+/usr/local/poudriere/ports/kali/devel/kf5-kpackage/
+/usr/local/poudriere/ports/kali/devel/kf5-kparts/
+/usr/local/poudriere/ports/kali/devel/kf5-kpeople/
+/usr/local/poudriere/ports/kali/devel/kf5-kpty/
+/usr/local/poudriere/ports/kali/devel/kf5-kservice/
+/usr/local/poudriere/ports/kali/devel/kf5-ktexteditor/
+/usr/local/poudriere/ports/kali/devel/kf5-kunitconversion/
+/usr/local/poudriere/ports/kali/devel/kf5-solid/
+/usr/local/poudriere/ports/kali/devel/kf5-threadweaver/
+/usr/local/poudriere/ports/kali/devel/kore/
+/usr/local/poudriere/ports/kali/devel/ksql/
+/usr/local/poudriere/ports/kali/devel/leatherman/
+/usr/local/poudriere/ports/kali/devel/leiningen/
+/usr/local/poudriere/ports/kali/devel/libdbusmenu-qt/
+/usr/local/poudriere/ports/kali/devel/libepoll-shim/
+/usr/local/poudriere/ports/kali/devel/libevdev/
+/usr/local/poudriere/ports/kali/devel/libevt/
+/usr/local/poudriere/ports/kali/devel/libevtx/
+/usr/local/poudriere/ports/kali/devel/libfsapfs/
+/usr/local/poudriere/ports/kali/devel/libfwnt/
+/usr/local/poudriere/ports/kali/devel/libfwsi/
+/usr/local/poudriere/ports/kali/devel/libgit2-glib/
+/usr/local/poudriere/ports/kali/devel/libinotify/
+/usr/local/poudriere/ports/kali/devel/liblnk/
+/usr/local/poudriere/ports/kali/devel/liblouis/
+/usr/local/poudriere/ports/kali/devel/libmsiecf/
+/usr/local/poudriere/ports/kali/devel/libmtdev/
+/usr/local/poudriere/ports/kali/devel/libqcow/
+/usr/local/poudriere/ports/kali/devel/libsigrok/
+/usr/local/poudriere/ports/kali/devel/libsigscan/
+/usr/local/poudriere/ports/kali/devel/libsmdev/
+/usr/local/poudriere/ports/kali/devel/libsmraw/
+/usr/local/poudriere/ports/kali/devel/libudev-devd/
+/usr/local/poudriere/ports/kali/devel/libuv/
+/usr/local/poudriere/ports/kali/devel/libvmdk/
+/usr/local/poudriere/ports/kali/devel/libvshadow/
+/usr/local/poudriere/ports/kali/devel/libvslvm/
+/usr/local/poudriere/ports/kali/devel/lightning/
+/usr/local/poudriere/ports/kali/devel/linux-c6-devtools/
+/usr/local/poudriere/ports/kali/devel/liteide/
+/usr/local/poudriere/ports/kali/devel/llvm70/
+/usr/local/poudriere/ports/kali/devel/luabind/
+/usr/local/poudriere/ports/kali/devel/meson/
+/usr/local/poudriere/ports/kali/devel/ncurses/
+/usr/local/poudriere/ports/kali/devel/openmp/
+/usr/local/poudriere/ports/kali/devel/p5-Config-Perl-V/
+/usr/local/poudriere/ports/kali/devel/p5-Exporter-Tidy/
+/usr/local/poudriere/ports/kali/devel/p5-File-Tempdir/
+/usr/local/poudriere/ports/kali/devel/p5-Getopt-ArgvFile/
+/usr/local/poudriere/ports/kali/devel/p5-UI-Dialog/
+/usr/local/poudriere/ports/kali/devel/pear-Config/
+/usr/local/poudriere/ports/kali/devel/pear-Console_Color/
+/usr/local/poudriere/ports/kali/devel/pear-Console_Getargs/
+/usr/local/poudriere/ports/kali/devel/pear-Date/
+/usr/local/poudriere/ports/kali/devel/pear-Date_Holidays/
+/usr/local/poudriere/ports/kali/devel/pear-Date_Holidays_Brazil/
+/usr/local/poudriere/ports/kali/devel/pear-Date_Holidays_Denmark/
+/usr/local/poudriere/ports/kali/devel/pear-Date_Holidays_Discordian/
+/usr/local/poudriere/ports/kali/devel/pear-Date_Holidays_EnglandWales/
+/usr/local/poudriere/ports/kali/devel/pear-Date_Holidays_Germany/
+/usr/local/poudriere/ports/kali/devel/pear-Date_Holidays_Iceland/
+/usr/local/poudriere/ports/kali/devel/pear-Date_Holidays_Ireland/
+/usr/local/poudriere/ports/kali/devel/pear-channel-horde/
+/usr/local/poudriere/ports/kali/devel/pecl-event/
+/usr/local/poudriere/ports/kali/devel/pecl-msgpack/
+/usr/local/poudriere/ports/kali/devel/phpunit6/
+/usr/local/poudriere/ports/kali/devel/phpunit7/
+/usr/local/poudriere/ports/kali/devel/pmd/
+/usr/local/poudriere/ports/kali/devel/ptlib/
+/usr/local/poudriere/ports/kali/devel/py-Dumper/
+/usr/local/poudriere/ports/kali/devel/py-PyUtilib/
+/usr/local/poudriere/ports/kali/devel/py-aiortc/
+/usr/local/poudriere/ports/kali/devel/py-antlr4-python3-runtime/
+/usr/local/poudriere/ports/kali/devel/py-anyjson/
+/usr/local/poudriere/ports/kali/devel/py-dbus/
+/usr/local/poudriere/ports/kali/devel/py-django-rq/
+/usr/local/poudriere/ports/kali/devel/py-evdev/
+/usr/local/poudriere/ports/kali/devel/py-fabric3/
+/usr/local/poudriere/ports/kali/devel/py-grpcio-tools/
+/usr/local/poudriere/ports/kali/devel/py-grpcio/
+/usr/local/poudriere/ports/kali/devel/py-libzfs/
+/usr/local/poudriere/ports/kali/devel/py-mypy/
+/usr/local/poudriere/ports/kali/devel/py-pykde4-kde4/
+/usr/local/poudriere/ports/kali/devel/py-pytest-timeout/
+/usr/local/poudriere/ports/kali/devel/py-pyudev/
+/usr/local/poudriere/ports/kali/devel/py-qt4-dbussupport/
+/usr/local/poudriere/ports/kali/devel/py-qt4-designerplugin/
+/usr/local/poudriere/ports/kali/devel/py-qt4-qscintilla2/
+/usr/local/poudriere/ports/kali/devel/py-qt5-core/
+/usr/local/poudriere/ports/kali/devel/py-qt5-dbus/
+/usr/local/poudriere/ports/kali/devel/py-qt5-dbussupport/
+/usr/local/poudriere/ports/kali/devel/py-qt5-designer/
+/usr/local/poudriere/ports/kali/devel/py-qt5-designerplugin/
+/usr/local/poudriere/ports/kali/devel/py-qt5-help/
+/usr/local/poudriere/ports/kali/devel/py-qt5-qscintilla2/
+/usr/local/poudriere/ports/kali/devel/py-qt5-test/
+/usr/local/poudriere/ports/kali/devel/py-qt5/
+/usr/local/poudriere/ports/kali/devel/py-sarge/
+/usr/local/poudriere/ports/kali/devel/py-setuptools_scm_git_archive/
+/usr/local/poudriere/ports/kali/devel/py-shellingham/
+/usr/local/poudriere/ports/kali/devel/py-sip/
+/usr/local/poudriere/ports/kali/devel/pycharm-ce/
+/usr/local/poudriere/ports/kali/devel/pyotherside-qt5/
+/usr/local/poudriere/ports/kali/devel/qbs/
+/usr/local/poudriere/ports/kali/devel/qca/
+/usr/local/poudriere/ports/kali/devel/qscintilla2-designerplugin-qt5/
+/usr/local/poudriere/ports/kali/devel/qscintilla2-designerplugin/
+/usr/local/poudriere/ports/kali/devel/qscintilla2-qt5/
+/usr/local/poudriere/ports/kali/devel/qscintilla2/
+/usr/local/poudriere/ports/kali/devel/qt5-assistant/
+/usr/local/poudriere/ports/kali/devel/qt5-core/
+/usr/local/poudriere/ports/kali/devel/qt5-designer/
+/usr/local/poudriere/ports/kali/devel/qt5-help/
+/usr/local/poudriere/ports/kali/devel/qt5-linguist/
+/usr/local/poudriere/ports/kali/devel/qt5-linguisttools/
+/usr/local/poudriere/ports/kali/devel/qt5-location/
+/usr/local/poudriere/ports/kali/devel/qt5-qdbus/
+/usr/local/poudriere/ports/kali/devel/qt5-qdbusviewer/
+/usr/local/poudriere/ports/kali/devel/qt5-qdoc-data/
+/usr/local/poudriere/ports/kali/devel/qt5-qdoc/
+/usr/local/poudriere/ports/kali/devel/qt5-qmake/
+/usr/local/poudriere/ports/kali/devel/qt5-script/
+/usr/local/poudriere/ports/kali/devel/qt5-scripttools/
+/usr/local/poudriere/ports/kali/devel/qt5-scxml/
+/usr/local/poudriere/ports/kali/devel/qt5-testlib/
+/usr/local/poudriere/ports/kali/devel/qt5-uitools/
+/usr/local/poudriere/ports/kali/devel/qt5/
+/usr/local/poudriere/ports/kali/devel/qtcreator/
+/usr/local/poudriere/ports/kali/devel/rtichoke/
+/usr/local/poudriere/ports/kali/devel/rubygem-gitlab-sidekiq-fetcher/
+/usr/local/poudriere/ports/kali/devel/rubygem-grape-path-helpers/
+/usr/local/poudriere/ports/kali/devel/rubygem-json-schema/
+/usr/local/poudriere/ports/kali/devel/rust-bindgen/
+/usr/local/poudriere/ports/kali/devel/sdl20/
+/usr/local/poudriere/ports/kali/devel/sope3/
+/usr/local/poudriere/ports/kali/devel/spark/
+/usr/local/poudriere/ports/kali/devel/svn2git/
+/usr/local/poudriere/ports/kali/devel/upnp/
+/usr/local/poudriere/ports/kali/devel/vera++/
+/usr/local/poudriere/ports/kali/devel/websocketpp/
+/usr/local/poudriere/ports/kali/devel/zfp/
+/usr/local/poudriere/ports/kali/dns/Makefile
+/usr/local/poudriere/ports/kali/dns/bind9-devel/
+/usr/local/poudriere/ports/kali/dns/kf5-kdnssd/
+/usr/local/poudriere/ports/kali/editors/Makefile
+/usr/local/poudriere/ports/kali/editors/abiword/
+/usr/local/poudriere/ports/kali/editors/calligra/
+/usr/local/poudriere/ports/kali/editors/kak-lsp/
+/usr/local/poudriere/ports/kali/editors/libreoffice/
+/usr/local/poudriere/ports/kali/editors/nano/
+/usr/local/poudriere/ports/kali/editors/openoffice-devel/
+/usr/local/poudriere/ports/kali/editors/tea/
+/usr/local/poudriere/ports/kali/editors/texmaker/
+/usr/local/poudriere/ports/kali/editors/texstudio/
+/usr/local/poudriere/ports/kali/emulators/Makefile
+/usr/local/poudriere/ports/kali/emulators/citra/
+/usr/local/poudriere/ports/kali/emulators/qmc2/
+/usr/local/poudriere/ports/kali/emulators/rpcs3/
+/usr/local/poudriere/ports/kali/emulators/vice/
+/usr/local/poudriere/ports/kali/emulators/wine-devel/
+/usr/local/poudriere/ports/kali/emulators/winetricks/
+/usr/local/poudriere/ports/kali/french/Makefile
+/usr/local/poudriere/ports/kali/french/wordpress/
+/usr/local/poudriere/ports/kali/games/Makefile
+/usr/local/poudriere/ports/kali/games/blackshadeselite/
+/usr/local/poudriere/ports/kali/games/dhewm3/
+/usr/local/poudriere/ports/kali/games/five-or-more/
+/usr/local/poudriere/ports/kali/games/flightgear/
+/usr/local/poudriere/ports/kali/games/gnome-nibbles/
+/usr/local/poudriere/ports/kali/games/gnome-robots/
+/usr/local/poudriere/ports/kali/games/libgnome-games-support/
+/usr/local/poudriere/ports/kali/games/linux-enemyterritory/
+/usr/local/poudriere/ports/kali/games/openra/
+/usr/local/poudriere/ports/kali/games/palomino/
+/usr/local/poudriere/ports/kali/games/plutocracy/
+/usr/local/poudriere/ports/kali/games/qnetwalk/
+/usr/local/poudriere/ports/kali/games/quakeforge/
+/usr/local/poudriere/ports/kali/games/stockfish/
+/usr/local/poudriere/ports/kali/games/tali/
+/usr/local/poudriere/ports/kali/games/trimines/
+/usr/local/poudriere/ports/kali/games/wtf/
+/usr/local/poudriere/ports/kali/games/wyrmsun/
+/usr/local/poudriere/ports/kali/german/Makefile
+/usr/local/poudriere/ports/kali/german/wordpress/
+/usr/local/poudriere/ports/kali/graphics/Coin/
+/usr/local/poudriere/ports/kali/graphics/GraphicsMagick/
+/usr/local/poudriere/ports/kali/graphics/Makefile
+/usr/local/poudriere/ports/kali/graphics/ampasCTL/
+/usr/local/poudriere/ports/kali/graphics/appleseed/
+/usr/local/poudriere/ports/kali/graphics/cimg/
+/usr/local/poudriere/ports/kali/graphics/dcmtk/
+/usr/local/poudriere/ports/kali/graphics/diff-pdf/
+/usr/local/poudriere/ports/kali/graphics/drm-fbsd12.0-kmod/
+/usr/local/poudriere/ports/kali/graphics/drm-legacy-kmod/
+/usr/local/poudriere/ports/kali/graphics/entangle/
+/usr/local/poudriere/ports/kali/graphics/exrtools/
+/usr/local/poudriere/ports/kali/graphics/fracplanet/
+/usr/local/poudriere/ports/kali/graphics/gimmage/
+/usr/local/poudriere/ports/kali/graphics/gimp-resynthesizer/
+/usr/local/poudriere/ports/kali/graphics/gmic/
+/usr/local/poudriere/ports/kali/graphics/goom/
+/usr/local/poudriere/ports/kali/graphics/gpxsee/
+/usr/local/poudriere/ports/kali/graphics/graphite2/
+/usr/local/poudriere/ports/kali/graphics/gscan2pdf/
+/usr/local/poudriere/ports/kali/graphics/inkscape/
+/usr/local/poudriere/ports/kali/graphics/kf5-kimageformats/
+/usr/local/poudriere/ports/kali/graphics/kf5-kplotting/
+/usr/local/poudriere/ports/kali/graphics/kf5-prison/
+/usr/local/poudriere/ports/kali/graphics/krita/
+/usr/local/poudriere/ports/kali/graphics/minder/
+/usr/local/poudriere/ports/kali/graphics/movit/
+/usr/local/poudriere/ports/kali/graphics/netpbm/
+/usr/local/poudriere/ports/kali/graphics/ocre/
+/usr/local/poudriere/ports/kali/graphics/okular-kde4/
+/usr/local/poudriere/ports/kali/graphics/okular/
+/usr/local/poudriere/ports/kali/graphics/openfx-arena/
+/usr/local/poudriere/ports/kali/graphics/openorienteering-mapper/
+/usr/local/poudriere/ports/kali/graphics/p5-Image-OCR-Tesseract/
+/usr/local/poudriere/ports/kali/graphics/pdfpc/
+/usr/local/poudriere/ports/kali/graphics/photivo/
+/usr/local/poudriere/ports/kali/graphics/png/
+/usr/local/poudriere/ports/kali/graphics/poppler-glib/
+/usr/local/poudriere/ports/kali/graphics/poppler-qt5/
+/usr/local/poudriere/ports/kali/graphics/poppler-utils/
+/usr/local/poudriere/ports/kali/graphics/poppler/
+/usr/local/poudriere/ports/kali/graphics/pqiv/
+/usr/local/poudriere/ports/kali/graphics/py-poppler/
+/usr/local/poudriere/ports/kali/graphics/py-qt5-svg/
+/usr/local/poudriere/ports/kali/graphics/qt5-3d/
+/usr/local/poudriere/ports/kali/graphics/qt5-graphicaleffects/
+/usr/local/poudriere/ports/kali/graphics/qt5-imageformats/
+/usr/local/poudriere/ports/kali/graphics/qt5-pixeltool/
+/usr/local/poudriere/ports/kali/graphics/qt5-svg/
+/usr/local/poudriere/ports/kali/graphics/qt5-wayland/
+/usr/local/poudriere/ports/kali/graphics/radiance/
+/usr/local/poudriere/ports/kali/graphics/rawtherapee/
+/usr/local/poudriere/ports/kali/graphics/sk1/
+/usr/local/poudriere/ports/kali/graphics/ufraw/
+/usr/local/poudriere/ports/kali/graphics/vigra/
+/usr/local/poudriere/ports/kali/graphics/yagf/
+/usr/local/poudriere/ports/kali/irc/anope/
+/usr/local/poudriere/ports/kali/irc/znc-push/
+/usr/local/poudriere/ports/kali/japanese/Makefile
+/usr/local/poudriere/ports/kali/japanese/kasumi/
+/usr/local/poudriere/ports/kali/japanese/wordpress/
+/usr/local/poudriere/ports/kali/java/intellij/
+/usr/local/poudriere/ports/kali/lang/Makefile
+/usr/local/poudriere/ports/kali/lang/erlang-runtime21/
+/usr/local/poudriere/ports/kali/lang/gcc7-devel/
+/usr/local/poudriere/ports/kali/lang/gcc8-devel/
+/usr/local/poudriere/ports/kali/lang/gcc8/
+/usr/local/poudriere/ports/kali/lang/gcc9-devel/
+/usr/local/poudriere/ports/kali/lang/ghc/
+/usr/local/poudriere/ports/kali/lang/ghc843/
+/usr/local/poudriere/ports/kali/lang/ghc862/
+/usr/local/poudriere/ports/kali/lang/go/
+/usr/local/poudriere/ports/kali/lang/gprolog/
+/usr/local/poudriere/ports/kali/lang/kf5-kross/
+/usr/local/poudriere/ports/kali/lang/perl5-devel/
+/usr/local/poudriere/ports/kali/lang/perl5.26/
+/usr/local/poudriere/ports/kali/lang/py-qt5-qml/
+/usr/local/poudriere/ports/kali/lang/ruby24/
+/usr/local/poudriere/ports/kali/lang/rust-nightly/
+/usr/local/poudriere/ports/kali/lang/rust/
+/usr/local/poudriere/ports/kali/lang/scala/
+/usr/local/poudriere/ports/kali/lang/scm/
+/usr/local/poudriere/ports/kali/lang/squeak/
+/usr/local/poudriere/ports/kali/mail/Makefile
+/usr/local/poudriere/ports/kali/mail/claws-mail/
+/usr/local/poudriere/ports/kali/mail/courier-imap/
+/usr/local/poudriere/ports/kali/mail/evolution-ews/
+/usr/local/poudriere/ports/kali/mail/mutt/
+/usr/local/poudriere/ports/kali/mail/opensmtpd-devel/
+/usr/local/poudriere/ports/kali/mail/opensmtpd/
+/usr/local/poudriere/ports/kali/mail/p5-Mail-RFC822-Address/
+/usr/local/poudriere/ports/kali/math/4ti2/
+/usr/local/poudriere/ports/kali/math/Makefile
+/usr/local/poudriere/ports/kali/math/blis/
+/usr/local/poudriere/ports/kali/math/combblas/
+/usr/local/poudriere/ports/kali/math/elpa/
+/usr/local/poudriere/ports/kali/math/geogebra/
+/usr/local/poudriere/ports/kali/math/gnuplot/
+/usr/local/poudriere/ports/kali/math/gretl/
+/usr/local/poudriere/ports/kali/math/gri/
+/usr/local/poudriere/ports/kali/math/hipmcl/
+/usr/local/poudriere/ports/kali/math/latte-integrale/
+/usr/local/poudriere/ports/kali/math/mathmod/
+/usr/local/poudriere/ports/kali/math/matio/
+/usr/local/poudriere/ports/kali/math/mkl-dnn/
+/usr/local/poudriere/ports/kali/math/octave-forge/
+/usr/local/poudriere/ports/kali/math/p5-Number-WithError/
+/usr/local/poudriere/ports/kali/math/plplot/
+/usr/local/poudriere/ports/kali/math/py-MutatorMath/
+/usr/local/poudriere/ports/kali/math/py-cvxpy/
+/usr/local/poudriere/ports/kali/math/py-mpmath/
+/usr/local/poudriere/ports/kali/math/py-pandas-datareader/
+/usr/local/poudriere/ports/kali/math/py-pyclipper/
+/usr/local/poudriere/ports/kali/math/py-python-louvain/
+/usr/local/poudriere/ports/kali/math/py-rapi/
+/usr/local/poudriere/ports/kali/math/py-theano/
+/usr/local/poudriere/ports/kali/math/qtiplot/
+/usr/local/poudriere/ports/kali/math/scilab/
+/usr/local/poudriere/ports/kali/misc/Makefile
+/usr/local/poudriere/ports/kali/misc/gnuit/
+/usr/local/poudriere/ports/kali/misc/iso-codes/
+/usr/local/poudriere/ports/kali/misc/kdeutils/
+/usr/local/poudriere/ports/kali/misc/kf5-purpose/
+/usr/local/poudriere/ports/kali/misc/libemos/
+/usr/local/poudriere/ports/kali/misc/openhab2-addons/
+/usr/local/poudriere/ports/kali/misc/openhab2/
+/usr/local/poudriere/ports/kali/misc/orange3/
+/usr/local/poudriere/ports/kali/misc/osinfo-db/
+/usr/local/poudriere/ports/kali/misc/p5-Array-RefElem/
+/usr/local/poudriere/ports/kali/misc/py-qt4-doc/
+/usr/local/poudriere/ports/kali/misc/qt5-doc/
+/usr/local/poudriere/ports/kali/misc/qt5-examples/
+/usr/local/poudriere/ports/kali/misc/qt5ct/
+/usr/local/poudriere/ports/kali/misc/snakemake/
+/usr/local/poudriere/ports/kali/misc/survex/
+/usr/local/poudriere/ports/kali/misc/tellico-kde4/
+/usr/local/poudriere/ports/kali/misc/unclutter-xfixes/
+/usr/local/poudriere/ports/kali/misc/urh/
+/usr/local/poudriere/ports/kali/multimedia/Makefile
+/usr/local/poudriere/ports/kali/multimedia/aom/
+/usr/local/poudriere/ports/kali/multimedia/clipgrab/
+/usr/local/poudriere/ports/kali/multimedia/dav1d/
+/usr/local/poudriere/ports/kali/multimedia/dvb-apps/
+/usr/local/poudriere/ports/kali/multimedia/ffmpeg/
+/usr/local/poudriere/ports/kali/multimedia/gstreamer1-plugins-aom/
+/usr/local/poudriere/ports/kali/multimedia/gstreamer1-plugins/
+/usr/local/poudriere/ports/kali/multimedia/gstreamer1-qt/
+/usr/local/poudriere/ports/kali/multimedia/kdenlive/
+/usr/local/poudriere/ports/kali/multimedia/kf5-kmediaplayer/
+/usr/local/poudriere/ports/kali/multimedia/kodi-devel/
+/usr/local/poudriere/ports/kali/multimedia/libva-intel-driver/
+/usr/local/poudriere/ports/kali/multimedia/lives/
+/usr/local/poudriere/ports/kali/multimedia/mpv/
+/usr/local/poudriere/ports/kali/multimedia/phonon-designerplugin/
+/usr/local/poudriere/ports/kali/multimedia/phonon-gstreamer/
+/usr/local/poudriere/ports/kali/multimedia/phonon-vlc/
+/usr/local/poudriere/ports/kali/multimedia/phonon/
+/usr/local/poudriere/ports/kali/multimedia/plexmediaserver-plexpass/
+/usr/local/poudriere/ports/kali/multimedia/plexmediaserver/
+/usr/local/poudriere/ports/kali/multimedia/py-moviepy/
+/usr/local/poudriere/ports/kali/multimedia/py-qt5-multimedia/
+/usr/local/poudriere/ports/kali/multimedia/py-qt5-multimediawidgets/
+/usr/local/poudriere/ports/kali/multimedia/pyjama/
+/usr/local/poudriere/ports/kali/multimedia/qt5-multimedia/
+/usr/local/poudriere/ports/kali/multimedia/rav1e/
+/usr/local/poudriere/ports/kali/multimedia/tautulli/
+/usr/local/poudriere/ports/kali/multimedia/v4l_compat/
+/usr/local/poudriere/ports/kali/multimedia/vlc/
+/usr/local/poudriere/ports/kali/multimedia/vlc3/
+/usr/local/poudriere/ports/kali/multimedia/webvfx-qt5/
+/usr/local/poudriere/ports/kali/net-im/Makefile
+/usr/local/poudriere/ports/kali/net-im/kopete-kde4/
+/usr/local/poudriere/ports/kali/net-im/ktp-accounts-kcm/
+/usr/local/poudriere/ports/kali/net-im/ktp-approver/
+/usr/local/poudriere/ports/kali/net-im/ktp-auth-handler/
+/usr/local/poudriere/ports/kali/net-im/ktp-contact-runner/
+/usr/local/poudriere/ports/kali/net-im/ktp-desktop-applets/
+/usr/local/poudriere/ports/kali/net-im/ktp-kded-module/
+/usr/local/poudriere/ports/kali/net-im/ktp-send-file/
+/usr/local/poudriere/ports/kali/net-im/prosody/
+/usr/local/poudriere/ports/kali/net-im/qTox/
+/usr/local/poudriere/ports/kali/net-im/ssh-chat/
+/usr/local/poudriere/ports/kali/net-im/telegram-desktop/
+/usr/local/poudriere/ports/kali/net-im/telepathy-qt/
+/usr/local/poudriere/ports/kali/net-mgmt/blackbox_exporter/
+/usr/local/poudriere/ports/kali/net-mgmt/collectd5/
+/usr/local/poudriere/ports/kali/net-mgmt/icingaweb2-module-grafana/
+/usr/local/poudriere/ports/kali/net-mgmt/librenms/
+/usr/local/poudriere/ports/kali/net-mgmt/py-prometheus-client/
+/usr/local/poudriere/ports/kali/net-p2p/Makefile
+/usr/local/poudriere/ports/kali/net-p2p/amule/
+/usr/local/poudriere/ports/kali/net-p2p/retroshare/
+/usr/local/poudriere/ports/kali/net-p2p/transmission-qt/
+/usr/local/poudriere/ports/kali/net/Makefile
+/usr/local/poudriere/ports/kali/net/aluminum/
+/usr/local/poudriere/ports/kali/net/anet/
+/usr/local/poudriere/ports/kali/net/bosh-bootloader/
+/usr/local/poudriere/ports/kali/net/cf/
+/usr/local/poudriere/ports/kali/net/clash/
+/usr/local/poudriere/ports/kali/net/freerdp/
+/usr/local/poudriere/ports/kali/net/google-cloud-sdk/
+/usr/local/poudriere/ports/kali/net/haproxy-devel/
+/usr/local/poudriere/ports/kali/net/haproxy/
+/usr/local/poudriere/ports/kali/net/kf5-kholidays/
+/usr/local/poudriere/ports/kali/net/kf5-kxmlrpcclient/
+/usr/local/poudriere/ports/kali/net/kf5-syndication/
+/usr/local/poudriere/ports/kali/net/kitinerary/
+/usr/local/poudriere/ports/kali/net/libsrtp/
+/usr/local/poudriere/ports/kali/net/liveMedia/
+/usr/local/poudriere/ports/kali/net/mpich/
+/usr/local/poudriere/ports/kali/net/nanomsg/
+/usr/local/poudriere/ports/kali/net/opal/
+/usr/local/poudriere/ports/kali/net/openldap24-server/
+/usr/local/poudriere/ports/kali/net/pdb/
+/usr/local/poudriere/ports/kali/net/py-qt5-network/
+/usr/local/poudriere/ports/kali/net/qt5-network/
+/usr/local/poudriere/ports/kali/net/sflowtool/
+/usr/local/poudriere/ports/kali/net/traefik/
+/usr/local/poudriere/ports/kali/net/uriparser/
+/usr/local/poudriere/ports/kali/net/wireguard/
+/usr/local/poudriere/ports/kali/palm/Makefile
+/usr/local/poudriere/ports/kali/polish/Makefile
+/usr/local/poudriere/ports/kali/ports-mgmt/pkg_cutleaves/
+/usr/local/poudriere/ports/kali/ports-mgmt/porttree/
+/usr/local/poudriere/ports/kali/portuguese/Makefile
+/usr/local/poudriere/ports/kali/print/Makefile
+/usr/local/poudriere/ports/kali/print/cups-filters/
+/usr/local/poudriere/ports/kali/print/gutenprint/
+/usr/local/poudriere/ports/kali/print/harfbuzz-icu/
+/usr/local/poudriere/ports/kali/print/harfbuzz/
+/usr/local/poudriere/ports/kali/print/pdf-tools/
+/usr/local/poudriere/ports/kali/print/py-qt5-printsupport/
+/usr/local/poudriere/ports/kali/print/qpdfview/
+/usr/local/poudriere/ports/kali/print/scribus-devel/
+/usr/local/poudriere/ports/kali/print/scribus/
+/usr/local/poudriere/ports/kali/science/InsightToolkit/
+/usr/local/poudriere/ports/kali/science/Makefile
+/usr/local/poudriere/ports/kali/science/agrum/
+/usr/local/poudriere/ports/kali/science/dalton/
+/usr/local/poudriere/ports/kali/science/drawxtl/
+/usr/local/poudriere/ports/kali/science/erkale/
+/usr/local/poudriere/ports/kali/science/gchemutils/
+/usr/local/poudriere/ports/kali/science/h5z-zfp/
+/usr/local/poudriere/ports/kali/science/jdftx/
+/usr/local/poudriere/ports/kali/science/lamprop/
+/usr/local/poudriere/ports/kali/science/libghemical/
+/usr/local/poudriere/ports/kali/science/mmdb2/
+/usr/local/poudriere/ports/kali/science/mpqc/
+/usr/local/poudriere/ports/kali/science/pcmsolver/
+/usr/local/poudriere/ports/kali/science/py-GPy/
+/usr/local/poudriere/ports/kali/science/py-GPyOpt/
+/usr/local/poudriere/ports/kali/science/py-dlib/
+/usr/local/poudriere/ports/kali/science/py-gsd/
+/usr/local/poudriere/ports/kali/science/py-lifelines/
+/usr/local/poudriere/ports/kali/science/py-paramz/
+/usr/local/poudriere/ports/kali/science/py-scikit-learn/
+/usr/local/poudriere/ports/kali/science/qmcpack/
+/usr/local/poudriere/ports/kali/science/qwalk/
+/usr/local/poudriere/ports/kali/science/tinker/
+/usr/local/poudriere/ports/kali/science/vipster/
+/usr/local/poudriere/ports/kali/science/xdrawchem/
+/usr/local/poudriere/ports/kali/science/yoda/
+/usr/local/poudriere/ports/kali/security/Makefile
+/usr/local/poudriere/ports/kali/security/beid/
+/usr/local/poudriere/ports/kali/security/bro/
+/usr/local/poudriere/ports/kali/security/cargo-audit/
+/usr/local/poudriere/ports/kali/security/cyberchef/
+/usr/local/poudriere/ports/kali/security/gnutls/
+/usr/local/poudriere/ports/kali/security/hashcat/
+/usr/local/poudriere/ports/kali/security/hitch/
+/usr/local/poudriere/ports/kali/security/kf5-kdesu/
+/usr/local/poudriere/ports/kali/security/krb5-appl/
+/usr/local/poudriere/ports/kali/security/krb5-devel/
+/usr/local/poudriere/ports/kali/security/libgpg-error/
+/usr/local/poudriere/ports/kali/security/libhijack/
+/usr/local/poudriere/ports/kali/security/libressl-devel/
+/usr/local/poudriere/ports/kali/security/libressl/
+/usr/local/poudriere/ports/kali/security/linux-c6-nss/
+/usr/local/poudriere/ports/kali/security/metasploit/
+/usr/local/poudriere/ports/kali/security/nextcloud-passman/
+/usr/local/poudriere/ports/kali/security/nextcloud-twofactor_totp/
+/usr/local/poudriere/ports/kali/security/nextcloud-twofactor_u2f/
+/usr/local/poudriere/ports/kali/security/opensc/
+/usr/local/poudriere/ports/kali/security/p5-Crypt-CAST5_PP/
+/usr/local/poudriere/ports/kali/security/p5-OpenCA-OpenSSL/
+/usr/local/poudriere/ports/kali/security/py-artifacts/
+/usr/local/poudriere/ports/kali/security/py-dfvfs/
+/usr/local/poudriere/ports/kali/security/py-ospd/
+/usr/local/poudriere/ports/kali/security/py-plaso/
+/usr/local/poudriere/ports/kali/security/py-stix2/
+/usr/local/poudriere/ports/kali/security/qtkeychain/
+/usr/local/poudriere/ports/kali/security/racoon2-legacy/
+/usr/local/poudriere/ports/kali/security/racoon2/
+/usr/local/poudriere/ports/kali/security/rubygem-metasploit-payloads/
+/usr/local/poudriere/ports/kali/security/rubygem-metasploit_payloads-mettle/
+/usr/local/poudriere/ports/kali/security/rubygem-recog/
+/usr/local/poudriere/ports/kali/security/silktools/
+/usr/local/poudriere/ports/kali/security/suricata/
+/usr/local/poudriere/ports/kali/security/tor-devel/
+/usr/local/poudriere/ports/kali/security/vault/
+/usr/local/poudriere/ports/kali/security/vuxml/
+/usr/local/poudriere/ports/kali/shells/ksh93-devel/
+/usr/local/poudriere/ports/kali/sysutils/Makefile
+/usr/local/poudriere/ports/kali/sysutils/ansible/
+/usr/local/poudriere/ports/kali/sysutils/ansible25/
+/usr/local/poudriere/ports/kali/sysutils/ansible26/
+/usr/local/poudriere/ports/kali/sysutils/apachetop/
+/usr/local/poudriere/ports/kali/sysutils/asmctl/
+/usr/local/poudriere/ports/kali/sysutils/bulk_extractor/
+/usr/local/poudriere/ports/kali/sysutils/cfengine-devel/
+/usr/local/poudriere/ports/kali/sysutils/cfengine-masterfiles-devel/
+/usr/local/poudriere/ports/kali/sysutils/debootstrap/
+/usr/local/poudriere/ports/kali/sysutils/e2fsprogs/
+/usr/local/poudriere/ports/kali/sysutils/eksctl/
+/usr/local/poudriere/ports/kali/sysutils/facter/
+/usr/local/poudriere/ports/kali/sysutils/fusefs-webdavfs/
+/usr/local/poudriere/ports/kali/sysutils/goawk/
+/usr/local/poudriere/ports/kali/sysutils/gotop/
+/usr/local/poudriere/ports/kali/sysutils/grub2-pcbsd/
+/usr/local/poudriere/ports/kali/sysutils/intel-pcm-devel/
+/usr/local/poudriere/ports/kali/sysutils/iocage-devel/
+/usr/local/poudriere/ports/kali/sysutils/kf5-baloo/
+/usr/local/poudriere/ports/kali/sysutils/kf5-kwallet/
+/usr/local/poudriere/ports/kali/sysutils/kfilemetadata-kde4/
+/usr/local/poudriere/ports/kali/sysutils/nepomuk-core-kde4/
+/usr/local/poudriere/ports/kali/sysutils/packer/
+/usr/local/poudriere/ports/kali/sysutils/polkit-qt/
+/usr/local/poudriere/ports/kali/sysutils/pot/
+/usr/local/poudriere/ports/kali/sysutils/puppet6/
+/usr/local/poudriere/ports/kali/sysutils/puppetserver6/
+/usr/local/poudriere/ports/kali/sysutils/rubygem-puppetserver-ca/
+/usr/local/poudriere/ports/kali/sysutils/runit-faster/
+/usr/local/poudriere/ports/kali/sysutils/shim/
+/usr/local/poudriere/ports/kali/sysutils/sysadm-client/
+/usr/local/poudriere/ports/kali/sysutils/syslog-ng/
+/usr/local/poudriere/ports/kali/sysutils/syslog-ng319/
+/usr/local/poudriere/ports/kali/sysutils/terraform/
+/usr/local/poudriere/ports/kali/sysutils/xorriso/
+/usr/local/poudriere/ports/kali/textproc/Makefile
+/usr/local/poudriere/ports/kali/textproc/ansifilter/
+/usr/local/poudriere/ports/kali/textproc/ffe/
+/usr/local/poudriere/ports/kali/textproc/fzy/
+/usr/local/poudriere/ports/kali/textproc/groonga/
+/usr/local/poudriere/ports/kali/textproc/htmldoc/
+/usr/local/poudriere/ports/kali/textproc/ibus-typing-booster/
+/usr/local/poudriere/ports/kali/textproc/kf5-kcodecs/
+/usr/local/poudriere/ports/kali/textproc/kf5-sonnet/
+/usr/local/poudriere/ports/kali/textproc/kf5-syntax-highlighting/
+/usr/local/poudriere/ports/kali/textproc/lowdown/
+/usr/local/poudriere/ports/kali/textproc/p5-Net-IDN-Encode/
+/usr/local/poudriere/ports/kali/textproc/pdfgrep/
+/usr/local/poudriere/ports/kali/textproc/pear-Structures_DataGrid_DataSource_RSS/
+/usr/local/poudriere/ports/kali/textproc/pear-Structures_DataGrid_DataSource_XML/
+/usr/local/poudriere/ports/kali/textproc/py-qt5-xml/
+/usr/local/poudriere/ports/kali/textproc/py-qt5-xmlpatterns/
+/usr/local/poudriere/ports/kali/textproc/qt5-xmlpatterns/
+/usr/local/poudriere/ports/kali/textproc/retext/
+/usr/local/poudriere/ports/kali/www/e2guardian/
+/usr/local/poudriere/ports/kali/www/gitlab-ce/
+/usr/local/poudriere/ports/kali/www/grafana5/
+/usr/local/poudriere/ports/kali/www/groupoffice/
+/usr/local/poudriere/ports/kali/www/kf5-kdewebkit/
+/usr/local/poudriere/ports/kali/www/kf5-khtml/
+/usr/local/poudriere/ports/kali/www/kf5-kjs/
+/usr/local/poudriere/ports/kali/www/kf5-kjsembed/
+/usr/local/poudriere/ports/kali/www/libepc/
+/usr/local/poudriere/ports/kali/www/minio/
+/usr/local/poudriere/ports/kali/www/nextcloud-contacts/
+/usr/local/poudriere/ports/kali/www/nginx/
+/usr/local/poudriere/ports/kali/www/node6/
+/usr/local/poudriere/ports/kali/www/node8/
+/usr/local/poudriere/ports/kali/www/p5-Mojolicious/
+/usr/local/poudriere/ports/kali/www/py-azure-common/
+/usr/local/poudriere/ports/kali/www/py-flask-bootstrap/
+/usr/local/poudriere/ports/kali/www/py-qt5-webchannel/
+/usr/local/poudriere/ports/kali/www/py-qt5-webkit/
+/usr/local/poudriere/ports/kali/www/py-qt5-webkitwidgets/
+/usr/local/poudriere/ports/kali/www/py-webassets/
+/usr/local/poudriere/ports/kali/www/qt5-webchannel/
+/usr/local/poudriere/ports/kali/www/qt5-webengine/
+/usr/local/poudriere/ports/kali/www/qt5-webkit/
+/usr/local/poudriere/ports/kali/www/qt5-websockets-qml/
+/usr/local/poudriere/ports/kali/www/qt5-websockets/
+/usr/local/poudriere/ports/kali/www/unit/
+/usr/local/poudriere/ports/kali/www/webkit-gtk2/
+/usr/local/poudriere/ports/kali/www/webkit2-gtk3/
+/usr/local/poudriere/ports/kali/www/wordpress/
+/usr/local/poudriere/ports/kali/x11-clocks/Makefile
+/usr/local/poudriere/ports/kali/x11-drivers/xf86-input-evdev/
+/usr/local/poudriere/ports/kali/x11-drivers/xf86-input-libinput/
+/usr/local/poudriere/ports/kali/x11-drivers/xf86-input-synaptics/
+/usr/local/poudriere/ports/kali/x11-drivers/xf86-input-wacom/
+/usr/local/poudriere/ports/kali/x11-drivers/xf86-video-ati-legacy/
+/usr/local/poudriere/ports/kali/x11-drivers/xf86-video-qxl/
+/usr/local/poudriere/ports/kali/x11-fm/Makefile
+/usr/local/poudriere/ports/kali/x11-fm/nautilus/
+/usr/local/poudriere/ports/kali/x11-fonts/Makefile
+/usr/local/poudriere/ports/kali/x11-fonts/py-booleanOperations/
+/usr/local/poudriere/ports/kali/x11-fonts/py-compreffor/
+/usr/local/poudriere/ports/kali/x11-fonts/py-cu2qu/
+/usr/local/poudriere/ports/kali/x11-fonts/py-defcon/
+/usr/local/poudriere/ports/kali/x11-fonts/py-fontMath/
+/usr/local/poudriere/ports/kali/x11-fonts/py-fontmake/
+/usr/local/poudriere/ports/kali/x11-fonts/py-glyphsLib/
+/usr/local/poudriere/ports/kali/x11-fonts/py-ufo2ft/
+/usr/local/poudriere/ports/kali/x11-fonts/py-ufoLib/
+/usr/local/poudriere/ports/kali/x11-servers/xwayland/
+/usr/local/poudriere/ports/kali/x11-themes/Kvantum/
+/usr/local/poudriere/ports/kali/x11-themes/adwaita-qt/
+/usr/local/poudriere/ports/kali/x11-themes/kf5-breeze-icons/
+/usr/local/poudriere/ports/kali/x11-themes/kf5-kemoticons/
+/usr/local/poudriere/ports/kali/x11-themes/kf5-kiconthemes/
+/usr/local/poudriere/ports/kali/x11-themes/kf5-oxygen-icons5/
+/usr/local/poudriere/ports/kali/x11-themes/kf5-qqc2-desktop-style/
+/usr/local/poudriere/ports/kali/x11-themes/qt5-style-plugins/
+/usr/local/poudriere/ports/kali/x11-toolkits/Makefile
+/usr/local/poudriere/ports/kali/x11-toolkits/gnustep-gui/
+/usr/local/poudriere/ports/kali/x11-toolkits/kf5-attica/
+/usr/local/poudriere/ports/kali/x11-toolkits/kf5-kcompletion/
+/usr/local/poudriere/ports/kali/x11-toolkits/kf5-kconfigwidgets/
+/usr/local/poudriere/ports/kali/x11-toolkits/kf5-kdesignerplugin/
+/usr/local/poudriere/ports/kali/x11-toolkits/kf5-kguiaddons/
+/usr/local/poudriere/ports/kali/x11-toolkits/kf5-kirigami2/
+/usr/local/poudriere/ports/kali/x11-toolkits/kf5-kitemviews/
+/usr/local/poudriere/ports/kali/x11-toolkits/kf5-kjobwidgets/
+/usr/local/poudriere/ports/kali/x11-toolkits/kf5-ktextwidgets/
+/usr/local/poudriere/ports/kali/x11-toolkits/kf5-kwidgetsaddons/
+/usr/local/poudriere/ports/kali/x11-toolkits/kf5-kxmlgui/
+/usr/local/poudriere/ports/kali/x11-toolkits/py-qt5-gui/
+/usr/local/poudriere/ports/kali/x11-toolkits/py-qt5-quick/
+/usr/local/poudriere/ports/kali/x11-toolkits/py-qt5-quickwidgets/
+/usr/local/poudriere/ports/kali/x11-toolkits/py-qt5-widgets/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-canvas3d/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-charts/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-datavis3d/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-declarative/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-gamepad/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-gtkplatform/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-gui/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-quickcontrols/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-quickcontrols2/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-uiplugin/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-virtualkeyboard/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5-widgets/
+/usr/local/poudriere/ports/kali/x11-toolkits/qt5pas/
+/usr/local/poudriere/ports/kali/x11-toolkits/qwt6/
+/usr/local/poudriere/ports/kali/x11-toolkits/tepl/
+/usr/local/poudriere/ports/kali/x11-toolkits/wlc/
+/usr/local/poudriere/ports/kali/x11-wm/bspwm/
+/usr/local/poudriere/ports/kali/x11-wm/i3/
+/usr/local/poudriere/ports/kali/x11-wm/plasma5-kwin/
+/usr/local/poudriere/ports/kali/x11-wm/stumpwm/
+/usr/local/poudriere/ports/kali/x11/Makefile
+/usr/local/poudriere/ports/kali/x11/cool-retro-term/
+/usr/local/poudriere/ports/kali/x11/i3blocks/
+/usr/local/poudriere/ports/kali/x11/kde-workspace-kde4/
+/usr/local/poudriere/ports/kali/x11/kdelibs-kde4/
+/usr/local/poudriere/ports/kali/x11/kf5-frameworkintegration/
+/usr/local/poudriere/ports/kali/x11/kf5-kactivities-stats/
+/usr/local/poudriere/ports/kali/x11/kf5-kactivities/
+/usr/local/poudriere/ports/kali/x11/kf5-kded/
+/usr/local/poudriere/ports/kali/x11/kf5-kdelibs4support/
+/usr/local/poudriere/ports/kali/x11/kf5-kglobalaccel/
+/usr/local/poudriere/ports/kali/x11/kf5-kinit/
+/usr/local/poudriere/ports/kali/x11/kf5-krunner/
+/usr/local/poudriere/ports/kali/x11/kf5-kwayland/
+/usr/local/poudriere/ports/kali/x11/kf5-kwindowsystem/
+/usr/local/poudriere/ports/kali/x11/kf5-plasma-framework/
+/usr/local/poudriere/ports/kali/x11/leechcraft/
+/usr/local/poudriere/ports/kali/x11/libinput/
+/usr/local/poudriere/ports/kali/x11/lumina-core/
+/usr/local/poudriere/ports/kali/x11/nvidia-settings/
+/usr/local/poudriere/ports/kali/x11/nvidia-xconfig/
+/usr/local/poudriere/ports/kali/x11/plasma5-kwayland-integration/
+/usr/local/poudriere/ports/kali/x11/polybar/
+/usr/local/poudriere/ports/kali/x11/py-qt5-opengl/
+/usr/local/poudriere/ports/kali/x11/qt5-qev/
+/usr/local/poudriere/ports/kali/x11/qt5-x11extras/
+/usr/local/poudriere/ports/kali/x11/radare-cutter/
+/usr/local/poudriere/ports/kali/x11/sxhkd/
+/usr/local/poudriere/ports/kali/x11/terminology/
+/usr/local/poudriere/ports/kali/x11/xfce4-taskmanager/
+/usr/local/poudriere/ports/kali/x11/xterm/
+/usr/local/poudriere/ports/kali/x11/xtermcontrol/
+Building new INDEX files... done.
+ done
++ sudo cp -Rfv /usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5 /usr/local/poudriere/ports/kali/devel
+/usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5 -> /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5
+/usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5/pkg-descr -> /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5/pkg-descr
+/usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5/distinfo -> /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5/distinfo
+/usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5/Makefile -> /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5/Makefile
++ cd /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5
++ sudo make distclean .
+===>  Cleaning for rubygem-activesupport5-5.2.2
+===>  Deleting distfiles for rubygem-activesupport5-5.2.2
+`.' is up to date.
++ sudo make makesum .
+=> activesupport-5.2.2.gem doesn't seem to exist in /usr/local/poudriere/ports/kali/distfiles/rubygem.
+=> Attempting to fetch https://rubygems.global.ssl.fastly.net/gems/activesupport-5.2.2.gem
+activesupport-5.2.2.gem                                  0  B    0  Bps
+`.' is up to date.
++ sudo poudriere bulk -c -j lrelease -p kali devel/rubygem-activesupport5
+[00:00:00] Creating the reference jail... done
+[00:00:02] Mounting system devices for lrelease-kali
+[00:00:02] Mounting ports/packages/distfiles
+[00:00:02] Using packages from previously failed build
+[00:00:02] Mounting packages from: /usr/local/poudriere/data/packages/lrelease-kali
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/lrelease-kali/ref/etc/resolv.conf
+[00:00:02] Starting jail lrelease-kali
+[00:00:09] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali/2018-12-23_00h29m11s
+[00:00:09] Loading MOVED for /usr/local/poudriere/data/.m/lrelease-kali/ref/usr/ports
+[00:00:10] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:10] Gathering ports metadata
+[00:00:11] Calculating ports order and dependencies
+[00:00:11] (-c) Cleaning all packages... done
+[00:00:12] Sanity checking the repository
+[00:00:12] Checking packages for incremental rebuild needs
+[00:00:12] Deleting stale symlinks... done
+[00:00:12] Deleting empty directories... done
+[00:00:12] Cleaning the build queue
+[00:00:12] Sanity checking build queue
+[00:00:12] Processing PRIORITY_BOOST
+[00:00:12] Balancing pool
+[00:00:12] Recording filesystem state for prepkg... done
+[00:00:13] Building 30 packages using 1 builders
+[00:00:13] Starting/Cloning builders
+[00:00:13] Hit CTRL+t at any time to see build progress and stats
+[00:00:13] [01] [00:00:00] Building ports-mgmt/pkg | pkg-1.10.5_5
+[00:02:20] [01] [00:02:07] Finished ports-mgmt/pkg | pkg-1.10.5_5: Success
+[00:02:20] [01] [00:00:00] Building print/indexinfo | indexinfo-0.3.1
+[00:02:22] [01] [00:00:02] Finished print/indexinfo | indexinfo-0.3.1: Success
+[00:02:22] [01] [00:00:00] Building devel/gettext-runtime | gettext-runtime-0.19.8.1_2
+[00:02:44] [01] [00:00:22] Finished devel/gettext-runtime | gettext-runtime-0.19.8.1_2: Success
+[00:02:45] [01] [00:00:00] Building devel/gettext-tools | gettext-tools-0.19.8.1_1
+[00:05:28] [01] [00:02:43] Finished devel/gettext-tools | gettext-tools-0.19.8.1_1: Success
+[00:05:29] [01] [00:00:00] Building lang/perl5.28 | perl5-5.28.1
+[00:09:48] [01] [00:04:19] Finished lang/perl5.28 | perl5-5.28.1: Success
+[00:09:48] [01] [00:00:00] Building devel/p5-Locale-gettext | p5-Locale-gettext-1.07
+[00:10:03] [01] [00:00:15] Finished devel/p5-Locale-gettext | p5-Locale-gettext-1.07: Success
+[00:10:03] [01] [00:00:00] Building converters/libiconv | libiconv-1.14_11
+[00:10:23] [01] [00:00:20] Finished converters/libiconv | libiconv-1.14_11: Success
+[00:10:23] [01] [00:00:00] Building devel/gmake | gmake-4.2.1_3
+[00:10:36] [01] [00:00:13] Finished devel/gmake | gmake-4.2.1_3: Success
+[00:10:36] [01] [00:00:00] Building devel/p5-Locale-libintl | p5-Locale-libintl-1.31
+[00:10:51] [01] [00:00:15] Finished devel/p5-Locale-libintl | p5-Locale-libintl-1.31: Success
+[00:10:51] [01] [00:00:00] Building misc/help2man | help2man-1.47.8_1
+[00:10:59] [01] [00:00:08] Finished misc/help2man | help2man-1.47.8_1: Success
+[00:10:59] [01] [00:00:00] Building converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30
+[00:11:08] [01] [00:00:09] Finished converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30: Success
+[00:11:09] [01] [00:00:00] Building textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40
+[00:11:26] [01] [00:00:17] Finished textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40: Success
+[00:11:26] [01] [00:00:00] Building print/texinfo | texinfo-6.5_2,1
+[00:12:20] [01] [00:00:54] Finished print/texinfo | texinfo-6.5_2,1: Success
+[00:12:21] [01] [00:00:00] Building devel/m4 | m4-1.4.18_1,1
+[00:12:52] [01] [00:00:31] Finished devel/m4 | m4-1.4.18_1,1: Success
+[00:12:52] [01] [00:00:00] Building devel/autoconf-wrapper | autoconf-wrapper-20131203
+[00:12:54] [01] [00:00:02] Finished devel/autoconf-wrapper | autoconf-wrapper-20131203: Success
+[00:12:54] [01] [00:00:00] Building devel/autoconf | autoconf-2.69_2
+[00:13:11] [01] [00:00:17] Finished devel/autoconf | autoconf-2.69_2: Success
+[00:13:11] [01] [00:00:00] Building devel/pkgconf | pkgconf-1.5.4,1
+[00:13:19] [01] [00:00:08] Finished devel/pkgconf | pkgconf-1.5.4,1: Success
+[00:13:19] [01] [00:00:00] Building devel/automake | automake-1.16.1_1
+[00:13:30] [01] [00:00:11] Finished devel/automake | automake-1.16.1_1: Success
+[00:13:30] [01] [00:00:00] Building devel/libffi | libffi-3.2.1_3
+[00:13:38] [01] [00:00:08] Finished devel/libffi | libffi-3.2.1_3: Success
+[00:13:38] [01] [00:00:00] Building textproc/libyaml | libyaml-0.2.1
+[00:13:48] [01] [00:00:10] Finished textproc/libyaml | libyaml-0.2.1: Success
+[00:13:48] [01] [00:00:00] Building devel/libunwind | libunwind-20170615
+[00:14:08] [01] [00:00:20] Finished devel/libunwind | libunwind-20170615: Success
+[00:14:08] [01] [00:00:00] Building devel/libedit | libedit-3.1.20170329_2,1
+[00:14:21] [01] [00:00:13] Finished devel/libedit | libedit-3.1.20170329_2,1: Success
+[00:14:21] [01] [00:00:00] Building lang/ruby24 | ruby-2.4.5_1,1
+[00:18:50] [01] [00:04:29] Finished lang/ruby24 | ruby-2.4.5_1,1: Success
+[00:18:51] [01] [00:00:00] Building devel/ruby-gems | ruby24-gems-2.7.8
+[00:19:03] [01] [00:00:12] Finished devel/ruby-gems | ruby24-gems-2.7.8: Success
+[00:19:04] [01] [00:00:00] Building devel/rubygem-thread_safe | rubygem-thread_safe-0.3.6
+[00:19:12] [01] [00:00:08] Finished devel/rubygem-thread_safe | rubygem-thread_safe-0.3.6: Success
+[00:19:12] [01] [00:00:00] Building devel/rubygem-concurrent-ruby | rubygem-concurrent-ruby-1.1.3
+[00:19:26] [01] [00:00:14] Finished devel/rubygem-concurrent-ruby | rubygem-concurrent-ruby-1.1.3: Success
+[00:19:26] [01] [00:00:00] Building devel/rubygem-tzinfo | rubygem-tzinfo-1.2.5
+[00:19:40] [01] [00:00:14] Finished devel/rubygem-tzinfo | rubygem-tzinfo-1.2.5: Success
+[00:19:41] [01] [00:00:01] Building devel/rubygem-i18n | rubygem-i18n-1.1.1,2
+[00:19:51] [01] [00:00:11] Finished devel/rubygem-i18n | rubygem-i18n-1.1.1,2: Success
+[00:19:51] [01] [00:00:00] Building devel/rubygem-minitest | rubygem-minitest-5.11.3
+[00:19:59] [01] [00:00:08] Finished devel/rubygem-minitest | rubygem-minitest-5.11.3: Success
+[00:19:59] [01] [00:00:00] Building devel/rubygem-activesupport5 | rubygem-activesupport5-5.2.2
+[00:20:11] [01] [00:00:12] Finished devel/rubygem-activesupport5 | rubygem-activesupport5-5.2.2: Success
+[00:20:12] Stopping 1 builders
+[00:20:17] Creating pkg repository
+Creating repository in /tmp/packages: .......... done
+Packing files for repository: .... done
+[00:20:21] Committing packages to repository
+[00:20:21] Removing old packages
+[00:20:21] Built ports: ports-mgmt/pkg print/indexinfo devel/gettext-runtime devel/gettext-tools lang/perl5.28 devel/p5-Locale-gettext converters/libiconv devel/gmake devel/p5-Locale-libintl misc/help2man converters/p5-Text-Unidecode textproc/p5-Unicode-EastAsianWidth print/texinfo devel/m4 devel/autoconf-wrapper devel/autoconf devel/pkgconf devel/automake devel/libffi textproc/libyaml devel/libunwind devel/libedit lang/ruby24 devel/ruby-gems devel/rubygem-thread_safe devel/rubygem-concurrent-ruby devel/rubygem-tzinfo devel/rubygem-i18n devel/rubygem-minitest devel/rubygem-activesupport5
+[lrelease-kali] [2018-12-23_00h29m11s] [committing:] Queued: 30 Built: 30 Failed: 0  Skipped: 0  Ignored: 0  Tobuild: 0   Time: 00:20:12
+[00:20:21] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali/2018-12-23_00h29m11s
+[00:20:21] Cleaning up
+[00:20:21] Unmounting file systems
++ sudo poudriere testport -j lrelease -p kali devel/rubygem-activesupport5
+[00:00:00] Creating the reference jail... done
+[00:00:01] Mounting system devices for lrelease-kali
+[00:00:01] Mounting ports/packages/distfiles
+[00:00:01] Stashing existing package repository
+[00:00:01] Mounting packages from: /usr/local/poudriere/data/packages/lrelease-kali
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/lrelease-kali/ref/etc/resolv.conf
+[00:00:01] Starting jail lrelease-kali
+[00:00:02] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:02] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali/2018-12-23_00h49m34s
+[00:00:02] Loading MOVED for /usr/local/poudriere/data/.m/lrelease-kali/ref/usr/ports
+[00:00:03] Gathering ports metadata
+[00:00:04] Calculating ports order and dependencies
+[00:00:04] Sanity checking the repository
+[00:00:04] Checking packages for incremental rebuild needs
+[00:00:05] Deleting stale symlinks... done
+[00:00:05] Deleting empty directories... done
+[00:00:05] Cleaning the build queue
+[00:00:05] Sanity checking build queue
+[00:00:05] Processing PRIORITY_BOOST
+[00:00:05] Balancing pool
+[00:00:05] Recording filesystem state for prepkg... done
+[00:00:07] Committing packages to repository
+[00:00:07] Removing old packages
+[00:00:08] Building with flags: 
+[00:00:08] Removing existing /usr/local
+build started at Sun Dec 23 00:49:42 IST 2018
+port directory: /usr/ports/devel/rubygem-activesupport5
+package name: rubygem-activesupport5-5.2.2
+building for: FreeBSD lrelease-kali 11.2-RELEASE-p6 FreeBSD 11.2-RELEASE-p6 amd64
+maintained by: sunpoet@FreeBSD.org
+Makefile ident:      $FreeBSD: head/devel/rubygem-activesupport5/Makefile 486429 2018-12-02 15:35:26Z sunpoet $
+Poudriere version: 3.2.7
+Host OSVERSION: 1200065
+Jail OSVERSION: 1102000
+Job Id: 
+
+---Begin Environment---
+SHELL=/bin/csh
+OSVERSION=1102000
+UNAME_v=FreeBSD 11.2-RELEASE-p6
+UNAME_r=11.2-RELEASE-p6
+BLOCKSIZE=K
+MAIL=/var/mail/root
+WARNING_WAIT=0
+STATUS=1
+HOME=/root
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin
+LOCALBASE=/usr/local
+USER=root
+TRYBROKEN=yes
+LIBEXECPREFIX=/libexec/poudriere
+POUDRIERE_VERSION=3.2.7
+MASTERMNT=/usr/local/poudriere/data/.m/lrelease-kali/ref
+DEV_WARNING_WAIT=0
+POUDRIERE_BUILD_TYPE=bulk
+PACKAGE_BUILDING=yes
+SAVED_TERM=su
+GID=0
+UID=0
+PWD=/usr/local/poudriere/data/.m/lrelease-kali/ref/.p
+NO_WARNING_PKG_INSTALL_EOL=yes
+P_PORTS_FEATURES=FLAVORS SELECTED_OPTIONS
+MASTERNAME=lrelease-kali
+SCRIPTPREFIX=/usr/share/poudriere
+OLDPWD=/usr/local/poudriere/data/.m/lrelease-kali/ref/.p
+SCRIPTPATH=/usr/share/poudriere/testport.sh
+POUDRIEREPATH=/usr/bin/poudriere
+---End Environment---
+
+---Begin Poudriere Port Flags/Env---
+PORT_FLAGS=
+PKGENV=PACKAGES=/tmp/pkgs PKGREPOSITORY=/tmp/pkgs
+FLAVOR=
+DEPENDS_ARGS=
+MAKE_ARGS=
+---End Poudriere Port Flags/Env---
+
+---Begin OPTIONS List---
+---End OPTIONS List---
+
+--MAINTAINER--
+sunpoet@FreeBSD.org
+--End MAINTAINER--
+
+--CONFIGURE_ARGS--
+
+--End CONFIGURE_ARGS--
+
+--CONFIGURE_ENV--
+XDG_DATA_HOME=/wrkdirs/usr/ports/devel/rubygem-activesupport5/work  XDG_CONFIG_HOME=/wrkdirs/usr/ports/devel/rubygem-activesupport5/work  HOME=/wrkdirs/usr/ports/devel/rubygem-activesupport5/work TMPDIR="/tmp" PATH=/wrkdirs/usr/ports/devel/rubygem-activesupport5/work/.bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin SHELL=/bin/sh CONFIG_SHELL=/bin/sh LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+--End CONFIGURE_ENV--
+
+--MAKE_ENV--
+XDG_DATA_HOME=/wrkdirs/usr/ports/devel/rubygem-activesupport5/work  XDG_CONFIG_HOME=/wrkdirs/usr/ports/devel/rubygem-activesupport5/work  HOME=/wrkdirs/usr/ports/devel/rubygem-activesupport5/work TMPDIR="/tmp" PATH=/wrkdirs/usr/ports/devel/rubygem-activesupport5/work/.bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin NO_PIE=yes MK_DEBUG_FILES=no MK_KERNEL_SYMBOLS=no SHELL=/bin/sh NO_LINT=YES LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 PREFIX=/usr/local  LOCALBASE=/usr/local  CC="cc" CFLAGS="-O2 -pipe  -fstack-protector -fno-strict-aliasing "  CPP="cpp" CPPFLAGS=""  LDFLAGS=" -fstack-protector " LIBS=""  CXX="c++" CXXFLAGS="-O2 -pipe -fstack-protector -fno-strict-aliasing  "  MANPREFIX="/usr/local" BSD_INSTALL_PROGRAM="install  -s -m 555"  BSD_INSTALL_LIB="install  -s -m 0644"  BSD_INSTALL_SCRIPT="install  -m 555"  BSD_INSTALL_DATA="install  -m 0644"  BSD_INSTALL_MAN="install  -m 444"
+--End MAKE_ENV--
+
+--PLIST_SUB--
+RUBY_LIBDIR="lib/ruby/2.4" RUBY_ARCHLIBDIR="lib/ruby/2.4/amd64-freebsd11" RUBY_SITELIBDIR="lib/ruby/site_ruby/2.4" RUBY_SITEARCHLIBDIR="lib/ruby/site_ruby/2.4/amd64-freebsd11" RUBY_VENDORLIBDIR="lib/ruby/vendor_ruby/2.4" RUBY_VENDORARCHLIBDIR="lib/ruby/vendor_ruby/2.4/amd64-freebsd11" RUBY_MODDOCDIR="share/doc/ruby24/activesupport" RUBY_MODEXAMPLESDIR="share/examples/ruby24/activesupport" RUBY_DOCDIR="share/doc/ruby24" RUBY_EXAMPLESDIR="share/examples/ruby24" RUBY_RIDIR="share/ri/2.4/system" RUBY_SITERIDIR="share/ri/2.4/site"  RUBY_VERSION="2.4.5"  RUBY_VER="2.4"  RUBY_SHLIBVER="24"  RUBY_ARCH="amd64-freebsd11"  RUBY_SUFFIX="24"  RUBY_NAME="ruby24"  RUBY_DEFAULT_SUFFIX="24"  RUBY23="@comment "  RUBY24=""  RUBY25="@comment " PORTVERSION="5.2.2"  REV=""  GEMS_BASE_DIR="lib/ruby/gems/2.4"  GEMS_DIR="lib/ruby/gems/2.4/gems"  DOC_DIR="lib/ruby/gems/2.4/doc"  CACHE_DIR="lib/ruby/gems/2.4/cache"  SPEC_DIR="lib/ruby/gems/2.4/specifications"  EXT_DIR="lib/ruby/gems/2.4/extensions"  PORT="activesupport-5.2.2"  GEM_NAME="activesupport-5.2.2"  GEM_LIB_DIR="lib/ruby/gems/2.4/gems/activesupport-5.2.2"  GEM_DOC_DIR="lib/ruby/gems/2.4/doc/activesupport-5.2.2"  GEM_SPEC="lib/ruby/gems/2.4/specifications/activesupport-5.2.2.gemspec"  GEM_CACHE="lib/ruby/gems/2.4/cache/activesupport-5.2.2.gem"  EXTRACT_SUFX=".gem" OSREL=11.2 PREFIX=%D LOCALBASE=/usr/local  RESETPREFIX=/usr/local LIB32DIR=lib DOCSDIR="share/doc/activesupport"  EXAMPLESDIR="share/examples/activesupport"  DATADIR="share/activesupport"  WWWDIR="www/activesupport"  ETCDIR="etc/activesupport"
+--End PLIST_SUB--
+
+--SUB_LIST--
+PREFIX=/usr/local LOCALBASE=/usr/local  DATADIR=/usr/local/share/activesupport DOCSDIR=/usr/local/share/doc/activesupport EXAMPLESDIR=/usr/local/share/examples/activesupport  WWWDIR=/usr/local/www/activesupport ETCDIR=/usr/local/etc/activesupport
+--End SUB_LIST--
+
+---Begin make.conf---
+USE_PACKAGE_DEPENDS=yes
+BATCH=yes
+WRKDIRPREFIX=/wrkdirs
+PORTSDIR=/usr/ports
+PACKAGES=/packages
+DISTDIR=/distfiles
+FORCE_PACKAGE=yes
+PACKAGE_BUILDING=yes
+PACKAGE_BUILDING_FLAVORS=yes
+#### /usr/ports/Mk/Scripts/ports_env.sh ####
+_CCVERSION_921dbbb2=FreeBSD clang version 6.0.0 (tags/RELEASE_600/final 326565) (based on LLVM 6.0.0) Target: x86_64-unknown-freebsd11.2 Thread model: posix InstalledDir: /usr/bin
+_ALTCCVERSION_921dbbb2=none
+_CXXINTERNAL_acaad9ca=FreeBSD clang version 6.0.0 (tags/RELEASE_600/final 326565) (based on LLVM 6.0.0) Target: x86_64-unknown-freebsd11.2 Thread model: posix InstalledDir: /usr/bin "/usr/bin/ld" "--eh-frame-hdr" "-dynamic-linker" "/libexec/ld-elf.so.1" "--hash-style=both" "--enable-new-dtags" "-o" "a.out" "/usr/lib/crt1.o" "/usr/lib/crti.o" "/usr/lib/crtbegin.o" "-L/usr/lib" "/dev/null" "-lc++" "-lm" "-lgcc" "--as-needed" "-lgcc_s" "--no-as-needed" "-lc" "-lgcc" "--as-needed" "-lgcc_s" "--no-as-needed" "/usr/lib/crtend.o" "/usr/lib/crtn.o"
+CC_OUTPUT_921dbbb2_58173849=yes
+CC_OUTPUT_921dbbb2_9bdba57c=yes
+CC_OUTPUT_921dbbb2_6a4fe7f5=yes
+CC_OUTPUT_921dbbb2_6bcac02b=yes
+CC_OUTPUT_921dbbb2_67d20829=yes
+CC_OUTPUT_921dbbb2_bfa62e83=yes
+CC_OUTPUT_921dbbb2_f0b4d593=yes
+CC_OUTPUT_921dbbb2_308abb44=yes
+CC_OUTPUT_921dbbb2_f00456e5=yes
+CC_OUTPUT_921dbbb2_65ad290d=yes
+CC_OUTPUT_921dbbb2_f2776b26=yes
+CC_OUTPUT_921dbbb2_b2657cc3=yes
+CC_OUTPUT_921dbbb2_380987f7=yes
+CC_OUTPUT_921dbbb2_160933ec=yes
+CC_OUTPUT_921dbbb2_fb62803b=yes
+_OBJC_CCVERSION_921dbbb2=FreeBSD clang version 6.0.0 (tags/RELEASE_600/final 326565) (based on LLVM 6.0.0) Target: x86_64-unknown-freebsd11.2 Thread model: posix InstalledDir: /usr/bin
+_OBJC_ALTCCVERSION_921dbbb2=none
+ARCH=amd64
+OPSYS=FreeBSD
+_OSRELEASE=11.2-RELEASE-p6
+OSREL=11.2
+OSVERSION=1102000
+PYTHONBASE=/usr/local
+HAVE_COMPAT_IA32_KERN=YES
+_SMP_CPUS=1
+CONFIGURE_MAX_CMD_LEN=262144
+HAVE_PORTS_ENV=1
+#### Misc Poudriere ####
+---End make.conf---
+--Resource limits--
+cpu time               (seconds, -t)  unlimited
+file size           (512-blocks, -f)  unlimited
+data seg size           (kbytes, -d)  33554432
+stack size              (kbytes, -s)  524288
+core file size      (512-blocks, -c)  unlimited
+max memory size         (kbytes, -m)  unlimited
+locked memory           (kbytes, -l)  unlimited
+max user processes              (-u)  9000
+open files                      (-n)  1024
+virtual mem size        (kbytes, -v)  unlimited
+swap limit              (kbytes, -w)  unlimited
+socket buffer size       (bytes, -b)  unlimited
+pseudo-terminals                (-p)  unlimited
+kqueues                         (-k)  unlimited
+umtx shared locks               (-o)  unlimited
+--End resource limits--
+=======================<phase: check-sanity   >============================
+===>  License MIT accepted by the user
+===========================================================================
+=======================<phase: pkg-depends    >============================
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/sbin/pkg - not found
+===>   Installing existing package /packages/All/pkg-1.10.5_5.txz
+[lrelease-kali] Installing pkg-1.10.5_5...
+[lrelease-kali] Extracting pkg-1.10.5_5: .......... done
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/sbin/pkg - found
+===>   Returning to build of rubygem-activesupport5-5.2.2
+===========================================================================
+=======================<phase: fetch-depends  >============================
+===========================================================================
+=======================<phase: fetch          >============================
+===>  License MIT accepted by the user
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by rubygem-activesupport5-5.2.2 for building
+===========================================================================
+=======================<phase: checksum       >============================
+===>  License MIT accepted by the user
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by rubygem-activesupport5-5.2.2 for building
+=> SHA256 Checksum OK for rubygem/activesupport-5.2.2.gem.
+===========================================================================
+=======================<phase: extract-depends>============================
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/ruby24 - not found
+===>   Installing existing package /packages/All/ruby-2.4.5_1,1.txz
+[lrelease-kali] Installing ruby-2.4.5_1,1...
+[lrelease-kali] `-- Installing libedit-3.1.20170329_2,1...
+[lrelease-kali] `-- Extracting libedit-3.1.20170329_2,1: .......... done
+[lrelease-kali] `-- Installing libffi-3.2.1_3...
+[lrelease-kali] |   `-- Installing indexinfo-0.3.1...
+[lrelease-kali] |   `-- Extracting indexinfo-0.3.1: .... done
+[lrelease-kali] `-- Extracting libffi-3.2.1_3: .......... done
+[lrelease-kali] `-- Installing libunwind-20170615...
+[lrelease-kali] `-- Extracting libunwind-20170615: .......... done
+[lrelease-kali] `-- Installing libyaml-0.2.1...
+[lrelease-kali] `-- Extracting libyaml-0.2.1: ......... done
+[lrelease-kali] Extracting ruby-2.4.5_1,1: .......... done
+Message from ruby-2.4.5_1,1:
+
+====
+Some of the standard commands are provided as separate ports for ease
+of upgrading:
+
+	devel/ruby-gems:	gem - RubyGems package manager
+	devel/rubygem-rake:	rake - Ruby Make
+
+And some of the standard libraries are provided as separate ports
+since they require extra dependencies:
+
+	databases/ruby-gdbm:	GDBM module
+
+Install them as occasion demands.
+====
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/ruby24 - found
+===>   Returning to build of rubygem-activesupport5-5.2.2
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/gem24 - not found
+===>   Installing existing package /packages/All/ruby24-gems-2.7.8.txz
+[lrelease-kali] Installing ruby24-gems-2.7.8...
+[lrelease-kali] Extracting ruby24-gems-2.7.8: .......... done
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/gem24 - found
+===>   Returning to build of rubygem-activesupport5-5.2.2
+===========================================================================
+=======================<phase: extract        >============================
+===>  License MIT accepted by the user
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by rubygem-activesupport5-5.2.2 for building
+===>  Extracting for rubygem-activesupport5-5.2.2
+=> SHA256 Checksum OK for rubygem/activesupport-5.2.2.gem.
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/ruby24 - found
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/gem24 - found
+Unpacked gem: '/wrkdirs/usr/ports/devel/rubygem-activesupport5/work/activesupport-5.2.2'
+===========================================================================
+=======================<phase: patch-depends  >============================
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/ruby24 - found
+===========================================================================
+=======================<phase: patch          >============================
+===>  Patching for rubygem-activesupport5-5.2.2
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/ruby24 - found
+===========================================================================
+=======================<phase: build-depends  >============================
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/ruby24 - found
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/gem24 - found
+===========================================================================
+=======================<phase: lib-depends    >============================
+===========================================================================
+=>> Recording filesystem state for prebuild... done
+=======================<phase: configure      >============================
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/ruby24 - found
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/gem24 - found
+===>  Configuring for rubygem-activesupport5-5.2.2
+===========================================================================
+=======================<phase: build          >============================
+===>  Building for rubygem-activesupport5-5.2.2
+  Successfully built RubyGem
+  Name: activesupport
+  Version: 5.2.2
+  File: activesupport-5.2.2.gem
+===========================================================================
+=>> Checking for filesystem violations... done
+=======================<phase: run-depends    >============================
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-concurrent-ruby>=1.0.2 - not found
+===>   Installing existing package /packages/All/rubygem-concurrent-ruby-1.1.3.txz
+[lrelease-kali] Installing rubygem-concurrent-ruby-1.1.3...
+[lrelease-kali] Extracting rubygem-concurrent-ruby-1.1.3: .......... done
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-concurrent-ruby>=1.0.2 - found
+===>   Returning to build of rubygem-activesupport5-5.2.2
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-i18n>=0.7 - not found
+===>   Installing existing package /packages/All/rubygem-i18n-1.1.1,2.txz
+[lrelease-kali] Installing rubygem-i18n-1.1.1,2...
+[lrelease-kali] Extracting rubygem-i18n-1.1.1,2: .......... done
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-i18n>=0.7 - found
+===>   Returning to build of rubygem-activesupport5-5.2.2
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-minitest>=5.1 - not found
+===>   Installing existing package /packages/All/rubygem-minitest-5.11.3.txz
+[lrelease-kali] Installing rubygem-minitest-5.11.3...
+[lrelease-kali] Extracting rubygem-minitest-5.11.3: .......... done
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-minitest>=5.1 - found
+===>   Returning to build of rubygem-activesupport5-5.2.2
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-tzinfo>=1.1 - not found
+===>   Installing existing package /packages/All/rubygem-tzinfo-1.2.5.txz
+[lrelease-kali] Installing rubygem-tzinfo-1.2.5...
+[lrelease-kali] `-- Installing rubygem-thread_safe-0.3.6...
+[lrelease-kali] `-- Extracting rubygem-thread_safe-0.3.6: .......... done
+[lrelease-kali] Extracting rubygem-tzinfo-1.2.5: .......... done
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-tzinfo>=1.1 - found
+===>   Returning to build of rubygem-activesupport5-5.2.2
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/ruby24 - found
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/gem24 - found
+===========================================================================
+=>> Recording filesystem state for prestage... done
+=======================<phase: stage          >============================
+===>  Staging for rubygem-activesupport5-5.2.2
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-concurrent-ruby>=1.0.2 - found
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-i18n>=0.7 - found
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-minitest>=5.1 - found
+===>   rubygem-activesupport5-5.2.2 depends on package: rubygem-tzinfo>=1.1 - found
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/ruby24 - found
+===>   rubygem-activesupport5-5.2.2 depends on file: /usr/local/bin/gem24 - found
+===>   Generating temporary packing list
+(cd /wrkdirs/usr/ports/devel/rubygem-activesupport5/work/activesupport-5.2.2; /usr/bin/env RB_USER_INSTALL=yes LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 /usr/local/bin/gem24 install -l --no-update-sources --install-dir /wrkdirs/usr/ports/devel/rubygem-activesupport5/work/stage/usr/local/lib/ruby/gems/2.4 --ignore-dependencies --bindir=/wrkdirs/usr/ports/devel/rubygem-activesupport5/work/stage/usr/local/bin --no-rdoc --no-ri activesupport-5.2.2.gem -- --build-args )
+Successfully installed activesupport-5.2.2
+1 gem installed
+/bin/rm -f -r /wrkdirs/usr/ports/devel/rubygem-activesupport5/work/stage/usr/local/lib/ruby/gems/2.4/build_info/
+/usr/bin/find /wrkdirs/usr/ports/devel/rubygem-activesupport5/work/stage/usr/local/lib/ruby/gems/2.4 -type f -name '*.so' -exec /usr/bin/strip {} +
+/usr/bin/find /wrkdirs/usr/ports/devel/rubygem-activesupport5/work/stage/usr/local/lib/ruby/gems/2.4 -type f \( -name mkmf.log -or -name gem_make.out \) -delete
+/bin/rm -f -r /wrkdirs/usr/ports/devel/rubygem-activesupport5/work/stage/usr/local/lib/ruby/gems/2.4/gems/activesupport-5.2.2/ext  /wrkdirs/usr/ports/devel/rubygem-activesupport5/work/stage/usr/local/lib/ruby/gems/2.4/cache 2> /dev/null || true
+/bin/rmdir /wrkdirs/usr/ports/devel/rubygem-activesupport5/work/stage/usr/local/lib/ruby/gems/2.4/extensions 2> /dev/null || true
+====> Compressing man pages (compress-man)
+===========================================================================
+====> Running Q/A tests (stage-qa)
+====> Checking for pkg-plist issues (check-plist)
+===> Parsing plist
+===> Checking for items in STAGEDIR missing from pkg-plist
+===> Checking for items in pkg-plist which are not in STAGEDIR
+===> No pkg-plist issues found (check-plist)
+=>> Checking for staging violations... done
+=======================<phase: package        >============================
+===>  Building package for rubygem-activesupport5-5.2.2
+===========================================================================
+=>> Recording filesystem state for preinst... done
+=======================<phase: install        >============================
+===>  Installing for rubygem-activesupport5-5.2.2
+===>  Checking if rubygem-activesupport5 already installed
+===>   Registering installation for rubygem-activesupport5-5.2.2
+[lrelease-kali] Installing rubygem-activesupport5-5.2.2...
+===========================================================================
+=>> Checking shared library dependencies
+=======================<phase: deinstall      >============================
+===>  Deinstalling for rubygem-activesupport5
+===>   Deinstalling rubygem-activesupport5-5.2.2
+Updating database digests format: .......... done
+Checking integrity... done (0 conflicting)
+Deinstallation has been requested for the following 1 packages (of 0 packages in the universe):
+
+Installed packages to be REMOVED:
+	rubygem-activesupport5-5.2.2
+
+Number of packages to be removed: 1
+
+The operation will free 2 MiB.
+[lrelease-kali] [1/1] Deinstalling rubygem-activesupport5-5.2.2...
+[lrelease-kali] [1/1] Deleting files for rubygem-activesupport5-5.2.2: .......... done
+===========================================================================
+=>> Checking for extra files and directories
+[00:00:21] Installing from package
+[lrelease-kali] Installing rubygem-activesupport5-5.2.2...
+[lrelease-kali] Extracting rubygem-activesupport5-5.2.2: .......... done
+[00:00:21] Cleaning up
+===>  Cleaning for rubygem-activesupport5-5.2.2
+[00:00:21] Deinstalling package
+Updating database digests format: . done
+Checking integrity... done (0 conflicting)
+Deinstallation has been requested for the following 1 packages (of 0 packages in the universe):
+
+Installed packages to be REMOVED:
+	rubygem-activesupport5-5.2.2
+
+Number of packages to be removed: 1
+
+The operation will free 2 MiB.
+[lrelease-kali] [1/1] Deinstalling rubygem-activesupport5-5.2.2...
+[lrelease-kali] [1/1] Deleting files for rubygem-activesupport5-5.2.2: .......... done
+build of devel/rubygem-activesupport5 | rubygem-activesupport5-5.2.2 ended at Sun Dec 23 00:49:55 IST 2018
+build time: 00:00:13
+[00:00:21] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali/2018-12-23_00h49m34s
+[00:00:21] Cleaning up
+[00:00:21] Unmounting file systems
+[EnvInject] - Injecting environment variables from a build step.
+Finished: SUCCESS

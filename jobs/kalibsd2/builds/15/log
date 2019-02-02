@@ -1,0 +1,166 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3a9c1632ac7958b2e555adda76f2b583696fda68 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3a9c1632ac7958b2e555adda76f2b583696fda68
+Commit message: "updating rubygem cms scanner"
+ > git rev-list --no-walk 3a9c1632ac7958b2e555adda76f2b583696fda68 # timeout=10
+[kalibsd2] $ /bin/sh -xe /tmp/jenkins7960974810397169325.sh
++ PORTS=/usr/local/poudriere/ports/kali2
++ CTGR=devel
++ PKG=rubygem-cms_scanner
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner
++ JNAME=kbuild
++ [ -d /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner ]
++ sudo rm -rfv /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/pkg-descr
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/Makefile
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/distinfo
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
++ sudo poudriere jail -u -j kbuild
+/usr/share/poudriere/jail.sh: cannot open /etc/poudriere.d/jails/kbuild/srcpath: No such file or directory
+[00:00:00] Upgrading using ftp
+/usr/share/poudriere/jail.sh: cannot open /etc/poudriere.d/jails/kbuild/kernel: No such file or directory
+/etc/resolv.conf -> /usr/local/poudriere/jails/kbuild/etc/resolv.conf
+Looking up update.FreeBSD.org mirrors... 3 mirrors found.
+Fetching metadata signature for 12.0-RELEASE from update4.freebsd.org... done.
+Fetching metadata index... done.
+Inspecting system... done.
+Preparing to download files... done.
+
+No updates needed to update system to 12.0-RELEASE-p1.
+12.0-RELEASE-p1
+[00:00:07] Recording filesystem state for clean... done
++ sudo poudriere ports -u -p kali2
+[00:00:00] Updating portstree "kali2" with portsnap...Looking up portsnap.FreeBSD.org mirrors... 6 mirrors found.
+Fetching snapshot tag from ec2-ap-southeast-2.portsnap.freebsd.org... done.
+Fetching snapshot metadata... done.
+Updating from Mon Jan  7 14:28:03 IST 2019 to Mon Jan  7 21:55:03 IST 2019.
+Fetching 5 metadata patches... done.
+Applying metadata patches... done.
+Fetching 0 metadata files... done.
+Fetching 25 patches. 
+                                     (0/25) 0.00% ..                                     (25/25) 100.00%  done. 
+done.
+Applying patches... 
+done.
+Fetching 0 new ports or files... done.
+Removing old files and directories... done.
+Extracting new files:
+/usr/local/poudriere/ports/kali2/LEGAL
+/usr/local/poudriere/ports/kali2/astro/oskar/
+/usr/local/poudriere/ports/kali2/biology/groopm/
+/usr/local/poudriere/ports/kali2/deskutils/horde-kronolith/
+/usr/local/poudriere/ports/kali2/devel/py-python-subunit/
+/usr/local/poudriere/ports/kali2/dns/bind9-devel/
+/usr/local/poudriere/ports/kali2/emulators/vba/
+/usr/local/poudriere/ports/kali2/graphics/lximage-qt/
+/usr/local/poudriere/ports/kali2/java/intellij-ultimate/
+/usr/local/poudriere/ports/kali2/lang/perl5-devel/
+/usr/local/poudriere/ports/kali2/mail/horde-imp/
+/usr/local/poudriere/ports/kali2/math/blitz++/
+/usr/local/poudriere/ports/kali2/misc/py-progressbar2/
+/usr/local/poudriere/ports/kali2/net-mgmt/unifi-devel/
+/usr/local/poudriere/ports/kali2/science/py-openpiv/
+/usr/local/poudriere/ports/kali2/sysutils/lxqt-qtplugin/
+/usr/local/poudriere/ports/kali2/textproc/2bsd-diff/
+/usr/local/poudriere/ports/kali2/www/p5-Apache-Session-Wrapper/
+/usr/local/poudriere/ports/kali2/x11-fm/pcmanfm-qt/
+/usr/local/poudriere/ports/kali2/x11-fm/pcmanfm/
+/usr/local/poudriere/ports/kali2/x11/libfm-extra/
+/usr/local/poudriere/ports/kali2/x11/libfm-qt/
+/usr/local/poudriere/ports/kali2/x11/libfm/
+/usr/local/poudriere/ports/kali2/x11/lxhotkey/
+/usr/local/poudriere/ports/kali2/x11/lxpanel/
+Building new INDEX files... done.
+ done
++ sudo cp -Rfv /usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner /usr/local/poudriere/ports/kali2/devel
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner/distinfo -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/distinfo
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner/Makefile -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/Makefile
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner/pkg-descr -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/pkg-descr
++ cd /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
++ sudo make distclean .
+===>  Cleaning for rubygem-cms_scanner-0.0.41.1
+===>  Deleting distfiles for rubygem-cms_scanner-0.0.41.1
+`.' is up to date.
++ sudo make makesum .
+=> cms_scanner-0.0.41.1.gem doesn't seem to exist in /usr/local/poudriere/ports/kali2/distfiles/rubygem.
+=> Attempting to fetch https://rubygems.global.ssl.fastly.net/gems/cms_scanner-0.0.41.1.gem
+cms_scanner-0.0.41.1.gem                                 0  B    0  Bps
+`.' is up to date.
++ sudo poudriere bulk -c -j kbuild -p kali2 devel/rubygem-cms_scanner
+[00:00:01] Creating the reference jail... done
+[00:00:03] Warning: !!! Jail is newer than host. (Jail: 1200086, Host: 1200065) !!!
+[00:00:03] Warning: This is not supported.
+[00:00:03] Warning: Host kernel must be same or newer than jail.
+[00:00:03] Warning: Expect build failures.
+[00:00:04] Mounting system devices for kbuild-kali2
+[00:00:04] Mounting ports/packages/distfiles
+[00:00:04] Converting package repository to new format
+[00:00:05] Stashing existing package repository
+[00:00:05] Mounting packages from: /usr/local/poudriere/data/packages/kbuild-kali2
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/kbuild-kali2/ref/etc/resolv.conf
+[00:00:05] Starting jail kbuild-kali2
+[00:00:28] Logs: /usr/local/poudriere/data/logs/bulk/kbuild-kali2/2019-01-07_22h58m23s
+[00:00:28] Loading MOVED for /usr/local/poudriere/data/.m/kbuild-kali2/ref/usr/ports
+[00:00:35] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:35] Gathering ports metadata
+[00:00:41] Calculating ports order and dependencies
+[00:00:41] (-c) Cleaning all packages... done
+[00:00:45] Sanity checking the repository
+[00:00:45] Checking packages for incremental rebuild needs
+[00:00:45] Deleting stale symlinks... done
+[00:00:45] Deleting empty directories... done
+[00:00:45] Cleaning the build queue
+[00:00:45] Sanity checking build queue
+[00:00:45] Processing PRIORITY_BOOST
+[00:00:45] Balancing pool
+[00:00:46] Recording filesystem state for prepkg... done
+[00:00:50] Building 51 packages using 2 builders
+[00:00:50] Starting/Cloning builders
+[00:00:55] Hit CTRL+t at any time to see build progress and stats
+[00:00:55] [01] [00:00:00] Building ports-mgmt/pkg | pkg-1.10.5_5
+[00:04:54] [01] [00:03:59] Finished ports-mgmt/pkg | pkg-1.10.5_5: Success
+[00:04:54] [01] [00:00:00] Building print/indexinfo | indexinfo-0.3.1
+[00:04:54] [02] [00:00:00] Building lang/perl5.28 | perl5-5.28.1
+[00:05:14] [01] [00:00:20] Finished print/indexinfo | indexinfo-0.3.1: Success
+[00:05:14] [01] [00:00:00] Building devel/gettext-runtime | gettext-runtime-0.19.8.1_2
+[00:06:21] [01] [00:01:07] Finished devel/gettext-runtime | gettext-runtime-0.19.8.1_2: Success
+[00:06:21] [01] [00:00:00] Building devel/gettext-tools | gettext-tools-0.19.8.1_1
+[00:14:50] [02] [00:09:56] Finished lang/perl5.28 | perl5-5.28.1: Success
+[00:14:53] [02] [00:00:00] Building converters/libiconv | libiconv-1.14_11
+[00:16:30] [02] [00:01:37] Finished converters/libiconv | libiconv-1.14_11: Success
+[00:16:30] [02] [00:00:00] Building devel/gmake | gmake-4.2.1_3
+[00:17:36] [01] [00:11:15] Finished devel/gettext-tools | gettext-tools-0.19.8.1_1: Success
+[00:17:36] [01] [00:00:00] Building devel/p5-Locale-gettext | p5-Locale-gettext-1.07
+[00:17:55] [02] [00:01:25] Finished devel/gmake | gmake-4.2.1_3: Success
+[00:17:55] [02] [00:00:00] Building devel/p5-Locale-libintl | p5-Locale-libintl-1.31
+[00:21:29] [01] [00:03:53] Finished devel/p5-Locale-gettext | p5-Locale-gettext-1.07: Success
+[00:21:30] [01] [00:00:00] Building misc/help2man | help2man-1.47.8_1
+[00:21:30] [02] [00:03:35] Finished devel/p5-Locale-libintl | p5-Locale-libintl-1.31: Success
+[00:21:31] [02] [00:00:00] Building converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30
+[00:22:50] [02] [00:01:19] Finished converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30: Success
+[00:22:50] [02] [00:00:00] Building textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40
+[00:22:56] [01] [00:01:26] Finished misc/help2man | help2man-1.47.8_1: Success
+[00:22:56] [01] [00:00:00] Building devel/autoconf-wrapper | autoconf-wrapper-20131203
+[00:24:04] [01] [00:01:08] Finished devel/autoconf-wrapper | autoconf-wrapper-20131203: Success
+[00:24:04] [01] [00:00:00] Building devel/pkgconf | pkgconf-1.5.4,1
+[00:24:07] [02] [00:01:17] Finished textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40: Success
+[00:24:07] [02] [00:00:00] Building print/texinfo | texinfo-6.5_3,1
+[00:24:37] [01] [00:00:33] Finished devel/pkgconf | pkgconf-1.5.4,1: Success
+[00:24:38] [01] [00:00:00] Building devel/libffi | libffi-3.2.1_3
+[00:24:55] [01] [00:00:17] Finished devel/libffi | libffi-3.2.1_3: Success
+[00:24:55] [01] [00:00:00] Building textproc/libyaml | libyaml-0.2.1
+[00:25:19] [02] [00:01:12] Finished print/texinfo | texinfo-6.5_3,1: Success
+[00:25:19] [02] [00:00:00] Building devel/m4 | m4-1.4.18_1,1

@@ -1,0 +1,170 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a2f38f5b7dd71d917d7e5fa3da377c338c83aa6f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a2f38f5b7dd71d917d7e5fa3da377c338c83aa6f
+Commit message: "removing ruby version"
+ > git rev-list --no-walk a2f38f5b7dd71d917d7e5fa3da377c338c83aa6f # timeout=10
+[kalibsd2] $ /bin/sh -xe /tmp/jenkins2788647290497631342.sh
++ PORTS=/usr/local/poudriere/ports/kali2
++ CTGR=security
++ PKG=cookiecadger
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd2/cookiecadger
++ JNAME=twlv
++ [ -d /usr/local/poudriere/ports/kali2/security/cookiecadger ]
++ sudo poudriere ports -u -p kali2
+[00:00:01] Updating portstree "kali2" with portsnap...Looking up portsnap.FreeBSD.org mirrors... 6 mirrors found.
+Fetching snapshot tag from ec2-ap-southeast-2.portsnap.freebsd.org... done.
+Fetching snapshot metadata... done.
+Updating from Sun Dec 23 12:22:26 IST 2018 to Mon Dec 24 07:04:35 IST 2018.
+Fetching 5 metadata patches... done.
+Applying metadata patches... done.
+Fetching 0 metadata files... done.
+Fetching 85 patches. 
+                                     (0/85) 0.00% ........                                     (85/85) 100.00%  done. 
+done.
+Applying patches... 
+done.
+Fetching 17 new ports or files... done.
+Removing old files and directories... done.
+Extracting new files:
+/usr/local/poudriere/ports/kali2/.gitauthors
+/usr/local/poudriere/ports/kali2/MOVED
+/usr/local/poudriere/ports/kali2/Mk/Uses/
+/usr/local/poudriere/ports/kali2/audio/foo-yc20/
+/usr/local/poudriere/ports/kali2/audio/vmpk/
+/usr/local/poudriere/ports/kali2/biology/iqtree/
+/usr/local/poudriere/ports/kali2/cad/gtkwave/
+/usr/local/poudriere/ports/kali2/databases/Makefile
+/usr/local/poudriere/ports/kali2/databases/mongodb34/
+/usr/local/poudriere/ports/kali2/databases/pecl-redis/
+/usr/local/poudriere/ports/kali2/databases/rubygem-peek-mysql2-rails50/
+/usr/local/poudriere/ports/kali2/databases/rubygem-peek-pg-rails50/
+/usr/local/poudriere/ports/kali2/databases/sqlitebrowser/
+/usr/local/poudriere/ports/kali2/databases/sqlrelay/
+/usr/local/poudriere/ports/kali2/devel/Makefile
+/usr/local/poudriere/ports/kali2/devel/antlr/
+/usr/local/poudriere/ports/kali2/devel/antlr4/
+/usr/local/poudriere/ports/kali2/devel/gitaly/
+/usr/local/poudriere/ports/kali2/devel/gitlab-shell/
+/usr/local/poudriere/ports/kali2/devel/kf5-extra-cmake-modules/
+/usr/local/poudriere/ports/kali2/devel/p5-IPC-Signal/
+/usr/local/poudriere/ports/kali2/devel/p5-Object-Import/
+/usr/local/poudriere/ports/kali2/devel/pear-PHP_CodeSniffer/
+/usr/local/poudriere/ports/kali2/devel/pecl-APCu/
+/usr/local/poudriere/ports/kali2/devel/py-monty/
+/usr/local/poudriere/ports/kali2/devel/py-raven/
+/usr/local/poudriere/ports/kali2/devel/py-ruamel.yaml/
+/usr/local/poudriere/ports/kali2/devel/py-stdnum/
+/usr/local/poudriere/ports/kali2/devel/rubygem-font-awesome-rails-rails50/
+/usr/local/poudriere/ports/kali2/devel/rubygem-gettext_i18n_rails_js-rails50/
+/usr/local/poudriere/ports/kali2/devel/rubygem-gitlab-default_value_for/
+/usr/local/poudriere/ports/kali2/devel/rubygem-graphiql-rails/
+/usr/local/poudriere/ports/kali2/devel/rubygem-health_check26-rails50/
+/usr/local/poudriere/ports/kali2/devel/rubygem-nakayoshi_fork/
+/usr/local/poudriere/ports/kali2/devel/rubygem-peek-gc-rails50/
+/usr/local/poudriere/ports/kali2/devel/rubygem-peek-rails50/
+/usr/local/poudriere/ports/kali2/devel/rubygem-peek-rblineprof-rails50/
+/usr/local/poudriere/ports/kali2/devel/rubygem-peek-redis-rails50/
+/usr/local/poudriere/ports/kali2/devel/rudiments/
+/usr/local/poudriere/ports/kali2/devel/xmltooling/
+/usr/local/poudriere/ports/kali2/games/cockatrice/
+/usr/local/poudriere/ports/kali2/graphics/p5-feedgnuplot/
+/usr/local/poudriere/ports/kali2/mail/Makefile
+/usr/local/poudriere/ports/kali2/mail/claws-mail-bogofilter/
+/usr/local/poudriere/ports/kali2/mail/claws-mail-vcalendar/
+/usr/local/poudriere/ports/kali2/mail/claws-mail/
+/usr/local/poudriere/ports/kali2/mail/py-aiosmtpd/
+/usr/local/poudriere/ports/kali2/mail/rubygem-premailer-rails19-rails50/
+/usr/local/poudriere/ports/kali2/mail/thunderbird-i18n/
+/usr/local/poudriere/ports/kali2/mail/thunderbird/
+/usr/local/poudriere/ports/kali2/math/R-cran-forcats/
+/usr/local/poudriere/ports/kali2/math/cadabra2/
+/usr/local/poudriere/ports/kali2/math/libccd/
+/usr/local/poudriere/ports/kali2/misc/ctm/
+/usr/local/poudriere/ports/kali2/net-im/Makefile
+/usr/local/poudriere/ports/kali2/net-im/pidgin-icyque/
+/usr/local/poudriere/ports/kali2/net-im/rubygem-discordrb-webhooks-blackst0ne/
+/usr/local/poudriere/ports/kali2/net-mgmt/nagstamon/
+/usr/local/poudriere/ports/kali2/net-mgmt/netdata/
+/usr/local/poudriere/ports/kali2/net/p5-Net-ACME2/
+/usr/local/poudriere/ports/kali2/net/rubygem-gitaly-proto/
+/usr/local/poudriere/ports/kali2/net/wireguard-go/
+/usr/local/poudriere/ports/kali2/print/ghostscript9-agpl-base/
+/usr/local/poudriere/ports/kali2/print/ghostscript9-agpl-x11/
+/usr/local/poudriere/ports/kali2/science/Makefile
+/usr/local/poudriere/ports/kali2/science/ghemical/
+/usr/local/poudriere/ports/kali2/science/hdf5/
+/usr/local/poudriere/ports/kali2/science/scidavis/
+/usr/local/poudriere/ports/kali2/security/p5-Crypt-RSA-Parse/
+/usr/local/poudriere/ports/kali2/security/rubygem-doorkeeper43/
+/usr/local/poudriere/ports/kali2/security/shibboleth-sp/
+/usr/local/poudriere/ports/kali2/sysutils/cfengine-masterfiles/
+/usr/local/poudriere/ports/kali2/sysutils/cfengine/
+/usr/local/poudriere/ports/kali2/sysutils/eksctl/
+/usr/local/poudriere/ports/kali2/sysutils/fusefs-libs3/
+/usr/local/poudriere/ports/kali2/sysutils/goawk/
+/usr/local/poudriere/ports/kali2/sysutils/helm/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng310/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng311/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng312/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng313/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng314/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng315/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng317/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng318/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng319/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng36/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng37/
+/usr/local/poudriere/ports/kali2/sysutils/syslog-ng39/
+/usr/local/poudriere/ports/kali2/textproc/rubygem-asciidoctor/
+/usr/local/poudriere/ports/kali2/www/Makefile
+/usr/local/poudriere/ports/kali2/www/gitlab-ce/
+/usr/local/poudriere/ports/kali2/www/gitlab-workhorse/
+/usr/local/poudriere/ports/kali2/www/p5-Selenium-Remote-Driver/
+/usr/local/poudriere/ports/kali2/www/p5-WWW-Mechanize-PhantomJS/
+/usr/local/poudriere/ports/kali2/www/rubygem-asana/
+/usr/local/poudriere/ports/kali2/www/rubygem-gon-rails50/
+/usr/local/poudriere/ports/kali2/www/rubygem-kubeclient/
+/usr/local/poudriere/ports/kali2/www/rubygem-webpack-rails-rails50/
+/usr/local/poudriere/ports/kali2/x11-fonts/py-compreffor/
+/usr/local/poudriere/ports/kali2/x11-servers/xwayland/
+/usr/local/poudriere/ports/kali2/x11/polybar/
+Building new INDEX files... done.
+ done
++ sudo cp -Rfv /usr/local/jenkins/workspace/kalibsd2/cookiecadger /usr/local/poudriere/ports/kali2/security
+/usr/local/jenkins/workspace/kalibsd2/cookiecadger -> /usr/local/poudriere/ports/kali2/security/cookiecadger
+/usr/local/jenkins/workspace/kalibsd2/cookiecadger/files -> /usr/local/poudriere/ports/kali2/security/cookiecadger/files
+/usr/local/jenkins/workspace/kalibsd2/cookiecadger/files/cookiecadger.in -> /usr/local/poudriere/ports/kali2/security/cookiecadger/files/cookiecadger.in
+/usr/local/jenkins/workspace/kalibsd2/cookiecadger/distinfo -> /usr/local/poudriere/ports/kali2/security/cookiecadger/distinfo
+/usr/local/jenkins/workspace/kalibsd2/cookiecadger/Makefile -> /usr/local/poudriere/ports/kali2/security/cookiecadger/Makefile
+/usr/local/jenkins/workspace/kalibsd2/cookiecadger/pkg-descr -> /usr/local/poudriere/ports/kali2/security/cookiecadger/pkg-descr
++ cd /usr/local/poudriere/ports/kali2/security/cookiecadger
++ sudo make distclean .
+===>  Cleaning for cookiecadger-1.08
+===>  Deleting distfiles for cookiecadger-1.08
+`.' is up to date.
++ sudo make makesum .
+=> CookieCadger-1.08.jar doesn't seem to exist in /usr/local/poudriere/ports/kali2/distfiles/.
+=> Attempting to fetch https://www.cookiecadger.com/files/CookieCadger-1.08.jar
+fetch: https://www.cookiecadger.com/files/CookieCadger-1.08.jar: Unknown HTTP error
+=> Attempting to fetch http://distcache.FreeBSD.org/ports-distfiles/CookieCadger-1.08.jar
+fetch: http://distcache.FreeBSD.org/ports-distfiles/CookieCadger-1.08.jar: Not Found
+=> Couldn't fetch it - please try to retrieve this
+=> port manually into /usr/local/poudriere/ports/kali2/distfiles/ and try again.
+*** Error code 1
+
+Stop.
+make: stopped in /usr/local/poudriere/ports/kali2/security/cookiecadger
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

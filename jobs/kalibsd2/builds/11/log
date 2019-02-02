@@ -1,0 +1,101 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3a9c1632ac7958b2e555adda76f2b583696fda68 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3a9c1632ac7958b2e555adda76f2b583696fda68
+Commit message: "updating rubygem cms scanner"
+ > git rev-list --no-walk 3a9c1632ac7958b2e555adda76f2b583696fda68 # timeout=10
+[kalibsd2] $ /bin/sh -xe /tmp/jenkins5993835794932383238.sh
++ PORTS=/usr/local/poudriere/ports/kali2
++ CTGR=devel
++ PKG=rubygem-cms_scanner
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner
++ JNAME=twlv
++ [ -d /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner ]
++ sudo rm -rfv /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/pkg-descr
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/distinfo
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/Makefile
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
++ sudo poudriere ports -u -p kali2
+[00:00:00] Updating portstree "kali2" with portsnap...Looking up portsnap.FreeBSD.org mirrors... 6 mirrors found.
+Fetching snapshot tag from ec2-ap-southeast-2.portsnap.freebsd.org... done.
+Fetching snapshot metadata... done.
+Updating from Mon Jan  7 13:18:57 IST 2019 to Mon Jan  7 14:28:03 IST 2019.
+Fetching 5 metadata patches... done.
+Applying metadata patches... done.
+Fetching 0 metadata files... done.
+Fetching 2 patches. 
+                                     (0/2) 0.00%                                      (2/2) 100.00%  done. 
+done.
+Applying patches... 
+done.
+Fetching 0 new ports or files... done.
+Removing old files and directories... done.
+Extracting new files:
+/usr/local/poudriere/ports/kali2/german/aspell/
+/usr/local/poudriere/ports/kali2/www/p5-Reddit-Client/
+Building new INDEX files... done.
+ done
++ sudo poudriere jail -n twlv -u
+poudriere jail [parameters] [options]
+
+Parameters:
+    -c            -- Create a jail
+    -d            -- Delete a jail
+    -i            -- Show information about a jail
+    -l            -- List all available jails
+    -s            -- Start a jail
+    -k            -- Stop a jail
+    -u            -- Update a jail
+    -r newname    -- Rename a jail
+
+Options:
+    -b            -- Build the OS (for use with -m src)
+    -q            -- Quiet (Do not print the header)
+    -n            -- Print only jail name (for use with -l)
+    -J n          -- Run buildworld in parallel with n jobs.
+    -j jailname   -- Specify the jailname
+    -v version    -- Specify which version of FreeBSD to install in the jail.
+    -a arch       -- Indicates the TARGET_ARCH of the jail. Such as i386 or
+                     amd64. Format of TARGET.TARGET_ARCH is also supported.
+                     (Default: same as the host)
+    -f fs         -- FS name (tank/jails/myjail) if fs is "none" then do not
+                     create on ZFS.
+    -K kernel     -- Build the jail with the kernel
+    -M mountpoint -- Mountpoint
+    -m method     -- When used with -c, overrides the default method for
+                     obtaining and building the jail. See poudriere(8) for more
+                     details. Can be one of:
+                       allbsd, ftp-archive, ftp, git, http, null, src=PATH, svn,
+                       svn+file, svn+http, svn+https, svn+ssh, tar=PATH, trueos
+                       url=SOMEURL.
+    -P patch      -- Specify a patch to apply to the source before building.
+    -S srcpath    -- Specify a path to the source tree to be used.
+    -D            -- Do a full git clone without --depth (default: --depth=1)
+    -t version    -- Version of FreeBSD to upgrade the jail to.
+    -U url        -- Specify a url to fetch the sources (with method git and/or svn).
+    -x            -- Build and setup native-xtools cross compile tools in jail when
+                     building for a different TARGET ARCH than the host.
+                     Only applies if TARGET_ARCH and HOST_ARCH are different.
+                     Will only be used if -m is svn*.
+
+Options for -d:
+    -C clean      -- Clean remaining data existing in pourdiere data folder.
+                     See poudriere(8) for more details. Can be one of:
+                       all, cache, logs, packages, wrkdirs
+Options for -s and -k:
+    -p tree       -- Specify which ports tree to start/stop the jail with.
+    -z set        -- Specify which SET the jail to start/stop with.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

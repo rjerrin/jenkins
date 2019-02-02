@@ -1,0 +1,868 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4ANC072mxUGdW0XVxCd9hQ96/8aX6hmejGxQ5p0facNoAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/eT83ILSktQifa/inFwAtwJR98MAAAA=[0mJslm in workspace /home/jery/workspace/linux
+[linux] $ /bin/sh -xe /tmp/jenkins4848513011498725898.sh
++ rsync -av --progress --delete rsync://rsync.kernel.org/pub .
+MOTD:
+MOTD:   Welcome to the Linux Kernel Archive.
+MOTD:
+MOTD:   Due to U.S. Exports Regulations, all cryptographic software on this
+MOTD:   site is subject to the following legal notice:
+MOTD:
+MOTD:   This site includes publicly available encryption source code
+MOTD:   which, together with object code resulting from the compiling of
+MOTD:   publicly available source code, may be exported from the United
+MOTD:   States under License Exception "TSU" pursuant to 15 C.F.R. Section
+MOTD:   740.13(e).
+MOTD:
+MOTD:   This legal notice applies to cryptographic software only.
+MOTD:   Please see the Bureau of Industry and Security,
+MOTD:   http://www.bis.doc.gov/ for more information about current
+MOTD:   U.S. regulations.
+MOTD:
+
+receiving incremental file list
+deleting .git/refs/tags/
+deleting .git/refs/heads/
+deleting .git/refs/
+deleting .git/objects/pack/tmp_pack_nakU3D
+deleting .git/objects/pack/tmp_pack_gzf813
+deleting .git/objects/pack/tmp_pack_WvabZB
+deleting .git/objects/pack/
+deleting .git/objects/info/
+deleting .git/objects/
+deleting .git/info/exclude
+deleting .git/info/
+deleting .git/hooks/update.sample
+deleting .git/hooks/prepare-commit-msg.sample
+deleting .git/hooks/pre-receive.sample
+deleting .git/hooks/pre-rebase.sample
+deleting .git/hooks/pre-push.sample
+deleting .git/hooks/pre-commit.sample
+deleting .git/hooks/pre-applypatch.sample
+deleting .git/hooks/post-update.sample
+deleting .git/hooks/fsmonitor-watchman.sample
+deleting .git/hooks/commit-msg.sample
+deleting .git/hooks/applypatch-msg.sample
+deleting .git/hooks/
+deleting .git/branches/
+deleting .git/description
+deleting .git/config
+deleting .git/HEAD
+deleting .git/FETCH_HEAD
+deleting .git/
+./
+.autosigner-last-run
+              0   0%    0.00kB/s    0:00:00               32 100%   31.25kB/s    0:00:00 (xfr#1, ir-chk=1336/1338)
+.well-known/
+.well-known/openpgpkey/
+.well-known/openpgpkey/hu/
+.well-known/openpgpkey/hu/163ux8fk184q7f9reyj4huqggwnwb6w7
+              0   0%    0.00kB/s    0:00:00            4,034 100%    3.85MB/s    0:00:00 (xfr#2, ir-chk=1400/1413)
+.well-known/openpgpkey/hu/16fc4fm84icanwosd9xazh6kk483kdr5
+              0   0%    0.00kB/s    0:00:00            2,218 100%    2.12MB/s    0:00:00 (xfr#3, ir-chk=1399/1413)
+.well-known/openpgpkey/hu/18g33if843w47awcoq9kefx5cocguks6
+              0   0%    0.00kB/s    0:00:00            3,464 100%    3.30MB/s    0:00:00 (xfr#4, ir-chk=1398/1413)
+.well-known/openpgpkey/hu/1b68i9kzz3ruqi9t8ugt5in75zan5cdj
+              0   0%    0.00kB/s    0:00:00            3,415 100%  666.99kB/s    0:00:00 (xfr#5, ir-chk=1397/1413)
+.well-known/openpgpkey/hu/1bb561ae65ruwmfimsccg1kmnehfoprx
+              0   0%    0.00kB/s    0:00:00            4,851 100%   10.34kB/s    0:00:00 (xfr#6, ir-chk=1396/1413)
+.well-known/openpgpkey/hu/1btongcut7ohd4ghw8ta7yafjfakqyw5
+              0   0%    0.00kB/s    0:00:00           21,450 100%   30.40kB/s    0:00:00 (xfr#7, ir-chk=1395/1413)
+.well-known/openpgpkey/hu/1e9zqenzqed4e131hsp59xifuwu9dmwq
+              0   0%    0.00kB/s    0:00:00            3,538 100%    3.76kB/s    0:00:00 (xfr#8, ir-chk=1394/1413)
+.well-known/openpgpkey/hu/1iiupo8wqmjq5ct3rjqbb79rerqt7673
+              0   0%    0.00kB/s    0:00:00            2,833 100%    3.00kB/s    0:00:00 (xfr#9, ir-chk=1393/1413)
+.well-known/openpgpkey/hu/1m4e4crh5ecw3ds4g4ie9gznttre9eoe
+              0   0%    0.00kB/s    0:00:00            4,024 100%    4.26kB/s    0:00:00 (xfr#10, ir-chk=1392/1413)
+.well-known/openpgpkey/hu/1nz48oygggkw8gj9go46qwaofn7qe6cf
+              0   0%    0.00kB/s    0:00:00            5,117 100%    5.41kB/s    0:00:00 (xfr#11, ir-chk=1391/1413)
+.well-known/openpgpkey/hu/1omd9rnx7zmcctoqzeqzfpxbjhnrggts
+              0   0%    0.00kB/s    0:00:00            2,217 100%    2.35kB/s    0:00:00 (xfr#12, ir-chk=1390/1413)
+.well-known/openpgpkey/hu/1t4iw6pcw7j6py75pw8815k88phzyizm
+              0   0%    0.00kB/s    0:00:00            4,029 100%    4.26kB/s    0:00:00 (xfr#13, ir-chk=1389/1413)
+.well-known/openpgpkey/hu/1tsxzyjefq4iasxsydu6hxj5ftwz877d
+              0   0%    0.00kB/s    0:00:00            2,203 100%    2.33kB/s    0:00:00 (xfr#14, ir-chk=1388/1413)
+.well-known/openpgpkey/hu/1uq775zotcybhybh3aje5zysfj8na5g1
+              0   0%    0.00kB/s    0:00:00            7,978 100%    5.65kB/s    0:00:01 (xfr#15, ir-chk=1387/1413)
+.well-known/openpgpkey/hu/1xzqhyfnz4a9zioopmcxmrbf6fahirqg
+              0   0%    0.00kB/s    0:00:00            6,446 100%    4.57kB/s    0:00:01 (xfr#16, ir-chk=1386/1413)
+.well-known/openpgpkey/hu/1zazt3xnxnyszandp95b6y4k17wrzzeq
+              0   0%    0.00kB/s    0:00:00            4,037 100%    2.85kB/s    0:00:01 (xfr#17, ir-chk=1385/1413)
+.well-known/openpgpkey/hu/1zny9bi1pgk4h89ko97fya7qt3wca6df
+              0   0%    0.00kB/s    0:00:00            4,741 100%    4.52MB/s    0:00:00 (xfr#18, ir-chk=1384/1413)
+.well-known/openpgpkey/hu/1zqcdbh9g1rhbies8rdh5skgq7jjpcs7
+              0   0%    0.00kB/s    0:00:00            2,223 100%    2.12MB/s    0:00:00 (xfr#19, ir-chk=1383/1413)
+.well-known/openpgpkey/hu/3471tjefpsw1reye5enpacdx4kn9wcuk
+              0   0%    0.00kB/s    0:00:00            2,220 100%    2.12MB/s    0:00:00 (xfr#20, ir-chk=1382/1413)
+.well-known/openpgpkey/hu/3774quifyw178id93i7g44pinro4u6du
+              0   0%    0.00kB/s    0:00:00            2,211 100%    2.11MB/s    0:00:00 (xfr#21, ir-chk=1381/1413)
+.well-known/openpgpkey/hu/37czuabays7b5hnrc8h1aa8jjucy9b49
+              0   0%    0.00kB/s    0:00:00            2,232 100%    2.13MB/s    0:00:00 (xfr#22, ir-chk=1380/1413)
+.well-known/openpgpkey/hu/393dmaxwtxfpsmykz9gw1iq8943ugkkn
+              0   0%    0.00kB/s    0:00:00            4,017 100%    3.83MB/s    0:00:00 (xfr#23, ir-chk=1379/1413)
+.well-known/openpgpkey/hu/3cebdrs96mgb5zenqm5u5aa83np6zocb
+              0   0%    0.00kB/s    0:00:00            2,802 100%    2.67MB/s    0:00:00 (xfr#24, ir-chk=1378/1413)
+.well-known/openpgpkey/hu/3ey9g5apin1kh1kxrq1s6pykon77w4yb
+              0   0%    0.00kB/s    0:00:00            5,332 100%   11.34kB/s    0:00:00 (xfr#25, ir-chk=1377/1413)
+.well-known/openpgpkey/hu/3gx4ktds5frbxug466dsqfeck7ec6ma6
+              0   0%    0.00kB/s    0:00:00            2,222 100%    4.73kB/s    0:00:00 (xfr#26, ir-chk=1376/1413)
+.well-known/openpgpkey/hu/3nrmfht7xcoewt6hstmktf1dx96jepae
+              0   0%    0.00kB/s    0:00:00            3,423 100%    7.28kB/s    0:00:00 (xfr#27, ir-chk=1375/1413)
+.well-known/openpgpkey/hu/3ogrpdt73ixqejjfuwwa5rn4cdhdgn6x
+              0   0%    0.00kB/s    0:00:00            3,424 100%    7.28kB/s    0:00:00 (xfr#28, ir-chk=1374/1413)
+.well-known/openpgpkey/hu/3qhesi3c84pu1q1qgp3t317kohsn8oy1
+              0   0%    0.00kB/s    0:00:00            5,083 100%   10.81kB/s    0:00:00 (xfr#29, ir-chk=1373/1413)
+.well-known/openpgpkey/hu/3sggq7xgbizsxjwaep5uru111dxu4w4a
+              0   0%    0.00kB/s    0:00:00            7,969 100%   11.31kB/s    0:00:00 (xfr#30, ir-chk=1372/1413)
+.well-known/openpgpkey/hu/3trxj6t9rtpp31uadistyo974uy5eyiq
+              0   0%    0.00kB/s    0:00:00            2,841 100%    4.02kB/s    0:00:00 (xfr#31, ir-chk=1371/1413)
+.well-known/openpgpkey/hu/3zs5i7burf5fp4q91og7kpkdtk9pu74c
+              0   0%    0.00kB/s    0:00:00            3,404 100%    4.78kB/s    0:00:00 (xfr#32, ir-chk=1370/1413)
+.well-known/openpgpkey/hu/43chndt84wiobgd5czwf5gphhiryizfq
+              0   0%    0.00kB/s    0:00:00            4,532 100%    4.83kB/s    0:00:00 (xfr#33, ir-chk=1369/1413)
+.well-known/openpgpkey/hu/4697qsokmbt5yqeh51881mrc4qr1cdxm
+              0   0%    0.00kB/s    0:00:00            4,590 100%    4.87kB/s    0:00:00 (xfr#34, ir-chk=1368/1413)
+.well-known/openpgpkey/hu/46uxrmehu7toy4mif45ssxnwz411ktif
+              0   0%    0.00kB/s    0:00:00            2,907 100%    3.07kB/s    0:00:00 (xfr#35, ir-chk=1367/1413)
+.well-known/openpgpkey/hu/477nbkbook58su7ebe3cjz4s1eer4iry
+              0   0%    0.00kB/s    0:00:00            2,208 100%    1.88kB/s    0:00:01 (xfr#36, ir-chk=1366/1413)
+.well-known/openpgpkey/hu/4a9g84b8irgcgyz5d1wznst6akabh3db
+              0   0%    0.00kB/s    0:00:00            2,226 100%    1.89kB/s    0:00:01 (xfr#37, ir-chk=1365/1413)
+.well-known/openpgpkey/hu/4coy1qicpzp9h416139trmrh7bgkyddg
+              0   0%    0.00kB/s    0:00:00            2,208 100%    1.88kB/s    0:00:01 (xfr#38, ir-chk=1364/1413)
+.well-known/openpgpkey/hu/4dah6b5qtxf4asrh95kataxmwmmg8p7t
+              0   0%    0.00kB/s    0:00:00            4,651 100%    3.94kB/s    0:00:01 (xfr#39, ir-chk=1363/1413)
+.well-known/openpgpkey/hu/4gq1qxszn9g8za37isxwfwc4ex5ksghw
+              0   0%    0.00kB/s    0:00:00            2,842 100%    2.02kB/s    0:00:01 (xfr#40, ir-chk=1362/1413)
+.well-known/openpgpkey/hu/4ik1nywcnuoxg6f6ktnqj4taofohbi98
+              0   0%    0.00kB/s    0:00:00            2,824 100%    2.00kB/s    0:00:01 (xfr#41, ir-chk=1361/1413)
+.well-known/openpgpkey/hu/4ipi7nnfujy3nd38a9yi519kzd5tfpbk
+              0   0%    0.00kB/s    0:00:00            6,667 100%    6.36MB/s    0:00:00 (xfr#42, ir-chk=1360/1413)
+.well-known/openpgpkey/hu/4mha6d38nt6koimr4cikg7mz4puuh4eo
+              0   0%    0.00kB/s    0:00:00            2,209 100%    2.11MB/s    0:00:00 (xfr#43, ir-chk=1359/1413)
+.well-known/openpgpkey/hu/4quou17ef9au7re1c7rc4qc581hq1zjq
+              0   0%    0.00kB/s    0:00:00            5,518 100%  898.11kB/s    0:00:00 (xfr#44, ir-chk=1358/1413)
+.well-known/openpgpkey/hu/4stnz64bjiwdawtk7gdczqoy4y15snu1
+              0   0%    0.00kB/s    0:00:00            4,063 100%   17.33kB/s    0:00:00 (xfr#45, ir-chk=1357/1413)
+.well-known/openpgpkey/hu/4u7bogjcmjd3hi1pf8bdydbqnsz7dsgz
+              0   0%    0.00kB/s    0:00:00            6,103 100%   25.69kB/s    0:00:00 (xfr#46, ir-chk=1356/1413)
+.well-known/openpgpkey/hu/4zsy4jdyfbn9p7fswpxxqkc3twx5wie8
+              0   0%    0.00kB/s    0:00:00            2,813 100%   11.64kB/s    0:00:00 (xfr#47, ir-chk=1355/1413)
+.well-known/openpgpkey/hu/53oj7pgi4hft4q8cc3bk5x6d8euad7th
+              0   0%    0.00kB/s    0:00:00            2,220 100%    9.19kB/s    0:00:00 (xfr#48, ir-chk=1354/1413)
+.well-known/openpgpkey/hu/56436drx9fednq46g1fon5rrg1zmeoq8
+              0   0%    0.00kB/s    0:00:00            3,420 100%    4.83kB/s    0:00:00 (xfr#49, ir-chk=1353/1413)
+.well-known/openpgpkey/hu/56m1t1xfnbyudorcxmpo8m4nkqkeejcs
+              0   0%    0.00kB/s    0:00:00            2,212 100%    3.12kB/s    0:00:00 (xfr#50, ir-chk=1352/1413)
+.well-known/openpgpkey/hu/594ittbi9xadpsmhj31mcuahhbx4ffz9
+              0   0%    0.00kB/s    0:00:00            2,844 100%    3.98kB/s    0:00:00 (xfr#51, ir-chk=1351/1413)
+.well-known/openpgpkey/hu/59eqtbakzka5f3e6xezpgzg5f91p1e3k
+              0   0%    0.00kB/s    0:00:00            4,100 100%    5.74kB/s    0:00:00 (xfr#52, ir-chk=1350/1413)
+.well-known/openpgpkey/hu/5dg1uf8bmxdb5s3mnradbxpfm5ih8e86
+              0   0%    0.00kB/s    0:00:00            2,223 100%    2.34kB/s    0:00:00 (xfr#53, ir-chk=1349/1413)
+.well-known/openpgpkey/hu/5hz4xoh7noqhmznit89pqocyh7m645r4
+              0   0%    0.00kB/s    0:00:00            3,865 100%    4.07kB/s    0:00:00 (xfr#54, ir-chk=1348/1413)
+.well-known/openpgpkey/hu/5kadhtr9nuuiq3cwkihkf59g6cc1q4zz
+              0   0%    0.00kB/s    0:00:00            2,205 100%    2.32kB/s    0:00:00 (xfr#55, ir-chk=1347/1413)
+.well-known/openpgpkey/hu/5m1m4qdx4udrquyu75f511ig78uitfjw
+              0   0%    0.00kB/s    0:00:00            2,825 100%    2.98kB/s    0:00:00 (xfr#56, ir-chk=1346/1413)
+.well-known/openpgpkey/hu/5nqpyxaa3349dhapqewpg6ugejmt4d44
+              0   0%    0.00kB/s    0:00:00            6,906 100%    5.86kB/s    0:00:01 (xfr#57, ir-chk=1345/1413)
+.well-known/openpgpkey/hu/5oaourctwgtddjy5njsemic3n5go6ik9
+              0   0%    0.00kB/s    0:00:00            2,236 100%    1.89kB/s    0:00:01 (xfr#58, ir-chk=1344/1413)
+.well-known/openpgpkey/hu/5pcuy6naazqjrgowfs8cj39dsn1r4ijw
+              0   0%    0.00kB/s    0:00:00            8,910 100%    6.30kB/s    0:00:01 (xfr#59, ir-chk=1343/1413)
+.well-known/openpgpkey/hu/5wky9qkubihtyi67ty36w35e97193zut
+              0   0%    0.00kB/s    0:00:00            2,205 100%    1.55kB/s    0:00:01 (xfr#60, ir-chk=1342/1413)
+.well-known/openpgpkey/hu/5z78fr8omozjxoody8emern4d39qcwh4
+              0   0%    0.00kB/s    0:00:00            1,180 100%    0.83kB/s    0:00:01 (xfr#61, ir-chk=1341/1413)
+.well-known/openpgpkey/hu/613eh7tnq3k6f743r4u38ga161myso88
+              0   0%    0.00kB/s    0:00:00            2,896 100%    2.76MB/s    0:00:00 (xfr#62, ir-chk=1340/1413)
+.well-known/openpgpkey/hu/64iqaysmryt5mbz7wfcs3f14k7jmtriw
+              0   0%    0.00kB/s    0:00:00           23,412 100%   97.71kB/s    0:00:00 (xfr#63, ir-chk=1339/1413)
+.well-known/openpgpkey/hu/6dz887wae3g3sjrsbu63oxt8t5gfy17e
+              0   0%    0.00kB/s    0:00:00            2,820 100%    9.91kB/s    0:00:00 (xfr#64, ir-chk=1338/1413)
+.well-known/openpgpkey/hu/6g4418kppmk18hubyrkf18yyx347nwrr
+              0   0%    0.00kB/s    0:00:00            2,220 100%    3.12kB/s    0:00:00 (xfr#65, ir-chk=1337/1413)
+.well-known/openpgpkey/hu/6jqk6qxd7r81wkfy6aoti6jyorejs3t6
+              0   0%    0.00kB/s    0:00:00            4,067 100%    5.72kB/s    0:00:00 (xfr#66, ir-chk=1336/1413)
+.well-known/openpgpkey/hu/6mdfuhy3kf5srbfgashor6d71yc9z5i7
+              0   0%    0.00kB/s    0:00:00            3,421 100%    4.81kB/s    0:00:00 (xfr#67, ir-chk=1335/1413)
+.well-known/openpgpkey/hu/6nhkqfstu6eoyj6o6byuoa6oqqppoqer
+              0   0%    0.00kB/s    0:00:00            4,923 100%    6.51kB/s    0:00:00 (xfr#68, ir-chk=1334/1413)
+.well-known/openpgpkey/hu/6odyy3j5gx41om7razpxg769atnxsttf
+              0   0%    0.00kB/s    0:00:00            2,209 100%    2.33kB/s    0:00:00 (xfr#69, ir-chk=1333/1413)
+.well-known/openpgpkey/hu/6owogd8iad7xg57c8wenyh7sha7ge67k
+              0   0%    0.00kB/s    0:00:00            4,100 100%    4.14kB/s    0:00:00 (xfr#70, ir-chk=1332/1413)
+.well-known/openpgpkey/hu/6ozm5ijyi65iys4yfbit4r95shwbhshs
+              0   0%    0.00kB/s    0:00:00            2,207 100%    2.23kB/s    0:00:00 (xfr#71, ir-chk=1331/1413)
+.well-known/openpgpkey/hu/6pjyj7nqix9jxq6p4gfq78w999n36kxb
+              0   0%    0.00kB/s    0:00:00            7,131 100%    5.82kB/s    0:00:01 (xfr#72, ir-chk=1330/1413)
+.well-known/openpgpkey/hu/6s1jzewsk8mkqizk8hnu5omu3zuw8pcb
+              0   0%    0.00kB/s    0:00:00           10,564 100%   10.07MB/s    0:00:00 (xfr#73, ir-chk=1329/1413)
+.well-known/openpgpkey/hu/6u4c3hfwmmdswyeury4a5chbpr6fge4x
+              0   0%    0.00kB/s    0:00:00            3,458 100%    3.30MB/s    0:00:00 (xfr#74, ir-chk=1328/1413)
+.well-known/openpgpkey/hu/6xzq78nhopiu9yjn6senmi4zoriytsum
+              0   0%    0.00kB/s    0:00:00           26,033 100%   55.15kB/s    0:00:00 (xfr#75, ir-chk=1327/1413)
+.well-known/openpgpkey/hu/6yw3f76bqrnuqoqkw44tmscjc7n5g7dz
+              0   0%    0.00kB/s    0:00:00            3,656 100%    5.17kB/s    0:00:00 (xfr#76, ir-chk=1326/1413)
+.well-known/openpgpkey/hu/737bcn8ji8x9xc4kik15m3jyaqxxs35n
+              0   0%    0.00kB/s    0:00:00            2,838 100%    4.02kB/s    0:00:00 (xfr#77, ir-chk=1325/1413)
+.well-known/openpgpkey/hu/75un6tc9nzqp56d4tz5j7y3ehktfcebe
+              0   0%    0.00kB/s    0:00:00            2,232 100%    3.16kB/s    0:00:00 (xfr#78, ir-chk=1324/1413)
+.well-known/openpgpkey/hu/7717h8d5hnieg998sjp4uj5uurn4641i
+              0   0%    0.00kB/s    0:00:00            2,215 100%    3.13kB/s    0:00:00 (xfr#79, ir-chk=1323/1413)
+.well-known/openpgpkey/hu/78tbccbc6yw5satcyqb9hygyoobnp8h5
+              0   0%    0.00kB/s    0:00:00            4,069 100%    4.32kB/s    0:00:00 (xfr#80, ir-chk=1322/1413)
+.well-known/openpgpkey/hu/78y4opg61s1phh4twqc4bt18rkfosdxf
+              0   0%    0.00kB/s    0:00:00            3,415 100%    3.62kB/s    0:00:00 (xfr#81, ir-chk=1321/1413)
+.well-known/openpgpkey/hu/79fjtyy9gqcqzi9q96yfwmyah5nj7bgw
+              0   0%    0.00kB/s    0:00:00            2,813 100%    2.98kB/s    0:00:00 (xfr#82, ir-chk=1320/1413)
+.well-known/openpgpkey/hu/79h5rsonhogcteagb584zs3zuqmwgs1q
+              0   0%    0.00kB/s    0:00:00            3,466 100%    3.49kB/s    0:00:00 (xfr#83, ir-chk=1319/1413)
+.well-known/openpgpkey/hu/7drat8wt4uwrf5skctau5ftapsxb7cei
+              0   0%    0.00kB/s    0:00:00            2,838 100%    2.41kB/s    0:00:01 (xfr#84, ir-chk=1318/1413)
+.well-known/openpgpkey/hu/7gpwp6pf9atcnkrr83qssa6gj1ssm89k
+              0   0%    0.00kB/s    0:00:00            1,184 100%    1.01kB/s    0:00:01 (xfr#85, ir-chk=1317/1413)
+.well-known/openpgpkey/hu/7j1cnb5wfkj3ts7cgy4xz1gwsz9xs5mj
+              0   0%    0.00kB/s    0:00:00            2,825 100%    2.40kB/s    0:00:01 (xfr#86, ir-chk=1316/1413)
+.well-known/openpgpkey/hu/7jcq8ru4ee4m7r3ojzjmcjmidkbr8yfk
+              0   0%    0.00kB/s    0:00:00            2,831 100%    2.31kB/s    0:00:01 (xfr#87, ir-chk=1315/1413)
+.well-known/openpgpkey/hu/7od58cuwoypxzmbp9r88hpxsa36i1xna
+              0   0%    0.00kB/s    0:00:00            4,654 100%    3.30kB/s    0:00:01 (xfr#88, ir-chk=1314/1413)
+.well-known/openpgpkey/hu/7pf5caapum63nq9fi4do1dnoiop4xjf1
+              0   0%    0.00kB/s    0:00:00            2,220 100%    1.57kB/s    0:00:01 (xfr#89, ir-chk=1313/1413)
+.well-known/openpgpkey/hu/7qsb4bsbpndnpyo5sd1zjebzw61uku1j
+              0   0%    0.00kB/s    0:00:00            8,225 100%    5.63kB/s    0:00:01 (xfr#90, ir-chk=1312/1413)
+.well-known/openpgpkey/hu/7rurnt7wnp4gfr9f8gde3ds96hmtmaxd
+              0   0%    0.00kB/s    0:00:00           11,960 100%   11.41MB/s    0:00:00 (xfr#91, ir-chk=1311/1413)
+.well-known/openpgpkey/hu/7rwqow5pqx9jt9ht8oirr1pd1ag33qk3
+              0   0%    0.00kB/s    0:00:00            3,394 100%   18.31kB/s    0:00:00 (xfr#92, ir-chk=1310/1413)
+.well-known/openpgpkey/hu/7th9hx8ocwum66omzkzussr933c9i47i
+              0   0%    0.00kB/s    0:00:00            2,830 100%   15.27kB/s    0:00:00 (xfr#93, ir-chk=1309/1413)
+.well-known/openpgpkey/hu/7ufwyxbftbumnkihwkg7nird7ns3z399
+              0   0%    0.00kB/s    0:00:00            7,336 100%   39.58kB/s    0:00:00 (xfr#94, ir-chk=1308/1413)
+.well-known/openpgpkey/hu/7wtcrmp7hpony7mjbrzgbpbjoqm69qg4
+              0   0%    0.00kB/s    0:00:00            4,041 100%    9.58kB/s    0:00:00 (xfr#95, ir-chk=1307/1413)
+.well-known/openpgpkey/hu/89q43fcjr1zxre81ymffchhe5siu6ffe
+              0   0%    0.00kB/s    0:00:00            2,212 100%    5.24kB/s    0:00:00 (xfr#96, ir-chk=1306/1413)
+.well-known/openpgpkey/hu/8a13i8d63yubahqchi73gfjqcun6cdpr
+              0   0%    0.00kB/s    0:00:00            4,045 100%    9.59kB/s    0:00:00 (xfr#97, ir-chk=1305/1413)
+.well-known/openpgpkey/hu/8d5gen16kgtjmt1m3kanaz68n8dxbou1
+              0   0%    0.00kB/s    0:00:00            2,209 100%    5.22kB/s    0:00:00 (xfr#98, ir-chk=1304/1413)
+.well-known/openpgpkey/hu/8dcwy6g7fr8ssq31q9wmmw39o1iosppx
+              0   0%    0.00kB/s    0:00:00           19,759 100%   22.15kB/s    0:00:00 (xfr#99, ir-chk=1303/1413)
+.well-known/openpgpkey/hu/8dh6ieajndnysbziwaynbcjnfhijkqyb
+              0   0%    0.00kB/s    0:00:00            2,273 100%    2.55kB/s    0:00:00 (xfr#100, ir-chk=1302/1413)
+.well-known/openpgpkey/hu/8ect5wi6e5wnp9zjr5kufcjs7i1hswaa
+              0   0%    0.00kB/s    0:00:00            7,802 100%    8.74kB/s    0:00:00 (xfr#101, ir-chk=1301/1413)
+.well-known/openpgpkey/hu/8o15yf1zrid8xw9bid6t6b4nazkeuxj3
+              0   0%    0.00kB/s    0:00:00            2,818 100%    3.15kB/s    0:00:00 (xfr#102, ir-chk=1300/1413)
+.well-known/openpgpkey/hu/8s8y7dqtghxwhsd1jyc5w4txfce7pw9b
+              0   0%    0.00kB/s    0:00:00            4,665 100%    4.14kB/s    0:00:01 (xfr#103, ir-chk=1299/1413)
+.well-known/openpgpkey/hu/8w8uz8qhiusdbtyyttxygducnq18t14x
+              0   0%    0.00kB/s    0:00:00            1,205 100%    1.07kB/s    0:00:01 (xfr#104, ir-chk=1298/1413)
+.well-known/openpgpkey/hu/8y9xki5hpaeztqj9m8se4njs67s1iggr
+              0   0%    0.00kB/s    0:00:00            4,459 100%    3.96kB/s    0:00:01 (xfr#105, ir-chk=1297/1413)
+.well-known/openpgpkey/hu/9arp8taziz3kha43f3gji5dq83yr5dt6
+              0   0%    0.00kB/s    0:00:00            2,224 100%    1.97kB/s    0:00:01 (xfr#106, ir-chk=1296/1413)
+.well-known/openpgpkey/hu/9b37faqkdemcgoc7qfdb4174wnusxd47
+              0   0%    0.00kB/s    0:00:00           26,964 100%   25.71MB/s    0:00:00 (xfr#107, ir-chk=1295/1413)
+.well-known/openpgpkey/hu/9gnjsyimhggb7uum4obwctcq4w9wuwa5
+              0   0%    0.00kB/s    0:00:00            5,229 100%    4.99MB/s    0:00:00 (xfr#108, ir-chk=1294/1413)
+.well-known/openpgpkey/hu/9i93c6ri783ihs8ctjtkot7fji94qj49
+              0   0%    0.00kB/s    0:00:00            8,256 100%  164.54kB/s    0:00:00 (xfr#109, ir-chk=1293/1413)
+.well-known/openpgpkey/hu/9igqe7dfgscbm8fpy53hoch8wbqpkq1r
+              0   0%    0.00kB/s    0:00:00            2,816 100%   11.96kB/s    0:00:00 (xfr#110, ir-chk=1292/1413)
+.well-known/openpgpkey/hu/9n53ki6tupygc5i6gp1wmefsn6fxciwf
+              0   0%    0.00kB/s    0:00:00            3,452 100%   14.66kB/s    0:00:00 (xfr#111, ir-chk=1291/1413)
+.well-known/openpgpkey/hu/9q3z7mfqny8bgb5pmtfwphdc9jgs9kxa
+              0   0%    0.00kB/s    0:00:00            4,889 100%   20.76kB/s    0:00:00 (xfr#112, ir-chk=1290/1413)
+.well-known/openpgpkey/hu/9sh859e31bn46hmfxyftn3ymop5ewdkz
+              0   0%    0.00kB/s    0:00:00            2,213 100%    9.36kB/s    0:00:00 (xfr#113, ir-chk=1289/1413)
+.well-known/openpgpkey/hu/9xm3cidx3yy5guobhtjhp9jofy9yneba
+              0   0%    0.00kB/s    0:00:00            2,217 100%    9.37kB/s    0:00:00 (xfr#114, ir-chk=1288/1413)
+.well-known/openpgpkey/hu/a68so3at61s6987dwnfkjrcf1wsiedww
+              0   0%    0.00kB/s    0:00:00            3,420 100%   11.97kB/s    0:00:00 (xfr#115, ir-chk=1287/1413)
+.well-known/openpgpkey/hu/a6aajmsw7dyi5drni5nrdqy6agbtbmh5
+              0   0%    0.00kB/s    0:00:00            2,814 100%    5.97kB/s    0:00:00 (xfr#116, ir-chk=1286/1413)
+.well-known/openpgpkey/hu/adyctbm645sjgkbphxzj4t9nr1sxufpx
+              0   0%    0.00kB/s    0:00:00            3,437 100%    7.30kB/s    0:00:00 (xfr#117, ir-chk=1285/1413)
+.well-known/openpgpkey/hu/ae1pzr5airw47y3awbjmzcpub64g3zj3
+              0   0%    0.00kB/s    0:00:00            3,287 100%    6.98kB/s    0:00:00 (xfr#118, ir-chk=1284/1413)
+.well-known/openpgpkey/hu/ajgyr1dzbmwaocxaw3kdndkcfadinudb
+              0   0%    0.00kB/s    0:00:00            2,224 100%    4.71kB/s    0:00:00 (xfr#119, ir-chk=1283/1413)
+.well-known/openpgpkey/hu/aqea6qenrod773iyyisq3kptikyqt3gq
+              0   0%    0.00kB/s    0:00:00           10,190 100%   19.59kB/s    0:00:00 (xfr#120, ir-chk=1282/1413)
+.well-known/openpgpkey/hu/at31o7qjoq9wqds913iw8qc94xbboeeo
+              0   0%    0.00kB/s    0:00:00            2,215 100%    4.26kB/s    0:00:00 (xfr#121, ir-chk=1281/1413)
+.well-known/openpgpkey/hu/aype3yk4jmesm99148ypgzq9mcmm4xm5
+              0   0%    0.00kB/s    0:00:00            1,196 100%    1.69kB/s    0:00:00 (xfr#122, ir-chk=1280/1413)
+.well-known/openpgpkey/hu/aywcrr9pm56xgdb9j9duc8p7hdrj8tpz
+              0   0%    0.00kB/s    0:00:00            3,422 100%    4.84kB/s    0:00:00 (xfr#123, ir-chk=1279/1413)
+.well-known/openpgpkey/hu/azoyuh57dri8fuprw5io6yaa1pzno8nb
+              0   0%    0.00kB/s    0:00:00            4,671 100%    6.59kB/s    0:00:00 (xfr#124, ir-chk=1278/1413)
+.well-known/openpgpkey/hu/b1bio7ifgk18phax5cxs7ft5i3sfwgor
+              0   0%    0.00kB/s    0:00:00            2,216 100%    3.13kB/s    0:00:00 (xfr#125, ir-chk=1277/1413)
+.well-known/openpgpkey/hu/b1sm4frupmxuo1zjmm7718ibmt7ig87x
+              0   0%    0.00kB/s    0:00:00            2,209 100%    3.12kB/s    0:00:00 (xfr#126, ir-chk=1276/1413)
+.well-known/openpgpkey/hu/b59ck86z37ezxr31d5de9sn1orkuxpwh
+              0   0%    0.00kB/s    0:00:00            2,805 100%    3.96kB/s    0:00:00 (xfr#127, ir-chk=1275/1413)
+.well-known/openpgpkey/hu/b85fshpzcim1mnm5f9kbwnpy359nhgsq
+              0   0%    0.00kB/s    0:00:00            3,534 100%    4.72kB/s    0:00:00 (xfr#128, ir-chk=1274/1413)
+.well-known/openpgpkey/hu/bm5194dw7k3kcyo47a9z5xrx9h9n98fg
+              0   0%    0.00kB/s    0:00:00           19,428 100%   20.60kB/s    0:00:00 (xfr#129, ir-chk=1273/1413)
+.well-known/openpgpkey/hu/bpetf89mxnjw1fptdjgyuuzjbkcsf5tr
+              0   0%    0.00kB/s    0:00:00            2,870 100%    3.04kB/s    0:00:00 (xfr#130, ir-chk=1272/1413)
+.well-known/openpgpkey/hu/bq9eash56pemu8yqxz5xi338fbn5mw1b
+              0   0%    0.00kB/s    0:00:00            2,204 100%    2.33kB/s    0:00:00 (xfr#131, ir-chk=1271/1413)
+.well-known/openpgpkey/hu/bqwg3c9otq7acgkahif7goheo6s5ejth
+              0   0%    0.00kB/s    0:00:00            2,211 100%    2.25kB/s    0:00:00 (xfr#132, ir-chk=1270/1413)
+.well-known/openpgpkey/hu/br8dnxoepchssho5akzfuk1id9as7rts
+              0   0%    0.00kB/s    0:00:00            2,954 100%    2.98kB/s    0:00:00 (xfr#133, ir-chk=1269/1413)
+.well-known/openpgpkey/hu/bs1bjsq3cxpryqqnwbjfsgnrrky8mk1a
+              0   0%    0.00kB/s    0:00:00            4,189 100%    3.56kB/s    0:00:01 (xfr#134, ir-chk=1268/1413)
+.well-known/openpgpkey/hu/bta4ttn7dowcjgsq7h5wup84i8jhgznw
+              0   0%    0.00kB/s    0:00:00            1,206 100%    1.03kB/s    0:00:01 (xfr#135, ir-chk=1267/1413)
+.well-known/openpgpkey/hu/btjnqgyc3k7cb3g46whz1id1wstrkewu
+              0   0%    0.00kB/s    0:00:00            4,466 100%    3.79kB/s    0:00:01 (xfr#136, ir-chk=1266/1413)
+.well-known/openpgpkey/hu/bwuo8n819ruixjq6b7f7trqusqjceunx
+              0   0%    0.00kB/s    0:00:00            2,215 100%    1.88kB/s    0:00:01 (xfr#137, ir-chk=1265/1413)
+.well-known/openpgpkey/hu/by5i58higskzafmz1rgbwqss6rzxf8g6
+              0   0%    0.00kB/s    0:00:00            2,866 100%    2.43kB/s    0:00:01 (xfr#138, ir-chk=1264/1413)
+.well-known/openpgpkey/hu/c1e7uodjtgg5inbomwwijm9pgojpq1k1
+              0   0%    0.00kB/s    0:00:00            2,834 100%    2.40kB/s    0:00:01 (xfr#139, ir-chk=1263/1413)
+.well-known/openpgpkey/hu/c5uyqj5ktbr5bfc96deb5b1d6zpgpyk1
+              0   0%    0.00kB/s    0:00:00            4,167 100%    3.42kB/s    0:00:01 (xfr#140, ir-chk=1262/1413)
+.well-known/openpgpkey/hu/c67sg6j9c5bhg6m46r84whh571t47qj8
+              0   0%    0.00kB/s    0:00:00            3,425 100%    2.81kB/s    0:00:01 (xfr#141, ir-chk=1261/1413)
+.well-known/openpgpkey/hu/c6uzrh1qf66brqrwhmkg1id5ocbp586i
+              0   0%    0.00kB/s    0:00:00            4,219 100%    3.44kB/s    0:00:01 (xfr#142, ir-chk=1260/1413)
+.well-known/openpgpkey/hu/ceyekqdkft1qama7eq9xuf6bkyb9nxpn
+              0   0%    0.00kB/s    0:00:00            2,209 100%    1.57kB/s    0:00:01 (xfr#143, ir-chk=1259/1413)
+.well-known/openpgpkey/hu/cke9kdnhb4r8y6ubddbbj3qbfsndwigs
+              0   0%    0.00kB/s    0:00:00            2,836 100%    2.01kB/s    0:00:01 (xfr#144, ir-chk=1258/1413)
+.well-known/openpgpkey/hu/ckg1kdj9p8acj51w8rnupoz9p87gnuu1
+              0   0%    0.00kB/s    0:00:00            1,151 100%    0.82kB/s    0:00:01 (xfr#145, ir-chk=1257/1413)
+.well-known/openpgpkey/hu/cm7cf7bazqyqdn39pk1s83pqb6wq7573
+              0   0%    0.00kB/s    0:00:00            3,542 100%    2.51kB/s    0:00:01 (xfr#146, ir-chk=1256/1413)
+.well-known/openpgpkey/hu/cnpfxj761aosengs31fgwugan9choaes
+              0   0%    0.00kB/s    0:00:00            4,034 100%    2.86kB/s    0:00:01 (xfr#147, ir-chk=1255/1413)
+.well-known/openpgpkey/hu/co3c7fm8mxuz4aqqrxz6rd48f5tb783t
+              0   0%    0.00kB/s    0:00:00            2,214 100%    1.57kB/s    0:00:01 (xfr#148, ir-chk=1254/1413)
+.well-known/openpgpkey/hu/cpuoyfpdmpxnmgo1i6qr1fhoohbd9b4y
+              0   0%    0.00kB/s    0:00:00            2,274 100%    1.61kB/s    0:00:01 (xfr#149, ir-chk=1253/1413)
+.well-known/openpgpkey/hu/cuzrhh5oh6hd1htuit1psguuy61xr589
+              0   0%    0.00kB/s    0:00:00           10,620 100%   10.13MB/s    0:00:00 (xfr#150, ir-chk=1252/1413)
+.well-known/openpgpkey/hu/czfs3gr5m1w6q1p761xao8f6zm73i9sh
+              0   0%    0.00kB/s    0:00:00            4,117 100%    3.93MB/s    0:00:00 (xfr#151, ir-chk=1251/1413)
+.well-known/openpgpkey/hu/d4uac4su5r1n7wgc69ebcxs3cch5shbr
+              0   0%    0.00kB/s    0:00:00            3,520 100%    3.36MB/s    0:00:00 (xfr#152, ir-chk=1250/1413)
+.well-known/openpgpkey/hu/d4uazsths5js79pa91r4ii1imao5jnd6
+              0   0%    0.00kB/s    0:00:00            5,912 100%    5.64MB/s    0:00:00 (xfr#153, ir-chk=1249/1413)
+.well-known/openpgpkey/hu/d6s1regf9i4p4yk73epn5j6gxqc47tji
+              0   0%    0.00kB/s    0:00:00            5,397 100%    5.15MB/s    0:00:00 (xfr#154, ir-chk=1248/1413)
+.well-known/openpgpkey/hu/dagq1pi5uc4i4jm56iho4jeuax3ezatm
+              0   0%    0.00kB/s    0:00:00            2,220 100%    2.12MB/s    0:00:00 (xfr#155, ir-chk=1247/1413)
+.well-known/openpgpkey/hu/dbfm7sxeb6uwtqgq711k8m9bzo1yfhna
+              0   0%    0.00kB/s    0:00:00            4,649 100%  110.73kB/s    0:00:00 (xfr#156, ir-chk=1246/1413)
+.well-known/openpgpkey/hu/dgomwpaceo74bdjyswdbmb1dbk4ru5wc
+              0   0%    0.00kB/s    0:00:00            3,920 100%   78.12kB/s    0:00:00 (xfr#157, ir-chk=1245/1413)
+.well-known/openpgpkey/hu/dhffdo5q9koxeu1eu8bg4ebepyc3x18k
+              0   0%    0.00kB/s    0:00:00            3,423 100%   14.53kB/s    0:00:00 (xfr#158, ir-chk=1244/1413)
+.well-known/openpgpkey/hu/doykwab5zrsi1uyd395y7uhqcq3kmxft
+              0   0%    0.00kB/s    0:00:00            9,288 100%   39.27kB/s    0:00:00 (xfr#159, ir-chk=1243/1413)
+.well-known/openpgpkey/hu/dpspxn4z5hyj4nd5pyz4mwr4yuukywfc
+              0   0%    0.00kB/s    0:00:00            2,253 100%    9.52kB/s    0:00:00 (xfr#160, ir-chk=1242/1413)
+.well-known/openpgpkey/hu/dqhp3umg7q1i5fg1rkp1ncgt9n11qn1g
+              0   0%    0.00kB/s    0:00:00            2,234 100%    9.40kB/s    0:00:00 (xfr#161, ir-chk=1241/1413)
+.well-known/openpgpkey/hu/e3n9xnm94c5apezqnj1pmrfuaoyfm8cf
+              0   0%    0.00kB/s    0:00:00            3,527 100%   14.85kB/s    0:00:00 (xfr#162, ir-chk=1240/1413)
+.well-known/openpgpkey/hu/e4rkpba96y1ayrbusxnmyqqimew9t6jz
+              0   0%    0.00kB/s    0:00:00            2,834 100%   11.93kB/s    0:00:00 (xfr#163, ir-chk=1239/1413)
+.well-known/openpgpkey/hu/e51jb1srkdwfi8f4gbcucsbgffuzduyd
+              0   0%    0.00kB/s    0:00:00            2,198 100%    9.25kB/s    0:00:00 (xfr#164, ir-chk=1238/1413)
+.well-known/openpgpkey/hu/e5s1nzkbcmitntewxp9g99mg7jhjdhm1
+              0   0%    0.00kB/s    0:00:00            2,212 100%    9.27kB/s    0:00:00 (xfr#165, ir-chk=1237/1413)
+.well-known/openpgpkey/hu/e8jz7788ibt6bnqth6z3pmo5izza8a37
+              0   0%    0.00kB/s    0:00:00            2,625 100%   11.00kB/s    0:00:00 (xfr#166, ir-chk=1236/1413)
+.well-known/openpgpkey/hu/eb5kr1bpo97twoccxb96qtj7dbk334b4
+              0   0%    0.00kB/s    0:00:00            2,218 100%    9.30kB/s    0:00:00 (xfr#167, ir-chk=1235/1413)
+.well-known/openpgpkey/hu/ebnms567aj64u3itpts51bfcasjptyn5
+              0   0%    0.00kB/s    0:00:00            5,408 100%   19.49kB/s    0:00:00 (xfr#168, ir-chk=1234/1413)
+.well-known/openpgpkey/hu/ect17rszbud4ww4ojmed1hrf73d5isd9
+              0   0%    0.00kB/s    0:00:00           14,305 100%   30.30kB/s    0:00:00 (xfr#169, ir-chk=1233/1413)
+.well-known/openpgpkey/hu/ek5ohm9fqnaaathzqmxa4occhw8sw3di
+              0   0%    0.00kB/s    0:00:00            3,451 100%    7.31kB/s    0:00:00 (xfr#170, ir-chk=1232/1413)
+.well-known/openpgpkey/hu/eo9m4buiqqgcnhg48r8ysjcnti6t84sx
+              0   0%    0.00kB/s    0:00:00            1,195 100%    2.53kB/s    0:00:00 (xfr#171, ir-chk=1231/1413)
+.well-known/openpgpkey/hu/ep5xz6dn8um5xobdre11tg73dushbeu9
+              0   0%    0.00kB/s    0:00:00            5,255 100%   11.11kB/s    0:00:00 (xfr#172, ir-chk=1230/1413)
+.well-known/openpgpkey/hu/epq74tshc5yyxex4rykr3yt7g9oprpbs
+              0   0%    0.00kB/s    0:00:00            4,046 100%    8.55kB/s    0:00:00 (xfr#173, ir-chk=1229/1413)
+.well-known/openpgpkey/hu/er5zhfq34qumo4hdet78s5dpxfox1bht
+              0   0%    0.00kB/s    0:00:00            2,241 100%    4.74kB/s    0:00:00 (xfr#174, ir-chk=1228/1413)
+.well-known/openpgpkey/hu/esmmgcntk8d6h7bt1kwi4qkde8t78p1r
+              0   0%    0.00kB/s    0:00:00            6,503 100%   13.72kB/s    0:00:00 (xfr#175, ir-chk=1227/1413)
+.well-known/openpgpkey/hu/ew8uiogxwri7d3fuioqgt7u1d5sngorx
+              0   0%    0.00kB/s    0:00:00            1,155 100%    1.54kB/s    0:00:00 (xfr#176, ir-chk=1226/1413)
+.well-known/openpgpkey/hu/ey8mjw4m6cbi4hchezb61hhnuzmsmakx
+              0   0%    0.00kB/s    0:00:00            1,549 100%    2.06kB/s    0:00:00 (xfr#177, ir-chk=1225/1413)
+.well-known/openpgpkey/hu/f1mkhgafoxmsmd8u6i5xan8so95cxhu1
+              0   0%    0.00kB/s    0:00:00            2,831 100%    2.99kB/s    0:00:00 (xfr#178, ir-chk=1224/1413)
+.well-known/openpgpkey/hu/f6fibig3oqnzd1xs1iczfhw6u3yoxrwi
+              0   0%    0.00kB/s    0:00:00            9,761 100%   10.29kB/s    0:00:00 (xfr#179, ir-chk=1223/1413)
+.well-known/openpgpkey/hu/f7tjaucuhpqd4pa9ytt5yogg7hnkmoxf
+              0   0%    0.00kB/s    0:00:00            2,849 100%    3.00kB/s    0:00:00 (xfr#180, ir-chk=1222/1413)
+.well-known/openpgpkey/hu/fbjedgjc37paxq471ij89frmicqyrx3x
+              0   0%    0.00kB/s    0:00:00            2,842 100%    2.99kB/s    0:00:00 (xfr#181, ir-chk=1221/1413)
+.well-known/openpgpkey/hu/fddaycc6ft9s5cruyo5i9xewt6qnmwj9
+              0   0%    0.00kB/s    0:00:00            6,153 100%    6.48kB/s    0:00:00 (xfr#182, ir-chk=1220/1413)
+.well-known/openpgpkey/hu/ff73e5h88r1c4so7kbgwb6muoooa1exk
+              0   0%    0.00kB/s    0:00:00            5,043 100%    5.31kB/s    0:00:00 (xfr#183, ir-chk=1219/1413)
+.well-known/openpgpkey/hu/fg747ojo1mjsksxdixdxr957b8b3myc9
+              0   0%    0.00kB/s    0:00:00            2,713 100%    2.85kB/s    0:00:00 (xfr#184, ir-chk=1218/1413)
+.well-known/openpgpkey/hu/fjj5it7f4c1eczzwp5nc8n3cb67beiiw
+              0   0%    0.00kB/s    0:00:00           15,009 100%   15.79kB/s    0:00:00 (xfr#185, ir-chk=1217/1413)
+.well-known/openpgpkey/hu/fooc6x4miog3e36u9asjgm1pdaphd7nc
+              0   0%    0.00kB/s    0:00:00            2,201 100%    2.32kB/s    0:00:00 (xfr#186, ir-chk=1216/1413)
+.well-known/openpgpkey/hu/fr7ms45s47htab313tez4qgrszdujqd9
+              0   0%    0.00kB/s    0:00:00            4,700 100%    4.95kB/s    0:00:00 (xfr#187, ir-chk=1215/1413)
+.well-known/openpgpkey/hu/fsgi14om17mj9rtgidbu7sqg5xrptyjy
+              0   0%    0.00kB/s    0:00:00            4,442 100%    4.66kB/s    0:00:00 (xfr#188, ir-chk=1214/1413)
+.well-known/openpgpkey/hu/ft13j7oeie6wd4cpjnngwa3eocxzbbfp
+              0   0%    0.00kB/s    0:00:00            2,213 100%    2.32kB/s    0:00:00 (xfr#189, ir-chk=1213/1413)
+.well-known/openpgpkey/hu/ftccgw5n984utpcxacgy5cgt3yqxcdcs
+              0   0%    0.00kB/s    0:00:00            2,284 100%    2.39kB/s    0:00:00 (xfr#190, ir-chk=1212/1413)
+.well-known/openpgpkey/hu/fuypbi5phmuxg6h155ia81nhscdxazqb
+              0   0%    0.00kB/s    0:00:00           10,802 100%   11.26kB/s    0:00:00 (xfr#191, ir-chk=1211/1413)
+.well-known/openpgpkey/hu/g59ozfgu1yitzr5w5fs6mrrc967s95yg
+              0   0%    0.00kB/s    0:00:00            3,439 100%    3.57kB/s    0:00:00 (xfr#192, ir-chk=1210/1413)
+.well-known/openpgpkey/hu/g9kbpgp7738hzfwhw1c6sdhmomdy4sqc
+              0   0%    0.00kB/s    0:00:00            5,545 100%    4.69kB/s    0:00:01 (xfr#193, ir-chk=1209/1413)
+.well-known/openpgpkey/hu/gbqcuienxo8whngnpf6w3k66y6wnrfuj
+              0   0%    0.00kB/s    0:00:00            3,825 100%    3.24kB/s    0:00:01 (xfr#194, ir-chk=1208/1413)
+.well-known/openpgpkey/hu/gcbc8tefag9q7rwed433aem1tqyhg985
+              0   0%    0.00kB/s    0:00:00            1,463 100%    1.24kB/s    0:00:01 (xfr#195, ir-chk=1207/1413)
+.well-known/openpgpkey/hu/gcp6rmdmcxfdhnod4orcfsegsgan3ix1
+              0   0%    0.00kB/s    0:00:00            2,211 100%    1.87kB/s    0:00:01 (xfr#196, ir-chk=1206/1413)
+.well-known/openpgpkey/hu/gdotewbryhthtixhkcef59ba4zz385su
+              0   0%    0.00kB/s    0:00:00            4,654 100%    3.93kB/s    0:00:01 (xfr#197, ir-chk=1205/1413)
+.well-known/openpgpkey/hu/gjhzz13tgn1e5rcanskxjuf5w3h5iq8f
+              0   0%    0.00kB/s    0:00:00           10,679 100%    8.96kB/s    0:00:01 (xfr#198, ir-chk=1204/1413)
+.well-known/openpgpkey/hu/gkwas6ryicu5bum3ygz1j8tx9se1pmhy
+              0   0%    0.00kB/s    0:00:00            3,428 100%    2.87kB/s    0:00:01 (xfr#199, ir-chk=1203/1413)
+.well-known/openpgpkey/hu/gmb9x4r47tn6q8wp8zxuasasb7bp749s
+              0   0%    0.00kB/s    0:00:00            3,425 100%    2.87kB/s    0:00:01 (xfr#200, ir-chk=1202/1413)
+.well-known/openpgpkey/hu/gmnurfgiu6jg15amm667ktqbzj159a8z
+              0   0%    0.00kB/s    0:00:00            5,612 100%    4.68kB/s    0:00:01 (xfr#201, ir-chk=1201/1413)
+.well-known/openpgpkey/hu/gngd5cip8fxgx7en5ce4uuitcy6weozy
+              0   0%    0.00kB/s    0:00:00            1,584 100%    1.32kB/s    0:00:01 (xfr#202, ir-chk=1200/1413)
+.well-known/openpgpkey/hu/grce6aajn6p8kz3q7tqk4a4qbws65kn7
+              0   0%    0.00kB/s    0:00:00            4,466 100%    3.15kB/s    0:00:01 (xfr#203, ir-chk=1199/1413)
+.well-known/openpgpkey/hu/gwiabeth4r8g745opz7cs51yrfdu1cz6
+              0   0%    0.00kB/s    0:00:00            4,127 100%    2.91kB/s    0:00:01 (xfr#204, ir-chk=1198/1413)
+.well-known/openpgpkey/hu/gzkjmpy4wo8ind9hzpodcwrfzn3fet7i
+              0   0%    0.00kB/s    0:00:00            2,223 100%    1.57kB/s    0:00:01 (xfr#205, ir-chk=1197/1413)
+.well-known/openpgpkey/hu/h66agnzn4drrbk5h4ejt3w396qgyp8f6
+              0   0%    0.00kB/s    0:00:00            4,012 100%    2.82kB/s    0:00:01 (xfr#206, ir-chk=1196/1413)
+.well-known/openpgpkey/hu/h9mfa6spsqz1ss88whgc9pmyy53pzb8t
+              0   0%    0.00kB/s    0:00:00            2,242 100%    1.58kB/s    0:00:01 (xfr#207, ir-chk=1195/1413)
+.well-known/openpgpkey/hu/hd6pmy69q9sgan8g4r1zcgqcnemp51cw
+              0   0%    0.00kB/s    0:00:00            4,689 100%    3.29kB/s    0:00:01 (xfr#208, ir-chk=1194/1413)
+.well-known/openpgpkey/hu/hmqugtrcbien5rz4ocsesqjigkt5874m
+              0   0%    0.00kB/s    0:00:00            2,820 100%    1.98kB/s    0:00:01 (xfr#209, ir-chk=1193/1413)
+.well-known/openpgpkey/hu/hpm3s8186j3if8ax1kkf84j3w48p786t
+              0   0%    0.00kB/s    0:00:00            5,838 100%    4.09kB/s    0:00:01 (xfr#210, ir-chk=1192/1413)
+.well-known/openpgpkey/hu/hxd99rtow6ntueynrnbo43etb4om75s1
+              0   0%    0.00kB/s    0:00:00            1,676 100%    1.17kB/s    0:00:01 (xfr#211, ir-chk=1191/1413)
+.well-known/openpgpkey/hu/i4ikwnq3wz7cxoh8exi8uk1mzd95bywo
+              0   0%    0.00kB/s    0:00:00            4,617 100%    3.23kB/s    0:00:01 (xfr#212, ir-chk=1190/1413)
+.well-known/openpgpkey/hu/i4wprgmuza437t6zfzkaoe4fry8dcfig
+              0   0%    0.00kB/s    0:00:00            2,221 100%    1.55kB/s    0:00:01 (xfr#213, ir-chk=1189/1413)
+.well-known/openpgpkey/hu/i7uj5fpradxykfnf4ufx5q3cmtfnoqf6
+              0   0%    0.00kB/s    0:00:00           29,096 100%   27.75MB/s    0:00:00 (xfr#214, ir-chk=1188/1413)
+.well-known/openpgpkey/hu/idpo1f1iw94871hh8gtpr68jcazredqy
+              0   0%    0.00kB/s    0:00:00            6,920 100%    3.30MB/s    0:00:00 (xfr#215, ir-chk=1187/1413)
+.well-known/openpgpkey/hu/isdmwekwycsj6imw8eco9ktrmgw7c8kn
+              0   0%    0.00kB/s    0:00:00            2,217 100%  721.68kB/s    0:00:00 (xfr#216, ir-chk=1186/1413)
+.well-known/openpgpkey/hu/izkx3wddfnt3jhfp189pw9zykhas5txp
+              0   0%    0.00kB/s    0:00:00            2,216 100%  360.68kB/s    0:00:00 (xfr#217, ir-chk=1185/1413)
+.well-known/openpgpkey/hu/j5japanjmw9bbgj15hniocq37ozar1j8
+              0   0%    0.00kB/s    0:00:00           13,352 100%    1.27MB/s    0:00:00 (xfr#218, ir-chk=1184/1413)
+.well-known/openpgpkey/hu/j9dtgbq11jcsocpydjgujidzut5zfs97
+              0   0%    0.00kB/s    0:00:00            2,219 100%   63.74kB/s    0:00:00 (xfr#219, ir-chk=1183/1413)
+.well-known/openpgpkey/hu/jazjdhkukszuozyndtwk1pm9f9jf86h7
+              0   0%    0.00kB/s    0:00:00            2,211 100%    9.64kB/s    0:00:00 (xfr#220, ir-chk=1182/1413)
+.well-known/openpgpkey/hu/je8knfcp8uddnwetuon5dx9obof7z7bb
+              0   0%    0.00kB/s    0:00:00           18,885 100%   79.84kB/s    0:00:00 (xfr#221, ir-chk=1181/1413)
+.well-known/openpgpkey/hu/jfa16a45yxys494cexxzb3r63dnsmyj7
+              0   0%    0.00kB/s    0:00:00            2,227 100%    9.41kB/s    0:00:00 (xfr#222, ir-chk=1180/1413)
+.well-known/openpgpkey/hu/jfgwjth4in6ee48maeaaumhxxwqfmepj
+              0   0%    0.00kB/s    0:00:00            2,308 100%    9.63kB/s    0:00:00 (xfr#223, ir-chk=1179/1413)
+.well-known/openpgpkey/hu/jk1skjnntbzuauuz4quw8zb8hrwhnaj9
+              0   0%    0.00kB/s    0:00:00            2,224 100%    9.28kB/s    0:00:00 (xfr#224, ir-chk=1178/1413)
+.well-known/openpgpkey/hu/jk9nktt6c8j4kpbijxzhr54c7t83hy4b
+              0   0%    0.00kB/s    0:00:00            7,064 100%   29.11kB/s    0:00:00 (xfr#225, ir-chk=1177/1413)
+.well-known/openpgpkey/hu/jxaxspeer98e5bw8m35c1e7rxbczax8x
+              0   0%    0.00kB/s    0:00:00            4,431 100%   18.26kB/s    0:00:00 (xfr#226, ir-chk=1176/1413)
+.well-known/openpgpkey/hu/jympixhpsg6g3mbisqtr3k3x9bnmmcg8
+              0   0%    0.00kB/s    0:00:00            2,208 100%    8.98kB/s    0:00:00 (xfr#227, ir-chk=1175/1413)
+.well-known/openpgpkey/hu/k443iteqoaoe9it8r44ua8cjbqpe9hna
+              0   0%    0.00kB/s    0:00:00            1,179 100%    4.80kB/s    0:00:00 (xfr#228, ir-chk=1174/1413)
+.well-known/openpgpkey/hu/k5mqwn6xdasq745xgzbqu7eq3p5ysxjz
+              0   0%    0.00kB/s    0:00:00            2,206 100%    8.98kB/s    0:00:00 (xfr#229, ir-chk=1173/1413)
+.well-known/openpgpkey/hu/k6z7tpjrqtu1wdobk8nyywwsj87w9pmx
+              0   0%    0.00kB/s    0:00:00            3,844 100%    5.60kB/s    0:00:00 (xfr#230, ir-chk=1172/1413)
+.well-known/openpgpkey/hu/k9n9nzuo4mqfnjsonn5in1814kdu57gs
+              0   0%    0.00kB/s    0:00:00            2,212 100%    3.22kB/s    0:00:00 (xfr#231, ir-chk=1171/1413)
+.well-known/openpgpkey/hu/kgph8h87ifttrpm6nor7hjhm97gi6s3f
+              0   0%    0.00kB/s    0:00:00            2,835 100%    4.13kB/s    0:00:00 (xfr#232, ir-chk=1170/1413)
+.well-known/openpgpkey/hu/ktc64ot455gfw99nr1q7cgeftmgnmtrz
+              0   0%    0.00kB/s    0:00:00           19,359 100%   28.17kB/s    0:00:00 (xfr#233, ir-chk=1169/1413)
+.well-known/openpgpkey/hu/ktiomrrzy311trpex779hqn4hfd9c8ht
+              0   0%    0.00kB/s    0:00:00            2,200 100%    3.20kB/s    0:00:00 (xfr#234, ir-chk=1168/1413)
+.well-known/openpgpkey/hu/ktujkt7nrz91b17es7prizffedzxrsna
+              0   0%    0.00kB/s    0:00:00            4,959 100%    7.22kB/s    0:00:00 (xfr#235, ir-chk=1167/1413)
+.well-known/openpgpkey/hu/kugnpcgpke3g4h3cgmg7wgg56gwrid1c
+              0   0%    0.00kB/s    0:00:00            2,829 100%    4.12kB/s    0:00:00 (xfr#236, ir-chk=1166/1413)
+.well-known/openpgpkey/hu/m1eiwsr58zxitui9n19ceg6cno7uxmbh
+              0   0%    0.00kB/s    0:00:00            1,209 100%    1.76kB/s    0:00:00 (xfr#237, ir-chk=1165/1413)
+.well-known/openpgpkey/hu/m53krq7di94t488htoeua8sdjpoesqau
+              0   0%    0.00kB/s    0:00:00            2,774 100%    4.04kB/s    0:00:00 (xfr#238, ir-chk=1164/1413)
+.well-known/openpgpkey/hu/m84q1jq78n8k8ij8afbxno5mmq85dhpr
+              0   0%    0.00kB/s    0:00:00            2,856 100%    4.16kB/s    0:00:00 (xfr#239, ir-chk=1163/1413)
+.well-known/openpgpkey/hu/mbdjzjuruf9hsoy7e3p1q3k48ty7guoe
+              0   0%    0.00kB/s    0:00:00            4,070 100%    5.92kB/s    0:00:00 (xfr#240, ir-chk=1162/1413)
+.well-known/openpgpkey/hu/mbw19ibdf8j1khq3u87h5ws74nffdbs5
+              0   0%    0.00kB/s    0:00:00            2,215 100%    3.22kB/s    0:00:00 (xfr#241, ir-chk=1161/1413)
+.well-known/openpgpkey/hu/mcx8tfcbuu57pxdzbrpouq97pw3owuuw
+              0   0%    0.00kB/s    0:00:00            3,422 100%    4.89kB/s    0:00:00 (xfr#242, ir-chk=1160/1413)
+.well-known/openpgpkey/hu/mewtec8bt8jm5uus1xxe7fpszxszrkqt
+              0   0%    0.00kB/s    0:00:00            6,594 100%    9.41kB/s    0:00:00 (xfr#243, ir-chk=1159/1413)
+.well-known/openpgpkey/hu/mf8x1e1foozjj9uwtwz5xwqmj1d8tg5n
+              0   0%    0.00kB/s    0:00:00           32,768   4%   28.00kB/s    0:00:22          196,608  29%   83.55kB/s    0:00:05          327,680  49%   86.81kB/s    0:00:03          458,752  68%   92.66kB/s    0:00:02          557,056  83%  105.65kB/s    0:00:01          622,592  93%   81.95kB/s    0:00:00          668,442 100%   83.35kB/s    0:00:07 (xfr#244, ir-chk=1158/1413)
+.well-known/openpgpkey/hu/mfu1x1fy7jg58qtc7uzp317c4xm5ghpa
+              0   0%    0.00kB/s    0:00:00            5,314 100%    9.12kB/s    0:00:00 (xfr#245, ir-chk=1157/1413)
+.well-known/openpgpkey/hu/moxgtcr31wgbg1rt6n5qn6kjtk8m7883
+              0   0%    0.00kB/s    0:00:00            2,235 100%    3.18kB/s    0:00:00 (xfr#246, ir-chk=1156/1413)
+.well-known/openpgpkey/hu/mtyfhtji9e4tr5qz8a8smd7tke9f98hq
+              0   0%    0.00kB/s    0:00:00            2,208 100%    3.14kB/s    0:00:00 (xfr#247, ir-chk=1155/1413)
+.well-known/openpgpkey/hu/mzyssbkqoz95w5rpgfgahipq1zqksrif
+              0   0%    0.00kB/s    0:00:00            1,153 100%    1.64kB/s    0:00:00 (xfr#248, ir-chk=1154/1413)
+.well-known/openpgpkey/hu/n88bujzh8q48ix8f1stjw5ir39si761c
+              0   0%    0.00kB/s    0:00:00            4,705 100%    5.75kB/s    0:00:00 (xfr#249, ir-chk=1153/1413)
+.well-known/openpgpkey/hu/n8wmzzo538ok6hb76e76ykz6mndrw1oa
+              0   0%    0.00kB/s    0:00:00            5,199 100%    5.54kB/s    0:00:00 (xfr#250, ir-chk=1152/1413)
+.well-known/openpgpkey/hu/ndet5a7mapk6ixwimq5ujh8ahhq4k5os
+              0   0%    0.00kB/s    0:00:00            2,205 100%    2.35kB/s    0:00:00 (xfr#251, ir-chk=1151/1413)
+.well-known/openpgpkey/hu/njks85fwcmnfe9fgsoiy89prmggutst3
+              0   0%    0.00kB/s    0:00:00            2,956 100%    2.81kB/s    0:00:01 (xfr#252, ir-chk=1150/1413)
+.well-known/openpgpkey/hu/nncepsdkojx6xjybnsmxnrdf9h8d74if
+              0   0%    0.00kB/s    0:00:00            2,203 100%    2.09kB/s    0:00:01 (xfr#253, ir-chk=1149/1413)
+.well-known/openpgpkey/hu/nnwce3qq91p745r1maujcujd3r8tnoqc
+              0   0%    0.00kB/s    0:00:00            6,725 100%    5.73kB/s    0:00:01 (xfr#254, ir-chk=1148/1413)
+.well-known/openpgpkey/hu/npdpzca66x5q6hsxnxwke386t36e3336
+              0   0%    0.00kB/s    0:00:00           29,082 100%   27.73MB/s    0:00:00 (xfr#255, ir-chk=1147/1413)
+.well-known/openpgpkey/hu/nz5bmx57rdbjg9d6ssi8mreo9iustbrc
+              0   0%    0.00kB/s    0:00:00            2,770 100%    2.64MB/s    0:00:00 (xfr#256, ir-chk=1146/1413)
+.well-known/openpgpkey/hu/o38trtoeg78yp3g4d617f3d65yh51iyt
+              0   0%    0.00kB/s    0:00:00            2,829 100%    2.70MB/s    0:00:00 (xfr#257, ir-chk=1145/1413)
+.well-known/openpgpkey/hu/obek4ce5xegodijjxwm96mko9ji4iorq
+              0   0%    0.00kB/s    0:00:00            3,559 100%   30.76kB/s    0:00:00 (xfr#258, ir-chk=1144/1413)
+.well-known/openpgpkey/hu/okkobcoyi7snwdskjz6iaqrqpq857dqg
+              0   0%    0.00kB/s    0:00:00            9,176 100%   38.96kB/s    0:00:00 (xfr#259, ir-chk=1143/1413)
+.well-known/openpgpkey/hu/opy4oakbfdju814d75x3uzqsehsgt958
+              0   0%    0.00kB/s    0:00:00            4,656 100%   13.18kB/s    0:00:00 (xfr#260, ir-chk=1142/1413)
+.well-known/openpgpkey/hu/oq47xoj3ydm4yabnzud3bczjjw7mdx6c
+              0   0%    0.00kB/s    0:00:00            4,012 100%    8.48kB/s    0:00:00 (xfr#261, ir-chk=1141/1413)
+.well-known/openpgpkey/hu/oswssxqr7frf1jykjq3jkkq38h64tdda
+              0   0%    0.00kB/s    0:00:00            2,207 100%    4.67kB/s    0:00:00 (xfr#262, ir-chk=1140/1413)
+.well-known/openpgpkey/hu/ott5i3ikqudcg71wwss83a75z89g999a
+              0   0%    0.00kB/s    0:00:00            4,464 100%    9.44kB/s    0:00:00 (xfr#263, ir-chk=1139/1413)
+.well-known/openpgpkey/hu/ougijy7n9gspdo51k8f4xowootrxrepa
+              0   0%    0.00kB/s    0:00:00            3,560 100%    6.03kB/s    0:00:00 (xfr#264, ir-chk=1138/1413)
+.well-known/openpgpkey/hu/outfdwz5abfirjhgnt7uiqgphkkqoun8
+              0   0%    0.00kB/s    0:00:00            8,997 100%   12.68kB/s    0:00:00 (xfr#265, ir-chk=1137/1413)
+.well-known/openpgpkey/hu/oy6dnnowru66qjujaygek73jgirzjxr9
+              0   0%    0.00kB/s    0:00:00            4,643 100%    5.62kB/s    0:00:00 (xfr#266, ir-chk=1136/1413)
+.well-known/openpgpkey/hu/oys6b6pbh6d5koaiwz3ykfhsbuj3y9i8
+              0   0%    0.00kB/s    0:00:00            3,450 100%    3.65kB/s    0:00:00 (xfr#267, ir-chk=1135/1413)
+.well-known/openpgpkey/hu/oz1u8hz8o1dnnxnpp85teatwf5yccj3w
+              0   0%    0.00kB/s    0:00:00            8,747 100%    8.24kB/s    0:00:01 (xfr#268, ir-chk=1134/1413)
+.well-known/openpgpkey/hu/p1u9i5ucigojjcxqgoxtdqnywioeib4g
+              0   0%    0.00kB/s    0:00:00            3,404 100%    3.21kB/s    0:00:01 (xfr#269, ir-chk=1133/1413)
+.well-known/openpgpkey/hu/pd8b3mydoi5736fiefpj8cgzt6adijfs
+              0   0%    0.00kB/s    0:00:00            2,229 100%    2.10kB/s    0:00:01 (xfr#270, ir-chk=1132/1413)
+.well-known/openpgpkey/hu/pf113mfnx1f3eb1yiwhsipa91xfc7o4x
+              0   0%    0.00kB/s    0:00:00            1,572 100%    1.33kB/s    0:00:01 (xfr#271, ir-chk=1131/1413)
+.well-known/openpgpkey/hu/pf1kujpec7xxojzikw595w1m8ho5o3p3
+              0   0%    0.00kB/s    0:00:00            1,188 100%    1.01kB/s    0:00:01 (xfr#272, ir-chk=1130/1413)
+.well-known/openpgpkey/hu/ph4shhfpmamqiiakhg81j4hwx9qqtbda
+              0   0%    0.00kB/s    0:00:00            2,216 100%    1.88kB/s    0:00:01 (xfr#273, ir-chk=1129/1413)
+.well-known/openpgpkey/hu/phw79dwowi9tzjo99it5ytwco47s4qw3
+              0   0%    0.00kB/s    0:00:00            2,850 100%    2.41kB/s    0:00:01 (xfr#274, ir-chk=1128/1413)
+.well-known/openpgpkey/hu/pkku3cqfgmt8cs1nhsbq3599meytyaow
+              0   0%    0.00kB/s    0:00:00            3,598 100%    2.77kB/s    0:00:01 (xfr#275, ir-chk=1127/1413)
+.well-known/openpgpkey/hu/pnecoqdojwdekkhdsatrk9h1mfu7nrkz
+              0   0%    0.00kB/s    0:00:00            3,433 100%    2.64kB/s    0:00:01 (xfr#276, ir-chk=1126/1413)
+.well-known/openpgpkey/hu/pqu3mxg9kz9txgn5nuqnxngmbc9jxc8s
+              0   0%    0.00kB/s    0:00:00            2,847 100%    2.19kB/s    0:00:01 (xfr#277, ir-chk=1125/1413)
+.well-known/openpgpkey/hu/prqxeyckzoxq5u5j3yun31kds8jk8afq
+              0   0%    0.00kB/s    0:00:00            2,867 100%    2.02kB/s    0:00:01 (xfr#278, ir-chk=1124/1413)
+.well-known/openpgpkey/hu/psisdrh9aztdqaefbjujgmadfz8pwzi9
+              0   0%    0.00kB/s    0:00:00           13,887 100%    9.06kB/s    0:00:01 (xfr#279, ir-chk=1123/1413)
+.well-known/openpgpkey/hu/pui5opb3mr6z1hk3uboe7fk8z57351mx
+              0   0%    0.00kB/s    0:00:00            3,455 100%    3.29MB/s    0:00:00 (xfr#280, ir-chk=1122/1413)
+.well-known/openpgpkey/hu/pzjwkbi54z1arep5sx18gmcz3rxorj55
+              0   0%    0.00kB/s    0:00:00            2,400 100%    2.29MB/s    0:00:00 (xfr#281, ir-chk=1121/1413)
+.well-known/openpgpkey/hu/q31s8sybmwq68onhwxx9nb1bi66s3nqf
+              0   0%    0.00kB/s    0:00:00            5,154 100%   44.54kB/s    0:00:00 (xfr#282, ir-chk=1120/1413)
+.well-known/openpgpkey/hu/q43s8wus5q1n1rsn7pfyrt3e6ogt5ybu
+              0   0%    0.00kB/s    0:00:00           23,432 100%   66.33kB/s    0:00:00 (xfr#283, ir-chk=1119/1413)
+.well-known/openpgpkey/hu/q4aagjdaswexwwqwsmzifz6iu1orydpt
+              0   0%    0.00kB/s    0:00:00            6,099 100%   12.92kB/s    0:00:00 (xfr#284, ir-chk=1118/1413)
+.well-known/openpgpkey/hu/q5capzzzir3hyt7a7euyy3jz1ni1xx5d
+              0   0%    0.00kB/s    0:00:00            2,219 100%    4.69kB/s    0:00:00 (xfr#285, ir-chk=1117/1413)
+.well-known/openpgpkey/hu/q6wpfwgi6bgyxk6ha8mwjanzzihgsh1d
+              0   0%    0.00kB/s    0:00:00            3,187 100%    5.41kB/s    0:00:00 (xfr#286, ir-chk=1116/1413)
+.well-known/openpgpkey/hu/q7ttjdjs7yoepbdujdtrgidzs7u38qmt
+              0   0%    0.00kB/s    0:00:00            3,924 100%    6.66kB/s    0:00:00 (xfr#287, ir-chk=1115/1413)
+.well-known/openpgpkey/hu/qb6tjrjmsjeci7u79a8key4so879au4s
+              0   0%    0.00kB/s    0:00:00            2,214 100%    3.76kB/s    0:00:00 (xfr#288, ir-chk=1114/1413)
+.well-known/openpgpkey/hu/qct4koa7doaoqkcdw4156e5wmp1i5z43
+              0   0%    0.00kB/s    0:00:00            2,821 100%    4.78kB/s    0:00:00 (xfr#289, ir-chk=1113/1413)
+.well-known/openpgpkey/hu/qhnenwiqfjh51p36oqo45pdgqmpwg8zu
+              0   0%    0.00kB/s    0:00:00            3,760 100%    5.30kB/s    0:00:00 (xfr#290, ir-chk=1112/1413)
+.well-known/openpgpkey/hu/qiy5hyc8qte7wqjd6kgrwk9ux86rsbct
+              0   0%    0.00kB/s    0:00:00            2,207 100%    3.11kB/s    0:00:00 (xfr#291, ir-chk=1111/1413)
+.well-known/openpgpkey/hu/qndyg7y49kmt93t614wabjqi8nrgdwiu
+              0   0%    0.00kB/s    0:00:00            3,454 100%    4.18kB/s    0:00:00 (xfr#292, ir-chk=1110/1413)
+.well-known/openpgpkey/hu/qns44iw89jzfabp9i5a68geyxh3ouusg
+              0   0%    0.00kB/s    0:00:00            6,657 100%    8.06kB/s    0:00:00 (xfr#293, ir-chk=1109/1413)
+.well-known/openpgpkey/hu/qny4xsc5tt4cy4ckqkg9d8t3nsw3mi9b
+              0   0%    0.00kB/s    0:00:00            2,559 100%    3.09kB/s    0:00:00 (xfr#294, ir-chk=1108/1413)
+.well-known/openpgpkey/hu/qr1i8b7dfo5y569g5654i4a18xa73dfs
+              0   0%    0.00kB/s    0:00:00            2,792 100%    2.95kB/s    0:00:00 (xfr#295, ir-chk=1107/1413)
+.well-known/openpgpkey/hu/qrq8871k9z8yxp9doyh415jnrooj7guc
+              0   0%    0.00kB/s    0:00:00            2,207 100%    2.34kB/s    0:00:00 (xfr#296, ir-chk=1106/1413)
+.well-known/openpgpkey/hu/qskbr6dmaw3upg3ng779ox73yisfsjp1
+              0   0%    0.00kB/s    0:00:00            6,721 100%    6.34kB/s    0:00:01 (xfr#297, ir-chk=1105/1413)
+.well-known/openpgpkey/hu/qya5okc17emypsozor65pu5cups9cihs
+              0   0%    0.00kB/s    0:00:00            5,987 100%    5.64kB/s    0:00:01 (xfr#298, ir-chk=1104/1413)
+.well-known/openpgpkey/hu/r3jgj9s3bxxa7yj4gibzm5ys6t9m5cqf
+              0   0%    0.00kB/s    0:00:00           11,369 100%    8.04kB/s    0:00:01 (xfr#299, ir-chk=1103/1413)
+.well-known/openpgpkey/hu/r4kax7bdjcwk97ufmed6ck8woojif7yr
+              0   0%    0.00kB/s    0:00:00            3,453 100%    2.44kB/s    0:00:01 (xfr#300, ir-chk=1102/1413)
+.well-known/openpgpkey/hu/r9snujz5xiap8x7xmmcghjxicoyb4oxp
+              0   0%    0.00kB/s    0:00:00            2,236 100%    1.58kB/s    0:00:01 (xfr#301, ir-chk=1101/1413)
+.well-known/openpgpkey/hu/rbh1fmi8a5bojxhnde6gkh4wq3qw7oif
+              0   0%    0.00kB/s    0:00:00           13,532 100%    8.83kB/s    0:00:01 (xfr#302, ir-chk=1100/1413)
+.well-known/openpgpkey/hu/rejqasxkdwsn6kc48t6myagmo1414otn
+              0   0%    0.00kB/s    0:00:00            3,031 100%    1.98kB/s    0:00:01 (xfr#303, ir-chk=1099/1413)
+.well-known/openpgpkey/hu/rg5wpqg1e8qnask88tx3cgoo1kzpezzi
+              0   0%    0.00kB/s    0:00:00            9,757 100%    9.31MB/s    0:00:00 (xfr#304, ir-chk=1098/1413)
+.well-known/openpgpkey/hu/ri4rz565jh9dcf8wbw8dmsftsaw7q3ty
+              0   0%    0.00kB/s    0:00:00            2,207 100%   19.24kB/s    0:00:00 (xfr#305, ir-chk=1097/1413)
+.well-known/openpgpkey/hu/rieo83enj8t7csnrdymqysmtqdi9afzx
+              0   0%    0.00kB/s    0:00:00            2,852 100%   24.65kB/s    0:00:00 (xfr#306, ir-chk=1096/1413)
+.well-known/openpgpkey/hu/rn5o6nzoyitqcp4az8zrryjq31mcmbco
+              0   0%    0.00kB/s    0:00:00            3,821 100%   16.29kB/s    0:00:00 (xfr#307, ir-chk=1095/1413)
+.well-known/openpgpkey/hu/rp49wa9n1nf5fz436adroqt4irt1ds54
+              0   0%    0.00kB/s    0:00:00            2,209 100%    9.42kB/s    0:00:00 (xfr#308, ir-chk=1094/1413)
+.well-known/openpgpkey/hu/rqu87duq86kgzuft1a95srrtnatrgdmg
+              0   0%    0.00kB/s    0:00:00           10,621 100%   30.15kB/s    0:00:00 (xfr#309, ir-chk=1093/1413)
+.well-known/openpgpkey/hu/rrauwtt7bqn3xhp6rcowf9nwysb6xs8s
+              0   0%    0.00kB/s    0:00:00            7,184 100%   15.32kB/s    0:00:00 (xfr#310, ir-chk=1092/1413)
+.well-known/openpgpkey/hu/rztgi3k9bjekxmcwd34j976emft5borp
+              0   0%    0.00kB/s    0:00:00           11,802 100%   20.11kB/s    0:00:00 (xfr#311, ir-chk=1091/1413)
+.well-known/openpgpkey/hu/s7htpoz6iqy4qy1fh64sq84xyj3o7x5r
+              0   0%    0.00kB/s    0:00:00            3,444 100%    5.86kB/s    0:00:00 (xfr#312, ir-chk=1090/1413)
+.well-known/openpgpkey/hu/s7pr4yob8c8gtmtcpqap39kmxxsnomqj
+              0   0%    0.00kB/s    0:00:00            4,060 100%    5.76kB/s    0:00:00 (xfr#313, ir-chk=1089/1413)
+.well-known/openpgpkey/hu/sapsizz4qsj4zmmscbz9f7y8cunt496y
+              0   0%    0.00kB/s    0:00:00           24,551 100%   26.09kB/s    0:00:00 (xfr#314, ir-chk=1088/1413)
+.well-known/openpgpkey/hu/sde6u3frhj5ny7n961p61yypwcmwwugg
+              0   0%    0.00kB/s    0:00:00            5,405 100%    5.11kB/s    0:00:01 (xfr#315, ir-chk=1087/1413)
+.well-known/openpgpkey/hu/sgg7k9acog6b9tb3hcb6q8jec4aj6q61
+              0   0%    0.00kB/s    0:00:00            3,461 100%    3.28kB/s    0:00:01 (xfr#316, ir-chk=1086/1413)
+.well-known/openpgpkey/hu/sha256sums.asc
+              0   0%    0.00kB/s    0:00:00           32,768  82%   21.46kB/s    0:00:00           39,891 100%   26.13kB/s    0:00:01 (xfr#317, ir-chk=1085/1413)
+.well-known/openpgpkey/hu/so7oiwxenn88iqdo461w94sj8mwmoayq
+              0   0%    0.00kB/s    0:00:00           20,077 100%  167.58kB/s    0:00:00 (xfr#318, ir-chk=1084/1413)
+.well-known/openpgpkey/hu/spx47kw9ch3n53f85746cezi1q1h4bz6
+              0   0%    0.00kB/s    0:00:00            3,408 100%   14.47kB/s    0:00:00 (xfr#319, ir-chk=1083/1413)
+.well-known/openpgpkey/hu/st1a9zm9zi1fakn3sdt34hebth3ymde1
+              0   0%    0.00kB/s    0:00:00            3,409 100%   14.47kB/s    0:00:00 (xfr#320, ir-chk=1082/1413)
+.well-known/openpgpkey/hu/swmhfschwxhoef4k5riqetdcxdwbax8t
+              0   0%    0.00kB/s    0:00:00            2,214 100%    9.40kB/s    0:00:00 (xfr#321, ir-chk=1081/1413)
+.well-known/openpgpkey/hu/swp3irtac4d4umr1xui9wdhztmxmtuif
+              0   0%    0.00kB/s    0:00:00           19,044 100%   40.43kB/s    0:00:00 (xfr#322, ir-chk=1080/1413)
+.well-known/openpgpkey/hu/sx43jaeku5qxkojh6rconeqwkbhccewo
+              0   0%    0.00kB/s    0:00:00            2,219 100%    4.71kB/s    0:00:00 (xfr#323, ir-chk=1079/1413)
+.well-known/openpgpkey/hu/t6jy6ewejiz6i8xaoqnda1wy1stqmmdx
+              0   0%    0.00kB/s    0:00:00            3,410 100%    7.22kB/s    0:00:00 (xfr#324, ir-chk=1078/1413)
+.well-known/openpgpkey/hu/t745jh8h6wg77hdghb98fqa6wyxnz8xb
+              0   0%    0.00kB/s    0:00:00            3,009 100%    5.85kB/s    0:00:00 (xfr#325, ir-chk=1077/1413)
+.well-known/openpgpkey/hu/t8ssfsyqq5yqsj8qbi1d8prk18bnqq46
+              0   0%    0.00kB/s    0:00:00            2,830 100%    4.80kB/s    0:00:00 (xfr#326, ir-chk=1076/1413)
+.well-known/openpgpkey/hu/tbcrubo1hq11rpknn31jq7zdycshs915
+              0   0%    0.00kB/s    0:00:00            2,218 100%    3.76kB/s    0:00:00 (xfr#327, ir-chk=1075/1413)
+.well-known/openpgpkey/hu/th9zmt4m4wcr7z84cw4cic6b8eykf7hw
+              0   0%    0.00kB/s    0:00:00            4,472 100%    7.57kB/s    0:00:00 (xfr#328, ir-chk=1074/1413)
+.well-known/openpgpkey/hu/thfh1mfc1o8u7y66sw6q46o9ryphhi31
+              0   0%    0.00kB/s    0:00:00            3,411 100%    4.83kB/s    0:00:00 (xfr#329, ir-chk=1073/1413)
+.well-known/openpgpkey/hu/thooruwobjcnen73sf9gysg7ow8n48qy
+              0   0%    0.00kB/s    0:00:00            4,037 100%    5.71kB/s    0:00:00 (xfr#330, ir-chk=1072/1413)
+.well-known/openpgpkey/hu/tj4bikgm479ma11s5s41tuw94fqwfhbw
+              0   0%    0.00kB/s    0:00:00            3,851 100%    5.44kB/s    0:00:00 (xfr#331, ir-chk=1071/1413)
+.well-known/openpgpkey/hu/tjnuzmc3nm96mg6y6nhkzab79g9b1ph6
+              0   0%    0.00kB/s    0:00:00            3,434 100%    4.17kB/s    0:00:00 (xfr#332, ir-chk=1070/1413)
+.well-known/openpgpkey/hu/tjwaw1rrr3qfomkjoiah8fjsehyfe15r
+              0   0%    0.00kB/s    0:00:00            4,044 100%    3.44kB/s    0:00:01 (xfr#333, ir-chk=1069/1413)
+.well-known/openpgpkey/hu/toebd1qop9d1iucuctqsophniqkwgbnp
+              0   0%    0.00kB/s    0:00:00            2,909 100%    2.47kB/s    0:00:01 (xfr#334, ir-chk=1068/1413)
+.well-known/openpgpkey/hu/ttw6he9u6t8anaigjim3a87nmozikkck
+              0   0%    0.00kB/s    0:00:00            4,072 100%    3.46kB/s    0:00:01 (xfr#335, ir-chk=1067/1413)
+.well-known/openpgpkey/hu/u16xsruy4jj6r4uj13d558f6hicbt41k
+              0   0%    0.00kB/s    0:00:00            3,418 100%    2.90kB/s    0:00:01 (xfr#336, ir-chk=1066/1413)
+.well-known/openpgpkey/hu/u35pansbn7prwoc64xjso63ibayrrdan
+              0   0%    0.00kB/s    0:00:00            2,816 100%    2.39kB/s    0:00:01 (xfr#337, ir-chk=1065/1413)
+.well-known/openpgpkey/hu/u9arwyiguh5sskh475b8dbabx19u37x3
+              0   0%    0.00kB/s    0:00:00            3,536 100%    3.00kB/s    0:00:01 (xfr#338, ir-chk=1064/1413)
+.well-known/openpgpkey/hu/u9ni1ezrxaohsynmzbhxp8z4nniiduan
+              0   0%    0.00kB/s    0:00:00            6,083 100%    5.17kB/s    0:00:01 (xfr#339, ir-chk=1063/1413)
+.well-known/openpgpkey/hu/ubw48y1ni4a1zrd8edem1d9wprguy4if
+              0   0%    0.00kB/s    0:00:00            9,202 100%    6.88kB/s    0:00:01 (xfr#340, ir-chk=1062/1413)
+.well-known/openpgpkey/hu/ugb3mkbotfdbm8k7eym35yppfx9gu8tb
+              0   0%    0.00kB/s    0:00:00           22,839 100%   21.78MB/s    0:00:00 (xfr#341, ir-chk=1061/1413)
+.well-known/openpgpkey/hu/ugyfb9obrahjxh14mkc83twujk1dd963
+              0   0%    0.00kB/s    0:00:00            2,220 100%    2.12MB/s    0:00:00 (xfr#342, ir-chk=1060/1413)
+.well-known/openpgpkey/hu/uk49kkohwn6xj7appseytabxcr4mmq81
+              0   0%    0.00kB/s    0:00:00            2,217 100%   55.51kB/s    0:00:00 (xfr#343, ir-chk=1059/1413)
+.well-known/openpgpkey/hu/us756bwe95qemmkpwp5dxhpgjqg8ddzn
+              0   0%    0.00kB/s    0:00:00            2,205 100%   55.21kB/s    0:00:00 (xfr#344, ir-chk=1058/1413)
+.well-known/openpgpkey/hu/uu1zqn35s13kdic5hmczhpbzuue3rkc9
+              0   0%    0.00kB/s    0:00:00            2,226 100%   55.74kB/s    0:00:00 (xfr#345, ir-chk=1057/1413)
+.well-known/openpgpkey/hu/uuq1w3j83yaktympfd8rentxq4zqaeeb
+              0   0%    0.00kB/s    0:00:00            6,744 100%   29.01kB/s    0:00:00 (xfr#346, ir-chk=1056/1413)
+.well-known/openpgpkey/hu/uw6at1sme9aw8tsxg4h4c8yjswwmftr4
+              0   0%    0.00kB/s    0:00:00            3,439 100%   14.67kB/s    0:00:00 (xfr#347, ir-chk=1055/1413)
+.well-known/openpgpkey/hu/ux5gb4epzq8ou4jawiad5myqptsoycqi
+              0   0%    0.00kB/s    0:00:00            8,119 100%   29.37kB/s    0:00:00 (xfr#348, ir-chk=1054/1413)
+.well-known/openpgpkey/hu/uymjj1zrjkw5cn7dzji3wr6sarmhpb83
+              0   0%    0.00kB/s    0:00:00            3,448 100%    5.47kB/s    0:00:00 (xfr#349, ir-chk=1053/1413)
+.well-known/openpgpkey/hu/w1d1ehhxa7tkxhogekg93m565az7ouex
+              0   0%    0.00kB/s    0:00:00            4,058 100%    6.43kB/s    0:00:00 (xfr#350, ir-chk=1052/1413)
+.well-known/openpgpkey/hu/w1pmw3nqrtrnad9d4t7gjqcqkkopx9ot
+              0   0%    0.00kB/s    0:00:00            6,983 100%   11.07kB/s    0:00:00 (xfr#351, ir-chk=1051/1413)
+.well-known/openpgpkey/hu/w88iq13fct5pre3q8wmi89apbth6pchi
+              0   0%    0.00kB/s    0:00:00            7,874 100%   12.48kB/s    0:00:00 (xfr#352, ir-chk=1050/1413)
+.well-known/openpgpkey/hu/w8drsi5f4k3f385tgfqmejgkxz3bur8q
+              0   0%    0.00kB/s    0:00:00            4,092 100%    6.49kB/s    0:00:00 (xfr#353, ir-chk=1049/1413)
+.well-known/openpgpkey/hu/wb3q1c9wmnyxhbnob4oe8iq865wbwbzo
+              0   0%    0.00kB/s    0:00:00            9,314 100%   11.31kB/s    0:00:00 (xfr#354, ir-chk=1048/1413)
+.well-known/openpgpkey/hu/wbp7trgro48kdyd9oi1ykze9zj5hpqwb
+              0   0%    0.00kB/s    0:00:00            3,471 100%    4.22kB/s    0:00:00 (xfr#355, ir-chk=1047/1413)
+.well-known/openpgpkey/hu/wg1z99uxjpun3pudco3erbbk6p57buft
+              0   0%    0.00kB/s    0:00:00            2,237 100%    2.38kB/s    0:00:00 (xfr#356, ir-chk=1046/1413)
+.well-known/openpgpkey/hu/whrjzpz87r1omsrki9ayp167cdgjnefs
+              0   0%    0.00kB/s    0:00:00            4,696 100%    4.78kB/s    0:00:00 (xfr#357, ir-chk=1045/1413)
+.well-known/openpgpkey/hu/wi9xgaafp3o5797n7613a4nibiypsy7o
+              0   0%    0.00kB/s    0:00:00            2,217 100%    2.14kB/s    0:00:01 (xfr#358, ir-chk=1044/1413)
+.well-known/openpgpkey/hu/wox9riitqmzcwfopmoyugrzy7i3r975q
+              0   0%    0.00kB/s    0:00:00            5,289 100%    5.00kB/s    0:00:01 (xfr#359, ir-chk=1043/1413)
+.well-known/openpgpkey/hu/wqmzaimzdxhr3wp7pm8yxnkd5wesagkp
+              0   0%    0.00kB/s    0:00:00            7,363 100%    6.05kB/s    0:00:01 (xfr#360, ir-chk=1042/1413)
+.well-known/openpgpkey/hu/wrn94s8ixdxkbxootfy7jtc7nwhshgni
+              0   0%    0.00kB/s    0:00:00            3,415 100%    2.81kB/s    0:00:01 (xfr#361, ir-chk=1041/1413)
+.well-known/openpgpkey/hu/wtkr1m1n9scbb3mz7xzfjdd6mg6aoq6k
+              0   0%    0.00kB/s    0:00:00            2,826 100%    2.23kB/s    0:00:01 (xfr#362, ir-chk=1040/1413)
+.well-known/openpgpkey/hu/wyf1qphkbgbn4ita3z7aamuh3o5pquns
+              0   0%    0.00kB/s    0:00:00            2,293 100%    1.77kB/s    0:00:01 (xfr#363, ir-chk=1039/1413)
+.well-known/openpgpkey/hu/wzgszpanjt8ybd3d7u9do31orgyxrd3x
+              0   0%    0.00kB/s    0:00:00            2,208 100%    1.56kB/s    0:00:01 (xfr#364, ir-chk=1038/1413)
+.well-known/openpgpkey/hu/wzrisxmhsuekhbpbmthhxgiwmdqn3dh6
+              0   0%    0.00kB/s    0:00:00            4,025 100%    2.85kB/s    0:00:01 (xfr#365, ir-chk=1037/1413)
+.well-known/openpgpkey/hu/x3gu8qkmy9awayn4xr1pw7tdqhn17ayx
+              0   0%    0.00kB/s    0:00:00            8,954 100%    5.95kB/s    0:00:01 (xfr#366, ir-chk=1036/1413)
+.well-known/openpgpkey/hu/x3whngg799e8i1unr7ar8nwzmagp57za
+              0   0%    0.00kB/s    0:00:00            2,892 100%    1.89kB/s    0:00:01 (xfr#367, ir-chk=1035/1413)
+.well-known/openpgpkey/hu/xab8ydyjgyjr8ha59w6nwtmm7mdxfckc
+              0   0%    0.00kB/s    0:00:00            7,142 100%    6.81MB/s    0:00:00 (xfr#368, ir-chk=1034/1413)
+.well-known/openpgpkey/hu/xaj4ft17tuc7qmypfdqdtco7drknhufo
+              0   0%    0.00kB/s    0:00:00            7,852 100%  102.24kB/s    0:00:00 (xfr#369, ir-chk=1033/1413)
+.well-known/openpgpkey/hu/xexky8zqpfo6s8tzfa4otou8ytdpbbzw
+              0   0%    0.00kB/s    0:00:00            2,211 100%   11.30kB/s    0:00:00 (xfr#370, ir-chk=1032/1413)
+.well-known/openpgpkey/hu/xffg35kojdbhmq3cqjsm9uhixwynn7bb
+              0   0%    0.00kB/s    0:00:00            8,126 100%   34.50kB/s    0:00:00 (xfr#371, ir-chk=1031/1413)
+.well-known/openpgpkey/hu/xk66kmbjo1mxwfw9s7ex183b8ewnnoix
+              0   0%    0.00kB/s    0:00:00            2,228 100%    4.25kB/s    0:00:00 (xfr#372, ir-chk=1030/1413)
+.well-known/openpgpkey/hu/xn3wfbo7oecsxcw91wpzg3ziwyu8hdba
+              0   0%    0.00kB/s    0:00:00            4,051 100%    6.06kB/s    0:00:00 (xfr#373, ir-chk=1029/1413)
+.well-known/openpgpkey/hu/xnihn4ogqg1mzdhwur9i3gz5sybjem7t
+              0   0%    0.00kB/s    0:00:00           14,935 100%   22.34kB/s    0:00:00 (xfr#374, ir-chk=1028/1413)
+.well-known/openpgpkey/hu/xnpuni4dwkg7y3irzekfuo43k8bjdsfg
+              0   0%    0.00kB/s    0:00:00            4,911 100%    4.83kB/s    0:00:00 (xfr#375, ir-chk=1027/1413)
+.well-known/openpgpkey/hu/xoerwthqqemcfxpn7c36cditoij5rjiw
+              0   0%    0.00kB/s    0:00:00            2,221 100%    2.18kB/s    0:00:00 (xfr#376, ir-chk=1026/1413)
+.well-known/openpgpkey/hu/y34fjd4pmft3gorkk8mno6us7q7n6oik
+              0   0%    0.00kB/s    0:00:00            2,814 100%    2.76kB/s    0:00:00 (xfr#377, ir-chk=1025/1413)
+.well-known/openpgpkey/hu/y4e4c3f1jpztmcoc4szqc151rhq5bn9b
+              0   0%    0.00kB/s    0:00:00            3,494 100%    3.43kB/s    0:00:00 (xfr#378, ir-chk=1024/1413)
+.well-known/openpgpkey/hu/y7red7zi5jguswuaoh89rpgty79qcesy
+              0   0%    0.00kB/s    0:00:00            2,209 100%    2.17kB/s    0:00:00 (xfr#379, ir-chk=1023/1413)
+.well-known/openpgpkey/hu/yccjmfhwx74to9nbg4s6gszcgu9q58qb
+              0   0%    0.00kB/s    0:00:00            3,421 100%    3.36kB/s    0:00:00 (xfr#380, ir-chk=1022/1413)
+.well-known/openpgpkey/hu/yd1c9d4gwiaybjnrjg935sgmzubyu9jk
+              0   0%    0.00kB/s    0:00:00            5,069 100%    4.13kB/s    0:00:01 (xfr#381, ir-chk=1021/1413)
+.well-known/openpgpkey/hu/yjqxhcup5fgs3bph8rnoadz64t91e9jk
+              0   0%    0.00kB/s    0:00:00            3,416 100%    2.78kB/s    0:00:01 (xfr#382, ir-chk=1020/1413)
+.well-known/openpgpkey/hu/yrn1nru9kr38b91o8sdkzyasitewx7fz
+              0   0%    0.00kB/s    0:00:00            6,717 100%    4.88kB/s    0:00:01 (xfr#383, ir-chk=1019/1413)
+.well-known/openpgpkey/hu/yt4k73n3oz447yw9kqnj57dsry8eq4co
+              0   0%    0.00kB/s    0:00:00            1,182 100%    0.81kB/s    0:00:01 (xfr#384, ir-chk=1018/1413)
+.well-known/openpgpkey/hu/yt99ojcxyrj633mqmaz6uag3o6awao3u
+              0   0%    0.00kB/s    0:00:00            3,467 100%    2.37kB/s    0:00:01 (xfr#385, ir-chk=1017/1413)
+.well-known/openpgpkey/hu/ytmb4z9fwgegmw9bt9f698oqwwbxysg8
+              0   0%    0.00kB/s    0:00:00            2,212 100%    2.11MB/s    0:00:00 (xfr#386, ir-chk=1016/1413)
+.well-known/openpgpkey/hu/z48crdk19z3bae9e8qtms7ngw99cscic
+              0   0%    0.00kB/s    0:00:00            4,044 100%    3.86MB/s    0:00:00 (xfr#387, ir-chk=1015/1413)
+.well-known/openpgpkey/hu/z4jjnnz8zpzitqh5xtzaes6dy3ybdfc1
+              0   0%    0.00kB/s    0:00:00            4,165 100%   32.28kB/s    0:00:00 (xfr#388, ir-chk=1014/1413)
+.well-known/openpgpkey/hu/z59r8io5eg9tnr3eoawihnnwmaxcfp6a
+              0   0%    0.00kB/s    0:00:00            8,206 100%   25.36kB/s    0:00:00 (xfr#389, ir-chk=1013/1413)
+.well-known/openpgpkey/hu/z63u9w884pchq18sfmd6xiphuqasym7j
+              0   0%    0.00kB/s    0:00:00           10,597 100%   18.99kB/s    0:00:00 (xfr#390, ir-chk=1012/1413)
+.well-known/openpgpkey/hu/z8kkf81ghqwu11cd1akmsof93kxpfyas
+              0   0%    0.00kB/s    0:00:00            4,805 100%    8.02kB/s    0:00:00 (xfr#391, ir-chk=1011/1413)
+.well-known/openpgpkey/hu/zij45sj5j8np9738gdof6rxt7aaoqu9r
+              0   0%    0.00kB/s    0:00:00            2,825 100%    4.00kB/s    0:00:00 (xfr#392, ir-chk=1010/1413)
+.well-known/openpgpkey/hu/zrqbbopqafu8hi7fskzqnbt7hwa1jgao
+              0   0%    0.00kB/s    0:00:00            4,096 100%    5.15kB/s    0:00:00 (xfr#393, ir-chk=1009/1413)
+.well-known/openpgpkey/hu/zt7p4rucfs7a8yi9dowkajtm1pt4gjag
+              0   0%    0.00kB/s    0:00:00            2,839 100%    3.57kB/s    0:00:00 (xfr#394, ir-chk=1008/1413)
+.well-known/openpgpkey/hu/ztr5xjj7b5t5get5txx86u7cssn1umee
+              0   0%    0.00kB/s    0:00:00            2,835 100%    3.39kB/s    0:00:00 (xfr#395, ir-chk=1007/1413)
+.well-known/openpgpkey/hu/zygbcy8syuj5bi5e6jz3bj58k9usybq7
+              0   0%    0.00kB/s    0:00:00            2,206 100%    2.34kB/s    0:00:00 (xfr#396, ir-chk=1006/1413)
+dist/
+dist/knoppix-dvd/
+dist/knoppix/
+dist/knoppix/contrib/
+dist/knoppix/contrib/knoppix-webserver-setup/
+dist/knoppix/docs/
+dist/knoppix/docs/HOWTO-burn/
+dist/knoppix/docs/knoppix_tutorial/
+dist/knoppix/docs/knoppix_tutorial/bilder/
+dist/knoppix/knoppix-cover/
+dist/knoppix/knoppix-cover/Tommie/
+dist/knoppix/knoppix-customize/
+dist/knoppix/knoppix-vortrag-als2000/
+dist/knoppix/md5-old/
+dist/planb/
+dist/planb/custom-kit.tar.gz
+              0   0%    0.00kB/s    0:00:00           32,768   0%   16.61kB/s    8:55:50          163,840   0%   51.30kB/s    2:53:25          360,448   0%   83.27kB/s    1:46:47          557,056   0%  103.96kB/s    1:25:30          688,128   0%  146.25kB/s    1:00:46          819,200   0%  140.20kB/s    1:03:22          917,504   0%  118.11kB/s    1:15:12        1,015,808   0%   94.30kB/s    1:34:11        1,146,880   0%   91.21kB/s    1:37:21        1,245,184   0%   87.95kB/s    1:40:56        1,343,488   0%   83.13kB/s    1:46:46        1,409,024   0%   71.43kB/s    2:04:15        1,474,560   0%   57.89kB/s    2:33:18        1,540,096   0%   52.56kB/s    2:48:48        1,605,632   0%   49.22kB/s    3:00:14        1,703,936   0%   59.64kB/s    2:28:43        1,835,008   0%   72.97kB/s    2:01:32        2,031,616   0%  102.37kB/s    1:26:35        2,228,224   0%  132.23kB/s    1:07:00        2,490,368   0%  159.01kB/s    0:55:42        2,686,976   0%  179.27kB/s    0:49:23        2,818,048   0%  154.75kB/s    0:57:12        2,883,584   0%  114.67kB/s    1:17:10        3,047,424   0%  104.21kB/s    1:24:54        3,145,728   0%   86.50kB/s    1:42:15        3,276,800   0%   89.74kB/s    1:38:32        3,375,104   0%  107.48kB/s    1:22:16        3,506,176   0%   92.89kB/s    1:35:10        3,604,480   0%   92.87kB/s    1:35:10        3,702,784   0%   86.29kB/s    1:42:24        3,833,856   0%   92.87kB/s    1:35:07        3,964,928   0%  100.58kB/s    1:27:48        4,096,000   0%  108.97kB/s    1:21:02        4,259,840   0%  122.22kB/s    1:12:13        4,423,680   0%  132.05kB/s    1:06:49        4,587,520   0%  133.71kB/s    1:05:58        4,718,592   0%  129.78kB/s    1:07:57        4,849,664   0%  120.48kB/s    1:13:11        4,947,968   0%  108.34kB/s    1:21:22        5,046,272   0%   94.83kB/s    1:32:56        5,144,576   0%   91.35kB/s    1:36:28        5,210,112   0%   80.68kB/s    1:49:13        5,308,416   0%   73.58kB/s    1:59:44        5,373,952   1%   68.23kB/s    2:09:06        5,472,256   1%   66.40kB/s    2:12:38        5,570,560   1%   72.18kB/s    2:02:00        5,668,864   1%   76.46kB/s    1:55:09        5,734,400   1%   76.27kB/s    1:55:25        5,832,704   1%   73.39kB/s    1:59:55        5,931,008   1%   72.86kB/s    2:00:46        6,029,312   1%   57.79kB/s    2:32:14        6,127,616   1%   59.93kB/s    2:26:47        6,193,152   1%   53.03kB/s    2:45:51        6,258,688   1%   43.93kB/s    3:20:12        6,324,224   1%   44.21kB/s    3:18:55        6,389,760   1%   41.03kB/s    3:34:16        6,488,064   1%   47.60kB/s    3:04:41        6,619,136   1%   66.65kB/s    2:11:51        6,717,440   1%   82.83kB/s    1:46:04        6,848,512   1%   93.76kB/s    1:33:41        6,979,584   1%  109.97kB/s    1:19:51        7,110,656   1%  101.74kB/s    1:26:18        7,208,960   1%   90.91kB/s    1:36:33        7,307,264   1%   85.82kB/s    1:42:16        7,405,568   1%   77.58kB/s    1:53:06        7,503,872   1%   76.66kB/s    1:54:26        7,602,176   1%   82.88kB/s    1:45:50        7,667,712   1%   77.01kB/s    1:53:53        7,766,016   1%   75.96kB/s    1:55:26        7,831,552   1%   68.49kB/s    2:08:00        7,929,856   1%   62.66kB/s    2:19:54        7,995,392   1%   60.85kB/s    2:24:03        8,060,928   1%   52.68kB/s    2:46:22        8,126,464   1%   52.05kB/s    2:48:21        8,192,000   1%   50.83kB/s    2:52:22        8,290,304   1%   56.55kB/s    2:34:55        8,388,608   1%   63.35kB/s    2:18:15        8,486,912   1%   69.94kB/s    2:05:12        8,585,216   1%   75.90kB/s    1:55:21        8,716,288   1%   81.54kB/s    1:47:21        8,814,592   1%   87.45kB/s    1:40:04        8,945,664   1%   92.01kB/s    1:35:05        9,043,968   1%   94.32kB/s    1:32:45        9,175,040   1%   92.87kB/s    1:34:10        9,273,344   1%   85.30kB/s    1:42:30        9,371,648   1%   76.84kB/s    1:53:46        9,469,952   1%   73.84kB/s    1:58:22        9,568,256   1%   72.60kB/s    2:00:22        9,666,560   1%   73.73kB/s    1:58:30        9,797,632   1%   81.28kB/s    1:47:28        9,895,936   1%   81.65kB/s    1:46:58        9,961,472   1%   72.70kB/s    2:00:07       10,027,008   1%   69.68kB/s    2:05:19       10,092,544   1%   59.20kB/s    2:27:28       10,190,848   1%   57.47kB/s    2:31:52       10,289,152   1%   63.37kB/s    2:17:43       10,387,456   1%   69.73kB/s    2:05:08       10,485,760   1%   76.05kB/s    1:54:42       10,616,832   1%   82.38kB/s    1:45:52       10,747,904   2%   92.91kB/s    1:33:51       10,878,976   2%   97.82kB/s    1:29:07       10,977,280   2%   99.54kB/s    1:27:33       11,042,816   2%   93.53kB/s    1:33:10       11,141,120   2%   82.87kB/s    1:45:08       11,239,424   2%   76.64kB/s    1:53:40       11,337,728   2%   69.11kB/s    2:06:01       11,436,032   2%   66.88kB/s    2:10:12       11,501,568   2%   60.82kB/s    2:23:10       11,567,104   2%   55.24kB/s    2:37:36       11,665,408   2%   57.95kB/s    2:30:12       11,796,480   2%   67.09kB/s    2:09:43       11,894,784   2%   75.95kB/s    1:54:33       11,993,088   2%   77.74kB/s    1:51:53       12,091,392   2%   74.26kB/s    1:57:07       12,156,928   2%   65.50kB/s    2:12:45       12,255,232   2%   63.30kB/s    2:17:21       12,353,536   2%   64.60kB/s    2:14:34       12,451,840   2%   63.81kB/s    2:16:11       12,550,144   2%   69.65kB/s    2:04:45       12,681,216   2%   77.50kB/s    1:52:06       12,746,752   2%   72.63kB/s    1:59:35       12,845,056   2%   75.93kB/s    1:54:22       12,943,360   2%   75.35kB/s    1:55:13       13,041,664   2%   67.64kB/s    2:08:20       13,139,968   2%   77.40kB/s    1:52:08       13,238,272   2%   82.88kB/s    1:44:42       13,369,344   2%   89.77kB/s    1:36:38       13,467,648   2%   96.47kB/s    1:29:54       13,598,720   2%  104.02kB/s    1:23:22       13,729,792   2%  110.98kB/s    1:18:07       13,860,864   2%  110.93kB/s    1:18:08       13,959,168   2%  109.94kB/s    1:18:49       14,057,472   2%  103.46kB/s    1:23:44       14,188,544   2%   97.10kB/s    1:29:12       14,286,848   2%   92.38kB/s    1:33:44       14,385,152   2%   88.06kB/s    1:38:19       14,483,456   2%   88.21kB/s    1:38:08       14,548,992   2%   76.17kB/s    1:53:38       14,647,296   2%   75.07kB/s    1:55:17       14,745,600   2%   72.91kB/s    1:58:41       14,843,904   2%   70.20kB/s    2:03:13       14,942,208   2%   75.41kB/s    1:54:41       15,040,512   2%   75.40kB/s    1:54:42       15,138,816   2%   74.72kB/s    1:55:42       15,237,120   2%   73.21kB/s    1:58:04       15,335,424   2%   77.20kB/s    1:51:57       15,466,496   2%   83.67kB/s    1:43:16       15,630,336   2%   98.18kB/s    1:27:59       15,761,408   2%  105.98kB/s    1:21:29       15,859,712   2%  104.19kB/s    1:22:52       15,958,016   2%   97.64kB/s    1:28:24       16,023,552   3%   83.46kB/s    1:43:25       16,121,856   3%   80.66kB/s    1:46:59       16,220,160   3%   82.20kB/s    1:44:57       16,318,464   3%   84.23kB/s    1:42:25       16,416,768   3%   90.91kB/s    1:34:52       16,515,072   3%   89.66kB/s    1:36:11       16,613,376   3%   85.43kB/s    1:40:55       16,678,912   3%   74.89kB/s    1:55:06       16,744,448   3%   64.39kB/s    2:13:52       16,809,984   3%   54.80kB/s    2:37:15       16,908,288   3%   54.97kB/s    2:36:45       16,973,824   3%   52.52kB/s    2:44:03       17,006,592   3%   46.72kB/s    3:04:25       17,072,128   3%   42.48kB/s    3:22:46       17,137,664   3%   35.18kB/s    4:04:49       17,203,200   3%   37.22kB/s    3:51:24       17,301,504   3%   49.73kB/s    2:53:08       17,432,576   3%   69.77kB/s    2:03:22       17,530,880   3%   79.62kB/s    1:48:05       17,629,184   3%   86.20kB/s    1:39:49       17,727,488   3%   86.20kB/s    1:39:48       17,858,560   3%   78.73kB/s    1:49:15       17,956,864   3%   82.29kB/s    1:44:29       18,055,168   3%   78.77kB/s    1:49:08       18,153,472   3%   75.42kB/s    1:53:58       18,251,776   3%   72.70kB/s    1:58:13       18,350,080   3%   69.70kB/s    2:03:16       18,448,384   3%   72.70kB/s    1:58:10       18,546,688   3%   61.95kB/s    2:18:39       18,579,456   3%   43.68kB/s    3:16:38       18,612,224   3%   32.88kB/s    4:21:14       18,644,992   3%   24.66kB/s    5:48:18       18,710,528   3%   22.56kB/s    6:20:40       18,808,832   3%   37.23kB/s    3:50:34       18,907,136   3%   52.22kB/s    2:44:22       18,939,904   3%   44.94kB/s    3:10:58       18,972,672   3%   36.07kB/s    3:57:57       19,005,440   3%   28.14kB/s    5:05:01       19,070,976   3%   21.07kB/s    6:47:16       19,103,744   3%   23.09kB/s    6:11:35       19,136,512   3%   26.04kB/s    5:29:31       19,169,280   3%   26.61kB/s    5:22:22       19,202,048   3%   25.34kB/s    5:38:35       19,234,816   3%   21.43kB/s    6:40:13       19,300,352   3%   26.38kB/s    5:25:10       19,365,888   3%   29.87kB/s    4:47:07       19,398,656   3%   24.68kB/s    5:47:29       19,464,192   3%   33.77kB/s    4:13:56       19,529,728   3%   26.62kB/s    5:22:02       19,562,496   3%   20.63kB/s    6:55:35       19,628,032   3%   23.00kB/s    6:12:40       19,660,800   3%   17.87kB/s    7:59:34       19,693,568   3%   18.32kB/s    7:47:47       19,726,336   3%    2.53kB/s   56:24:59       19,759,104   3%    2.07kB/s   69:02:27       19,791,872   3%    2.10kB/s   67:54:59       19,824,640   3%    2.09kB/s   68:10:07       19,857,408   3%   19.25kB/s    7:25:07       19,890,176   3%   19.25kB/s    7:25:05       19,955,712   3%   23.26kB/s    6:08:17       20,054,016   3%   34.91kB/s    4:05:21       20,119,552   3%   48.36kB/s    2:57:05       20,283,392   3%   79.47kB/s    1:47:43       20,480,000   3%  105.81kB/s    1:20:52       20,611,072   3%  108.02kB/s    1:19:11       20,709,376   3%  100.35kB/s    1:25:14       20,774,912   3%   77.39kB/s    1:50:30       20,840,448   3%   54.79kB/s    2:36:03       20,905,984   3%   44.61kB/s    3:11:40       20,938,752   3%   34.83kB/s    4:05:27       20,971,520   3%   32.14kB/s    4:25:57       21,037,056   3%   30.95kB/s    4:36:10       21,069,824   3%   26.28kB/s    5:25:17       21,102,592   3%   29.64kB/s    4:48:24       21,135,360   3%   30.25kB/s    4:42:30       21,200,896   3%   32.38kB/s    4:23:56       21,266,432   3%   24.62kB/s    5:47:01       21,299,200   3%   23.91kB/s    5:57:16       21,364,736   4%   25.26kB/s    5:38:09       21,430,272   4%   26.12kB/s    5:26:59       21,495,808   4%   40.28kB/s    3:32:01       21,561,344   4%   48.01kB/s    2:57:51       21,659,648   4%   56.42kB/s    2:31:20       21,725,184   4%   46.23kB/s    3:04:39       21,790,720   4%   45.89kB/s    3:06:00       21,856,256   4%   42.95kB/s    3:18:43       21,921,792   4%   39.72kB/s    3:34:50       22,020,096   4%   54.63kB/s    2:36:10       22,118,400   4%   60.70kB/s    2:20:32       22,249,472   4%   78.51kB/s    1:48:37       22,380,544   4%   97.39kB/s    1:27:32       22,577,152   4%  112.56kB/s    1:15:42       22,740,992   4%  124.46kB/s    1:08:27       22,839,296   4%  119.45kB/s    1:11:18       22,970,368   4%  112.99kB/s    1:15:22       23,068,672   4%   98.22kB/s    1:26:41       23,134,208   4%   79.64kB/s    1:46:54       23,199,744   4%   72.64kB/s    1:57:11       23,265,280   4%   59.42kB/s    2:23:14       23,330,816   4%   48.42kB/s    2:55:45       23,396,352   4%   48.32kB/s    2:56:05       23,461,888   4%   48.05kB/s    2:57:04       23,560,192   4%   54.43kB/s    2:36:16       23,658,496   4%   65.75kB/s    2:09:20       23,756,800   4%   72.91kB/s    1:56:37       23,887,872   4%   85.33kB/s    1:39:37       24,018,944   4%   90.47kB/s    1:33:56       24,150,016   4%   98.48kB/s    1:26:16       24,281,088   4%  104.23kB/s    1:21:29       24,412,160   4%  106.98kB/s    1:19:22       24,543,232   4%  111.38kB/s    1:16:13       24,641,536   4%   99.46kB/s    1:25:20       24,772,608   4%   98.50kB/s    1:26:08       24,870,912   4%   91.22kB/s    1:33:00       24,969,216   4%   83.02kB/s    1:42:10       25,067,520   4%   86.22kB/s    1:38:22       25,165,824   4%   80.37kB/s    1:45:30  Build was aborted
+Aborted by [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Finished: ABORTED

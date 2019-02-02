@@ -1,0 +1,205 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c8faa6f787a27b19ac1f274cb4000952f6a9d621 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c8faa6f787a27b19ac1f274cb4000952f6a9d621
+Commit message: "ruby activer support"
+ > git rev-list --no-walk c8faa6f787a27b19ac1f274cb4000952f6a9d621 # timeout=10
+[kalibsd2] $ /bin/sh -xe /tmp/jenkins2763597365733697863.sh
++ PORTS=/usr/local/poudriere/ports/kali2
++ CTGR=devel
++ PKG=rubygem-cms_scanner
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner
++ JNAME=lrelease
++ [ -d /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner ]
++ sudo poudriere ports -u -p kali2
+[00:00:00] Updating portstree "kali2" with portsnap...Looking up portsnap.FreeBSD.org mirrors... 5 mirrors found.
+Fetching snapshot tag from ec2-ap-southeast-2.portsnap.freebsd.org... done.
+Fetching snapshot metadata... done.
+Updating from Thu Dec 13 14:22:14 IST 2018 to Thu Dec 13 16:04:59 IST 2018.
+Fetching 5 metadata patches... done.
+Applying metadata patches... done.
+Fetching 0 metadata files... done.
+Fetching 8 patches. 
+                                     (0/8) 0.00%                                      (8/8) 100.00%  done. 
+done.
+Applying patches... 
+done.
+Fetching 0 new ports or files... done.
+Removing old files and directories... done.
+Extracting new files:
+/usr/local/poudriere/ports/kali2/devel/p5-App-Options/
+/usr/local/poudriere/ports/kali2/dns/bind9-devel/
+/usr/local/poudriere/ports/kali2/dns/bind911/
+/usr/local/poudriere/ports/kali2/dns/bind912/
+/usr/local/poudriere/ports/kali2/dns/bind913/
+/usr/local/poudriere/ports/kali2/math/py-CyLP/
+/usr/local/poudriere/ports/kali2/net/haproxy/
+/usr/local/poudriere/ports/kali2/net/py-s3cmd/
+Building new INDEX files... done.
+ done
++ sudo cp -Rfv /usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner /usr/local/poudriere/ports/kali2/devel
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner/distinfo -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/distinfo
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner/Makefile -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/Makefile
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner/pkg-descr -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/pkg-descr
++ cd /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
++ sudo make distclean .
+===>  Cleaning for rubygem-cms_scanner-0.0.39.3
+===>  Deleting distfiles for rubygem-cms_scanner-0.0.39.3
+`.' is up to date.
++ sudo make makesum .
+=> cms_scanner-0.0.39.3.gem doesn't seem to exist in /usr/local/poudriere/ports/kali2/distfiles/rubygem.
+=> Attempting to fetch https://rubygems.global.ssl.fastly.net/gems/cms_scanner-0.0.39.3.gem
+cms_scanner-0.0.39.3.gem                                 0  B    0  Bps
+`.' is up to date.
++ sudo poudriere bulk -c -j lrelease -p kali2 devel/rubygem-cms_scanner
+[00:00:00] Creating the reference jail... done
+[00:00:02] Mounting system devices for lrelease-kali2
+[00:00:02] Mounting ports/packages/distfiles
+[00:00:02] Converting package repository to new format
+[00:00:02] Stashing existing package repository
+[00:00:02] Mounting packages from: /usr/local/poudriere/data/packages/lrelease-kali2
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/lrelease-kali2/ref/etc/resolv.conf
+[00:00:02] Starting jail lrelease-kali2
+[00:00:10] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali2/2018-12-13_17h06m27s
+[00:00:10] Loading MOVED for /usr/local/poudriere/data/.m/lrelease-kali2/ref/usr/ports
+[00:00:13] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:13] Gathering ports metadata
+[00:00:15] Calculating ports order and dependencies
+[00:00:15] (-c) Cleaning all packages... done
+[00:00:16] Sanity checking the repository
+[00:00:16] Checking packages for incremental rebuild needs
+[00:00:16] Deleting stale symlinks... done
+[00:00:16] Deleting empty directories... done
+[00:00:16] Cleaning the build queue
+[00:00:16] Sanity checking build queue
+[00:00:16] Processing PRIORITY_BOOST
+[00:00:16] Balancing pool
+[00:00:16] Recording filesystem state for prepkg... done
+[00:00:22] Building 50 packages using 2 builders
+[00:00:22] Starting/Cloning builders
+[00:00:24] Hit CTRL+t at any time to see build progress and stats
+[00:00:24] [01] [00:00:00] Building ports-mgmt/pkg | pkg-1.10.5_5
+[00:02:16] [01] [00:01:52] Finished ports-mgmt/pkg | pkg-1.10.5_5: Success
+[00:02:16] [01] [00:00:00] Building print/indexinfo | indexinfo-0.3.1
+[00:02:16] [02] [00:00:00] Building lang/perl5.26 | perl5-5.26.3
+[00:02:21] [01] [00:00:05] Finished print/indexinfo | indexinfo-0.3.1: Success
+[00:02:21] [01] [00:00:00] Building devel/gettext-runtime | gettext-runtime-0.19.8.1_2
+[00:02:59] [01] [00:00:38] Finished devel/gettext-runtime | gettext-runtime-0.19.8.1_2: Success
+[00:03:00] [01] [00:00:00] Building devel/gettext-tools | gettext-tools-0.19.8.1_1
+[00:07:24] [01] [00:04:24] Finished devel/gettext-tools | gettext-tools-0.19.8.1_1: Success
+[00:07:24] [01] [00:00:00] Building converters/libiconv | libiconv-1.14_11
+[00:07:26] [02] [00:05:10] Finished lang/perl5.26 | perl5-5.26.3: Success
+[00:07:27] [02] [00:00:00] Building devel/p5-Locale-gettext | p5-Locale-gettext-1.07
+[00:07:54] [02] [00:00:27] Finished devel/p5-Locale-gettext | p5-Locale-gettext-1.07: Success
+[00:07:54] [02] [00:00:00] Building devel/gmake | gmake-4.2.1_3
+[00:08:09] [01] [00:00:45] Finished converters/libiconv | libiconv-1.14_11: Success
+[00:08:10] [01] [00:00:00] Building devel/p5-Locale-libintl | p5-Locale-libintl-1.31
+[00:08:14] [02] [00:00:20] Finished devel/gmake | gmake-4.2.1_3: Success
+[00:08:14] [02] [00:00:00] Building misc/help2man | help2man-1.47.8_1
+[00:08:26] [02] [00:00:12] Finished misc/help2man | help2man-1.47.8_1: Success
+[00:08:26] [02] [00:00:00] Building converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30
+[00:08:30] [01] [00:00:20] Finished devel/p5-Locale-libintl | p5-Locale-libintl-1.31: Success
+[00:08:30] [01] [00:00:00] Building textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40
+[00:08:37] [02] [00:00:11] Finished converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30: Success
+[00:08:37] [02] [00:00:00] Building devel/autoconf-wrapper | autoconf-wrapper-20131203
+[00:08:41] [02] [00:00:04] Finished devel/autoconf-wrapper | autoconf-wrapper-20131203: Success
+[00:08:41] [02] [00:00:00] Building devel/pkgconf | pkgconf-1.5.4,1
+[00:08:47] [01] [00:00:17] Finished textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40: Success
+[00:08:48] [01] [00:00:00] Building print/texinfo | texinfo-6.5_2,1
+[00:09:08] [02] [00:00:27] Finished devel/pkgconf | pkgconf-1.5.4,1: Success
+[00:09:08] [02] [00:00:00] Building devel/libffi | libffi-3.2.1_3
+[00:09:25] [02] [00:00:17] Finished devel/libffi | libffi-3.2.1_3: Success
+[00:09:26] [02] [00:00:00] Building textproc/libyaml | libyaml-0.2.1
+[00:09:39] [02] [00:00:13] Finished textproc/libyaml | libyaml-0.2.1: Success
+[00:09:40] [02] [00:00:00] Building devel/libunwind | libunwind-20170615
+[00:10:13] [02] [00:00:33] Finished devel/libunwind | libunwind-20170615: Success
+[00:10:13] [02] [00:00:00] Building devel/libedit | libedit-3.1.20170329_2,1
+[00:10:14] [01] [00:01:26] Finished print/texinfo | texinfo-6.5_2,1: Success
+[00:10:14] [01] [00:00:00] Building devel/m4 | m4-1.4.18_1,1
+[00:10:29] [02] [00:00:16] Finished devel/libedit | libedit-3.1.20170329_2,1: Success
+[00:10:29] [02] [00:00:00] Building security/ca_root_nss | ca_root_nss-3.41
+[00:10:42] [02] [00:00:13] Finished security/ca_root_nss | ca_root_nss-3.41: Success
+[00:10:42] [02] [00:00:00] Building dns/public_suffix_list | public_suffix_list-20181109
+[00:10:45] [02] [00:00:03] Finished dns/public_suffix_list | public_suffix_list-20181109: Success
+[00:10:45] [02] [00:00:00] Building security/libgpg-error | libgpg-error-1.32_1
+[00:11:00] [01] [00:00:46] Finished devel/m4 | m4-1.4.18_1,1: Success
+[00:11:00] [01] [00:00:00] Building devel/autoconf | autoconf-2.69_2
+[00:11:19] [02] [00:00:34] Finished security/libgpg-error | libgpg-error-1.32_1: Success
+[00:11:20] [02] [00:00:00] Building devel/libtool | libtool-2.4.6_1
+[00:11:25] [01] [00:00:25] Finished devel/autoconf | autoconf-2.69_2: Success
+[00:11:25] [01] [00:00:00] Building devel/automake | automake-1.16.1_1
+[00:11:41] [02] [00:00:21] Finished devel/libtool | libtool-2.4.6_1: Success
+[00:11:41] [02] [00:00:00] Building textproc/libxml2 | libxml2-2.9.7
+[00:11:43] [01] [00:00:18] Finished devel/automake | automake-1.16.1_1: Success
+[00:11:43] [01] [00:00:00] Building lang/ruby24 | ruby-2.4.5_1,1
+[00:12:57] [02] [00:01:16] Finished textproc/libxml2 | libxml2-2.9.7: Success
+[00:12:57] [02] [00:00:00] Building www/libnghttp2 | libnghttp2-1.35.0_1
+[00:14:03] [02] [00:01:06] Finished www/libnghttp2 | libnghttp2-1.35.0_1: Success
+[00:14:03] [02] [00:00:00] Building ftp/curl | curl-7.62.0
+[00:15:55] [02] [00:01:52] Finished ftp/curl | curl-7.62.0: Success
+[00:15:55] [02] [00:00:00] Building security/libgcrypt | libgcrypt-1.8.4_1
+[00:17:15] [02] [00:01:20] Finished security/libgcrypt | libgcrypt-1.8.4_1: Success
+[00:17:15] [02] [00:00:00] Building textproc/libxslt | libxslt-1.1.32
+[00:17:42] [02] [00:00:27] Finished textproc/libxslt | libxslt-1.1.32: Success
+[00:18:22] [01] [00:06:39] Finished lang/ruby24 | ruby-2.4.5_1,1: Success
+[00:18:23] [01] [00:00:00] Building devel/ruby-gems | ruby24-gems-2.7.8
+[00:18:36] [01] [00:00:13] Finished devel/ruby-gems | ruby24-gems-2.7.8: Success
+[00:18:37] [02] [00:00:00] Building devel/rubygem-concurrent-ruby | rubygem-concurrent-ruby-1.1.3
+[00:18:37] [01] [00:00:00] Building devel/rubygem-thread_safe | rubygem-thread_safe-0.3.6
+[00:18:45] [01] [00:00:08] Finished devel/rubygem-thread_safe | rubygem-thread_safe-0.3.6: Success
+[00:18:45] [01] [00:00:00] Building devel/rubygem-ffi | rubygem-ffi-1.9.25
+[00:18:46] [02] [00:00:09] Finished devel/rubygem-concurrent-ruby | rubygem-concurrent-ruby-1.1.3: Success
+[00:18:46] [02] [00:00:00] Building dns/rubygem-public_suffix | rubygem-public_suffix-3.0.3_2
+[00:18:55] [02] [00:00:09] Finished dns/rubygem-public_suffix | rubygem-public_suffix-3.0.3_2: Success
+[00:18:56] [02] [00:00:00] Building devel/rubygem-tzinfo | rubygem-tzinfo-1.2.5
+[00:19:20] [02] [00:00:24] Finished devel/rubygem-tzinfo | rubygem-tzinfo-1.2.5: Success
+[00:19:21] [02] [00:00:01] Building devel/rubygem-i18n | rubygem-i18n-1.1.1,2
+[00:19:21] [01] [00:00:36] Finished devel/rubygem-ffi | rubygem-ffi-1.9.25: Success
+[00:19:21] [01] [00:00:00] Building devel/rubygem-minitest | rubygem-minitest-5.11.3
+[00:19:43] [02] [00:00:23] Finished devel/rubygem-i18n | rubygem-i18n-1.1.1,2: Success
+[00:19:44] [02] [00:00:00] Building www/rubygem-ethon | rubygem-ethon-0.11.0
+[00:19:44] [01] [00:00:23] Finished devel/rubygem-minitest | rubygem-minitest-5.11.3: Success
+[00:19:44] [01] [00:00:00] Building devel/rubygem-pkg-config | rubygem-pkg-config-1.3.2
+[00:19:56] [01] [00:00:12] Finished devel/rubygem-pkg-config | rubygem-pkg-config-1.3.2: Success
+[00:19:56] [01] [00:00:00] Building www/rubygem-addressable | rubygem-addressable-2.5.2
+[00:20:02] [02] [00:00:18] Finished www/rubygem-ethon | rubygem-ethon-0.11.0: Success
+[00:20:02] [02] [00:00:00] Building devel/rubygem-activesupport5 | rubygem-activesupport5-5.1.6.1
+[00:20:10] [01] [00:00:14] Finished www/rubygem-addressable | rubygem-addressable-2.5.2: Success
+[00:20:11] [01] [00:00:00] Building devel/rubygem-ruby-progressbar | rubygem-ruby-progressbar-1.10.0
+[00:20:20] [02] [00:00:18] Finished devel/rubygem-activesupport5 | rubygem-activesupport5-5.1.6.1: Success
+[00:20:20] [02] [00:00:00] Building devel/rubygem-opt_parse_validator | rubygem-opt_parse_validator-0.0.16.1
+[00:20:28] [01] [00:00:17] Finished devel/rubygem-ruby-progressbar | rubygem-ruby-progressbar-1.10.0: Success
+[00:20:29] [01] [00:00:00] Building www/rubygem-typhoeus | rubygem-typhoeus-1.3.1
+[00:20:35] [02] [00:00:15] Finished devel/rubygem-opt_parse_validator | rubygem-opt_parse_validator-0.0.16.1: Success
+[00:20:36] [02] [00:00:01] Building devel/rubygem-yajl-ruby | rubygem-yajl-ruby-1.4.1
+[00:20:44] [01] [00:00:15] Finished www/rubygem-typhoeus | rubygem-typhoeus-1.3.1: Success
+[00:20:45] [01] [00:00:01] Building textproc/rubygem-nokogiri | rubygem-nokogiri-1.8.5
+[00:21:06] [02] [00:00:31] Finished devel/rubygem-yajl-ruby | rubygem-yajl-ruby-1.4.1: Success
+[00:21:26] [01] [00:00:42] Finished textproc/rubygem-nokogiri | rubygem-nokogiri-1.8.5: Success
+[00:21:26] [01] [00:00:00] Building devel/rubygem-cms_scanner | rubygem-cms_scanner-0.0.39.3
+[00:21:39] [01] [00:00:13] Finished devel/rubygem-cms_scanner | rubygem-cms_scanner-0.0.39.3: Success
+[00:21:39] Stopping 2 builders
+[00:21:40] Creating pkg repository
+Creating repository in /tmp/packages: .......... done
+Packing files for repository: .... done
+[00:21:43] Committing packages to repository
+[00:21:43] Removing old packages
+[00:21:44] Built ports: ports-mgmt/pkg print/indexinfo devel/gettext-runtime devel/gettext-tools lang/perl5.26 devel/p5-Locale-gettext converters/libiconv devel/gmake misc/help2man devel/p5-Locale-libintl converters/p5-Text-Unidecode devel/autoconf-wrapper textproc/p5-Unicode-EastAsianWidth devel/pkgconf devel/libffi textproc/libyaml devel/libunwind print/texinfo devel/libedit security/ca_root_nss dns/public_suffix_list devel/m4 security/libgpg-error devel/autoconf devel/libtool devel/automake textproc/libxml2 www/libnghttp2 ftp/curl security/libgcrypt textproc/libxslt lang/ruby24 devel/ruby-gems devel/rubygem-thread_safe devel/rubygem-concurrent-ruby dns/rubygem-public_suffix devel/rubygem-tzinfo devel/rubygem-ffi devel/rubygem-i18n devel/rubygem-minitest devel/rubygem-pkg-config www/rubygem-ethon www/rubygem-addressable devel/rubygem-activesupport5 devel/rubygem-ruby-progressbar devel/rubygem-opt_parse_validator www/rubygem-typhoeus devel/rubygem-yajl-ruby textproc/rubygem-nokogiri devel/rubygem-cms_scanner
+[lrelease-kali2] [2018-12-13_17h06m27s] [committing:] Queued: 50 Built: 50 Failed: 0  Skipped: 0  Ignored: 0  Tobuild: 0   Time: 00:34:24
+[00:21:44] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali2/2018-12-13_17h06m27s
+[00:21:44] Cleaning up
+[00:21:44] Unmounting file systems
+[EnvInject] - Injecting environment variables from a build step.
+Finished: SUCCESS

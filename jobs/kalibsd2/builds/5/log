@@ -1,0 +1,644 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd2
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision aea0597585568fe85a69c67b91be1550f583ef19 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f aea0597585568fe85a69c67b91be1550f583ef19
+Commit message: "updating version"
+ > git rev-list --no-walk aea0597585568fe85a69c67b91be1550f583ef19 # timeout=10
+[kalibsd2] $ /bin/sh -xe /tmp/jenkins1472475146644104097.sh
++ PORTS=/usr/local/poudriere/ports/kali2
++ CTGR=devel
++ PKG=rubygem-cms_scanner
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner
++ JNAME=twlv
++ [ -d /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner ]
++ sudo rm -rfv /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/Makefile
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/distinfo
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/pkg-descr
+/usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
++ sudo poudriere ports -u -p kali2
+[00:00:00] Updating portstree "kali2" with portsnap...Looking up portsnap.FreeBSD.org mirrors... 5 mirrors found.
+Fetching snapshot tag from ec2-ap-southeast-2.portsnap.freebsd.org... done.
+Fetching snapshot metadata... done.
+Updating from Sat Dec 15 12:26:41 IST 2018 to Sat Dec 15 14:55:16 IST 2018.
+Fetching 5 metadata patches... done.
+Applying metadata patches... done.
+Fetching 0 metadata files... done.
+Fetching 11 patches. 
+                                     (0/11) 0.00% .                                     (11/11) 100.00%  done. 
+done.
+Applying patches... 
+done.
+Fetching 1 new ports or files... done.
+Removing old files and directories... done.
+Extracting new files:
+/usr/local/poudriere/ports/kali2/biology/Makefile
+/usr/local/poudriere/ports/kali2/biology/py-fastTSNE/
+/usr/local/poudriere/ports/kali2/devel/leiningen/
+/usr/local/poudriere/ports/kali2/graphics/drm-fbsd12.0-kmod/
+/usr/local/poudriere/ports/kali2/math/py-cvxpy/
+/usr/local/poudriere/ports/kali2/multimedia/vlc/
+/usr/local/poudriere/ports/kali2/multimedia/vlc3/
+/usr/local/poudriere/ports/kali2/net-im/ssh-chat/
+/usr/local/poudriere/ports/kali2/net/liveMedia/
+/usr/local/poudriere/ports/kali2/ports-mgmt/porttree/
+/usr/local/poudriere/ports/kali2/security/p5-Crypt-CAST5_PP/
+/usr/local/poudriere/ports/kali2/sysutils/gotop/
+Building new INDEX files... done.
+ done
++ sudo cp -Rfv /usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner /usr/local/poudriere/ports/kali2/devel
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner/distinfo -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/distinfo
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner/Makefile -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/Makefile
+/usr/local/jenkins/workspace/kalibsd2/rubygem-cms_scanner/pkg-descr -> /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner/pkg-descr
++ cd /usr/local/poudriere/ports/kali2/devel/rubygem-cms_scanner
++ sudo make distclean .
+===>  Cleaning for rubygem-cms_scanner-0.0.39.4
+===>  Deleting distfiles for rubygem-cms_scanner-0.0.39.4
+`.' is up to date.
++ sudo make makesum .
+=> cms_scanner-0.0.39.4.gem doesn't seem to exist in /usr/local/poudriere/ports/kali2/distfiles/rubygem.
+=> Attempting to fetch https://rubygems.global.ssl.fastly.net/gems/cms_scanner-0.0.39.4.gem
+cms_scanner-0.0.39.4.gem                                 0  B    0  Bps
+`.' is up to date.
++ sudo poudriere bulk -c -j twlv -p kali2 devel/rubygem-cms_scanner
+[00:00:00] Creating the reference jail... done
+[00:00:02] Warning: !!! Jail is newer than host. (Jail: 1200086, Host: 1200065) !!!
+[00:00:02] Warning: This is not supported.
+[00:00:02] Warning: Host kernel must be same or newer than jail.
+[00:00:02] Warning: Expect build failures.
+[00:00:03] Mounting system devices for twlv-kali2
+[00:00:04] Mounting ports/packages/distfiles
+[00:00:04] Converting package repository to new format
+[00:00:04] Stashing existing package repository
+[00:00:04] Mounting packages from: /usr/local/poudriere/data/packages/twlv-kali2
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/twlv-kali2/ref/etc/resolv.conf
+[00:00:04] Starting jail twlv-kali2
+[00:00:11] Logs: /usr/local/poudriere/data/logs/bulk/twlv-kali2/2018-12-15_17h15m06s
+[00:00:11] Loading MOVED for /usr/local/poudriere/data/.m/twlv-kali2/ref/usr/ports
+[00:00:15] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:15] Gathering ports metadata
+[00:00:19] Calculating ports order and dependencies
+[00:00:19] (-c) Cleaning all packages... done
+[00:00:20] Sanity checking the repository
+[00:00:20] Checking packages for incremental rebuild needs
+[00:00:20] Deleting stale symlinks... done
+[00:00:20] Deleting empty directories... done
+[00:00:20] Cleaning the build queue
+[00:00:20] Sanity checking build queue
+[00:00:20] Processing PRIORITY_BOOST
+[00:00:20] Balancing pool
+[00:00:20] Recording filesystem state for prepkg... done
+[00:00:22] Building 50 packages using 2 builders
+[00:00:22] Starting/Cloning builders
+[00:00:23] Hit CTRL+t at any time to see build progress and stats
+[00:00:23] [01] [00:00:00] Building ports-mgmt/pkg | pkg-1.10.5_5
+[00:02:17] [01] [00:01:54] Finished ports-mgmt/pkg | pkg-1.10.5_5: Success
+[00:02:17] [01] [00:00:00] Building print/indexinfo | indexinfo-0.3.1
+[00:02:17] [02] [00:00:00] Building lang/perl5.28 | perl5-5.28.1
+[00:02:34] [01] [00:00:17] Finished print/indexinfo | indexinfo-0.3.1: Success
+[00:02:34] [01] [00:00:00] Building devel/gettext-runtime | gettext-runtime-0.19.8.1_2
+[00:03:30] [01] [00:00:56] Finished devel/gettext-runtime | gettext-runtime-0.19.8.1_2: Success
+[00:03:30] [01] [00:00:00] Building devel/gettext-tools | gettext-tools-0.19.8.1_1
+[00:08:13] [02] [00:05:56] Finished lang/perl5.28 | perl5-5.28.1: Success
+[00:08:14] [02] [00:00:00] Building converters/libiconv | libiconv-1.14_11
+[00:08:14] [01] [00:04:44] Finished devel/gettext-tools | gettext-tools-0.19.8.1_1: Success
+[00:08:14] [01] [00:00:00] Building devel/p5-Locale-gettext | p5-Locale-gettext-1.07
+[00:08:39] [01] [00:00:25] Finished devel/p5-Locale-gettext | p5-Locale-gettext-1.07: Success
+[00:08:39] [01] [00:00:00] Building devel/gmake | gmake-4.2.1_3
+[00:08:56] [02] [00:00:42] Finished converters/libiconv | libiconv-1.14_11: Success
+[00:08:56] [02] [00:00:00] Building devel/p5-Locale-libintl | p5-Locale-libintl-1.31
+[00:08:57] [01] [00:00:18] Finished devel/gmake | gmake-4.2.1_3: Success
+[00:08:57] [01] [00:00:00] Building misc/help2man | help2man-1.47.8_1
+[00:09:36] [01] [00:00:39] Finished misc/help2man | help2man-1.47.8_1: Success
+[00:09:36] [01] [00:00:00] Building converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30
+[00:09:40] [02] [00:00:44] Finished devel/p5-Locale-libintl | p5-Locale-libintl-1.31: Success
+[00:09:40] [02] [00:00:00] Building textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40
+[00:09:56] [02] [00:00:16] Finished textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40: Success
+[00:09:56] [02] [00:00:00] Building devel/autoconf-wrapper | autoconf-wrapper-20131203
+[00:09:58] [01] [00:00:22] Finished converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30: Success
+[00:09:58] [01] [00:00:00] Building print/texinfo | texinfo-6.5_2,1
+[00:10:17] [02] [00:00:21] Finished devel/autoconf-wrapper | autoconf-wrapper-20131203: Success
+[00:10:17] [02] [00:00:00] Building devel/pkgconf | pkgconf-1.5.4,1
+[00:11:11] [02] [00:00:54] Finished devel/pkgconf | pkgconf-1.5.4,1: Success
+[00:11:11] [02] [00:00:00] Building devel/libffi | libffi-3.2.1_3
+[00:11:29] [02] [00:00:18] Finished devel/libffi | libffi-3.2.1_3: Success
+[00:11:30] [02] [00:00:00] Building textproc/libyaml | libyaml-0.2.1
+[00:11:41] [01] [00:01:43] Finished print/texinfo | texinfo-6.5_2,1: Success
+[00:11:42] [01] [00:00:00] Building devel/m4 | m4-1.4.18_1,1
+[00:11:45] [02] [00:00:15] Finished textproc/libyaml | libyaml-0.2.1: Success
+[00:11:46] [02] [00:00:00] Building devel/libunwind | libunwind-20170615
+[00:12:16] [01] [00:00:34] Finished devel/m4 | m4-1.4.18_1,1: Success
+[00:12:17] [01] [00:00:00] Building devel/autoconf | autoconf-2.69_2
+[00:12:26] [02] [00:00:40] Finished devel/libunwind | libunwind-20170615: Success
+[00:12:27] [02] [00:00:00] Building devel/libedit | libedit-3.1.20170329_2,1
+[00:12:39] [01] [00:00:22] Finished devel/autoconf | autoconf-2.69_2: Success
+[00:12:39] [01] [00:00:00] Building devel/automake | automake-1.16.1_1
+[00:13:35] [01] [00:00:56] Finished devel/automake | automake-1.16.1_1: Success
+[00:13:35] [01] [00:00:00] Building devel/libtool | libtool-2.4.6_1
+[00:13:48] [02] [00:01:21] Finished devel/libedit | libedit-3.1.20170329_2,1: Success
+[00:13:48] [02] [00:00:00] Building lang/ruby24 | ruby-2.4.5_1,1
+[00:14:52] [01] [00:01:17] Finished devel/libtool | libtool-2.4.6_1: Success
+[00:14:52] [01] [00:00:00] Building security/ca_root_nss | ca_root_nss-3.41
+[00:16:28] [01] [00:01:36] Finished security/ca_root_nss | ca_root_nss-3.41: Success
+[00:16:28] [01] [00:00:00] Building dns/public_suffix_list | public_suffix_list-20181109
+[00:16:46] [01] [00:00:18] Finished dns/public_suffix_list | public_suffix_list-20181109: Success
+[00:16:47] [01] [00:00:00] Building security/libgpg-error | libgpg-error-1.32_1
+[00:17:46] [01] [00:00:59] Finished security/libgpg-error | libgpg-error-1.32_1: Success
+[00:17:47] [01] [00:00:00] Building www/libnghttp2 | libnghttp2-1.35.1
+[00:18:27] [01] [00:00:40] Finished www/libnghttp2 | libnghttp2-1.35.1: Success
+[00:18:27] [01] [00:00:00] Building ftp/curl | curl-7.62.0
+[00:19:54] [01] [00:01:27] Finished ftp/curl | curl-7.62.0: Success
+[00:19:54] [01] [00:00:00] Building textproc/libxml2 | libxml2-2.9.7
+[00:20:59] [01] [00:01:05] Finished textproc/libxml2 | libxml2-2.9.7: Success
+[00:20:59] [01] [00:00:00] Building security/libgcrypt | libgcrypt-1.8.4_1
+[00:21:02] [02] [00:07:14] Finished lang/ruby24 | ruby-2.4.5_1,1: Success
+[00:21:03] [02] [00:00:00] Building devel/ruby-gems | ruby24-gems-2.7.8
+[00:21:43] [02] [00:00:40] Finished devel/ruby-gems | ruby24-gems-2.7.8: Success
+[00:21:43] [02] [00:00:00] Building devel/rubygem-thread_safe | rubygem-thread_safe-0.3.6
+[00:21:57] [02] [00:00:14] Finished devel/rubygem-thread_safe | rubygem-thread_safe-0.3.6: Success
+[00:21:58] [02] [00:00:00] Building devel/rubygem-concurrent-ruby | rubygem-concurrent-ruby-1.1.3
+[00:22:03] [01] [00:01:04] Finished security/libgcrypt | libgcrypt-1.8.4_1: Success
+[00:22:03] [01] [00:00:00] Building devel/rubygem-ffi | rubygem-ffi-1.9.25
+[00:22:07] [02] [00:00:09] Finished devel/rubygem-concurrent-ruby | rubygem-concurrent-ruby-1.1.3: Success
+[00:22:07] [02] [00:00:00] Building dns/rubygem-public_suffix | rubygem-public_suffix-3.0.3_2
+[00:22:17] [02] [00:00:10] Finished dns/rubygem-public_suffix | rubygem-public_suffix-3.0.3_2: Success
+[00:22:17] [02] [00:00:00] Building devel/rubygem-tzinfo | rubygem-tzinfo-1.2.5
+[00:22:21] [01] [00:00:18] Finished devel/rubygem-ffi | rubygem-ffi-1.9.25: Success
+[00:22:21] [01] [00:00:00] Building devel/rubygem-i18n | rubygem-i18n-1.1.1,2
+[00:22:33] [01] [00:00:12] Finished devel/rubygem-i18n | rubygem-i18n-1.1.1,2: Success
+[00:22:34] [01] [00:00:00] Building devel/rubygem-minitest | rubygem-minitest-5.11.3
+[00:22:35] [02] [00:00:18] Finished devel/rubygem-tzinfo | rubygem-tzinfo-1.2.5: Success
+[00:22:35] [02] [00:00:00] Building textproc/libxslt | libxslt-1.1.32
+[00:22:57] [01] [00:00:23] Finished devel/rubygem-minitest | rubygem-minitest-5.11.3: Success
+[00:22:57] [01] [00:00:00] Building www/rubygem-ethon | rubygem-ethon-0.11.0
+[00:23:08] [02] [00:00:33] Finished textproc/libxslt | libxslt-1.1.32: Success
+[00:23:08] [02] [00:00:00] Building devel/rubygem-pkg-config | rubygem-pkg-config-1.3.2
+[00:23:22] [02] [00:00:14] Finished devel/rubygem-pkg-config | rubygem-pkg-config-1.3.2: Success
+[00:23:22] [02] [00:00:00] Building www/rubygem-addressable | rubygem-addressable-2.5.2
+[00:24:00] [01] [00:01:03] Finished www/rubygem-ethon | rubygem-ethon-0.11.0: Success
+[00:24:00] [01] [00:00:00] Building devel/rubygem-activesupport5 | rubygem-activesupport5-5.1.6.1
+[00:24:14] [02] [00:00:52] Finished www/rubygem-addressable | rubygem-addressable-2.5.2: Success
+[00:24:14] [02] [00:00:00] Building devel/rubygem-ruby-progressbar | rubygem-ruby-progressbar-1.10.0
+[00:24:29] [01] [00:00:29] Finished devel/rubygem-activesupport5 | rubygem-activesupport5-5.1.6.1: Success
+[00:24:29] [01] [00:00:00] Building devel/rubygem-opt_parse_validator | rubygem-opt_parse_validator-0.0.16.1
+[00:24:36] [02] [00:00:22] Finished devel/rubygem-ruby-progressbar | rubygem-ruby-progressbar-1.10.0: Success
+[00:24:37] [02] [00:00:00] Building www/rubygem-typhoeus | rubygem-typhoeus-1.3.1
+[00:24:45] [01] [00:00:16] Finished devel/rubygem-opt_parse_validator | rubygem-opt_parse_validator-0.0.16.1: Success
+[00:24:45] [01] [00:00:00] Building devel/rubygem-yajl-ruby | rubygem-yajl-ruby-1.4.1
+[00:25:15] [02] [00:00:38] Finished www/rubygem-typhoeus | rubygem-typhoeus-1.3.1: Success
+[00:25:15] [02] [00:00:00] Building textproc/rubygem-nokogiri | rubygem-nokogiri-1.8.5
+[00:25:31] [01] [00:00:46] Finished devel/rubygem-yajl-ruby | rubygem-yajl-ruby-1.4.1: Success
+[00:25:44] [02] [00:00:29] Finished textproc/rubygem-nokogiri | rubygem-nokogiri-1.8.5: Success
+[00:25:44] [01] [00:00:00] Building devel/rubygem-cms_scanner | rubygem-cms_scanner-0.0.39.4
+[00:26:19] [01] [00:00:35] Finished devel/rubygem-cms_scanner | rubygem-cms_scanner-0.0.39.4: Success
+[00:26:22] Stopping 2 builders
+[00:26:46] Creating pkg repository
+Creating repository in /tmp/packages: .......... done
+Packing files for repository: .... done
+[00:26:57] Committing packages to repository
+[00:26:57] Removing old packages
+[00:26:57] Built ports: ports-mgmt/pkg print/indexinfo devel/gettext-runtime lang/perl5.28 devel/gettext-tools devel/p5-Locale-gettext converters/libiconv devel/gmake misc/help2man devel/p5-Locale-libintl textproc/p5-Unicode-EastAsianWidth converters/p5-Text-Unidecode devel/autoconf-wrapper devel/pkgconf devel/libffi print/texinfo textproc/libyaml devel/m4 devel/libunwind devel/autoconf devel/automake devel/libedit devel/libtool security/ca_root_nss dns/public_suffix_list security/libgpg-error www/libnghttp2 ftp/curl textproc/libxml2 lang/ruby24 devel/ruby-gems devel/rubygem-thread_safe security/libgcrypt devel/rubygem-concurrent-ruby dns/rubygem-public_suffix devel/rubygem-ffi devel/rubygem-i18n devel/rubygem-tzinfo devel/rubygem-minitest textproc/libxslt devel/rubygem-pkg-config www/rubygem-ethon www/rubygem-addressable devel/rubygem-activesupport5 devel/rubygem-ruby-progressbar devel/rubygem-opt_parse_validator www/rubygem-typhoeus devel/rubygem-yajl-ruby textproc/rubygem-nokogiri devel/rubygem-cms_scanner
+[twlv-kali2] [2018-12-15_17h15m06s] [committing:] Queued: 50 Built: 50 Failed: 0  Skipped: 0  Ignored: 0  Tobuild: 0   Time: 00:26:46
+[00:26:57] Logs: /usr/local/poudriere/data/logs/bulk/twlv-kali2/2018-12-15_17h15m06s
+[00:26:57] Cleaning up
+[00:26:57] Unmounting file systems
++ sudo poudriere testport -j twlv -p kali2 devel/rubygem-cms_scanner
+[00:00:04] Creating the reference jail... done
+[00:00:05] Warning: !!! Jail is newer than host. (Jail: 1200086, Host: 1200065) !!!
+[00:00:05] Warning: This is not supported.
+[00:00:05] Warning: Host kernel must be same or newer than jail.
+[00:00:05] Warning: Expect build failures.
+[00:00:06] Mounting system devices for twlv-kali2
+[00:00:06] Mounting ports/packages/distfiles
+[00:00:06] Stashing existing package repository
+[00:00:06] Mounting packages from: /usr/local/poudriere/data/packages/twlv-kali2
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/twlv-kali2/ref/etc/resolv.conf
+[00:00:07] Starting jail twlv-kali2
+[00:00:08] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:09] Logs: /usr/local/poudriere/data/logs/bulk/twlv-kali2/2018-12-15_17h42m09s
+[00:00:09] Loading MOVED for /usr/local/poudriere/data/.m/twlv-kali2/ref/usr/ports
+[00:00:13] Gathering ports metadata
+[00:00:15] Calculating ports order and dependencies
+[00:00:15] Sanity checking the repository
+[00:00:15] Checking packages for incremental rebuild needs
+[00:00:16] Deleting stale symlinks... done
+[00:00:16] Deleting empty directories... done
+[00:00:16] Cleaning the build queue
+[00:00:16] Sanity checking build queue
+[00:00:16] Processing PRIORITY_BOOST
+[00:00:16] Balancing pool
+[00:00:16] Recording filesystem state for prepkg... done
+[00:00:19] Committing packages to repository
+[00:00:19] Removing old packages
+[00:00:19] Building with flags: 
+[00:00:19] Removing existing /usr/local
+build started at Sat Dec 15 17:42:27 IST 2018
+port directory: /usr/ports/devel/rubygem-cms_scanner
+package name: rubygem-cms_scanner-0.0.39.4
+building for: FreeBSD twlv-kali2 12.0-RELEASE FreeBSD 12.0-RELEASE amd64
+maintained by: rihaz.jerrin@gmail.com
+Makefile ident: 
+Poudriere version: 3.2.7
+Host OSVERSION: 1200065
+Jail OSVERSION: 1200086
+Job Id: 
+
+
+
+
+!!! Jail is newer than host. (Jail: 1200086, Host: 1200065) !!!
+!!! This is not supported. !!!
+!!! Host kernel must be same or newer than jail. !!!
+!!! Expect build failures. !!!
+
+
+
+---Begin Environment---
+SHELL=/bin/csh
+OSVERSION=1200086
+UNAME_v=FreeBSD 12.0-RELEASE
+UNAME_r=12.0-RELEASE
+BLOCKSIZE=K
+MAIL=/var/mail/root
+WARNING_WAIT=0
+STATUS=1
+HOME=/root
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin
+LOCALBASE=/usr/local
+USER=root
+TRYBROKEN=yes
+LIBEXECPREFIX=/libexec/poudriere
+POUDRIERE_VERSION=3.2.7
+MASTERMNT=/usr/local/poudriere/data/.m/twlv-kali2/ref
+DEV_WARNING_WAIT=0
+POUDRIERE_BUILD_TYPE=bulk
+PACKAGE_BUILDING=yes
+SAVED_TERM=su
+GID=0
+UID=0
+PWD=/usr/local/poudriere/data/.m/twlv-kali2/ref/.p
+NO_WARNING_PKG_INSTALL_EOL=yes
+P_PORTS_FEATURES=FLAVORS SELECTED_OPTIONS
+MASTERNAME=twlv-kali2
+SCRIPTPREFIX=/usr/share/poudriere
+OLDPWD=/usr/local/poudriere/data/.m/twlv-kali2/ref/.p
+SCRIPTPATH=/usr/share/poudriere/testport.sh
+POUDRIEREPATH=/usr/bin/poudriere
+---End Environment---
+
+---Begin Poudriere Port Flags/Env---
+PORT_FLAGS=
+PKGENV=PACKAGES=/tmp/pkgs PKGREPOSITORY=/tmp/pkgs
+FLAVOR=
+DEPENDS_ARGS=
+MAKE_ARGS=
+---End Poudriere Port Flags/Env---
+
+---Begin OPTIONS List---
+---End OPTIONS List---
+
+--MAINTAINER--
+rihaz.jerrin@gmail.com
+--End MAINTAINER--
+
+--CONFIGURE_ARGS--
+
+--End CONFIGURE_ARGS--
+
+--CONFIGURE_ENV--
+XDG_DATA_HOME=/wrkdirs/usr/ports/devel/rubygem-cms_scanner/work  XDG_CONFIG_HOME=/wrkdirs/usr/ports/devel/rubygem-cms_scanner/work  HOME=/wrkdirs/usr/ports/devel/rubygem-cms_scanner/work TMPDIR="/tmp" PATH=/wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/.bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin SHELL=/bin/sh CONFIG_SHELL=/bin/sh LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+--End CONFIGURE_ENV--
+
+--MAKE_ENV--
+XDG_DATA_HOME=/wrkdirs/usr/ports/devel/rubygem-cms_scanner/work  XDG_CONFIG_HOME=/wrkdirs/usr/ports/devel/rubygem-cms_scanner/work  HOME=/wrkdirs/usr/ports/devel/rubygem-cms_scanner/work TMPDIR="/tmp" PATH=/wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/.bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin NO_PIE=yes MK_DEBUG_FILES=no MK_KERNEL_SYMBOLS=no SHELL=/bin/sh NO_LINT=YES LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 PREFIX=/usr/local  LOCALBASE=/usr/local  CC="cc" CFLAGS="-O2 -pipe  -fstack-protector -fno-strict-aliasing "  CPP="cpp" CPPFLAGS=""  LDFLAGS=" -fstack-protector " LIBS=""  CXX="c++" CXXFLAGS="-O2 -pipe -fstack-protector -fno-strict-aliasing  "  MANPREFIX="/usr/local" BSD_INSTALL_PROGRAM="install  -s -m 555"  BSD_INSTALL_LIB="install  -s -m 0644"  BSD_INSTALL_SCRIPT="install  -m 555"  BSD_INSTALL_DATA="install  -m 0644"  BSD_INSTALL_MAN="install  -m 444"
+--End MAKE_ENV--
+
+--PLIST_SUB--
+RUBY_LIBDIR="lib/ruby/2.4" RUBY_ARCHLIBDIR="lib/ruby/2.4/amd64-freebsd12" RUBY_SITELIBDIR="lib/ruby/site_ruby/2.4" RUBY_SITEARCHLIBDIR="lib/ruby/site_ruby/2.4/amd64-freebsd12" RUBY_VENDORLIBDIR="lib/ruby/vendor_ruby/2.4" RUBY_VENDORARCHLIBDIR="lib/ruby/vendor_ruby/2.4/amd64-freebsd12" RUBY_MODDOCDIR="share/doc/ruby24/cms_scanner" RUBY_MODEXAMPLESDIR="share/examples/ruby24/cms_scanner" RUBY_DOCDIR="share/doc/ruby24" RUBY_EXAMPLESDIR="share/examples/ruby24" RUBY_RIDIR="share/ri/2.4/system" RUBY_SITERIDIR="share/ri/2.4/site"  RUBY_VERSION="2.4.5"  RUBY_VER="2.4"  RUBY_SHLIBVER="24"  RUBY_ARCH="amd64-freebsd12"  RUBY_SUFFIX="24"  RUBY_NAME="ruby24"  RUBY_DEFAULT_SUFFIX="24"  RUBY23="@comment "  RUBY24=""  RUBY25="@comment " PORTVERSION="0.0.39.4"  REV=""  GEMS_BASE_DIR="lib/ruby/gems/2.4"  GEMS_DIR="lib/ruby/gems/2.4/gems"  DOC_DIR="lib/ruby/gems/2.4/doc"  CACHE_DIR="lib/ruby/gems/2.4/cache"  SPEC_DIR="lib/ruby/gems/2.4/specifications"  EXT_DIR="lib/ruby/gems/2.4/extensions"  PORT="cms_scanner-0.0.39.4"  GEM_NAME="cms_scanner-0.0.39.4"  GEM_LIB_DIR="lib/ruby/gems/2.4/gems/cms_scanner-0.0.39.4"  GEM_DOC_DIR="lib/ruby/gems/2.4/doc/cms_scanner-0.0.39.4"  GEM_SPEC="lib/ruby/gems/2.4/specifications/cms_scanner-0.0.39.4.gemspec"  GEM_CACHE="lib/ruby/gems/2.4/cache/cms_scanner-0.0.39.4.gem"  EXTRACT_SUFX=".gem" OSREL=12.0 PREFIX=%D LOCALBASE=/usr/local  RESETPREFIX=/usr/local LIB32DIR=lib DOCSDIR="share/doc/cms_scanner"  EXAMPLESDIR="share/examples/cms_scanner"  DATADIR="share/cms_scanner"  WWWDIR="www/cms_scanner"  ETCDIR="etc/cms_scanner"
+--End PLIST_SUB--
+
+--SUB_LIST--
+PREFIX=/usr/local LOCALBASE=/usr/local  DATADIR=/usr/local/share/cms_scanner DOCSDIR=/usr/local/share/doc/cms_scanner EXAMPLESDIR=/usr/local/share/examples/cms_scanner  WWWDIR=/usr/local/www/cms_scanner ETCDIR=/usr/local/etc/cms_scanner
+--End SUB_LIST--
+
+---Begin make.conf---
+USE_PACKAGE_DEPENDS=yes
+BATCH=yes
+WRKDIRPREFIX=/wrkdirs
+PORTSDIR=/usr/ports
+PACKAGES=/packages
+DISTDIR=/distfiles
+FORCE_PACKAGE=yes
+PACKAGE_BUILDING=yes
+PACKAGE_BUILDING_FLAVORS=yes
+#### /usr/ports/Mk/Scripts/ports_env.sh ####
+_CCVERSION_921dbbb2=FreeBSD clang version 6.0.1 (tags/RELEASE_601/final 335540) (based on LLVM 6.0.1) Target: x86_64-unknown-freebsd12.0 Thread model: posix InstalledDir: /usr/bin
+_ALTCCVERSION_921dbbb2=none
+_CXXINTERNAL_acaad9ca=FreeBSD clang version 6.0.1 (tags/RELEASE_601/final 335540) (based on LLVM 6.0.1) Target: x86_64-unknown-freebsd12.0 Thread model: posix InstalledDir: /usr/bin "/usr/bin/ld" "--eh-frame-hdr" "-dynamic-linker" "/libexec/ld-elf.so.1" "--hash-style=both" "--enable-new-dtags" "-o" "a.out" "/usr/lib/crt1.o" "/usr/lib/crti.o" "/usr/lib/crtbegin.o" "-L/usr/lib" "/dev/null" "-lc++" "-lm" "-lgcc" "--as-needed" "-lgcc_s" "--no-as-needed" "-lc" "-lgcc" "--as-needed" "-lgcc_s" "--no-as-needed" "/usr/lib/crtend.o" "/usr/lib/crtn.o"
+CC_OUTPUT_921dbbb2_58173849=yes
+CC_OUTPUT_921dbbb2_9bdba57c=yes
+CC_OUTPUT_921dbbb2_6a4fe7f5=yes
+CC_OUTPUT_921dbbb2_6bcac02b=yes
+CC_OUTPUT_921dbbb2_67d20829=yes
+CC_OUTPUT_921dbbb2_bfa62e83=yes
+CC_OUTPUT_921dbbb2_f0b4d593=yes
+CC_OUTPUT_921dbbb2_308abb44=yes
+CC_OUTPUT_921dbbb2_f00456e5=yes
+CC_OUTPUT_921dbbb2_65ad290d=yes
+CC_OUTPUT_921dbbb2_f2776b26=yes
+CC_OUTPUT_921dbbb2_b2657cc3=yes
+CC_OUTPUT_921dbbb2_380987f7=yes
+CC_OUTPUT_921dbbb2_160933ec=yes
+CC_OUTPUT_921dbbb2_fb62803b=yes
+_OBJC_CCVERSION_921dbbb2=FreeBSD clang version 6.0.1 (tags/RELEASE_601/final 335540) (based on LLVM 6.0.1) Target: x86_64-unknown-freebsd12.0 Thread model: posix InstalledDir: /usr/bin
+_OBJC_ALTCCVERSION_921dbbb2=none
+ARCH=amd64
+OPSYS=FreeBSD
+_OSRELEASE=12.0-RELEASE
+OSREL=12.0
+OSVERSION=1200086
+PYTHONBASE=/usr/local
+HAVE_COMPAT_IA32_KERN=YES
+_SMP_CPUS=2
+CONFIGURE_MAX_CMD_LEN=262144
+HAVE_PORTS_ENV=1
+#### Misc Poudriere ####
+---End make.conf---
+--Resource limits--
+cpu time               (seconds, -t)  unlimited
+file size           (512-blocks, -f)  unlimited
+data seg size           (kbytes, -d)  33554432
+stack size              (kbytes, -s)  524288
+core file size      (512-blocks, -c)  unlimited
+max memory size         (kbytes, -m)  unlimited
+locked memory           (kbytes, -l)  unlimited
+max user processes              (-u)  9000
+open files                      (-n)  1024
+virtual mem size        (kbytes, -v)  unlimited
+swap limit              (kbytes, -w)  unlimited
+socket buffer size       (bytes, -b)  unlimited
+pseudo-terminals                (-p)  unlimited
+kqueues                         (-k)  unlimited
+umtx shared locks               (-o)  unlimited
+--End resource limits--
+=======================<phase: check-sanity   >============================
+===>  License MIT accepted by the user
+===========================================================================
+=======================<phase: pkg-depends    >============================
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/sbin/pkg - not found
+===>   Installing existing package /packages/All/pkg-1.10.5_5.txz
+[twlv-kali2] Installing pkg-1.10.5_5...
+[twlv-kali2] Extracting pkg-1.10.5_5: .......... done
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/sbin/pkg - found
+===>   Returning to build of rubygem-cms_scanner-0.0.39.4
+===========================================================================
+=======================<phase: fetch-depends  >============================
+===========================================================================
+=======================<phase: fetch          >============================
+===>  License MIT accepted by the user
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by rubygem-cms_scanner-0.0.39.4 for building
+===========================================================================
+=======================<phase: checksum       >============================
+===>  License MIT accepted by the user
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by rubygem-cms_scanner-0.0.39.4 for building
+=> SHA256 Checksum OK for rubygem/cms_scanner-0.0.39.4.gem.
+===========================================================================
+=======================<phase: extract-depends>============================
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/ruby24 - not found
+===>   Installing existing package /packages/All/ruby-2.4.5_1,1.txz
+[twlv-kali2] Installing ruby-2.4.5_1,1...
+[twlv-kali2] `-- Installing libedit-3.1.20170329_2,1...
+[twlv-kali2] `-- Extracting libedit-3.1.20170329_2,1: .......... done
+[twlv-kali2] `-- Installing libffi-3.2.1_3...
+[twlv-kali2] |   `-- Installing indexinfo-0.3.1...
+[twlv-kali2] |   `-- Extracting indexinfo-0.3.1: .... done
+[twlv-kali2] `-- Extracting libffi-3.2.1_3: .......... done
+[twlv-kali2] `-- Installing libunwind-20170615...
+[twlv-kali2] `-- Extracting libunwind-20170615: .......... done
+[twlv-kali2] `-- Installing libyaml-0.2.1...
+[twlv-kali2] `-- Extracting libyaml-0.2.1: ......... done
+[twlv-kali2] Extracting ruby-2.4.5_1,1: .......... done
+Message from ruby-2.4.5_1,1:
+
+====
+Some of the standard commands are provided as separate ports for ease
+of upgrading:
+
+	devel/ruby-gems:	gem - RubyGems package manager
+	devel/rubygem-rake:	rake - Ruby Make
+
+And some of the standard libraries are provided as separate ports
+since they require extra dependencies:
+
+	databases/ruby-gdbm:	GDBM module
+
+Install them as occasion demands.
+====
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/ruby24 - found
+===>   Returning to build of rubygem-cms_scanner-0.0.39.4
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/gem24 - not found
+===>   Installing existing package /packages/All/ruby24-gems-2.7.8.txz
+[twlv-kali2] Installing ruby24-gems-2.7.8...
+[twlv-kali2] Extracting ruby24-gems-2.7.8: .......... done
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/gem24 - found
+===>   Returning to build of rubygem-cms_scanner-0.0.39.4
+===========================================================================
+=======================<phase: extract        >============================
+===>  License MIT accepted by the user
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/sbin/pkg - found
+===> Fetching all distfiles required by rubygem-cms_scanner-0.0.39.4 for building
+===>  Extracting for rubygem-cms_scanner-0.0.39.4
+=> SHA256 Checksum OK for rubygem/cms_scanner-0.0.39.4.gem.
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/ruby24 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/gem24 - found
+Unpacked gem: '/wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/cms_scanner-0.0.39.4'
+===========================================================================
+=======================<phase: patch-depends  >============================
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/ruby24 - found
+===========================================================================
+=======================<phase: patch          >============================
+===>  Patching for rubygem-cms_scanner-0.0.39.4
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/ruby24 - found
+===========================================================================
+=======================<phase: build-depends  >============================
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/ruby24 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/gem24 - found
+===========================================================================
+=======================<phase: lib-depends    >============================
+===========================================================================
+=>> Recording filesystem state for prebuild... done
+=======================<phase: configure      >============================
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/ruby24 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/gem24 - found
+===>  Configuring for rubygem-cms_scanner-0.0.39.4
+===========================================================================
+=======================<phase: build          >============================
+===>  Building for rubygem-cms_scanner-0.0.39.4
+  Successfully built RubyGem
+  Name: cms_scanner
+  Version: 0.0.39.4
+  File: cms_scanner-0.0.39.4.gem
+===========================================================================
+=>> Checking for filesystem violations... done
+=======================<phase: run-depends    >============================
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-activesupport5>=5.1.6 - not found
+===>   Installing existing package /packages/All/rubygem-activesupport5-5.1.6.1.txz
+[twlv-kali2] Installing rubygem-activesupport5-5.1.6.1...
+[twlv-kali2] `-- Installing rubygem-concurrent-ruby-1.1.3...
+[twlv-kali2] `-- Extracting rubygem-concurrent-ruby-1.1.3: .......... done
+[twlv-kali2] `-- Installing rubygem-i18n-1.1.1,2...
+[twlv-kali2] `-- Extracting rubygem-i18n-1.1.1,2: .......... done
+[twlv-kali2] `-- Installing rubygem-minitest-5.11.3...
+[twlv-kali2] `-- Extracting rubygem-minitest-5.11.3: .......... done
+[twlv-kali2] `-- Installing rubygem-tzinfo-1.2.5...
+[twlv-kali2] |   `-- Installing rubygem-thread_safe-0.3.6...
+[twlv-kali2] |   `-- Extracting rubygem-thread_safe-0.3.6: .......... done
+[twlv-kali2] `-- Extracting rubygem-tzinfo-1.2.5: .......... done
+[twlv-kali2] Extracting rubygem-activesupport5-5.1.6.1: .......... done
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-activesupport5>=5.1.6 - found
+===>   Returning to build of rubygem-cms_scanner-0.0.39.4
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-addressable>=2.5.2 - not found
+===>   Installing existing package /packages/All/rubygem-addressable-2.5.2.txz
+[twlv-kali2] Installing rubygem-addressable-2.5.2...
+[twlv-kali2] `-- Installing rubygem-public_suffix-3.0.3_2...
+[twlv-kali2] `-- Extracting rubygem-public_suffix-3.0.3_2: .......... done
+[twlv-kali2] Extracting rubygem-addressable-2.5.2: .......... done
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-addressable>=2.5.2 - found
+===>   Returning to build of rubygem-cms_scanner-0.0.39.4
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-nokogiri>=1.8.4 - not found
+===>   Installing existing package /packages/All/rubygem-nokogiri-1.8.5.txz
+[twlv-kali2] Installing rubygem-nokogiri-1.8.5...
+[twlv-kali2] `-- Installing libgcrypt-1.8.4_1...
+[twlv-kali2] |   `-- Installing libgpg-error-1.32_1...
+[twlv-kali2] |   | `-- Installing gettext-runtime-0.19.8.1_2...
+[twlv-kali2] |   | `-- Extracting gettext-runtime-0.19.8.1_2: .......... done
+[twlv-kali2] |   `-- Extracting libgpg-error-1.32_1: .......... done
+[twlv-kali2] `-- Extracting libgcrypt-1.8.4_1: .......... done
+[twlv-kali2] `-- Installing libxml2-2.9.7...
+[twlv-kali2] `-- Extracting libxml2-2.9.7: .......... done
+[twlv-kali2] `-- Installing libxslt-1.1.32...
+[twlv-kali2] `-- Extracting libxslt-1.1.32: .......... done
+[twlv-kali2] `-- Installing rubygem-pkg-config-1.3.2...
+[twlv-kali2] `-- Extracting rubygem-pkg-config-1.3.2: .......... done
+[twlv-kali2] Extracting rubygem-nokogiri-1.8.5: .......... done
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-nokogiri>=1.8.4 - found
+===>   Returning to build of rubygem-cms_scanner-0.0.39.4
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-opt_parse_validator>=0.0.16.1 - not found
+===>   Installing existing package /packages/All/rubygem-opt_parse_validator-0.0.16.1.txz
+[twlv-kali2] Installing rubygem-opt_parse_validator-0.0.16.1...
+[twlv-kali2] Extracting rubygem-opt_parse_validator-0.0.16.1: .......... done
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-opt_parse_validator>=0.0.16.1 - found
+===>   Returning to build of rubygem-cms_scanner-0.0.39.4
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-public_suffix>=3.0.3 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-ruby-progressbar>=1.10.0 - not found
+===>   Installing existing package /packages/All/rubygem-ruby-progressbar-1.10.0.txz
+[twlv-kali2] Installing rubygem-ruby-progressbar-1.10.0...
+[twlv-kali2] Extracting rubygem-ruby-progressbar-1.10.0: .......... done
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-ruby-progressbar>=1.10.0 - found
+===>   Returning to build of rubygem-cms_scanner-0.0.39.4
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-typhoeus>=1.3.0 - not found
+===>   Installing existing package /packages/All/rubygem-typhoeus-1.3.1.txz
+[twlv-kali2] Installing rubygem-typhoeus-1.3.1...
+[twlv-kali2] `-- Installing rubygem-ethon-0.11.0...
+[twlv-kali2] |   `-- Installing curl-7.62.0...
+[twlv-kali2] |   | `-- Installing ca_root_nss-3.41...
+[twlv-kali2] |   | `-- Extracting ca_root_nss-3.41: ........ done
+[twlv-kali2] |   | `-- Installing libnghttp2-1.35.1...
+[twlv-kali2] |   | `-- Extracting libnghttp2-1.35.1: .......... done
+[twlv-kali2] |   `-- Extracting curl-7.62.0: .......... done
+[twlv-kali2] |   `-- Installing rubygem-ffi-1.9.25...
+[twlv-kali2] |   `-- Extracting rubygem-ffi-1.9.25: .......... done
+[twlv-kali2] `-- Extracting rubygem-ethon-0.11.0: .......... done
+[twlv-kali2] Extracting rubygem-typhoeus-1.3.1: .......... done
+Message from ca_root_nss-3.41:
+
+********************************* WARNING *********************************
+
+FreeBSD does not, and can not warrant that the certification authorities
+whose certificates are included in this package have in any way been
+audited for trustworthiness or RFC 3647 compliance.
+
+Assessment and verification of trust is the complete responsibility of the
+system administrator.
+
+*********************************** NOTE **********************************
+
+This package installs symlinks to support root certificates discovery by
+default for software that uses OpenSSL.
+
+This enables SSL Certificate Verification by client software without manual
+intervention.
+
+If you prefer to do this manually, replace the following symlinks with
+either an empty file or your site-local certificate bundle.
+
+  * /etc/ssl/cert.pem
+  * /usr/local/etc/ssl/cert.pem
+  * /usr/local/openssl/cert.pem
+
+***************************************************************************
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-typhoeus>=1.3.0 - found
+===>   Returning to build of rubygem-cms_scanner-0.0.39.4
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-yajl-ruby>=1.3.0 - not found
+===>   Installing existing package /packages/All/rubygem-yajl-ruby-1.4.1.txz
+[twlv-kali2] Installing rubygem-yajl-ruby-1.4.1...
+[twlv-kali2] Extracting rubygem-yajl-ruby-1.4.1: .......... done
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-yajl-ruby>=1.3.0 - found
+===>   Returning to build of rubygem-cms_scanner-0.0.39.4
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/ruby24 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/gem24 - found
+===========================================================================
+=>> Recording filesystem state for prestage... done
+=======================<phase: stage          >============================
+===>  Staging for rubygem-cms_scanner-0.0.39.4
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-activesupport5>=5.1.6 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-addressable>=2.5.2 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-nokogiri>=1.8.4 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-opt_parse_validator>=0.0.16.1 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-public_suffix>=3.0.3 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-ruby-progressbar>=1.10.0 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-typhoeus>=1.3.0 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on package: rubygem-yajl-ruby>=1.3.0 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/ruby24 - found
+===>   rubygem-cms_scanner-0.0.39.4 depends on file: /usr/local/bin/gem24 - found
+===>   Generating temporary packing list
+(cd /wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/cms_scanner-0.0.39.4; /usr/bin/env RB_USER_INSTALL=yes LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 /usr/local/bin/gem24 install -l --no-update-sources --install-dir /wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/stage/usr/local/lib/ruby/gems/2.4 --ignore-dependencies --bindir=/wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/stage/usr/local/bin --no-rdoc --no-ri cms_scanner-0.0.39.4.gem -- --build-args )
+Successfully installed cms_scanner-0.0.39.4
+1 gem installed
+/bin/rm -f -r /wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/stage/usr/local/lib/ruby/gems/2.4/build_info/
+/usr/bin/find /wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/stage/usr/local/lib/ruby/gems/2.4 -type f -name '*.so' -exec /usr/bin/strip {} +
+/usr/bin/find /wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/stage/usr/local/lib/ruby/gems/2.4 -type f \( -name mkmf.log -or -name gem_make.out \) -delete
+/bin/rm -f -r /wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/stage/usr/local/lib/ruby/gems/2.4/gems/cms_scanner-0.0.39.4/ext  /wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/stage/usr/local/lib/ruby/gems/2.4/cache 2> /dev/null || true
+/bin/rmdir /wrkdirs/usr/ports/devel/rubygem-cms_scanner/work/stage/usr/local/lib/ruby/gems/2.4/extensions 2> /dev/null || true
+====> Compressing man pages (compress-man)
+===========================================================================
+====> Running Q/A tests (stage-qa)
+Error: RubyGem dependency ruby-progressbar ~> 1.9.0 is not satisfied.
+Error: RubyGem dependency yajl-ruby ~> 1.3.0 is not satisfied.
+*** Error code 1
+
+Stop.
+make: stopped in /usr/ports/devel/rubygem-cms_scanner
+=>> Error: stage-qa failures detected
+build of devel/rubygem-cms_scanner | rubygem-cms_scanner-0.0.39.4 ended at Sat Dec 15 17:42:41 IST 2018
+build time: 00:00:14
+!!! build failure encountered !!!
+[00:00:32] Error: Build failed in phase: stage-qa
+[00:00:32] Cleaning up
+[00:00:32] Unmounting file systems
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

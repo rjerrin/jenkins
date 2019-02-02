@@ -1,0 +1,132 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 1a8e26634cd54d31a699bb938a5e6e0ce4696720 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1a8e26634cd54d31a699bb938a5e6e0ce4696720
+Commit message: "updating progress bar"
+ > git rev-list --no-walk 1a8e26634cd54d31a699bb938a5e6e0ce4696720 # timeout=10
+[kalibsd] $ /bin/sh -xe /tmp/jenkins2529093218494580554.sh
++ PORTS=/usr/local/poudriere/ports/kali
++ CTGR=security
++ PKG=0d1n
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd/0d1n
++ JNAME=lrelease
++ [ -d /usr/local/poudriere/ports/kali/security/0d1n ]
++ sudo rm -rfv /usr/local/poudriere/ports/kali/security/0d1n
+/usr/local/poudriere/ports/kali/security/0d1n/pkg-descr
+/usr/local/poudriere/ports/kali/security/0d1n/Makefile
+/usr/local/poudriere/ports/kali/security/0d1n/pkg-plist
+/usr/local/poudriere/ports/kali/security/0d1n/distinfo
+/usr/local/poudriere/ports/kali/security/0d1n/files/patch-Makefile
+/usr/local/poudriere/ports/kali/security/0d1n/files
+/usr/local/poudriere/ports/kali/security/0d1n
++ sudo poudriere ports -p kali -u
+[00:00:00] Updating portstree "kali" with portsnap...Looking up portsnap.FreeBSD.org mirrors... 5 mirrors found.
+Fetching snapshot tag from ec2-ap-southeast-2.portsnap.freebsd.org... done.
+Latest snapshot on server matches what we already have.
+No updates needed.
+Ports tree is already up to date.
+ done
++ sudo cp -Rfv /usr/local/jenkins/workspace/kalibsd/0d1n /usr/local/poudriere/ports/kali/security
+/usr/local/jenkins/workspace/kalibsd/0d1n -> /usr/local/poudriere/ports/kali/security/0d1n
+/usr/local/jenkins/workspace/kalibsd/0d1n/pkg-plist -> /usr/local/poudriere/ports/kali/security/0d1n/pkg-plist
+/usr/local/jenkins/workspace/kalibsd/0d1n/files -> /usr/local/poudriere/ports/kali/security/0d1n/files
+/usr/local/jenkins/workspace/kalibsd/0d1n/files/patch-Makefile -> /usr/local/poudriere/ports/kali/security/0d1n/files/patch-Makefile
+/usr/local/jenkins/workspace/kalibsd/0d1n/pkg-descr -> /usr/local/poudriere/ports/kali/security/0d1n/pkg-descr
+/usr/local/jenkins/workspace/kalibsd/0d1n/Makefile -> /usr/local/poudriere/ports/kali/security/0d1n/Makefile
+/usr/local/jenkins/workspace/kalibsd/0d1n/distinfo -> /usr/local/poudriere/ports/kali/security/0d1n/distinfo
++ sudo poudriere bulk -c -j lrelease -p kali security/0d1n
+[00:00:00] Creating the reference jail... done
+[00:00:02] Mounting system devices for lrelease-kali
+[00:00:02] Mounting ports/packages/distfiles
+[00:00:02] Using packages from previously failed build
+[00:00:02] Mounting packages from: /usr/local/poudriere/data/packages/lrelease-kali
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/lrelease-kali/ref/etc/resolv.conf
+[00:00:02] Starting jail lrelease-kali
+[00:00:03] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali/2018-12-13_12h52m47s
+[00:00:03] Loading MOVED for /usr/local/poudriere/data/.m/lrelease-kali/ref/usr/ports
+[00:00:08] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:08] Gathering ports metadata
+[00:00:09] Calculating ports order and dependencies
+[00:00:09] (-c) Cleaning all packages... done
+[00:00:09] Sanity checking the repository
+[00:00:09] Checking packages for incremental rebuild needs
+[00:00:09] Deleting stale symlinks... done
+[00:00:09] Deleting empty directories... done
+[00:00:09] Cleaning the build queue
+[00:00:09] Sanity checking build queue
+[00:00:09] Processing PRIORITY_BOOST
+[00:00:09] Balancing pool
+[00:00:09] Recording filesystem state for prepkg... done
+[00:00:12] Building 23 packages using 2 builders
+[00:00:12] Starting/Cloning builders
+[00:00:13] Hit CTRL+t at any time to see build progress and stats
+[00:00:13] [01] [00:00:00] Building ports-mgmt/pkg | pkg-1.10.5_5
+[00:02:53] [01] [00:02:40] Finished ports-mgmt/pkg | pkg-1.10.5_5: Success
+[00:02:53] [01] [00:00:00] Building print/indexinfo | indexinfo-0.3.1
+[00:02:53] [02] [00:00:00] Building lang/perl5.26 | perl5-5.26.3
+[00:02:56] [01] [00:00:03] Finished print/indexinfo | indexinfo-0.3.1: Success
+[00:02:56] [01] [00:00:00] Building devel/gettext-runtime | gettext-runtime-0.19.8.1_2
+[00:04:41] [01] [00:01:45] Finished devel/gettext-runtime | gettext-runtime-0.19.8.1_2: Success
+[00:04:41] [01] [00:00:00] Building devel/gettext-tools | gettext-tools-0.19.8.1_1
+[00:10:42] [02] [00:07:49] Finished lang/perl5.26 | perl5-5.26.3: Success
+[00:10:42] [02] [00:00:00] Building converters/libiconv | libiconv-1.14_11
+[00:11:03] [01] [00:06:22] Finished devel/gettext-tools | gettext-tools-0.19.8.1_1: Success
+[00:11:04] [01] [00:00:00] Building devel/p5-Locale-gettext | p5-Locale-gettext-1.07
+[00:11:18] [01] [00:00:14] Finished devel/p5-Locale-gettext | p5-Locale-gettext-1.07: Success
+[00:11:18] [01] [00:00:00] Building devel/gmake | gmake-4.2.1_3
+[00:11:25] [02] [00:00:43] Finished converters/libiconv | libiconv-1.14_11: Success
+[00:11:25] [02] [00:00:00] Building devel/p5-Locale-libintl | p5-Locale-libintl-1.31
+[00:11:44] [01] [00:00:26] Finished devel/gmake | gmake-4.2.1_3: Success
+[00:11:44] [01] [00:00:00] Building misc/help2man | help2man-1.47.8_1
+[00:11:46] [02] [00:00:21] Finished devel/p5-Locale-libintl | p5-Locale-libintl-1.31: Success
+[00:11:46] [02] [00:00:00] Building converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30
+[00:11:55] [01] [00:00:11] Finished misc/help2man | help2man-1.47.8_1: Success
+[00:11:56] [01] [00:00:00] Building textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40
+[00:11:59] [02] [00:00:13] Finished converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30: Success
+[00:11:59] [02] [00:00:00] Building devel/autoconf-wrapper | autoconf-wrapper-20131203
+[00:12:04] [02] [00:00:05] Finished devel/autoconf-wrapper | autoconf-wrapper-20131203: Success
+[00:12:04] [02] [00:00:00] Building devel/pkgconf | pkgconf-1.5.4,1
+[00:12:12] [01] [00:00:16] Finished textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40: Success
+[00:12:12] [01] [00:00:00] Building print/texinfo | texinfo-6.5_2,1
+[00:12:22] [02] [00:00:18] Finished devel/pkgconf | pkgconf-1.5.4,1: Success
+[00:12:22] [02] [00:00:00] Building security/ca_root_nss | ca_root_nss-3.41
+[00:13:15] [02] [00:00:53] Finished security/ca_root_nss | ca_root_nss-3.41: Success
+[00:13:31] [01] [00:01:19] Finished print/texinfo | texinfo-6.5_2,1: Success
+[00:13:31] [01] [00:00:00] Building devel/m4 | m4-1.4.18_1,1
+[00:14:15] [01] [00:00:44] Finished devel/m4 | m4-1.4.18_1,1: Success
+[00:14:15] [01] [00:00:00] Building devel/autoconf | autoconf-2.69_2
+[00:14:15] [02] [00:00:00] Building devel/libtool | libtool-2.4.6_1
+[00:14:47] [02] [00:00:32] Finished devel/libtool | libtool-2.4.6_1: Success
+[00:14:49] [01] [00:00:34] Finished devel/autoconf | autoconf-2.69_2: Success
+[00:14:49] [01] [00:00:00] Building devel/automake | automake-1.16.1_1
+[00:15:07] [01] [00:00:18] Finished devel/automake | automake-1.16.1_1: Success
+[00:15:07] [01] [00:00:00] Building www/libnghttp2 | libnghttp2-1.35.0_1
+[00:15:50] [01] [00:00:43] Finished www/libnghttp2 | libnghttp2-1.35.0_1: Success
+[00:15:51] [01] [00:00:00] Building ftp/curl | curl-7.62.0
+[00:17:31] [01] [00:01:40] Finished ftp/curl | curl-7.62.0: Success
+[00:17:32] [01] [00:00:00] Building security/0d1n | 0d1n-2.2
+[00:17:48] [01] [00:00:16] Finished security/0d1n | 0d1n-2.2: Success
+[00:17:48] Stopping 2 builders
+[00:17:49] Creating pkg repository
+Creating repository in /tmp/packages: .......... done
+Packing files for repository: .... done
+[00:17:50] Committing packages to repository
+[00:17:50] Removing old packages
+[00:17:50] Built ports: ports-mgmt/pkg print/indexinfo devel/gettext-runtime lang/perl5.26 devel/gettext-tools devel/p5-Locale-gettext converters/libiconv devel/gmake devel/p5-Locale-libintl misc/help2man converters/p5-Text-Unidecode devel/autoconf-wrapper textproc/p5-Unicode-EastAsianWidth devel/pkgconf security/ca_root_nss print/texinfo devel/m4 devel/libtool devel/autoconf devel/automake www/libnghttp2 ftp/curl security/0d1n
+[lrelease-kali] [2018-12-13_12h52m47s] [committing:] Queued: 23 Built: 23 Failed: 0  Skipped: 0  Ignored: 0  Tobuild: 0   Time: 00:17:46
+[00:17:50] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali/2018-12-13_12h52m47s
+[00:17:50] Cleaning up
+[00:17:50] Unmounting file systems
+[EnvInject] - Injecting environment variables from a build step.
+Finished: SUCCESS

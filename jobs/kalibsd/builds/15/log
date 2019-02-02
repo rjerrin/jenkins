@@ -1,0 +1,104 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 53a569b02d3faa331d08e7b9ca57a1115bb69838 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 53a569b02d3faa331d08e7b9ca57a1115bb69838
+Commit message: "updating version"
+ > git rev-list --no-walk c8faa6f787a27b19ac1f274cb4000952f6a9d621 # timeout=10
+[kalibsd] $ /bin/sh -xe /tmp/jenkins1818539765461919799.sh
++ PORTS=/usr/local/poudriere/ports/kali
++ CTGR=devel
++ PKG=rubygem-opt_parse_validator
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd/rubygem-opt_parse_validator
++ JNAME=lrelease
++ [ -d /usr/local/poudriere/ports/kali/devel/rubygem-opt_parse_validator ]
++ sudo rm -rfv /usr/local/poudriere/ports/kali/devel/rubygem-opt_parse_validator
+/usr/local/poudriere/ports/kali/devel/rubygem-opt_parse_validator/pkg-descr
+/usr/local/poudriere/ports/kali/devel/rubygem-opt_parse_validator/Makefile
+/usr/local/poudriere/ports/kali/devel/rubygem-opt_parse_validator/distinfo
+/usr/local/poudriere/ports/kali/devel/rubygem-opt_parse_validator
++ sudo poudriere ports -p kali -u
+[00:00:00] Updating portstree "kali" with portsnap...Looking up portsnap.FreeBSD.org mirrors... 5 mirrors found.
+Fetching snapshot tag from ec2-ap-southeast-2.portsnap.freebsd.org... done.
+Fetching snapshot metadata... done.
+Updating from Sat Dec 15 09:56:39 IST 2018 to Sat Dec 15 11:49:49 IST 2018.
+Fetching 5 metadata patches... done.
+Applying metadata patches... done.
+Fetching 0 metadata files... done.
+Fetching 4 patches. 
+                                     (0/4) 0.00%                                      (4/4) 100.00%  done. 
+done.
+Applying patches... 
+done.
+Fetching 1 new ports or files... done.
+Removing old files and directories... done.
+Extracting new files:
+/usr/local/poudriere/ports/kali/UPDATING
+/usr/local/poudriere/ports/kali/devel/py-pytest-pycodestyle/
+/usr/local/poudriere/ports/kali/net-im/Makefile
+/usr/local/poudriere/ports/kali/net-im/ssh-chat/
+/usr/local/poudriere/ports/kali/www/s/
+Building new INDEX files... done.
+ done
++ sudo cp -Rfv /usr/local/jenkins/workspace/kalibsd/rubygem-opt_parse_validator /usr/local/poudriere/ports/kali/devel
+/usr/local/jenkins/workspace/kalibsd/rubygem-opt_parse_validator -> /usr/local/poudriere/ports/kali/devel/rubygem-opt_parse_validator
+/usr/local/jenkins/workspace/kalibsd/rubygem-opt_parse_validator/distinfo -> /usr/local/poudriere/ports/kali/devel/rubygem-opt_parse_validator/distinfo
+/usr/local/jenkins/workspace/kalibsd/rubygem-opt_parse_validator/Makefile -> /usr/local/poudriere/ports/kali/devel/rubygem-opt_parse_validator/Makefile
+/usr/local/jenkins/workspace/kalibsd/rubygem-opt_parse_validator/pkg-descr -> /usr/local/poudriere/ports/kali/devel/rubygem-opt_parse_validator/pkg-descr
++ cd /usr/local/poudriere/ports/kali/devel/rubygem-opt_parse_validator
++ sudo make distclean .
+===>  Cleaning for rubygem-opt_parse_validator-0.0.16.4
+===>  Deleting distfiles for rubygem-opt_parse_validator-0.0.16.4
+`.' is up to date.
++ sudo make makesum .
+=> opt_parse_validator-0.0.16.4.gem doesn't seem to exist in /usr/local/poudriere/ports/kali/distfiles/rubygem.
+=> Attempting to fetch https://rubygems.global.ssl.fastly.net/gems/opt_parse_validator-0.0.16.4.gem
+opt_parse_validator-0.0.16.4.gem                         0  B    0  Bps
+`.' is up to date.
++ sudo poudriere bulk -c -j lrelease -p kali devel/rubygem-opt_parse_validator
+[00:00:01] Creating the reference jail... done
+[00:00:02] Mounting system devices for lrelease-kali
+[00:00:02] Mounting ports/packages/distfiles
+[00:00:02] Stashing existing package repository
+[00:00:02] Mounting packages from: /usr/local/poudriere/data/packages/lrelease-kali
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/lrelease-kali/ref/etc/resolv.conf
+[00:00:02] Starting jail lrelease-kali
+[00:00:10] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali/2018-12-15_13h58m48s
+[00:00:10] Loading MOVED for /usr/local/poudriere/data/.m/lrelease-kali/ref/usr/ports
+[00:00:14] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:14] Gathering ports metadata
+[00:00:17] Calculating ports order and dependencies
+[00:00:18] (-c) Cleaning all packages... done
+[00:00:18] Sanity checking the repository
+[00:00:18] Checking packages for incremental rebuild needs
+[00:00:18] Deleting stale symlinks... done
+[00:00:18] Deleting empty directories... done
+[00:00:18] Cleaning the build queue
+[00:00:18] Sanity checking build queue
+[00:00:18] Processing PRIORITY_BOOST
+[00:00:18] Balancing pool
+[00:00:18] Recording filesystem state for prepkg... done
+[00:00:22] Building 34 packages using 2 builders
+[00:00:22] Starting/Cloning builders
+[00:00:24] Hit CTRL+t at any time to see build progress and stats
+[00:00:24] [01] [00:00:00] Building ports-mgmt/pkg | pkg-1.10.5_5
+[00:02:16] [01] [00:01:52] Finished ports-mgmt/pkg | pkg-1.10.5_5: Success
+[00:02:16] [01] [00:00:00] Building print/indexinfo | indexinfo-0.3.1
+[00:02:16] [02] [00:00:00] Building lang/perl5.28 | perl5-5.28.1
+[00:02:19] [01] [00:00:03] Finished print/indexinfo | indexinfo-0.3.1: Success
+[00:02:19] [01] [00:00:00] Building devel/gettext-runtime | gettext-runtime-0.19.8.1_2
+[00:03:00] [01] [00:00:41] Finished devel/gettext-runtime | gettext-runtime-0.19.8.1_2: Success
+[00:03:01] [01] [00:00:00] Building devel/gettext-tools | gettext-tools-0.19.8.1_1
+Build was aborted
+Aborted by [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Finished: ABORTED

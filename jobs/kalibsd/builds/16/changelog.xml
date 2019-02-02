@@ -1,0 +1,11 @@
+commit aea0597585568fe85a69c67b91be1550f583ef19
+tree 13176e04e7ce9e3a879ba327e95d50e43cb8491a
+parent 53a569b02d3faa331d08e7b9ca57a1115bb69838
+author jery <jery@tos.bsd.dev> 2018-12-15 14:04:13 +0530
+committer jery <jery@tos.bsd.dev> 2018-12-15 14:04:13 +0530
+
+    updating version
+
+
+
+:100644 100644 a7c85060478d8f82bd0de957248a96d04b4f675c eea73ead39d0263cb4061f99a1aa2cd6b546aa04 M	rubygem-cms_scanner/Makefile

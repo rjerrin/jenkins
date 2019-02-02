@@ -1,0 +1,31 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4ANC072mxUGdW0XVxCd9hQ96/8aX6hmejGxQ5p0facNoAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/eT83ILSktQifa/inFwAtwJR98MAAAA=[0mJslm in workspace /home/jery/workspace/linux
+[linux] $ /bin/sh -xe /tmp/jenkins5138918165136666225.sh
++ rsync -av --progress --delete --exclude=*.xz --exclude=*.sign rsync://rsync.kernel.org/pub/linux/kernel/v4.x/ .
+MOTD:
+MOTD:   Welcome to the Linux Kernel Archive.
+MOTD:
+MOTD:   Due to U.S. Exports Regulations, all cryptographic software on this
+MOTD:   site is subject to the following legal notice:
+MOTD:
+MOTD:   This site includes publicly available encryption source code
+MOTD:   which, together with object code resulting from the compiling of
+MOTD:   publicly available source code, may be exported from the United
+MOTD:   States under License Exception "TSU" pursuant to 15 C.F.R. Section
+MOTD:   740.13(e).
+MOTD:
+MOTD:   This legal notice applies to cryptographic software only.
+MOTD:   Please see the Bureau of Industry and Security,
+MOTD:   http://www.bis.doc.gov/ for more information about current
+MOTD:   U.S. regulations.
+MOTD:
+
+receiving incremental file list
+deleting .linux-4.0.1.tar.xz.gSYZyZ
+deleting .linux-4.0.1.tar.gz.Dr1AwK
+./
+linux-4.0.1.tar.gz
+              0   0%    0.00kB/s    0:00:00           32,768   0%   23.88kB/s    1:26:39           98,304   0%   35.15kB/s    0:58:50          163,840   0%   40.70kB/s    0:50:47          262,144   0%   49.82kB/s    0:41:28          360,448   0%   62.37kB/s    0:33:05          491,520   0%   74.82kB/s    0:27:33          589,824   0%   64.52kB/s    0:31:56          688,128   0%   54.97kB/s    0:37:27          753,664   0%   50.10kB/s    0:41:03          819,200   0%   39.39kB/s    0:52:12          851,968   0%   36.61kB/s    0:56:09          884,736   0%   33.22kB/s    1:01:51          950,272   0%   34.61kB/s    0:59:21        1,048,576   0%   45.68kB/s    0:44:56        1,179,648   0%   69.17kB/s    0:29:38        1,343,488   1%   95.93kB/s    0:21:20        1,572,864   1%  126.22kB/s    0:16:11        1,736,704   1%  134.40kB/s    0:15:11        1,900,544   1%  133.28kB/s    0:15:17        2,064,384   1%  132.41kB/s    0:15:22        2,228,224   1%  124.78kB/s    0:16:17        2,359,296   1%  125.13kB/s    0:16:13        2,555,904   2%  137.19kB/s    0:14:46        2,719,744   2%  138.17kB/s    0:14:39        2,785,280   2%   90.47kB/s    0:22:22        2,850,816   2%   79.33kB/s    0:25:29        2,916,352   2%   58.53kB/s    0:34:32        3,014,656   2%   46.15kB/s    0:43:45        3,112,960   2%   67.90kB/s    0:29:43        3,244,032   2%   72.15kB/s    0:27:56        3,342,336   2%   79.09kB/s    0:25:28        3,440,640   2%   79.09kB/s    0:25:26        3,538,944   2%   73.82kB/s    0:27:14        3,571,712   2%   55.55kB/s    0:36:11        3,637,248   2%   48.93kB/s    0:41:04        3,702,784   2%   45.78kB/s    0:43:52        3,801,088   3%   47.75kB/s    0:42:01        3,964,928   3%   82.99kB/s    0:24:08        4,194,304   3%  119.04kB/s    0:16:48        4,390,912   3%  145.23kB/s    0:13:44        4,587,520   3%  163.79kB/s    0:12:10        4,718,592   3%  136.73kB/s    0:14:33        4,751,360   3%  102.95kB/s    0:19:20        4,849,664   3%   86.24kB/s    0:23:04  Build was aborted
+Aborted by [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Finished: ABORTED

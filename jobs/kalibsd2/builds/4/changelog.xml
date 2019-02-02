@@ -1,0 +1,22 @@
+commit aea0597585568fe85a69c67b91be1550f583ef19
+tree 13176e04e7ce9e3a879ba327e95d50e43cb8491a
+parent 53a569b02d3faa331d08e7b9ca57a1115bb69838
+author jery <jery@tos.bsd.dev> 2018-12-15 14:04:13 +0530
+committer jery <jery@tos.bsd.dev> 2018-12-15 14:04:13 +0530
+
+    updating version
+
+
+
+:100644 100644 a7c85060478d8f82bd0de957248a96d04b4f675c eea73ead39d0263cb4061f99a1aa2cd6b546aa04 M	rubygem-cms_scanner/Makefile
+commit 53a569b02d3faa331d08e7b9ca57a1115bb69838
+tree 3bf87bfd62f5a63b76947a95cca00dde0bd55c61
+parent c8faa6f787a27b19ac1f274cb4000952f6a9d621
+author jery <jery@tos.bsd.dev> 2018-12-15 13:52:58 +0530
+committer jery <jery@tos.bsd.dev> 2018-12-15 13:52:58 +0530
+
+    updating version
+
+
+
+:100644 100644 8d5f6022b272541177a1b9d034b7e59314f5c5c6 1af536cca596d70a5a1c1ada8443ca0735863573 M	rubygem-opt_parse_validator/Makefile

@@ -1,0 +1,150 @@
+Started by user [8mha:////4N+egVLBmw6baf0GROpeJp1VAfM7YlHvJPDfN/u7wRpqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FwIVwKyU0cxgGlztXEzKpATnvWkhA93XBkqN5/mfMnJAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/ZL8Yr2k4hS9lNQyAMYjNCDKAAAA[0mtos.bsd.dev in workspace /usr/local/jenkins/workspace/kalibsd
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:rjerrin/kali-freebsd-ports.git # timeout=10
+Fetching upstream changes from git@github.com:rjerrin/kali-freebsd-ports.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:rjerrin/kali-freebsd-ports.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c8faa6f787a27b19ac1f274cb4000952f6a9d621 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c8faa6f787a27b19ac1f274cb4000952f6a9d621
+Commit message: "ruby activer support"
+ > git rev-list --no-walk c8faa6f787a27b19ac1f274cb4000952f6a9d621 # timeout=10
+[kalibsd] $ /bin/sh -xe /tmp/jenkins8350379061144976903.sh
++ PORTS=/usr/local/poudriere/ports/kali
++ CTGR=devel
++ PKG=rubygem-activesupport5
++ PKG_PATH=/usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5
++ JNAME=lrelease
++ [ -d /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5 ]
++ sudo rm -rfv /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5
+/usr/local/poudriere/ports/kali/devel/rubygem-activesupport5/pkg-descr
+/usr/local/poudriere/ports/kali/devel/rubygem-activesupport5/distinfo
+/usr/local/poudriere/ports/kali/devel/rubygem-activesupport5/Makefile
+/usr/local/poudriere/ports/kali/devel/rubygem-activesupport5
++ sudo poudriere ports -p kali -u
+[00:00:00] Updating portstree "kali" with portsnap...Looking up portsnap.FreeBSD.org mirrors... 5 mirrors found.
+Fetching snapshot tag from ec2-ap-southeast-2.portsnap.freebsd.org... done.
+Latest snapshot on server matches what we already have.
+No updates needed.
+Ports tree is already up to date.
+ done
++ sudo cp -Rfv /usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5 /usr/local/poudriere/ports/kali/devel
+/usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5 -> /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5
+/usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5/pkg-descr -> /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5/pkg-descr
+/usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5/distinfo -> /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5/distinfo
+/usr/local/jenkins/workspace/kalibsd/rubygem-activesupport5/Makefile -> /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5/Makefile
++ cd /usr/local/poudriere/ports/kali/devel/rubygem-activesupport5
++ sudo make distclean .
+===>  Cleaning for rubygem-activesupport5-5.2.2
+===>  Deleting distfiles for rubygem-activesupport5-5.2.2
+`.' is up to date.
++ sudo make makesum .
+=> activesupport-5.2.2.gem doesn't seem to exist in /usr/local/poudriere/ports/kali/distfiles/rubygem.
+=> Attempting to fetch https://rubygems.global.ssl.fastly.net/gems/activesupport-5.2.2.gem
+activesupport-5.2.2.gem                                  0  B    0  Bps
+`.' is up to date.
++ sudo poudriere bulk -c -j lrelease -p kali devel/rubygem-activesupport5
+[00:00:00] Creating the reference jail... done
+[00:00:01] Mounting system devices for lrelease-kali
+[00:00:01] Mounting ports/packages/distfiles
+[00:00:01] Stashing existing package repository
+[00:00:01] Mounting packages from: /usr/local/poudriere/data/packages/lrelease-kali
+/etc/resolv.conf -> /usr/local/poudriere/data/.m/lrelease-kali/ref/etc/resolv.conf
+[00:00:01] Starting jail lrelease-kali
+[00:00:02] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali/2018-12-13_15h31m08s
+[00:00:02] Loading MOVED for /usr/local/poudriere/data/.m/lrelease-kali/ref/usr/ports
+[00:00:05] Ports supports: FLAVORS SELECTED_OPTIONS
+[00:00:05] Gathering ports metadata
+[00:00:06] Calculating ports order and dependencies
+[00:00:06] (-c) Cleaning all packages... done
+[00:00:06] Sanity checking the repository
+[00:00:06] Checking packages for incremental rebuild needs
+[00:00:06] Deleting stale symlinks... done
+[00:00:06] Deleting empty directories... done
+[00:00:06] Cleaning the build queue
+[00:00:06] Sanity checking build queue
+[00:00:06] Processing PRIORITY_BOOST
+[00:00:06] Balancing pool
+[00:00:06] Recording filesystem state for prepkg... done
+[00:00:08] Building 30 packages using 2 builders
+[00:00:08] Starting/Cloning builders
+[00:00:09] Hit CTRL+t at any time to see build progress and stats
+[00:00:09] [01] [00:00:00] Building ports-mgmt/pkg | pkg-1.10.5_5
+[00:01:40] [01] [00:01:31] Finished ports-mgmt/pkg | pkg-1.10.5_5: Success
+[00:01:40] [01] [00:00:00] Building print/indexinfo | indexinfo-0.3.1
+[00:01:40] [02] [00:00:00] Building lang/perl5.26 | perl5-5.26.3
+[00:01:42] [01] [00:00:02] Finished print/indexinfo | indexinfo-0.3.1: Success
+[00:01:42] [01] [00:00:00] Building devel/gettext-runtime | gettext-runtime-0.19.8.1_2
+[00:02:10] [01] [00:00:28] Finished devel/gettext-runtime | gettext-runtime-0.19.8.1_2: Success
+[00:02:10] [01] [00:00:00] Building devel/gettext-tools | gettext-tools-0.19.8.1_1
+[00:06:13] [01] [00:04:03] Finished devel/gettext-tools | gettext-tools-0.19.8.1_1: Success
+[00:06:13] [01] [00:00:00] Building converters/libiconv | libiconv-1.14_11
+[00:06:14] [02] [00:04:34] Finished lang/perl5.26 | perl5-5.26.3: Success
+[00:06:15] [02] [00:00:00] Building devel/p5-Locale-gettext | p5-Locale-gettext-1.07
+[00:06:22] [02] [00:00:07] Finished devel/p5-Locale-gettext | p5-Locale-gettext-1.07: Success
+[00:06:22] [02] [00:00:00] Building devel/gmake | gmake-4.2.1_3
+[00:06:34] [02] [00:00:12] Finished devel/gmake | gmake-4.2.1_3: Success
+[00:06:34] [02] [00:00:00] Building misc/help2man | help2man-1.47.8_1
+[00:06:38] [01] [00:00:25] Finished converters/libiconv | libiconv-1.14_11: Success
+[00:06:38] [01] [00:00:00] Building devel/p5-Locale-libintl | p5-Locale-libintl-1.31
+[00:06:42] [02] [00:00:08] Finished misc/help2man | help2man-1.47.8_1: Success
+[00:06:42] [02] [00:00:00] Building converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30
+[00:06:52] [02] [00:00:10] Finished converters/p5-Text-Unidecode | p5-Text-Unidecode-1.30: Success
+[00:06:53] [02] [00:00:00] Building textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40
+[00:06:55] [01] [00:00:17] Finished devel/p5-Locale-libintl | p5-Locale-libintl-1.31: Success
+[00:06:55] [01] [00:00:00] Building devel/autoconf-wrapper | autoconf-wrapper-20131203
+[00:06:58] [02] [00:00:05] Finished textproc/p5-Unicode-EastAsianWidth | p5-Unicode-EastAsianWidth-1.40: Success
+[00:06:58] [01] [00:00:03] Finished devel/autoconf-wrapper | autoconf-wrapper-20131203: Success
+[00:06:58] [02] [00:00:00] Building print/texinfo | texinfo-6.5_2,1
+[00:06:58] [01] [00:00:00] Building devel/pkgconf | pkgconf-1.5.4,1
+[00:07:07] [01] [00:00:09] Finished devel/pkgconf | pkgconf-1.5.4,1: Success
+[00:07:07] [01] [00:00:00] Building devel/libffi | libffi-3.2.1_3
+[00:07:20] [01] [00:00:13] Finished devel/libffi | libffi-3.2.1_3: Success
+[00:07:20] [01] [00:00:00] Building textproc/libyaml | libyaml-0.2.1
+[00:07:30] [01] [00:00:10] Finished textproc/libyaml | libyaml-0.2.1: Success
+[00:07:30] [01] [00:00:00] Building devel/libunwind | libunwind-20170615
+[00:07:56] [01] [00:00:26] Finished devel/libunwind | libunwind-20170615: Success
+[00:07:56] [01] [00:00:00] Building devel/libedit | libedit-3.1.20170329_2,1
+[00:08:01] [02] [00:01:03] Finished print/texinfo | texinfo-6.5_2,1: Success
+[00:08:02] [02] [00:00:00] Building devel/m4 | m4-1.4.18_1,1
+[00:08:08] [01] [00:00:12] Finished devel/libedit | libedit-3.1.20170329_2,1: Success
+[00:08:32] [02] [00:00:30] Finished devel/m4 | m4-1.4.18_1,1: Success
+[00:08:32] [01] [00:00:00] Building devel/autoconf | autoconf-2.69_2
+[00:08:48] [01] [00:00:16] Finished devel/autoconf | autoconf-2.69_2: Success
+[00:08:48] [01] [00:00:00] Building devel/automake | automake-1.16.1_1
+[00:08:57] [01] [00:00:09] Finished devel/automake | automake-1.16.1_1: Success
+[00:08:57] [01] [00:00:00] Building lang/ruby24 | ruby-2.4.5_1,1
+[00:12:54] [01] [00:03:57] Finished lang/ruby24 | ruby-2.4.5_1,1: Success
+[00:12:55] [01] [00:00:00] Building devel/ruby-gems | ruby24-gems-2.7.8
+[00:13:08] [01] [00:00:13] Finished devel/ruby-gems | ruby24-gems-2.7.8: Success
+[00:13:09] [01] [00:00:00] Building devel/rubygem-thread_safe | rubygem-thread_safe-0.3.6
+[00:13:09] [02] [00:00:00] Building devel/rubygem-concurrent-ruby | rubygem-concurrent-ruby-1.1.3
+[00:13:16] [01] [00:00:07] Finished devel/rubygem-thread_safe | rubygem-thread_safe-0.3.6: Success
+[00:13:16] [01] [00:00:00] Building devel/rubygem-tzinfo | rubygem-tzinfo-1.2.5
+[00:13:17] [02] [00:00:08] Finished devel/rubygem-concurrent-ruby | rubygem-concurrent-ruby-1.1.3: Success
+[00:13:17] [02] [00:00:00] Building devel/rubygem-i18n | rubygem-i18n-1.1.1,2
+[00:13:24] [01] [00:00:08] Finished devel/rubygem-tzinfo | rubygem-tzinfo-1.2.5: Success
+[00:13:24] [02] [00:00:07] Finished devel/rubygem-i18n | rubygem-i18n-1.1.1,2: Success
+[00:13:24] [01] [00:00:00] Building devel/rubygem-minitest | rubygem-minitest-5.11.3
+[00:13:40] [01] [00:00:16] Finished devel/rubygem-minitest | rubygem-minitest-5.11.3: Success
+[00:13:40] [01] [00:00:00] Building devel/rubygem-activesupport5 | rubygem-activesupport5-5.2.2
+[00:13:53] [01] [00:00:13] Finished devel/rubygem-activesupport5 | rubygem-activesupport5-5.2.2: Success
+[00:13:54] Stopping 2 builders
+[00:13:56] Creating pkg repository
+Creating repository in /tmp/packages: .......... done
+Packing files for repository: .... done
+[00:13:58] Committing packages to repository
+[00:13:58] Removing old packages
+[00:13:58] Built ports: ports-mgmt/pkg print/indexinfo devel/gettext-runtime devel/gettext-tools lang/perl5.26 devel/p5-Locale-gettext devel/gmake converters/libiconv misc/help2man converters/p5-Text-Unidecode devel/p5-Locale-libintl textproc/p5-Unicode-EastAsianWidth devel/autoconf-wrapper devel/pkgconf devel/libffi textproc/libyaml devel/libunwind print/texinfo devel/libedit devel/m4 devel/autoconf devel/automake lang/ruby24 devel/ruby-gems devel/rubygem-thread_safe devel/rubygem-concurrent-ruby devel/rubygem-tzinfo devel/rubygem-i18n devel/rubygem-minitest devel/rubygem-activesupport5
+[lrelease-kali] [2018-12-13_15h31m08s] [committing:] Queued: 30 Built: 30 Failed: 0  Skipped: 0  Ignored: 0  Tobuild: 0   Time: 00:13:57
+[00:13:58] Logs: /usr/local/poudriere/data/logs/bulk/lrelease-kali/2018-12-13_15h31m08s
+[00:13:58] Cleaning up
+[00:13:58] Unmounting file systems
+[EnvInject] - Injecting environment variables from a build step.
+Finished: SUCCESS
